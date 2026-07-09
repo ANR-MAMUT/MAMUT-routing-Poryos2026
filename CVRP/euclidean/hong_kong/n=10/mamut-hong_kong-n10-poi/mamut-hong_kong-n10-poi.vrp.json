@@ -1,0 +1,58 @@
+{
+    "instance_name": "mamut-hong_kong-n10-poi",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Mamut2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 174,
+    "coordinates": [
+        [1438.9425746026898, -1211.8557234748282],
+        [-4415.099913634072, 1944.5011457522387],
+        [2778.714044257341, -8100.25357785588],
+        [1443.2772920598895, -8294.407818124724],
+        [606.0347964877085, 10526.327714736706],
+        [6561.511056149917, -7289.594581885472],
+        [-181.7479461053226, -2709.1003300258444],
+        [3257.491472953999, -2677.133727204122],
+        [1031.6636787533362, -5147.375548625918],
+        [3329.414601464914, -2450.5662664800284],
+        [1505.2176207169177, -5856.468498663148]
+    ],
+    "demands": [0, 7, 84, 5, 2, 9, 6, 10, 1, 9, 7],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 22.35252895,
+        "lon": 114.15986375,
+        "alt": 0.0
+    },
+    "metric_variant": "euclidean",
+    "arc_costs_source": {
+        "model": "euclidean",
+        "decimals": 3
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-09",
+        "problem_type": "CVRP",
+        "metric_variant": "euclidean",
+        "city": "hong_kong",
+        "method": "poi",
+        "base_instance_name": "mamut-hong_kong-n10-poi",
+        "num_vehicles_lb": 1,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "generate-base",
+            "version": 2,
+            "city": "hong_kong",
+            "method": "poi",
+            "sampling_seed": 3458029247,
+            "stage1_base": "hong_kong_poi-n11-k1"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/hong_kong/n=10/mamut-hong_kong-n10-poi/mamut-hong_kong-n10-poi.geo.json.gz",
+                "sha256": "10b7fcb07a0739fd7600a98372a9bba37800fd515d6c17dbbcaa577b5ff88ae1"
+            }
+        }
+    }
+}

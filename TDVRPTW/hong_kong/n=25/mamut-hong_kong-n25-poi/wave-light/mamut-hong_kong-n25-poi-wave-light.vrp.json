@@ -1,0 +1,134 @@
+{
+    "instance_name": "mamut-hong_kong-n25-poi-wave-light",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Mamut2026",
+    "num_customers": 25,
+    "num_vehicles": null,
+    "vehicle_capacity": 177,
+    "coordinates": [
+        [1438.9425746026898, -1211.8557234748282],
+        [606.0347964877085, 10526.327714736706],
+        [3450.936963218273, 4916.363532401619],
+        [2412.0654927604764, -8187.728259249408],
+        [3264.032303192316, -2622.794822983934],
+        [3014.6375148601583, -3322.3119673371825],
+        [5763.251601095636, -3927.8620861179566],
+        [1392.9314989064142, -8628.89529317537],
+        [1657.1512020287034, -8331.12798639866],
+        [-10408.836804334127, 1725.461763361523],
+        [5843.925894669479, -1958.182873220073],
+        [2844.4254781254, 2192.6348328739277],
+        [2490.775823648351, -8792.788096484219],
+        [846.7983848643414, -8315.69057612887],
+        [7561.666621356643, 7858.721941585984],
+        [-10396.118462280363, 1615.9138909720125],
+        [497.0077019670739, -8167.233631182251],
+        [-525.3165094386084, -11485.933225382805],
+        [-934.9154767064645, -7640.89473510511],
+        [6824.799442027119, -8201.209742593914],
+        [687.5150444325487, 11057.865037196978],
+        [5775.898316501922, -2998.1848493751695],
+        [1064.7303099413407, -4565.50818442616],
+        [-4551.942347783452, 2130.48742027946],
+        [1603.9689736012306, -5599.975802319523],
+        [1413.5849636099879, -8172.503541214461]
+    ],
+    "demands": [0, 1, 9, 7, 4, 9, 5, 84, 10, 1, 1, 7, 8, 1, 4, 3, 5, 8, 79, 87, 3, 4, 10, 5, 3, 4],
+    "service_times": [0, 336, 1430, 320, 1402, 113, 748, 894, 1018, 1, 714, 1011, 1365, 1178, 691, 1309, 771, 1242, 225, 935, 2076, 1614, 884, 1143, 1658, 1527],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 22.35252895,
+        "lon": 114.15986375,
+        "alt": 0.0
+    },
+    "horizon": [0.0, 86400.0],
+    "td": {
+        "model": "road-graph",
+        "graph": {
+            "path": "sidecars/hong_kong/n=25/mamut-hong_kong-n25-poi/mamut-hong_kong-n25-poi.road.json.gz",
+            "sha256": "e4e59d8839f6e185d5d7f3b77105e10f882a7e340f8bd047a769671302193bb1"
+        },
+        "traffic": {
+            "path": "sidecars/hong_kong/n=25/mamut-hong_kong-n25-poi/mamut-hong_kong-n25-poi.traffic-wave-light.json.gz",
+            "sha256": "0a8fe8222a2ab0bd14fe9070b54c2c68059c9ae8b5ed3cf88c0012dda1c2b672"
+        },
+        "atf_sha256": "86cec9687f9a943ee0a6b78c66110254d628e4418185e188bf588408d1983dfd",
+        "sample_step": 60.0,
+        "simplify_tolerance": 1.0
+    },
+    "time_windows": [
+        [0, 86400],
+        [14005, 34281],
+        [12907, 29547],
+        [0, 15661],
+        [0, 8950],
+        [0, 10272],
+        [8490, 23803],
+        [0, 14575],
+        [1151, 19782],
+        [24332, 33446],
+        [13679, 23972],
+        [12676, 27323],
+        [0, 17449],
+        [1583, 13687],
+        [14116, 31832],
+        [16016, 41817],
+        [2597, 20552],
+        [11224, 14982],
+        [8423, 16529],
+        [3534, 26198],
+        [21410, 27662],
+        [7294, 26784],
+        [0, 13328],
+        [19957, 34934],
+        [0, 10025],
+        [5453, 12304]
+    ],
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-09",
+        "city": "hong_kong",
+        "method": "poi",
+        "base_instance_name": "mamut-hong_kong-n25-poi",
+        "subinstance": "wave-light",
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "build-td",
+            "version": 2,
+            "city": "hong_kong",
+            "method": "poi"
+        },
+        "traffic": {
+            "model": "wave",
+            "intensity": "light",
+            "seed": 10251,
+            "num_trips": 0,
+            "params": {
+                "floor_share": 0.35,
+                "min_speed_factor": 0.12,
+                "jitter": 0.08,
+                "amplitude": 0.25,
+                "center_decay_m": 3000.0
+            }
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/hong_kong/n=25/mamut-hong_kong-n25-poi/mamut-hong_kong-n25-poi.geo.json.gz",
+                "sha256": "7bcb47194cb2448e5905a2f5e0951d9c60a6cf315240d1ce725b5930e4cbdd0b"
+            }
+        },
+        "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
+        "problem_type": "TDVRPTW",
+        "tw_repair": {
+            "policy": "minimal-shared-tw-repair",
+            "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
+            "lifted_customers": 0,
+            "max_lift_seconds": 0,
+            "reduced_customers": 0,
+            "max_reduction_seconds": 0,
+            "repairs": {
+
+            }
+        }
+    }
+}

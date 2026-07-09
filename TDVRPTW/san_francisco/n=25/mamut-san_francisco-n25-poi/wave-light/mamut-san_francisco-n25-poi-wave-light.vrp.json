@@ -1,0 +1,134 @@
+{
+    "instance_name": "mamut-san_francisco-n25-poi-wave-light",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Mamut2026",
+    "num_customers": 25,
+    "num_vehicles": null,
+    "vehicle_capacity": 193,
+    "coordinates": [
+        [27567.380647101618, -311.8625620472418],
+        [18558.110903080724, 15853.006480186414],
+        [29487.347060222568, 722.4275225711312],
+        [28109.05025228539, 201.268483371017],
+        [28253.013969226817, 490.1988214681638],
+        [29194.524315355222, 615.1084142378343],
+        [20153.49835885502, -4712.093978883138],
+        [26837.037261323807, -847.0845648199902],
+        [20645.20792702422, -345.848943408223],
+        [28306.40032028609, 1279.6992180807088],
+        [27620.544382827626, -15061.215450863085],
+        [27183.939809623193, 1015.7276883996659],
+        [27590.995832100816, 222.69228382946744],
+        [22242.84975251324, -7023.118426794532],
+        [21673.78317189807, -9409.615103078353],
+        [29023.16481782747, -150.9502061757976],
+        [28488.39869672662, 1287.1417220530159],
+        [38480.54735914157, 9446.723631398943],
+        [26094.369659519554, 58.651240609902345],
+        [27915.342580311844, -306.4841254753646],
+        [20828.961636403903, -14863.878072556921],
+        [38338.690917060274, 9366.322540752957],
+        [20701.57882708868, -342.6551762691954],
+        [24811.866971773044, -974.825654010878],
+        [26894.992415638764, -2187.6211953995016],
+        [26652.27736434158, -15914.960293941931]
+    ],
+    "demands": [0, 7, 5, 9, 1, 10, 1, 6, 2, 5, 4, 2, 9, 7, 2, 87, 5, 83, 3, 8, 9, 6, 9, 10, 4, 10],
+    "service_times": [0, 1126, 2580, 1576, 1553, 1374, 1322, 701, 898, 1447, 786, 2018, 86, 1865, 2291, 716, 2324, 1316, 1877, 1236, 719, 1245, 399, 937, 938, 301],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 37.78499105,
+        "lon": -122.7276414,
+        "alt": 0.0
+    },
+    "horizon": [0.0, 86400.0],
+    "td": {
+        "model": "road-graph",
+        "graph": {
+            "path": "sidecars/san_francisco/n=25/mamut-san_francisco-n25-poi/mamut-san_francisco-n25-poi.road.json.gz",
+            "sha256": "b03e48e67c0e72c74069be8241565a7e4c23223f24bd71ed16570d980c370700"
+        },
+        "traffic": {
+            "path": "sidecars/san_francisco/n=25/mamut-san_francisco-n25-poi/mamut-san_francisco-n25-poi.traffic-wave-light.json.gz",
+            "sha256": "85267f747a14eabb24a0691a3860c4b12f547ce2510eb4837b9d99e6d3118406"
+        },
+        "atf_sha256": "544e619d3843a676c1dc67213852dde3993534dc16b62207a17e12da7dd66e65",
+        "sample_step": 60.0,
+        "simplify_tolerance": 1.0
+    },
+    "time_windows": [
+        [0, 86400],
+        [28698, 36921],
+        [13133, 25973],
+        [0, 8267],
+        [17196, 35035],
+        [14593, 21696],
+        [26671, 34152],
+        [0, 10521],
+        [701, 16254],
+        [15465, 33708],
+        [2927, 28903],
+        [20749, 34867],
+        [0, 14758],
+        [1208, 18225],
+        [456, 22987],
+        [5018, 29728],
+        [15473, 28982],
+        [32786, 40720],
+        [0, 12855],
+        [0, 8587],
+        [2443, 26223],
+        [28693, 42301],
+        [27, 16122],
+        [997, 12831],
+        [0, 12722],
+        [10262, 20750]
+    ],
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-09",
+        "city": "san_francisco",
+        "method": "poi",
+        "base_instance_name": "mamut-san_francisco-n25-poi",
+        "subinstance": "wave-light",
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "build-td",
+            "version": 2,
+            "city": "san_francisco",
+            "method": "poi"
+        },
+        "traffic": {
+            "model": "wave",
+            "intensity": "light",
+            "seed": 10251,
+            "num_trips": 0,
+            "params": {
+                "floor_share": 0.35,
+                "min_speed_factor": 0.12,
+                "jitter": 0.08,
+                "amplitude": 0.25,
+                "center_decay_m": 3000.0
+            }
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/san_francisco/n=25/mamut-san_francisco-n25-poi/mamut-san_francisco-n25-poi.geo.json.gz",
+                "sha256": "706aec8c0356e7f7ed4cb005fcc46f83bb32aa7542ad9ade4595488430906268"
+            }
+        },
+        "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
+        "problem_type": "TDVRPTW",
+        "tw_repair": {
+            "policy": "minimal-shared-tw-repair",
+            "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
+            "lifted_customers": 0,
+            "max_lift_seconds": 0,
+            "reduced_customers": 0,
+            "max_reduction_seconds": 0,
+            "repairs": {
+
+            }
+        }
+    }
+}

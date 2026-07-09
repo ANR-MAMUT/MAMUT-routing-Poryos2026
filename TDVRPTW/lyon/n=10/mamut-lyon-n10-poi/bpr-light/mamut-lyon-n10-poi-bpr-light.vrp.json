@@ -1,0 +1,121 @@
+{
+    "instance_name": "mamut-lyon-n10-poi-bpr-light",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Mamut2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 151,
+    "coordinates": [
+        [135.7576295960148, 21.597263143175013],
+        [-1164.0975455280536, -1386.9656573759394],
+        [349.60714888174965, -2469.462390077968],
+        [2090.053894033262, 2037.426794875233],
+        [17.803017969731993, 573.805653555079],
+        [1360.7971717527425, 644.3658744564032],
+        [-270.2222319729993, 863.1041592261349],
+        [1723.4891058059418, 700.8849576255684],
+        [-467.8914630350672, 1204.8143916924419],
+        [577.7314830048462, -1047.9512471219673],
+        [3602.3800592215607, 1263.5027604862778]
+    ],
+    "demands": [0, 4, 2, 3, 8, 7, 52, 8, 5, 6, 10],
+    "service_times": [0, 832, 522, 1020, 1221, 35, 974, 694, 886, 702, 1141],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 45.7578147,
+        "lon": 4.835118850000001,
+        "alt": 0.0
+    },
+    "horizon": [0.0, 86400.0],
+    "td": {
+        "model": "road-graph",
+        "graph": {
+            "path": "sidecars/lyon/n=10/mamut-lyon-n10-poi/mamut-lyon-n10-poi.road.json.gz",
+            "sha256": "263fb4b35d23d7fc0494deb9bf88f374e80dad41ccfe3587fdde305a014dabd9"
+        },
+        "traffic": {
+            "path": "sidecars/lyon/n=10/mamut-lyon-n10-poi/mamut-lyon-n10-poi.traffic-bpr-light.json.gz",
+            "sha256": "6f72497eaab702f14c963191a4fbd216d7bf48cfdda053e67e7217140fa271ac"
+        },
+        "atf_sha256": "28520090ac47c0f25576dacc98e0e90a8836a7f0f1cfbd2a48a6e2a81bcd44c1",
+        "sample_step": 60.0,
+        "simplify_tolerance": 1.0
+    },
+    "time_windows": [
+        [0, 86400],
+        [0, 18141],
+        [2161, 11468],
+        [1008, 8439],
+        [0, 12678],
+        [0, 9446],
+        [0, 1937],
+        [0, 19372],
+        [0, 19034],
+        [0, 18545],
+        [0, 12080]
+    ],
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-09",
+        "city": "lyon",
+        "method": "poi",
+        "base_instance_name": "mamut-lyon-n10-poi",
+        "subinstance": "bpr-light",
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "build-td",
+            "version": 2,
+            "city": "lyon",
+            "method": "poi"
+        },
+        "traffic": {
+            "model": "bpr",
+            "intensity": "light",
+            "seed": 10150,
+            "num_trips": 199656,
+            "params": {
+                "capacity_veh_h": {
+                    "5": 900.0,
+                    "4": 1100.0,
+                    "6": 600.0,
+                    "7": 400.0,
+                    "2": 1600.0,
+                    "8": 300.0,
+                    "3": 1400.0,
+                    "1": 1900.0
+                },
+                "min_speed_factor": 0.12,
+                "bpr_beta": 4,
+                "bpr_alpha": 0.15,
+                "multiplier_cap": 6.0,
+                "trips_per_vertex": 2.5,
+                "departures": {
+                    "lunch_return": [12.25, 0.5],
+                    "lunch_probability": 0.25,
+                    "lunch_back": [13.5, 0.5],
+                    "morning": [8.0, 0.75],
+                    "evening": [17.5, 1.0]
+                }
+            }
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/lyon/n=10/mamut-lyon-n10-poi/mamut-lyon-n10-poi.geo.json.gz",
+                "sha256": "15ae4226e18a2af39ffea38fa72e7604a7ce5bc9e8888ff9238dd45249a4fd89"
+            }
+        },
+        "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
+        "problem_type": "TDVRPTW",
+        "tw_repair": {
+            "policy": "minimal-shared-tw-repair",
+            "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
+            "lifted_customers": 0,
+            "max_lift_seconds": 0,
+            "reduced_customers": 0,
+            "max_reduction_seconds": 0,
+            "repairs": {
+
+            }
+        }
+    }
+}

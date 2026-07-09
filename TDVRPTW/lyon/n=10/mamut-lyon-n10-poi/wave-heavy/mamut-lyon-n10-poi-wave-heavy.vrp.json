@@ -1,0 +1,104 @@
+{
+    "instance_name": "mamut-lyon-n10-poi-wave-heavy",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Mamut2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 151,
+    "coordinates": [
+        [135.7576295960148, 21.597263143175013],
+        [-1164.0975455280536, -1386.9656573759394],
+        [349.60714888174965, -2469.462390077968],
+        [2090.053894033262, 2037.426794875233],
+        [17.803017969731993, 573.805653555079],
+        [1360.7971717527425, 644.3658744564032],
+        [-270.2222319729993, 863.1041592261349],
+        [1723.4891058059418, 700.8849576255684],
+        [-467.8914630350672, 1204.8143916924419],
+        [577.7314830048462, -1047.9512471219673],
+        [3602.3800592215607, 1263.5027604862778]
+    ],
+    "demands": [0, 4, 2, 3, 8, 7, 52, 8, 5, 6, 10],
+    "service_times": [0, 832, 522, 1020, 1221, 35, 974, 694, 886, 702, 1141],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 45.7578147,
+        "lon": 4.835118850000001,
+        "alt": 0.0
+    },
+    "horizon": [0.0, 86400.0],
+    "td": {
+        "model": "road-graph",
+        "graph": {
+            "path": "sidecars/lyon/n=10/mamut-lyon-n10-poi/mamut-lyon-n10-poi.road.json.gz",
+            "sha256": "263fb4b35d23d7fc0494deb9bf88f374e80dad41ccfe3587fdde305a014dabd9"
+        },
+        "traffic": {
+            "path": "sidecars/lyon/n=10/mamut-lyon-n10-poi/mamut-lyon-n10-poi.traffic-wave-heavy.json.gz",
+            "sha256": "a20435c09e3ba892293631f53841d31f714cf7f40cf3b0e226793e9e459b197f"
+        },
+        "atf_sha256": "483f7ae2b23b20fc699ec2ce6d56838eae767afa7402eaaef8420b883b8e8a13",
+        "sample_step": 60.0,
+        "simplify_tolerance": 1.0
+    },
+    "time_windows": [
+        [0, 86400],
+        [0, 18141],
+        [2161, 11468],
+        [1008, 8439],
+        [0, 12678],
+        [0, 9446],
+        [0, 1937],
+        [0, 19372],
+        [0, 19034],
+        [0, 18545],
+        [0, 12080]
+    ],
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-09",
+        "city": "lyon",
+        "method": "poi",
+        "base_instance_name": "mamut-lyon-n10-poi",
+        "subinstance": "wave-heavy",
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "build-td",
+            "version": 2,
+            "city": "lyon",
+            "method": "poi"
+        },
+        "traffic": {
+            "model": "wave",
+            "intensity": "heavy",
+            "seed": 30265,
+            "num_trips": 0,
+            "params": {
+                "floor_share": 0.35,
+                "min_speed_factor": 0.12,
+                "jitter": 0.08,
+                "amplitude": 0.65,
+                "center_decay_m": 3000.0
+            }
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/lyon/n=10/mamut-lyon-n10-poi/mamut-lyon-n10-poi.geo.json.gz",
+                "sha256": "15ae4226e18a2af39ffea38fa72e7604a7ce5bc9e8888ff9238dd45249a4fd89"
+            }
+        },
+        "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
+        "problem_type": "TDVRPTW",
+        "tw_repair": {
+            "policy": "minimal-shared-tw-repair",
+            "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
+            "lifted_customers": 0,
+            "max_lift_seconds": 0,
+            "reduced_customers": 0,
+            "max_reduction_seconds": 0,
+            "repairs": {
+
+            }
+        }
+    }
+}

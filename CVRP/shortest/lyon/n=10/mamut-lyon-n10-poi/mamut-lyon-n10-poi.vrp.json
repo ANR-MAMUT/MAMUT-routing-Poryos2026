@@ -1,0 +1,61 @@
+{
+    "instance_name": "mamut-lyon-n10-poi",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Mamut2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 151,
+    "coordinates": [
+        [135.7576295960148, 21.597263143175013],
+        [-1164.0975455280536, -1386.9656573759394],
+        [349.60714888174965, -2469.462390077968],
+        [2090.053894033262, 2037.426794875233],
+        [17.803017969731993, 573.805653555079],
+        [1360.7971717527425, 644.3658744564032],
+        [-270.2222319729993, 863.1041592261349],
+        [1723.4891058059418, 700.8849576255684],
+        [-467.8914630350672, 1204.8143916924419],
+        [577.7314830048462, -1047.9512471219673],
+        [3602.3800592215607, 1263.5027604862778]
+    ],
+    "demands": [0, 4, 2, 3, 8, 7, 52, 8, 5, 6, 10],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 45.7578147,
+        "lon": 4.835118850000001,
+        "alt": 0.0
+    },
+    "metric_variant": "shortest",
+    "arc_costs_source": {
+        "model": "distances-sidecar",
+        "distances": {
+            "path": "sidecars/lyon/n=10/mamut-lyon-n10-poi/mamut-lyon-n10-poi.distances-shortest.json.gz",
+            "sha256": "b81f9437dd826d57a8e12c04a4bcb4ba263cd1c37c5b4c3aaa86a6faba01a303"
+        }
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-09",
+        "problem_type": "CVRP",
+        "metric_variant": "shortest",
+        "city": "lyon",
+        "method": "poi",
+        "base_instance_name": "mamut-lyon-n10-poi",
+        "num_vehicles_lb": 1,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "generate-base",
+            "version": 2,
+            "city": "lyon",
+            "method": "poi",
+            "sampling_seed": 346986650,
+            "stage1_base": "lyon_poi-n11-k1"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/lyon/n=10/mamut-lyon-n10-poi/mamut-lyon-n10-poi.geo.json.gz",
+                "sha256": "15ae4226e18a2af39ffea38fa72e7604a7ce5bc9e8888ff9238dd45249a4fd89"
+            }
+        }
+    }
+}

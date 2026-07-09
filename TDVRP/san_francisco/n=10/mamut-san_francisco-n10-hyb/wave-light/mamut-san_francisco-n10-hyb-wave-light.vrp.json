@@ -1,0 +1,80 @@
+{
+    "instance_name": "mamut-san_francisco-n10-hyb-wave-light",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Mamut2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 122,
+    "coordinates": [
+        [27567.380647101618, -311.8625620472418],
+        [20831.002691242335, -14847.357619048676],
+        [26891.010381785043, -1590.959803547444],
+        [27333.686637104704, 660.9341895113392],
+        [23279.790117235345, -188.08560439639047],
+        [25967.423829982512, 1422.6547332263924],
+        [25899.240267214365, -4937.5384202517835],
+        [15887.27313507047, 10474.539507965108],
+        [27162.886353292874, -6164.339083099242],
+        [27370.074981349317, -8270.698288620415],
+        [28698.407123398207, -1824.1517637416177]
+    ],
+    "demands": [0, 1, 50, 6, 5, 7, 1, 7, 10, 5, 1],
+    "service_times": [0, 851, 823, 1371, 605, 892, 1242, 1357, 1293, 448, 1339],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 37.78499105,
+        "lon": -122.7276414,
+        "alt": 0.0
+    },
+    "horizon": [0.0, 86400.0],
+    "td": {
+        "model": "road-graph",
+        "graph": {
+            "path": "sidecars/san_francisco/n=10/mamut-san_francisco-n10-hyb/mamut-san_francisco-n10-hyb.road.json.gz",
+            "sha256": "a60336103072756be6cb7936c25a15187628c715b5816069857546584d353444"
+        },
+        "traffic": {
+            "path": "sidecars/san_francisco/n=10/mamut-san_francisco-n10-hyb/mamut-san_francisco-n10-hyb.traffic-wave-light.json.gz",
+            "sha256": "2c93c6b84b8346042500608c290b18be42041b2fafa8214e88f6ddc074d358eb"
+        },
+        "atf_sha256": "b339680703c79aede47503c485efa3ab48df98cbf2d40fdfb0a4a52c2c1c54cc",
+        "sample_step": 60.0,
+        "simplify_tolerance": 1.0
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-09",
+        "city": "san_francisco",
+        "method": "hyb",
+        "base_instance_name": "mamut-san_francisco-n10-hyb",
+        "subinstance": "wave-light",
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "build-td",
+            "version": 2,
+            "city": "san_francisco",
+            "method": "hyb"
+        },
+        "traffic": {
+            "model": "wave",
+            "intensity": "light",
+            "seed": 10251,
+            "num_trips": 0,
+            "params": {
+                "floor_share": 0.35,
+                "min_speed_factor": 0.12,
+                "jitter": 0.08,
+                "amplitude": 0.25,
+                "center_decay_m": 3000.0
+            }
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/san_francisco/n=10/mamut-san_francisco-n10-hyb/mamut-san_francisco-n10-hyb.geo.json.gz",
+                "sha256": "74409b49d30048d6f8650f40d01e23658cf1d6c40a9492ccbdb8751f830fe205"
+            }
+        },
+        "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
+        "problem_type": "TDVRP"
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "instance_name": "mamut-san_francisco-n10-hyb-tw-tight",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Mamut2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 122,
+    "coordinates": [
+        [27567.380647101618, -311.8625620472418],
+        [20831.002691242335, -14847.357619048676],
+        [26891.010381785043, -1590.959803547444],
+        [27333.686637104704, 660.9341895113392],
+        [23279.790117235345, -188.08560439639047],
+        [25967.423829982512, 1422.6547332263924],
+        [25899.240267214365, -4937.5384202517835],
+        [15887.27313507047, 10474.539507965108],
+        [27162.886353292874, -6164.339083099242],
+        [27370.074981349317, -8270.698288620415],
+        [28698.407123398207, -1824.1517637416177]
+    ],
+    "demands": [0, 1, 50, 6, 5, 7, 1, 7, 10, 5, 1],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 37.78499105,
+        "lon": -122.7276414,
+        "alt": 0.0
+    },
+    "metric_variant": "fastest",
+    "arc_costs_source": {
+        "model": "distances-sidecar",
+        "distances": {
+            "path": "sidecars/san_francisco/n=10/mamut-san_francisco-n10-hyb/mamut-san_francisco-n10-hyb.distances-fastest.json.gz",
+            "sha256": "a555984cd59c3dd915db1c81c5ef00fe4e2c6a9a92e52689fddfa125f0fc68b4"
+        }
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-09",
+        "problem_type": "VRPTW",
+        "metric_variant": "fastest",
+        "city": "san_francisco",
+        "method": "hyb",
+        "base_instance_name": "mamut-san_francisco-n10-hyb",
+        "num_vehicles_lb": 1,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "derive-vrptw",
+            "version": 2,
+            "city": "san_francisco",
+            "method": "hyb",
+            "service_seed": 3417339852,
+            "tw_seed": 3332107594,
+            "tw_anchor": "free-flow-fastest",
+            "tw_set": "tight"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/san_francisco/n=10/mamut-san_francisco-n10-hyb/mamut-san_francisco-n10-hyb.geo.json.gz",
+                "sha256": "74409b49d30048d6f8650f40d01e23658cf1d6c40a9492ccbdb8751f830fe205"
+            }
+        },
+        "tw_set": {
+            "name": "tight",
+            "td_paired": false,
+            "policy": "route-centered-tight",
+            "note": "static-only TW set; NOT the TDVRPTW windows; never audited under traffic"
+        }
+    },
+    "service_times": [0, 851, 823, 1371, 605, 892, 1242, 1357, 1293, 448, 1339],
+    "time_windows": [
+        [0, 86400],
+        [6286, 12242],
+        [728, 4618],
+        [0, 3877],
+        [9606, 12051],
+        [0, 4330],
+        [3150, 10318],
+        [10627, 13660],
+        [3647, 6857],
+        [5476, 11109],
+        [2078, 5164]
+    ]
+}

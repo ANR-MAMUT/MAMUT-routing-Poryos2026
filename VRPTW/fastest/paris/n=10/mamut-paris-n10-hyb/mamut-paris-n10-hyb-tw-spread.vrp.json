@@ -1,0 +1,83 @@
+{
+    "instance_name": "mamut-paris-n10-hyb-tw-spread",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Mamut2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 172,
+    "coordinates": [
+        [-500.8740114215472, 70.82241150336951],
+        [204.8446488510741, -2048.531554806438],
+        [-8173.220823616647, 2231.9919294420965],
+        [211.35652709402478, -3429.149072564719],
+        [1164.4979859466587, -4043.880396272072],
+        [-15.266373918583824, 1335.4140196994983],
+        [-3805.380107470213, -3591.508253884344],
+        [-2347.624105815279, -2030.6269205401368],
+        [4983.648261324295, -3650.5327220929316],
+        [-3362.9471560758475, -786.6270302935086],
+        [3425.2382808219295, 1785.9871400442835]
+    ],
+    "demands": [0, 9, 5, 5, 1, 3, 3, 9, 76, 6, 5],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 48.85886575,
+        "lon": 2.3469411,
+        "alt": 0.0
+    },
+    "metric_variant": "fastest",
+    "arc_costs_source": {
+        "model": "distances-sidecar",
+        "distances": {
+            "path": "sidecars/paris/n=10/mamut-paris-n10-hyb/mamut-paris-n10-hyb.distances-fastest.json.gz",
+            "sha256": "2aeed6c95d9ae50b69e0c510a32810bf218298bef40892e729cebb6802710a13"
+        }
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-09",
+        "problem_type": "VRPTW",
+        "metric_variant": "fastest",
+        "city": "paris",
+        "method": "hyb",
+        "base_instance_name": "mamut-paris-n10-hyb",
+        "num_vehicles_lb": 1,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "derive-vrptw",
+            "version": 2,
+            "city": "paris",
+            "method": "hyb",
+            "service_seed": 2057371962,
+            "tw_seed": 3721219373,
+            "tw_anchor": "uniform-feasible",
+            "tw_set": "spread"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/paris/n=10/mamut-paris-n10-hyb/mamut-paris-n10-hyb.geo.json.gz",
+                "sha256": "63ea552e0ea54b85f92a6631cb21d353308307ed581b0794e285367c8198f30d"
+            }
+        },
+        "tw_set": {
+            "name": "spread",
+            "td_paired": false,
+            "policy": "uniform-spread",
+            "note": "static-only TW set; NOT the TDVRPTW windows; never audited under traffic"
+        }
+    },
+    "service_times": [0, 909, 859, 330, 938, 1127, 626, 1593, 1249, 260, 970],
+    "time_windows": [
+        [0, 86400],
+        [2867, 24234],
+        [44536, 58770],
+        [57474, 85220],
+        [40685, 59032],
+        [59288, 68589],
+        [3535, 16336],
+        [68008, 84620],
+        [26886, 53412],
+        [40152, 60318],
+        [22513, 49022]
+    ]
+}

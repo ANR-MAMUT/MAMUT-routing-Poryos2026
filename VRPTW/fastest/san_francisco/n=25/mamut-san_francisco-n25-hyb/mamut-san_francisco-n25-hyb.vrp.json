@@ -1,0 +1,123 @@
+{
+    "instance_name": "mamut-san_francisco-n25-hyb",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Mamut2026",
+    "num_customers": 25,
+    "num_vehicles": null,
+    "vehicle_capacity": 150,
+    "coordinates": [
+        [27567.380647101618, -311.8625620472418],
+        [38257.799859627135, 9676.787790909726],
+        [28538.96609045972, 1016.6930115024019],
+        [25888.914386249162, 405.9437906343255],
+        [28540.425733774497, -6244.715857967081],
+        [21553.927040228387, -512.8741000830282],
+        [38424.23510960802, 11826.298885416427],
+        [25872.74955887107, 1715.5231589695236],
+        [36957.000240093796, 11166.634802795998],
+        [27910.377166302333, 859.8366160611142],
+        [27055.62923733573, 2556.391716923175],
+        [27590.995832100816, 222.69228382946744],
+        [26855.440353446324, -2190.735904775188],
+        [30079.26364351577, -12410.035017292723],
+        [21628.207005366035, -11634.268768176182],
+        [23001.815503913876, -10624.79892904937],
+        [29894.807565950778, -5655.919675430992],
+        [22355.37388133241, -12033.672187798673],
+        [25092.78993935052, 2582.964149158238],
+        [28326.578033439553, -14918.053310769543],
+        [27502.68322233369, -15445.102092198624],
+        [30311.322838489265, -6472.82080083206],
+        [26415.37213122278, -694.6668155462875],
+        [30234.935719854147, -1177.0510048611538],
+        [38289.05525939373, 5129.499079785034],
+        [36230.288804810916, 14740.874346709226]
+    ],
+    "demands": [0, 2, 4, 2, 3, 5, 1, 7, 5, 7, 5, 4, 1, 6, 10, 3, 1, 82, 4, 9, 9, 6, 3, 9, 86, 2],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 37.78499105,
+        "lon": -122.7276414,
+        "alt": 0.0
+    },
+    "metric_variant": "fastest",
+    "arc_costs_source": {
+        "model": "distances-sidecar",
+        "distances": {
+            "path": "sidecars/san_francisco/n=25/mamut-san_francisco-n25-hyb/mamut-san_francisco-n25-hyb.distances-fastest.json.gz",
+            "sha256": "e5afee657b439ad94ddd7f1f4db73012945c3e43b64e9a1b94d5629b8f4e1ed2"
+        }
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-09",
+        "problem_type": "VRPTW",
+        "metric_variant": "fastest",
+        "city": "san_francisco",
+        "method": "hyb",
+        "base_instance_name": "mamut-san_francisco-n25-hyb",
+        "num_vehicles_lb": 2,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "derive-vrptw",
+            "version": 2,
+            "city": "san_francisco",
+            "method": "hyb",
+            "service_seed": 2868830468,
+            "tw_seed": 3215881647,
+            "tw_anchor": "free-flow-fastest"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/san_francisco/n=25/mamut-san_francisco-n25-hyb/mamut-san_francisco-n25-hyb.geo.json.gz",
+                "sha256": "65ab21597b012c2c0d3102c66e688267ff24e91afcbf586ef3abf637846ce753"
+            }
+        },
+        "tw_set": {
+            "name": "td-shared",
+            "td_paired": true,
+            "policy": "route-centered",
+            "note": "windows shared verbatim with the base's TDVRPTW twins (post minimal-shared-tw-repair)"
+        },
+        "tw_repair": {
+            "policy": "minimal-shared-tw-repair",
+            "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
+            "lifted_customers": 0,
+            "max_lift_seconds": 0,
+            "reduced_customers": 0,
+            "max_reduction_seconds": 0,
+            "repairs": {
+
+            }
+        }
+    },
+    "service_times": [0, 404, 936, 481, 892, 566, 855, 569, 56, 352, 1296, 1137, 375, 107, 1255, 584, 995, 3, 348, 337, 561, 969, 541, 744, 742, 981],
+    "time_windows": [
+        [0, 86400],
+        [8341, 29527],
+        [0, 8389],
+        [0, 17977],
+        [7049, 12849],
+        [9730, 21814],
+        [13527, 25397],
+        [0, 10975],
+        [10769, 30114],
+        [0, 6283],
+        [0, 13122],
+        [0, 8084],
+        [0, 17097],
+        [4912, 17460],
+        [9450, 18448],
+        [0, 27267],
+        [0, 20245],
+        [3719, 23957],
+        [10582, 22769],
+        [1715, 21670],
+        [9048, 15356],
+        [3728, 13882],
+        [0, 12084],
+        [0, 16544],
+        [6424, 29470],
+        [9500, 31986]
+    ]
+}

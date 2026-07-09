@@ -1,0 +1,93 @@
+{
+    "instance_name": "mamut-lyon-n10-hyb",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Mamut2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 86,
+    "coordinates": [
+        [135.7576295960148, 21.597263143175013],
+        [3126.3010134318724, -320.96171734745644],
+        [1031.7086868969097, -934.078618401704],
+        [-2716.8638004217123, -1126.865821124214],
+        [1218.8167662808248, -103.60261815535841],
+        [192.30442889933292, 726.7575745405231],
+        [-455.388499595481, -3116.91484030618],
+        [-2169.781890321866, 2614.729356937507],
+        [314.52171931586815, -2797.1452361383003],
+        [-3221.170321779459, -2460.636245678063],
+        [-1721.2898458264253, -4599.490878225703]
+    ],
+    "demands": [0, 4, 2, 7, 7, 7, 1, 10, 7, 8, 3],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 45.7578147,
+        "lon": 4.835118850000001,
+        "alt": 0.0
+    },
+    "metric_variant": "fastest",
+    "arc_costs_source": {
+        "model": "distances-sidecar",
+        "distances": {
+            "path": "sidecars/lyon/n=10/mamut-lyon-n10-hyb/mamut-lyon-n10-hyb.distances-fastest.json.gz",
+            "sha256": "383d197decf604269c8e3eb3443fcbe43535a64691283ab4d3d2fa235b040744"
+        }
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-09",
+        "problem_type": "VRPTW",
+        "metric_variant": "fastest",
+        "city": "lyon",
+        "method": "hyb",
+        "base_instance_name": "mamut-lyon-n10-hyb",
+        "num_vehicles_lb": 1,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "derive-vrptw",
+            "version": 2,
+            "city": "lyon",
+            "method": "hyb",
+            "service_seed": 1327471760,
+            "tw_seed": 3660121882,
+            "tw_anchor": "free-flow-fastest"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/lyon/n=10/mamut-lyon-n10-hyb/mamut-lyon-n10-hyb.geo.json.gz",
+                "sha256": "06a5abb6f300e2f6beca9b02ef9f65ce73e1c341b963ccb29c9fca7d20a15145"
+            }
+        },
+        "tw_set": {
+            "name": "td-shared",
+            "td_paired": true,
+            "policy": "route-centered",
+            "note": "windows shared verbatim with the base's TDVRPTW twins (post minimal-shared-tw-repair)"
+        },
+        "tw_repair": {
+            "policy": "minimal-shared-tw-repair",
+            "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
+            "lifted_customers": 0,
+            "max_lift_seconds": 0,
+            "reduced_customers": 0,
+            "max_reduction_seconds": 0,
+            "repairs": {
+
+            }
+        }
+    },
+    "service_times": [0, 1147, 1468, 269, 1212, 466, 13, 472, 863, 25, 825],
+    "time_windows": [
+        [0, 86400],
+        [0, 9471],
+        [0, 9235],
+        [0, 21810],
+        [0, 10461],
+        [0, 9325],
+        [0, 17317],
+        [46, 16113],
+        [0, 13742],
+        [2509, 12825],
+        [0, 21068]
+    ]
+}

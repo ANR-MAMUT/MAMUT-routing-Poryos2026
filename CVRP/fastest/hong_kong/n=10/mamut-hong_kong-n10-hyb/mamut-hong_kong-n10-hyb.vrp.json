@@ -1,0 +1,61 @@
+{
+    "instance_name": "mamut-hong_kong-n10-hyb",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Mamut2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 174,
+    "coordinates": [
+        [1438.9425746026898, -1211.8557234748282],
+        [1341.1207028225522, -8492.364949990431],
+        [-617.8920959478759, -7808.174334780928],
+        [3729.5649171749856, -2859.97228879346],
+        [1113.921911167056, 11014.492264973676],
+        [422.1075768473487, -2211.2211519477],
+        [-8059.341270334778, 9001.557866204848],
+        [-3140.1587977196036, -2065.126878252965],
+        [-2308.6187075243256, -1828.7764953860717],
+        [9962.929957311815, -5586.984192715099],
+        [5504.164896871657, 5115.139734534838]
+    ],
+    "demands": [0, 3, 9, 7, 3, 5, 77, 4, 1, 8, 2],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 22.35252895,
+        "lon": 114.15986375,
+        "alt": 0.0
+    },
+    "metric_variant": "fastest",
+    "arc_costs_source": {
+        "model": "distances-sidecar",
+        "distances": {
+            "path": "sidecars/hong_kong/n=10/mamut-hong_kong-n10-hyb/mamut-hong_kong-n10-hyb.distances-fastest.json.gz",
+            "sha256": "cca8366f13079c94c3ddb52a3ded1dee769d6163b9685dbdb18561cda189c124"
+        }
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-09",
+        "problem_type": "CVRP",
+        "metric_variant": "fastest",
+        "city": "hong_kong",
+        "method": "hyb",
+        "base_instance_name": "mamut-hong_kong-n10-hyb",
+        "num_vehicles_lb": 1,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "generate-base",
+            "version": 2,
+            "city": "hong_kong",
+            "method": "hyb",
+            "sampling_seed": 2027204622,
+            "stage1_base": "hong_kong_hyb-n11-k1"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/hong_kong/n=10/mamut-hong_kong-n10-hyb/mamut-hong_kong-n10-hyb.geo.json.gz",
+                "sha256": "f508a260a55b8f33ae36ecc01ddbf7ea5bb89d33d5a289319479b3282fdf31f4"
+            }
+        }
+    }
+}

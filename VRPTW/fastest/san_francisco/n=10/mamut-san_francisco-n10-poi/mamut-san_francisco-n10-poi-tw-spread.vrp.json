@@ -1,0 +1,83 @@
+{
+    "instance_name": "mamut-san_francisco-n10-poi-tw-spread",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Mamut2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 139,
+    "coordinates": [
+        [27567.380647101618, -311.8625620472418],
+        [26084.41894413347, -1698.352223789911],
+        [22059.761676907758, -13788.093734211598],
+        [24775.526836279187, -476.9769990128843],
+        [27546.013525227383, 2543.699328598829],
+        [29008.580131551276, 518.5200362263879],
+        [27190.18900904875, -4196.004172043974],
+        [20832.8103615555, -14832.780077542713],
+        [26702.54713000814, -1842.1165707269922],
+        [24783.3280172331, -979.4400604839734],
+        [27016.614788167746, -3298.7357312735685]
+    ],
+    "demands": [0, 5, 8, 5, 9, 2, 4, 2, 8, 55, 7],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 37.78499105,
+        "lon": -122.7276414,
+        "alt": 0.0
+    },
+    "metric_variant": "fastest",
+    "arc_costs_source": {
+        "model": "distances-sidecar",
+        "distances": {
+            "path": "sidecars/san_francisco/n=10/mamut-san_francisco-n10-poi/mamut-san_francisco-n10-poi.distances-fastest.json.gz",
+            "sha256": "a0b4cb0d4460f6acd600bd158f32ec8553a0e4aa45edcfefa4f9649ca65153eb"
+        }
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-09",
+        "problem_type": "VRPTW",
+        "metric_variant": "fastest",
+        "city": "san_francisco",
+        "method": "poi",
+        "base_instance_name": "mamut-san_francisco-n10-poi",
+        "num_vehicles_lb": 1,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "derive-vrptw",
+            "version": 2,
+            "city": "san_francisco",
+            "method": "poi",
+            "service_seed": 2002795824,
+            "tw_seed": 139318497,
+            "tw_anchor": "uniform-feasible",
+            "tw_set": "spread"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/san_francisco/n=10/mamut-san_francisco-n10-poi/mamut-san_francisco-n10-poi.geo.json.gz",
+                "sha256": "9d6501aa5f02f7b9eb59a361ab94883fb18fe099a95c6bf857b15826bb498615"
+            }
+        },
+        "tw_set": {
+            "name": "spread",
+            "td_paired": false,
+            "policy": "uniform-spread",
+            "note": "static-only TW set; NOT the TDVRPTW windows; never audited under traffic"
+        }
+    },
+    "service_times": [0, 2117, 1048, 2224, 1041, 989, 356, 623, 564, 956, 684],
+    "time_windows": [
+        [0, 86400],
+        [53023, 80624],
+        [10265, 30614],
+        [59562, 76189],
+        [30514, 55017],
+        [52414, 73342],
+        [9800, 33289],
+        [30235, 40956],
+        [62707, 77261],
+        [61049, 77939],
+        [72957, 78092]
+    ]
+}
