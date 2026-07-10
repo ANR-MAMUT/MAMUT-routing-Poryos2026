@@ -1,0 +1,20 @@
+{
+    "instance_name": "mamut-lyon-n25-poi-bpr-heavy",
+    "routes": [
+        [1, 14, 18, 24, 3, 10, 9, 16, 21, 6],
+        [5, 2, 25, 7, 11, 19],
+        [13, 12, 4, 17, 20, 15, 23, 8, 22]
+    ],
+    "cost": 24072.86833036185,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T07:33:48",
+        "validated_cost": 24072.86833036185,
+        "validated_num_routes": 3,
+        "route_durations": [10567.039591871715, 5602.587307725178, 7903.241430764957],
+        "route_departure_times": [10203.726253051173, 12786.346908527543, 858.2014098919053]
+    },
+    "objective_function": "Duration"
+}

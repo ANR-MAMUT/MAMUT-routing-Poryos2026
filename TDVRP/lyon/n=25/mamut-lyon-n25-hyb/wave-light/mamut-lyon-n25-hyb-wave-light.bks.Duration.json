@@ -1,0 +1,19 @@
+{
+    "instance_name": "mamut-lyon-n25-hyb-wave-light",
+    "routes": [
+        [8, 12, 11, 10, 6],
+        [16, 18, 22, 25, 13, 9, 23, 7, 14, 24, 2, 15, 5, 1, 17, 20, 21, 4, 19, 3]
+    ],
+    "cost": 24073.70222441692,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T04:57:56",
+        "validated_cost": 24073.70222441692,
+        "validated_num_routes": 2,
+        "route_durations": [3100.6993405183757, 20973.002883898545],
+        "route_departure_times": [0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

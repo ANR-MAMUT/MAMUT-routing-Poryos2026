@@ -1,0 +1,19 @@
+{
+    "instance_name": "mamut-san_francisco-n25-hyb-wave-heavy",
+    "routes": [
+        [9, 11, 2, 10, 7, 18, 5, 3, 24, 1, 25, 6, 8],
+        [22, 12, 15, 17, 14, 20, 19, 13, 4, 21, 16, 23]
+    ],
+    "cost": 22536.939983603177,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T08:30:31",
+        "validated_cost": 22536.939983603177,
+        "validated_num_routes": 2,
+        "route_durations": [12378.698269871942, 10158.241713731235],
+        "route_departure_times": [5548.056458220273, 7062.069879125991]
+    },
+    "objective_function": "Duration"
+}

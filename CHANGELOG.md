@@ -1,5 +1,10 @@
 # Changelog — Mamut2026 collection
 
+## 2026-07-10 — initial BKS seeding (coverage 1080/1080)
+
+- Every instance now carries a checker-validated best known solution: `MonoCost` for the 360 static CVRP and VRPTW instances (PyVRP HGS on the documented 1000-scaled integer twin, re-priced in the canonical float domain), `Duration` for the 720 TDVRP and TDVRPTW instances (kayros TD-ILS on the materialized arrival-time functions).
+- Seeding campaign: seeds {42, 123, 456}, per-size time limits from 120 s (n=10) to 3600 s (n=1000); each stored solution is the best of its runs, re-validated by the reference checker before storage (improve-only store discipline).
+
 ## 2026-07-09 — initial release (collection layout v1, pipeline v2)
 
 - 60 base instances: 5 cities × n ∈ {10, 25, 50, 100, 500, 1000} × {poi, hyb}.

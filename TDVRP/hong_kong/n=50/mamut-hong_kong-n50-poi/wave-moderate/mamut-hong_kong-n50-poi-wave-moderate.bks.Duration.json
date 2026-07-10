@@ -1,0 +1,22 @@
+{
+    "instance_name": "mamut-hong_kong-n50-poi-wave-moderate",
+    "routes": [
+        [3, 8, 26, 45, 15, 12, 43, 28, 24],
+        [6, 21, 11, 32, 19, 23, 5, 20, 7, 38, 1, 50, 17, 49, 35],
+        [14, 2, 46, 31, 27, 48, 16, 4, 36, 29, 10, 39],
+        [18, 30, 41, 33, 34, 37, 9, 22, 13, 47, 40, 44],
+        [25, 42]
+    ],
+    "cost": 53754.03436427055,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=480s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T04:31:46",
+        "validated_cost": 53754.03436427055,
+        "validated_num_routes": 5,
+        "route_durations": [9838.27643257748, 15256.524626800854, 12908.6483736808, 12853.662686950847, 2896.9222442605674],
+        "route_departure_times": [0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

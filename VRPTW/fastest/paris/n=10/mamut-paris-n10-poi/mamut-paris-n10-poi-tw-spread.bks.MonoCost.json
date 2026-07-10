@@ -1,0 +1,16 @@
+{
+    "instance_name": "mamut-paris-n10-poi-tw-spread",
+    "routes": [
+        [6, 7, 8, 9, 5, 10, 1, 2, 3, 4]
+    ],
+    "cost": 2511.177,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=120s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T12:42:35",
+        "validated_cost": 2511.177,
+        "validated_num_routes": 1
+    },
+    "objective_function": "MonoCost"
+}

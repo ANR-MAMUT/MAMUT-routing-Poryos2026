@@ -1,0 +1,19 @@
+{
+    "instance_name": "mamut-san_francisco-n25-poi-tw-spread",
+    "routes": [
+        [12, 11, 16, 9, 2, 5, 4, 3],
+        [15, 17, 21, 19],
+        [18, 1, 6, 14, 20, 25, 10, 13, 7],
+        [24, 23, 8, 22]
+    ],
+    "cost": 7285.554000000001,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=240s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T12:42:42",
+        "validated_cost": 7285.554000000001,
+        "validated_num_routes": 4
+    },
+    "objective_function": "MonoCost"
+}

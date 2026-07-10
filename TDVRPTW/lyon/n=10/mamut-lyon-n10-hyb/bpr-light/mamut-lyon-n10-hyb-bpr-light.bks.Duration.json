@@ -1,0 +1,18 @@
+{
+    "instance_name": "mamut-lyon-n10-hyb-bpr-light",
+    "routes": [
+        [5, 7, 3, 9, 10, 6, 8, 2, 4, 1]
+    ],
+    "cost": 8552.282550830798,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=120s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T07:15:24",
+        "validated_cost": 8552.282550830798,
+        "validated_num_routes": 1,
+        "route_durations": [8552.282550830798],
+        "route_departure_times": [686.4258054084775]
+    },
+    "objective_function": "Duration"
+}

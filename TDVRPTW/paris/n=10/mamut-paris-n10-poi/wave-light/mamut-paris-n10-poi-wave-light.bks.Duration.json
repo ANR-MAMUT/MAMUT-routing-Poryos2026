@@ -1,0 +1,18 @@
+{
+    "instance_name": "mamut-paris-n10-poi-wave-light",
+    "routes": [
+        [10, 9, 8, 7, 4, 6, 3, 1, 2, 5]
+    ],
+    "cost": 12004.550530689548,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=120s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T07:39:54",
+        "validated_cost": 12004.550530689548,
+        "validated_num_routes": 1,
+        "route_durations": [12004.550530689548],
+        "route_departure_times": [700.2161275698247]
+    },
+    "objective_function": "Duration"
+}

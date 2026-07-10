@@ -1,0 +1,20 @@
+{
+    "instance_name": "mamut-paris-n25-hyb-bpr-heavy",
+    "routes": [
+        [2, 6, 11, 23, 1, 24, 22, 4, 15, 25, 18, 7, 10, 8, 14, 5, 21],
+        [3, 13, 17, 9, 16],
+        [20, 19, 12]
+    ],
+    "cost": 13610.017737897238,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T05:25:18",
+        "validated_cost": 13610.017737897238,
+        "validated_num_routes": 3,
+        "route_durations": [8044.848919139491, 3231.8901685299875, 2333.2786502277595],
+        "route_departure_times": [78378.46947282349, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

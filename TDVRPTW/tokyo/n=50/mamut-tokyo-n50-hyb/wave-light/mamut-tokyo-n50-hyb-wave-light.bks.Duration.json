@@ -1,0 +1,22 @@
+{
+    "instance_name": "mamut-tokyo-n50-hyb-wave-light",
+    "routes": [
+        [8, 14],
+        [12, 7, 19, 46, 34, 50, 28, 13, 21, 20, 37, 22, 27, 47, 15, 2, 10, 29, 36, 42, 44, 49, 25, 30, 39, 32, 6, 43, 41],
+        [16, 1, 23, 48, 26, 31, 5],
+        [18, 9, 40, 17, 3, 35, 11, 4, 45],
+        [24, 38, 33]
+    ],
+    "cost": 52081.04366202593,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=480s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T12:11:47",
+        "validated_cost": 52081.04366202593,
+        "validated_num_routes": 5,
+        "route_durations": [1731.0826891316028, 30610.177887580037, 6498.589695598399, 10872.489468597909, 2368.70392111798],
+        "route_departure_times": [37427.121744875934, 2181.888042957872, 39600.0, 37948.080072436824, 39600.0]
+    },
+    "objective_function": "Duration"
+}

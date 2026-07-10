@@ -1,0 +1,20 @@
+{
+    "instance_name": "mamut-tokyo-n50-hyb",
+    "routes": [
+        [2, 10, 29, 36, 42, 44, 45],
+        [8, 38, 33, 31, 26, 48, 23, 1],
+        [12, 7, 19, 46, 34, 50, 49, 25, 30, 39, 32, 6, 43, 41, 24],
+        [16, 14, 5],
+        [28, 13, 21, 20, 37, 22, 15, 27, 47, 4, 11, 35, 3, 17, 40, 18, 9]
+    ],
+    "cost": 10302.811,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=480s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T12:42:45",
+        "validated_cost": 10302.811,
+        "validated_num_routes": 5
+    },
+    "objective_function": "MonoCost"
+}

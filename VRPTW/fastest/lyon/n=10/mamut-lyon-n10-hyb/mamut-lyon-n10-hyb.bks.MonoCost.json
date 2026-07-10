@@ -1,0 +1,16 @@
+{
+    "instance_name": "mamut-lyon-n10-hyb",
+    "routes": [
+        [5, 7, 3, 9, 10, 6, 8, 2, 4, 1]
+    ],
+    "cost": 1792.1119999999999,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=120s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T12:42:32",
+        "validated_cost": 1792.1119999999999,
+        "validated_num_routes": 1
+    },
+    "objective_function": "MonoCost"
+}

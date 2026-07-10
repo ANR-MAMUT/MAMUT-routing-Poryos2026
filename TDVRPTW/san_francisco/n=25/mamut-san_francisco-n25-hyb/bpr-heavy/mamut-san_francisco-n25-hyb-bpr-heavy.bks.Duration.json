@@ -1,0 +1,19 @@
+{
+    "instance_name": "mamut-san_francisco-n25-hyb-bpr-heavy",
+    "routes": [
+        [9, 11, 2, 10, 7, 18, 5, 3, 24, 1, 25, 6, 8],
+        [22, 12, 15, 17, 14, 20, 19, 13, 4, 21, 16, 23]
+    ],
+    "cost": 22396.00012252336,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T08:30:18",
+        "validated_cost": 22396.00012252336,
+        "validated_num_routes": 2,
+        "route_durations": [12293.64604186569, 10102.354080657671],
+        "route_departure_times": [5566.805234768445, 7077.026520537313]
+    },
+    "objective_function": "Duration"
+}

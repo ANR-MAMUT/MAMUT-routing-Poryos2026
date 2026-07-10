@@ -1,0 +1,20 @@
+{
+    "instance_name": "mamut-san_francisco-n25-poi-wave-moderate",
+    "routes": [
+        [6, 1, 21, 17],
+        [7, 24, 23, 22, 8, 13, 14, 20, 25, 10, 15, 2, 5, 4, 9, 16, 11],
+        [19, 3, 12, 18]
+    ],
+    "cost": 39232.10972726494,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T08:31:02",
+        "validated_cost": 39232.10972726494,
+        "validated_num_routes": 3,
+        "route_durations": [9149.79978224315, 25033.62920628769, 5048.680738734101],
+        "route_departure_times": [33542.659006994996, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

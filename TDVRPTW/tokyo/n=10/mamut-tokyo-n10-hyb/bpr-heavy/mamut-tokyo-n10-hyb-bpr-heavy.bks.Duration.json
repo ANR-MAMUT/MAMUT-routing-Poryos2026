@@ -1,0 +1,18 @@
+{
+    "instance_name": "mamut-tokyo-n10-hyb-bpr-heavy",
+    "routes": [
+        [4, 5, 7, 6, 10, 2, 1, 9, 8, 3]
+    ],
+    "cost": 17818.93507912635,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=120s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T08:38:37",
+        "validated_cost": 17818.93507912635,
+        "validated_num_routes": 1,
+        "route_durations": [17818.93507912635],
+        "route_departure_times": [0.0]
+    },
+    "objective_function": "Duration"
+}

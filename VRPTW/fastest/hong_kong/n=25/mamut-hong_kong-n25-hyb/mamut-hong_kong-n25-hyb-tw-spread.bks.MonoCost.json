@@ -1,0 +1,19 @@
+{
+    "instance_name": "mamut-hong_kong-n25-hyb-tw-spread",
+    "routes": [
+        [1, 8, 14, 25, 16, 12, 6, 15, 2, 5],
+        [9, 19, 18],
+        [21, 10, 4, 7, 11, 3, 20, 13],
+        [24, 17, 22, 23]
+    ],
+    "cost": 10138.062,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=240s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T12:42:31",
+        "validated_cost": 10138.062,
+        "validated_num_routes": 4
+    },
+    "objective_function": "MonoCost"
+}

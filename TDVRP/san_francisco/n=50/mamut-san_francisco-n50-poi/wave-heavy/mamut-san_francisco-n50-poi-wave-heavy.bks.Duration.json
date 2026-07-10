@@ -1,0 +1,22 @@
+{
+    "instance_name": "mamut-san_francisco-n50-poi-wave-heavy",
+    "routes": [
+        [2, 21, 34, 33, 20, 6, 15, 17, 39, 5, 45, 19, 26, 8, 50, 13, 9, 37, 36, 11, 12, 29],
+        [16, 3, 1, 40, 18, 23, 27, 24, 42, 30, 4, 32, 44],
+        [22, 28, 47, 41, 38, 48, 7, 14, 35],
+        [31, 46],
+        [43, 25, 10, 49]
+    ],
+    "cost": 88690.44170094436,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=456, time_limit=480s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T05:56:54",
+        "validated_cost": 88690.44170094436,
+        "validated_num_routes": 5,
+        "route_durations": [37715.00517734924, 20759.8654233568, 17189.472171534446, 5005.235781326644, 8020.863147377232],
+        "route_departure_times": [788.1903099164334, 0.0, 0.0, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

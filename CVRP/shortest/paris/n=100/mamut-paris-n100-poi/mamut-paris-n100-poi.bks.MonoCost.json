@@ -1,0 +1,23 @@
+{
+    "instance_name": "mamut-paris-n100-poi",
+    "routes": [
+        [2, 23, 57, 45, 80, 77, 30],
+        [7, 12, 61, 53, 70, 5, 14, 31, 60, 18, 98, 1, 73, 26, 34, 10, 74],
+        [20, 59, 3, 28, 54, 96],
+        [52, 41, 68, 92, 36, 32, 79, 51, 35, 84, 22, 44, 65, 56, 33, 63, 89, 21, 13, 9, 85, 17, 19, 88, 25, 37, 75, 8, 90],
+        [67, 43, 50, 38, 83, 11, 24, 99, 16, 91, 15, 62, 46, 95, 81, 100, 55, 78, 94, 42, 49, 29],
+        [72, 66, 48],
+        [76, 27, 6, 64, 39],
+        [93, 40, 69, 47, 87, 97, 58, 82, 86, 4, 71]
+    ],
+    "cost": 156277.756,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=900s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T04:08:43",
+        "validated_cost": 156277.756,
+        "validated_num_routes": 8
+    },
+    "objective_function": "MonoCost"
+}

@@ -1,0 +1,16 @@
+{
+    "instance_name": "mamut-hong_kong-n10-hyb",
+    "routes": [
+        [10, 4, 6, 7, 8, 5, 2, 1, 9, 3]
+    ],
+    "cost": 102821.922,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=120s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T04:08:43",
+        "validated_cost": 102821.922,
+        "validated_num_routes": 1
+    },
+    "objective_function": "MonoCost"
+}

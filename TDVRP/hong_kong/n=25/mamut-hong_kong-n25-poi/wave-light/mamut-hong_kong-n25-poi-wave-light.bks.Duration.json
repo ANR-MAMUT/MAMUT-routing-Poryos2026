@@ -1,0 +1,20 @@
+{
+    "instance_name": "mamut-hong_kong-n25-poi-wave-light",
+    "routes": [
+        [4, 10, 21, 6, 19, 3, 12, 17, 8, 25, 16, 24, 5],
+        [7, 13, 18, 22],
+        [9, 15, 23, 2, 1, 20, 14, 11]
+    ],
+    "cost": 31607.748073264775,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T04:30:46",
+        "validated_cost": 31607.748073264775,
+        "validated_num_routes": 3,
+        "route_durations": [16090.15196409933, 4293.747365699772, 11223.848743465669],
+        "route_departure_times": [0.0, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

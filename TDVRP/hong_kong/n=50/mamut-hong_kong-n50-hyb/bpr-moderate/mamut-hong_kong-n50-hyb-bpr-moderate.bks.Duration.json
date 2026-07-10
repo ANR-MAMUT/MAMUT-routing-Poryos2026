@@ -1,0 +1,21 @@
+{
+    "instance_name": "mamut-hong_kong-n50-hyb-bpr-moderate",
+    "routes": [
+        [3, 33],
+        [14, 44, 37, 42, 35, 17, 26, 7, 30, 25, 11],
+        [16, 28, 22, 38, 49, 18, 34, 45, 32, 36, 2, 29, 19, 12, 23, 1, 47, 43],
+        [48, 4, 27, 6, 8, 39, 40, 46, 50, 5, 20, 10, 9, 15, 24, 31, 41, 21, 13]
+    ],
+    "cost": 56468.096375827816,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=42, time_limit=480s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T04:31:12",
+        "validated_cost": 56468.096375827816,
+        "validated_num_routes": 4,
+        "route_durations": [3155.4683057532966, 12971.901875988973, 17947.979501278638, 22392.74669280691],
+        "route_departure_times": [84079.5825625989, 73566.81370985317, 0.0, 53620.92557331577]
+    },
+    "objective_function": "Duration"
+}

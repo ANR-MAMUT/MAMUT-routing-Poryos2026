@@ -1,0 +1,20 @@
+{
+    "instance_name": "mamut-lyon-n25-poi-wave-heavy",
+    "routes": [
+        [1, 14, 18, 24, 3],
+        [5, 2, 25, 7, 11, 19],
+        [13, 12, 4, 22, 8, 10, 9, 23, 15, 17, 20, 6, 21, 16]
+    ],
+    "cost": 24142.595584090384,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T07:33:51",
+        "validated_cost": 24142.595584090384,
+        "validated_num_routes": 3,
+        "route_durations": [5868.501581492525, 5624.858306862752, 12649.235695735106],
+        "route_departure_times": [10197.60516453907, 12776.62296507629, 5518.722874387733]
+    },
+    "objective_function": "Duration"
+}

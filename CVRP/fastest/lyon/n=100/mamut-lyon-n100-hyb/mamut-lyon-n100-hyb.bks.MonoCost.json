@@ -1,0 +1,24 @@
+{
+    "instance_name": "mamut-lyon-n100-hyb",
+    "routes": [
+        [5, 35, 21, 61, 36, 91, 86],
+        [10, 24, 48, 88, 82, 11, 33, 59, 40],
+        [16, 62, 54, 81, 78, 25, 65, 96, 75, 56, 58, 27, 22, 29, 28],
+        [23, 55, 77, 98, 60, 80, 63, 4, 46, 41, 31],
+        [32, 13, 19, 26],
+        [42, 66, 3, 70, 69, 1, 85, 87, 99, 100, 93, 51, 71, 2, 84, 92, 18, 37],
+        [45, 97, 83, 67, 73, 53, 89, 9, 95, 90, 8, 64, 74, 68, 57, 44],
+        [50, 43, 52, 49, 14, 79, 20, 94],
+        [72, 39, 38, 47, 34, 17, 15, 7, 6, 76, 30, 12]
+    ],
+    "cost": 10794.348999999997,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=900s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T04:08:42",
+        "validated_cost": 10794.348999999997,
+        "validated_num_routes": 9
+    },
+    "objective_function": "MonoCost"
+}

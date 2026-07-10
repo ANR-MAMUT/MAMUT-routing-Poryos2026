@@ -1,0 +1,19 @@
+{
+    "instance_name": "mamut-san_francisco-n50-poi",
+    "routes": [
+        [22, 40, 18, 23, 4, 30, 27, 24, 42, 46],
+        [29, 12, 36, 11, 37, 9, 13, 50, 8, 26, 19, 45, 5, 39, 17, 15, 6, 20, 33, 34, 21, 2],
+        [31, 16, 3, 32, 44, 1, 28, 47, 41, 38, 48, 7, 14, 35],
+        [43, 25, 10, 49]
+    ],
+    "cost": 7968.390000000002,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=480s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T04:08:42",
+        "validated_cost": 7968.390000000002,
+        "validated_num_routes": 4
+    },
+    "objective_function": "MonoCost"
+}

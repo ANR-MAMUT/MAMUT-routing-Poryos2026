@@ -1,0 +1,17 @@
+{
+    "instance_name": "mamut-san_francisco-n25-hyb",
+    "routes": [
+        [3, 7, 18, 10, 25, 6, 8, 1, 24, 23, 2, 9, 11],
+        [22, 5, 15, 14, 17, 20, 19, 13, 21, 16, 4, 12]
+    ],
+    "cost": 91973.129,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=240s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T04:08:41",
+        "validated_cost": 91973.129,
+        "validated_num_routes": 2
+    },
+    "objective_function": "MonoCost"
+}

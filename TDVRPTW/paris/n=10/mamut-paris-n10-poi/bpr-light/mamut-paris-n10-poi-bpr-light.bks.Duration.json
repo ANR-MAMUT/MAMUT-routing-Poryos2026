@@ -1,0 +1,18 @@
+{
+    "instance_name": "mamut-paris-n10-poi-bpr-light",
+    "routes": [
+        [10, 9, 8, 7, 4, 6, 3, 1, 2, 5]
+    ],
+    "cost": 11956.651580596958,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=120s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T07:39:50",
+        "validated_cost": 11956.651580596958,
+        "validated_num_routes": 1,
+        "route_durations": [11956.651580596958],
+        "route_departure_times": [722.2503805185962]
+    },
+    "objective_function": "Duration"
+}

@@ -1,0 +1,22 @@
+{
+    "instance_name": "mamut-san_francisco-n50-poi-bpr-moderate",
+    "routes": [
+        [28, 40, 18, 23, 27, 24, 30, 4],
+        [29, 2, 34, 21, 33, 6, 20, 12, 43, 36, 11, 37, 9, 13, 50, 8, 26, 19, 45, 5, 39, 17, 15],
+        [31, 46, 16, 3, 32, 44, 1, 14, 22, 35],
+        [42, 25, 10, 49],
+        [47, 41, 38, 48, 7]
+    ],
+    "cost": 88823.22211859249,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=480s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T08:31:42",
+        "validated_cost": 88823.22211859249,
+        "validated_num_routes": 5,
+        "route_durations": [15584.941171200568, 39643.33703008317, 17410.34838909109, 7250.4281794743, 8934.167348743358],
+        "route_departure_times": [57282.79523942615, 16439.868201507685, 0.0, 79148.8978632646, 77465.24794279032]
+    },
+    "objective_function": "Duration"
+}

@@ -1,0 +1,17 @@
+{
+    "instance_name": "mamut-paris-n25-poi",
+    "routes": [
+        [2, 23, 6, 5, 9, 22, 16, 13, 7, 12, 10, 17, 3, 14, 15],
+        [4, 21, 8, 19, 1, 18, 25, 20, 11, 24]
+    ],
+    "cost": 68489.648,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=240s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T04:08:43",
+        "validated_cost": 68489.648,
+        "validated_num_routes": 2
+    },
+    "objective_function": "MonoCost"
+}

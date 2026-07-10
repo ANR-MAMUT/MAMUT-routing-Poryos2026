@@ -1,0 +1,20 @@
+{
+    "instance_name": "mamut-hong_kong-n25-poi-bpr-moderate",
+    "routes": [
+        [4, 10, 21, 6, 19, 3, 12, 17, 8, 25, 16, 24, 5],
+        [7, 13, 18, 22],
+        [9, 15, 23, 2, 1, 20, 14, 11]
+    ],
+    "cost": 31461.379801249976,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T04:30:42",
+        "validated_cost": 31461.379801249976,
+        "validated_num_routes": 3,
+        "route_durations": [16029.779822298442, 4270.523732198489, 11161.076246753044],
+        "route_departure_times": [70588.00282515427, 0.0, 75572.5073440957]
+    },
+    "objective_function": "Duration"
+}

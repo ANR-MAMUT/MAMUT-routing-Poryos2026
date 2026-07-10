@@ -1,0 +1,20 @@
+{
+    "instance_name": "mamut-san_francisco-n25-poi-bpr-light",
+    "routes": [
+        [6, 1, 21, 17],
+        [7, 24, 23, 22, 8, 13, 14, 20, 25, 10, 15, 2, 5, 4, 9, 16, 11],
+        [19, 3, 12, 18]
+    ],
+    "cost": 38942.64176921971,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T08:30:47",
+        "validated_cost": 38942.64176921971,
+        "validated_num_routes": 3,
+        "route_durations": [8964.101160339895, 24936.63538295917, 5041.905225920643],
+        "route_departure_times": [33626.11831384485, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

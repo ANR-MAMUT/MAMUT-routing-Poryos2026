@@ -1,0 +1,21 @@
+{
+    "instance_name": "mamut-tokyo-n50-poi-wave-moderate",
+    "routes": [
+        [2],
+        [29, 33, 39, 22, 43, 25, 16, 10, 34, 14, 38, 18, 13, 8, 23],
+        [46, 15, 49, 21, 7, 31, 19, 17, 28, 26, 42, 9, 1, 40, 44, 3, 45, 6, 4],
+        [47, 37, 50, 35, 24, 32, 41, 5, 12, 27, 36, 11, 48, 20, 30]
+    ],
+    "cost": 52195.992836307305,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=42, time_limit=480s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T06:33:25",
+        "validated_cost": 52195.992836307305,
+        "validated_num_routes": 4,
+        "route_durations": [668.3810907191437, 17548.95257248996, 20274.65237907863, 13704.006794019566],
+        "route_departure_times": [0.0, 0.0, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

@@ -1,0 +1,19 @@
+{
+    "instance_name": "mamut-san_francisco-n25-poi-wave-light",
+    "routes": [
+        [7, 24, 23, 1, 22, 8, 6, 13, 14, 20, 25, 10, 15, 4, 3, 12],
+        [19, 21, 17, 2, 5, 9, 16, 11, 18]
+    ],
+    "cost": 38108.279495978306,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T05:56:06",
+        "validated_cost": 38108.279495978306,
+        "validated_num_routes": 2,
+        "route_durations": [20837.46567322878, 17270.813822749522],
+        "route_departure_times": [0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

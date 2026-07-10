@@ -1,0 +1,18 @@
+{
+    "instance_name": "mamut-tokyo-n25-poi-tw-tight",
+    "routes": [
+        [2, 11, 18, 8, 3, 22, 1, 16],
+        [15, 17, 13, 25, 23, 14, 20, 19, 4],
+        [21, 7, 9, 24, 10, 12, 5, 6]
+    ],
+    "cost": 6445.633,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=240s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T12:42:45",
+        "validated_cost": 6445.633,
+        "validated_num_routes": 3
+    },
+    "objective_function": "MonoCost"
+}

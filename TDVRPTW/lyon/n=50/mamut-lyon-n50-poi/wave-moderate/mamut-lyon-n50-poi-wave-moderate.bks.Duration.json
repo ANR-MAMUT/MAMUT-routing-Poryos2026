@@ -1,0 +1,22 @@
+{
+    "instance_name": "mamut-lyon-n50-poi-wave-moderate",
+    "routes": [
+        [4, 8, 6, 27, 7, 39, 25, 13, 34, 35, 48, 3, 40, 47, 38, 14, 17, 49],
+        [26, 21, 22, 46, 50, 43, 2, 36, 1],
+        [28, 30, 18, 12, 19, 42, 24],
+        [32, 41, 44, 33, 20, 5, 31, 11],
+        [37, 45, 29, 15, 10, 23, 9, 16]
+    ],
+    "cost": 52041.0373905946,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=42, time_limit=480s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-10T07:34:38",
+        "validated_cost": 52041.0373905946,
+        "validated_num_routes": 5,
+        "route_durations": [18476.863878279415, 8947.747152550233, 7161.604597166675, 9271.371874890741, 8183.44988770754],
+        "route_departure_times": [3314.2227434725614, 39600.0, 39600.0, 20925.316862468175, 13297.376012493061]
+    },
+    "objective_function": "Duration"
+}

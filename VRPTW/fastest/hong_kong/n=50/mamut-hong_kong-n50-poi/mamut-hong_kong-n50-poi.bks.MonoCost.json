@@ -1,0 +1,20 @@
+{
+    "instance_name": "mamut-hong_kong-n50-poi",
+    "routes": [
+        [6, 21, 11, 32, 19, 23, 5, 20, 7, 38, 1, 50, 17, 49, 35],
+        [14, 2, 46, 31, 48, 16, 36, 10, 39, 29, 4],
+        [24],
+        [25, 42, 43, 28, 12],
+        [26, 45, 15, 8, 3, 27, 18, 30, 41, 33, 34, 37, 9, 22, 13, 47, 44, 40]
+    ],
+    "cost": 9426.810000000003,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=480s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T12:42:31",
+        "validated_cost": 9426.810000000003,
+        "validated_num_routes": 5
+    },
+    "objective_function": "MonoCost"
+}

@@ -1,0 +1,19 @@
+{
+    "instance_name": "mamut-paris-n25-poi-tw-spread",
+    "routes": [
+        [2, 15],
+        [7, 10, 17, 3, 22, 16, 9, 12, 13],
+        [14, 6, 5, 23, 24, 11, 20, 25, 18, 1, 19, 8],
+        [21, 4]
+    ],
+    "cost": 5688.93,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=240s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T12:42:38",
+        "validated_cost": 5688.93,
+        "validated_num_routes": 4
+    },
+    "objective_function": "MonoCost"
+}

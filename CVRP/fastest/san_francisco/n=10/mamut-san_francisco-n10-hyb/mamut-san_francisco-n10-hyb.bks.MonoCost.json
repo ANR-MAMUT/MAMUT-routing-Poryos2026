@@ -1,0 +1,16 @@
+{
+    "instance_name": "mamut-san_francisco-n10-hyb",
+    "routes": [
+        [3, 5, 7, 4, 6, 1, 9, 8, 10, 2]
+    ],
+    "cost": 3807.1659999999993,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=120s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T04:08:42",
+        "validated_cost": 3807.1659999999993,
+        "validated_num_routes": 1
+    },
+    "objective_function": "MonoCost"
+}
