@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 10,
     "num_vehicles": null,
-    "vehicle_capacity": 174,
+    "vehicle_capacity": 101,
     "coordinates": [
         [1438.9425746026898, -1211.8557234748282],
         [1341.1207028225522, -8492.364949990431],
@@ -18,7 +18,7 @@
         [9962.929957311815, -5586.984192715099],
         [5504.164896871657, 5115.139734534838]
     ],
-    "demands": [0, 3, 9, 7, 3, 5, 77, 4, 1, 8, 2],
+    "demands": [0, 61, 9, 7, 60, 5, 77, 4, 1, 8, 2],
     "service_times": [0, 950, 497, 192, 233, 1272, 957, 103, 13, 405, 1071],
     "depot": 0,
     "reference_lla": {
@@ -31,7 +31,7 @@
         "model": "road-graph",
         "graph": {
             "path": "sidecars/hong_kong/n=10/mamut-hong_kong-n10-hyb/mamut-hong_kong-n10-hyb.road.json.gz",
-            "sha256": "3dc1a8212cb6bc139699a402077bca02aa2bd54e1071ca0927ecdb311517bcb5"
+            "sha256": "153b40d4ed4a523359f35c0e795d7ee8449741b6b056d5d0a03fe064bebaaad6"
         },
         "traffic": {
             "path": "sidecars/hong_kong/n=10/mamut-hong_kong-n10-hyb/mamut-hong_kong-n10-hyb.traffic-bpr-moderate.json.gz",
@@ -46,17 +46,17 @@
         [0, 12984],
         [0, 10080],
         [0, 18928],
-        [1050, 13071],
+        [0, 6771],
         [0, 8932],
-        [0, 24016],
+        [0, 17036],
         [0, 11863],
         [0, 12832],
-        [4050, 17544],
+        [652, 14146],
         [0, 17482]
     ],
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "city": "hong_kong",
         "method": "hyb",
         "base_instance_name": "mamut-hong_kong-n10-hyb",
@@ -64,7 +64,7 @@
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "build-td",
-            "version": 2,
+            "version": 3,
             "city": "hong_kong",
             "method": "hyb"
         },
@@ -101,18 +101,19 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/hong_kong/n=10/mamut-hong_kong-n10-hyb/mamut-hong_kong-n10-hyb.geo.json.gz",
-                "sha256": "f508a260a55b8f33ae36ecc01ddbf7ea5bb89d33d5a289319479b3282fdf31f4"
+                "sha256": "88270c7c78b6c9a622a35352f5c260b1acca88a6956ffe8f3607db2acf3f8918"
             }
         },
         "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
         "problem_type": "TDVRPTW",
         "tw_repair": {
-            "policy": "minimal-shared-tw-repair",
+            "policy": "global-anchor-minimal-shared-deadline-lift",
             "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
             "lifted_customers": 0,
             "max_lift_seconds": 0,
             "reduced_customers": 0,
             "max_reduction_seconds": 0,
+            "anchor_routes": 3,
             "repairs": {
 
             }

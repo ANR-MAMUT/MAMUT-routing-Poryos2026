@@ -1,18 +1,20 @@
 {
     "instance_name": "mamut-paris-n10-poi-bpr-moderate",
     "routes": [
-        [10, 9, 8, 7, 4, 6, 3, 1, 2, 5]
+        [3, 1, 2, 9, 8, 7],
+        [6, 4],
+        [10, 5]
     ],
-    "cost": 11956.714802402956,
+    "cost": 12115.688285925584,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=120s)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=120s)",
         "validated_by": "mamut-routing-lib td Duration checker",
-        "date": "2026-07-10T07:39:51",
-        "validated_cost": 11956.714802402956,
-        "validated_num_routes": 1,
-        "route_durations": [11956.714802402956],
-        "route_departure_times": [722.248687139393]
+        "date": "2026-07-16T14:12:22",
+        "validated_cost": 12115.688285925584,
+        "validated_num_routes": 3,
+        "route_durations": [7758.471079010544, 1257.5226027146107, 3099.6946042004297],
+        "route_departure_times": [252.15012955615057, 0.0, 0.0]
     },
     "objective_function": "Duration"
 }

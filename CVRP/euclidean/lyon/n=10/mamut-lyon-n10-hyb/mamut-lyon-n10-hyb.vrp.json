@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 10,
     "num_vehicles": null,
-    "vehicle_capacity": 86,
+    "vehicle_capacity": 133,
     "coordinates": [
         [135.7576295960148, 21.597263143175013],
         [3126.3010134318724, -320.96171734745644],
@@ -18,7 +18,7 @@
         [-3221.170321779459, -2460.636245678063],
         [-1721.2898458264253, -4599.490878225703]
     ],
-    "demands": [0, 4, 2, 7, 7, 7, 1, 10, 7, 8, 3],
+    "demands": [0, 4, 2, 84, 7, 80, 1, 10, 7, 86, 3],
     "depot": 0,
     "reference_lla": {
         "lat": 45.7578147,
@@ -32,26 +32,26 @@
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "CVRP",
         "metric_variant": "euclidean",
         "city": "lyon",
         "method": "hyb",
         "base_instance_name": "mamut-lyon-n10-hyb",
-        "num_vehicles_lb": 1,
+        "num_vehicles_lb": 3,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "generate-base",
-            "version": 2,
+            "version": 3,
             "city": "lyon",
             "method": "hyb",
             "sampling_seed": 2724691499,
-            "stage1_base": "lyon_hyb-n11-k1"
+            "stage1_base": "lyon_hyb-n11-k3"
         },
         "sidecars": {
             "geo": {
                 "path": "sidecars/lyon/n=10/mamut-lyon-n10-hyb/mamut-lyon-n10-hyb.geo.json.gz",
-                "sha256": "06a5abb6f300e2f6beca9b02ef9f65ce73e1c341b963ccb29c9fca7d20a15145"
+                "sha256": "d3874cdb1b4699b53827779a66291304e3121c99d1bffbcdaa98ce14aa604d76"
             }
         }
     }

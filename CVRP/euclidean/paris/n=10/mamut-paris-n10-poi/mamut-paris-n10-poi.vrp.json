@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 10,
     "num_vehicles": null,
-    "vehicle_capacity": 196,
+    "vehicle_capacity": 117,
     "coordinates": [
         [-500.8740114215472, 70.82241150336951],
         [6467.771607250243, -63.205621447679604],
@@ -18,7 +18,7 @@
         [827.0413724647658, 2512.805078839476],
         [-222.56301618360513, 1122.7346376741345]
     ],
-    "demands": [0, 4, 10, 2, 2, 5, 9, 2, 8, 7, 82],
+    "demands": [0, 4, 10, 2, 59, 5, 9, 2, 8, 80, 82],
     "depot": 0,
     "reference_lla": {
         "lat": 48.85886575,
@@ -32,26 +32,26 @@
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "CVRP",
         "metric_variant": "euclidean",
         "city": "paris",
         "method": "poi",
         "base_instance_name": "mamut-paris-n10-poi",
-        "num_vehicles_lb": 1,
+        "num_vehicles_lb": 3,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "generate-base",
-            "version": 2,
+            "version": 3,
             "city": "paris",
             "method": "poi",
             "sampling_seed": 530303154,
-            "stage1_base": "paris_poi-n11-k1"
+            "stage1_base": "paris_poi-n11-k3"
         },
         "sidecars": {
             "geo": {
                 "path": "sidecars/paris/n=10/mamut-paris-n10-poi/mamut-paris-n10-poi.geo.json.gz",
-                "sha256": "bb9db99eab7532d30acb4cc566abb99776e8209c5badf2c2c875296475b01050"
+                "sha256": "e5727a1a568a15cf382b6b93228da60ee78d8f93f77ec0db02773947f9ca023d"
             }
         }
     }

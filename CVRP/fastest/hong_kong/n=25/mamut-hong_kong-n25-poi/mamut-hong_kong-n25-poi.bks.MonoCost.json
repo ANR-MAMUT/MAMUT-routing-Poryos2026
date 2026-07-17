@@ -1,18 +1,22 @@
 {
     "instance_name": "mamut-hong_kong-n25-poi",
     "routes": [
-        [4, 10, 21, 6, 19, 3, 12, 17, 8, 25, 16, 24, 5],
-        [7, 13, 18, 22],
-        [9, 15, 23, 2, 1, 20, 14, 11]
+        [3, 12, 7, 17],
+        [4, 10, 21, 6],
+        [9, 15, 23, 2, 1, 20, 14, 11],
+        [16, 13, 18, 24],
+        [19],
+        [22],
+        [25, 8, 5]
     ],
-    "cost": 6855.8910000000005,
+    "cost": 9233.091999999997,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=240s)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=240s)",
         "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
-        "date": "2026-07-10T04:08:42",
-        "validated_cost": 6855.8910000000005,
-        "validated_num_routes": 3
+        "date": "2026-07-16T07:49:00",
+        "validated_cost": 9233.091999999997,
+        "validated_num_routes": 7
     },
     "objective_function": "MonoCost"
 }

@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 25,
     "num_vehicles": null,
-    "vehicle_capacity": 177,
+    "vehicle_capacity": 141,
     "coordinates": [
         [1438.9425746026898, -1211.8557234748282],
         [606.0347964877085, 10526.327714736706],
@@ -33,7 +33,7 @@
         [1603.9689736012306, -5599.975802319523],
         [1413.5849636099879, -8172.503541214461]
     ],
-    "demands": [0, 1, 9, 7, 4, 9, 5, 84, 10, 1, 1, 7, 8, 1, 4, 3, 5, 8, 79, 87, 3, 4, 10, 5, 3, 4],
+    "demands": [0, 1, 9, 7, 4, 9, 71, 84, 100, 1, 1, 82, 8, 1, 4, 3, 5, 8, 79, 87, 3, 4, 99, 5, 3, 4],
     "depot": 0,
     "reference_lla": {
         "lat": 22.35252895,
@@ -45,22 +45,22 @@
         "model": "distances-sidecar",
         "distances": {
             "path": "sidecars/hong_kong/n=25/mamut-hong_kong-n25-poi/mamut-hong_kong-n25-poi.distances-fastest.json.gz",
-            "sha256": "0a671c6e9c86955f315ebbcd03a37357987691edf724de69913ccee4504025af"
+            "sha256": "b4352c130e0884dde3469b087f2ef4b478322517e531fb4ad8100edc9ca7bcd7"
         }
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "VRPTW",
         "metric_variant": "fastest",
         "city": "hong_kong",
         "method": "poi",
         "base_instance_name": "mamut-hong_kong-n25-poi",
-        "num_vehicles_lb": 3,
+        "num_vehicles_lb": 5,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "derive-vrptw",
-            "version": 2,
+            "version": 3,
             "city": "hong_kong",
             "method": "poi",
             "service_seed": 3646891821,
@@ -71,7 +71,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/hong_kong/n=25/mamut-hong_kong-n25-poi/mamut-hong_kong-n25-poi.geo.json.gz",
-                "sha256": "7bcb47194cb2448e5905a2f5e0951d9c60a6cf315240d1ce725b5930e4cbdd0b"
+                "sha256": "3f8dad863b72c3e05c598db1b987889f968ff1b876fe856a3db22f8b36f3b993"
             }
         },
         "tw_set": {
@@ -79,35 +79,50 @@
             "td_paired": false,
             "policy": "route-centered-tight",
             "note": "static-only TW set; NOT the TDVRPTW windows; never audited under traffic"
+        },
+        "tw_anchor": {
+            "policy": "deterministic-capacity-horizon-nearest-neighbour",
+            "routes": [
+                [4, 5, 22, 24, 3, 12, 13, 25, 16, 10],
+                [21, 6, 2, 14, 1, 20, 23, 9, 15, 17],
+                [11],
+                [8],
+                [7],
+                [18],
+                [19]
+            ],
+            "num_routes": 7,
+            "min_customers_per_route": 1,
+            "max_customers_per_route": 10
         }
     },
     "service_times": [0, 336, 1430, 320, 1402, 113, 748, 894, 1018, 1, 714, 1011, 1365, 1178, 691, 1309, 771, 1242, 225, 935, 2076, 1614, 884, 1143, 1658, 1527],
     "time_windows": [
         [0, 86400],
-        [23228, 25058],
-        [19667, 22787],
+        [5239, 7069],
+        [1678, 4798],
         [2816, 6898],
         [0, 3186],
         [240, 3190],
-        [13945, 18347],
-        [6133, 7281],
-        [8055, 12879],
-        [27856, 29922],
-        [16590, 21060],
-        [19074, 20925],
+        [0, 4181],
+        [0, 982],
+        [0, 2815],
+        [9867, 11933],
+        [8605, 13075],
+        [0, 1251],
         [2936, 7510],
-        [5194, 10077],
-        [22477, 23470],
-        [24998, 32835],
-        [10196, 12954],
-        [11486, 14721],
-        [9770, 15181],
-        [11677, 18055],
-        [21694, 27377],
-        [13883, 20194],
+        [4297, 9180],
+        [4488, 5481],
+        [7009, 14846],
+        [8204, 10962],
+        [11649, 14884],
+        [0, 3198],
+        [0, 3769],
+        [3705, 9388],
+        [0, 3454],
         [0, 4125],
-        [24187, 30704],
+        [6198, 12715],
         [0, 6673],
-        [5986, 11771]
+        [5089, 10874]
     ]
 }

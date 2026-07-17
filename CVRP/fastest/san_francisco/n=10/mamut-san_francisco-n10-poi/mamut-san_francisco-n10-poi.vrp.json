@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 10,
     "num_vehicles": null,
-    "vehicle_capacity": 139,
+    "vehicle_capacity": 108,
     "coordinates": [
         [27567.380647101618, -311.8625620472418],
         [26084.41894413347, -1698.352223789911],
@@ -18,7 +18,7 @@
         [24783.3280172331, -979.4400604839734],
         [27016.614788167746, -3298.7357312735685]
     ],
-    "demands": [0, 5, 8, 5, 9, 2, 4, 2, 8, 55, 7],
+    "demands": [0, 74, 8, 5, 9, 2, 4, 55, 8, 55, 80],
     "depot": 0,
     "reference_lla": {
         "lat": 37.78499105,
@@ -30,31 +30,31 @@
         "model": "distances-sidecar",
         "distances": {
             "path": "sidecars/san_francisco/n=10/mamut-san_francisco-n10-poi/mamut-san_francisco-n10-poi.distances-fastest.json.gz",
-            "sha256": "a0b4cb0d4460f6acd600bd158f32ec8553a0e4aa45edcfefa4f9649ca65153eb"
+            "sha256": "dd796b30f5db69cdfb5479e59e53f58493cc92840637d5b615956fc77ba367be"
         }
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "CVRP",
         "metric_variant": "fastest",
         "city": "san_francisco",
         "method": "poi",
         "base_instance_name": "mamut-san_francisco-n10-poi",
-        "num_vehicles_lb": 1,
+        "num_vehicles_lb": 3,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "generate-base",
-            "version": 2,
+            "version": 3,
             "city": "san_francisco",
             "method": "poi",
             "sampling_seed": 84155017,
-            "stage1_base": "san_francisco_poi-n11-k1"
+            "stage1_base": "san_francisco_poi-n11-k3"
         },
         "sidecars": {
             "geo": {
                 "path": "sidecars/san_francisco/n=10/mamut-san_francisco-n10-poi/mamut-san_francisco-n10-poi.geo.json.gz",
-                "sha256": "9d6501aa5f02f7b9eb59a361ab94883fb18fe099a95c6bf857b15826bb498615"
+                "sha256": "06e4d90038323fc126bf2a5c215b5a8155b52b71f41f6f7a6e7c10725ebc4524"
             }
         }
     }

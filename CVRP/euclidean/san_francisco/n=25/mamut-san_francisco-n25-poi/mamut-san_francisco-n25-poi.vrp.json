@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 25,
     "num_vehicles": null,
-    "vehicle_capacity": 193,
+    "vehicle_capacity": 139,
     "coordinates": [
         [27567.380647101618, -311.8625620472418],
         [18558.110903080724, 15853.006480186414],
@@ -33,7 +33,7 @@
         [26894.992415638764, -2187.6211953995016],
         [26652.27736434158, -15914.960293941931]
     ],
-    "demands": [0, 7, 5, 9, 1, 10, 1, 6, 2, 5, 4, 2, 9, 7, 2, 87, 5, 83, 3, 8, 9, 6, 9, 10, 4, 10],
+    "demands": [0, 7, 5, 9, 1, 10, 54, 6, 2, 5, 4, 2, 9, 7, 2, 87, 5, 83, 3, 8, 9, 6, 92, 10, 4, 10],
     "depot": 0,
     "reference_lla": {
         "lat": 37.78499105,
@@ -47,26 +47,26 @@
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "CVRP",
         "metric_variant": "euclidean",
         "city": "san_francisco",
         "method": "poi",
         "base_instance_name": "mamut-san_francisco-n25-poi",
-        "num_vehicles_lb": 2,
+        "num_vehicles_lb": 4,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "generate-base",
-            "version": 2,
+            "version": 3,
             "city": "san_francisco",
             "method": "poi",
             "sampling_seed": 544014679,
-            "stage1_base": "san_francisco_poi-n26-k2"
+            "stage1_base": "san_francisco_poi-n26-k4"
         },
         "sidecars": {
             "geo": {
                 "path": "sidecars/san_francisco/n=25/mamut-san_francisco-n25-poi/mamut-san_francisco-n25-poi.geo.json.gz",
-                "sha256": "706aec8c0356e7f7ed4cb005fcc46f83bb32aa7542ad9ade4595488430906268"
+                "sha256": "ed3ebb422e218d482a9fffc9617ded3a757a0ad1721a5c9f658ca4d645e9357f"
             }
         }
     }

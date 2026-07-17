@@ -1,18 +1,20 @@
 {
     "instance_name": "mamut-paris-n10-poi-wave-heavy",
     "routes": [
-        [10, 9, 8, 7, 4, 6, 3, 1, 2, 5]
+        [3, 1, 2, 9, 8, 7],
+        [6, 4],
+        [10, 5]
     ],
-    "cost": 12004.867705324577,
+    "cost": 12166.638038377969,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=120s)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=120s)",
         "validated_by": "mamut-routing-lib td Duration checker",
-        "date": "2026-07-10T07:39:53",
-        "validated_cost": 12004.867705324577,
-        "validated_num_routes": 1,
-        "route_durations": [12004.867705324577],
-        "route_departure_times": [703.750757018567]
+        "date": "2026-07-16T14:12:24",
+        "validated_cost": 12166.638038377969,
+        "validated_num_routes": 3,
+        "route_durations": [7793.202957594254, 1264.5660049280123, 3108.8690758557027],
+        "route_departure_times": [242.31850723294207, 0.0, 0.0]
     },
     "objective_function": "Duration"
 }

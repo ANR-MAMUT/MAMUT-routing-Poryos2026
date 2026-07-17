@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 25,
     "num_vehicles": null,
-    "vehicle_capacity": 141,
+    "vehicle_capacity": 138,
     "coordinates": [
         [-2164.0120515125586, 1974.6974344579025],
         [-8776.875283054862, 3728.5142074990667],
@@ -33,7 +33,7 @@
         [-6488.123387448324, -6381.418742989421],
         [2226.6883157671937, 8728.00907202518]
     ],
-    "demands": [0, 9, 4, 60, 7, 8, 5, 2, 10, 5, 6, 4, 2, 7, 6, 8, 5, 9, 10, 2, 6, 6, 7, 1, 2, 72],
+    "demands": [0, 9, 4, 60, 7, 8, 5, 2, 100, 5, 79, 4, 2, 7, 6, 8, 74, 9, 10, 2, 6, 6, 81, 1, 2, 72],
     "service_times": [0, 2241, 2266, 627, 2257, 3112, 886, 2828, 1737, 2096, 1529, 2865, 2964, 871, 750, 1115, 1909, 3175, 3297, 3005, 757, 16, 2443, 1651, 3397, 1344],
     "depot": 0,
     "reference_lla": {
@@ -46,7 +46,7 @@
         "model": "road-graph",
         "graph": {
             "path": "sidecars/tokyo/n=25/mamut-tokyo-n25-hyb/mamut-tokyo-n25-hyb.road.json.gz",
-            "sha256": "ceadfb75cf265a7d30ecbd15a43c5186cd47a2889cee7cfe6dc9c172f795229b"
+            "sha256": "089c5a413f2120fa6b2baeb62a82974863fe956c66dd147e30146ea638167afa"
         },
         "traffic": {
             "path": "sidecars/tokyo/n=25/mamut-tokyo-n25-hyb/mamut-tokyo-n25-hyb.traffic-bpr-moderate.json.gz",
@@ -58,35 +58,35 @@
     },
     "time_windows": [
         [0, 86400],
-        [9584, 28323],
-        [18007, 31239],
-        [0, 20419],
-        [37535, 45536],
-        [6922, 24350],
-        [0, 13153],
-        [12245, 30335],
-        [45551, 55607],
-        [1906, 17746],
+        [8848, 27587],
+        [17271, 30503],
+        [0, 15727],
+        [0, 4951],
+        [6186, 23614],
+        [0, 12417],
+        [11509, 29599],
+        [0, 5436],
+        [1170, 17010],
         [0, 8335],
-        [39107, 55751],
-        [0, 17381],
-        [15178, 39573],
-        [48710, 56300],
-        [26108, 49380],
-        [33724, 54076],
-        [21529, 35152],
-        [6056, 18147],
+        [0, 11826],
+        [0, 16645],
+        [0, 23791],
+        [3014, 10604],
+        [1089, 24361],
+        [0, 10532],
+        [1540, 15163],
+        [5320, 17411],
         [0, 13408],
-        [50492, 58355],
-        [13836, 34806],
-        [20170, 43062],
-        [32660, 45568],
-        [25330, 43060],
-        [39303, 52785]
+        [10784, 18647],
+        [13100, 34070],
+        [0, 11907],
+        [24003, 36911],
+        [17891, 35621],
+        [0, 7189]
     ],
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "city": "tokyo",
         "method": "hyb",
         "base_instance_name": "mamut-tokyo-n25-hyb",
@@ -94,7 +94,7 @@
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "build-td",
-            "version": 2,
+            "version": 3,
             "city": "tokyo",
             "method": "hyb"
         },
@@ -131,18 +131,19 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/tokyo/n=25/mamut-tokyo-n25-hyb/mamut-tokyo-n25-hyb.geo.json.gz",
-                "sha256": "33f9cb2033694dd4d3ed2e0f6718715a508a294c0fb945862bb4e3b87ac1e2ff"
+                "sha256": "752b3ce45688922e726573864b9ddc47d493436f52a40d15c2908c8706648ff7"
             }
         },
         "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
         "problem_type": "TDVRPTW",
         "tw_repair": {
-            "policy": "minimal-shared-tw-repair",
+            "policy": "global-anchor-minimal-shared-deadline-lift",
             "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
             "lifted_customers": 0,
             "max_lift_seconds": 0,
             "reduced_customers": 0,
             "max_reduction_seconds": 0,
+            "anchor_routes": 6,
             "repairs": {
 
             }

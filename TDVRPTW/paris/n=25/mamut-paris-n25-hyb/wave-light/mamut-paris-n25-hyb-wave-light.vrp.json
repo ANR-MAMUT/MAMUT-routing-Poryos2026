@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 25,
     "num_vehicles": null,
-    "vehicle_capacity": 156,
+    "vehicle_capacity": 122,
     "coordinates": [
         [-500.8740114215472, 70.82241150336951],
         [4532.19255418217, 3564.094497024737],
@@ -33,7 +33,7 @@
         [4278.097632131759, 3078.2836470352418],
         [4615.996589766718, -1306.279881612815]
     ],
-    "demands": [0, 2, 3, 2, 8, 4, 4, 10, 8, 3, 4, 2, 3, 8, 57, 1, 10, 99, 7, 51, 7, 5, 2, 4, 5, 9],
+    "demands": [0, 2, 3, 2, 8, 4, 4, 10, 8, 3, 65, 2, 61, 8, 57, 1, 10, 99, 7, 51, 7, 5, 2, 4, 71, 95],
     "service_times": [0, 262, 203, 231, 265, 448, 546, 654, 366, 357, 657, 398, 502, 594, 157, 246, 329, 560, 306, 359, 255, 309, 108, 385, 111, 436],
     "depot": 0,
     "reference_lla": {
@@ -46,7 +46,7 @@
         "model": "road-graph",
         "graph": {
             "path": "sidecars/paris/n=25/mamut-paris-n25-hyb/mamut-paris-n25-hyb.road.json.gz",
-            "sha256": "ba4b9dcdeafd378d51b2cc796077ac04ef85dcd7f119c597407cf9988cb6e500"
+            "sha256": "a1f90079066e234a34c91b42a6a398d218fe0f1a3b2b13e9f3a129d4b47d39fc"
         },
         "traffic": {
             "path": "sidecars/paris/n=25/mamut-paris-n25-hyb/mamut-paris-n25-hyb.traffic-wave-light.json.gz",
@@ -58,35 +58,35 @@
     },
     "time_windows": [
         [0, 86400],
-        [696, 21277],
+        [0, 17844],
         [0, 10306],
         [0, 10002],
-        [400, 20641],
+        [0, 10890],
         [0, 7990],
         [0, 14687],
-        [7444, 10399],
+        [4833, 7788],
         [0, 8985],
-        [0, 17403],
-        [3342, 16038],
+        [0, 15259],
+        [0, 6621],
         [0, 15540],
-        [0, 19232],
+        [0, 14280],
         [0, 11678],
         [0, 17893],
-        [0, 20358],
-        [0, 14510],
-        [0, 13373],
-        [1570, 22546],
-        [0, 14211],
-        [3722, 23632],
+        [0, 17747],
+        [0, 12366],
+        [0, 9253],
+        [0, 12572],
+        [0, 9611],
+        [0, 13089],
         [0, 8295],
-        [1722, 21535],
-        [2667, 22836],
-        [704, 21914],
-        [0, 17180]
+        [0, 17170],
+        [0, 11361],
+        [0, 10966],
+        [0, 9329]
     ],
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "city": "paris",
         "method": "hyb",
         "base_instance_name": "mamut-paris-n25-hyb",
@@ -94,7 +94,7 @@
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "build-td",
-            "version": 2,
+            "version": 3,
             "city": "paris",
             "method": "hyb"
         },
@@ -114,18 +114,19 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/paris/n=25/mamut-paris-n25-hyb/mamut-paris-n25-hyb.geo.json.gz",
-                "sha256": "ebe0c025cc12bf0d7d7a3fa74c783b7b4f5e2b2200f1711b8e8246fcae989818"
+                "sha256": "1c0aead436afb099d44e74ce2cda74d1cd5e3c09a2ca5cdc86a14f8d87cce1d1"
             }
         },
         "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
         "problem_type": "TDVRPTW",
         "tw_repair": {
-            "policy": "minimal-shared-tw-repair",
+            "policy": "global-anchor-minimal-shared-deadline-lift",
             "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
             "lifted_customers": 0,
             "max_lift_seconds": 0,
             "reduced_customers": 0,
             "max_reduction_seconds": 0,
+            "anchor_routes": 6,
             "repairs": {
 
             }

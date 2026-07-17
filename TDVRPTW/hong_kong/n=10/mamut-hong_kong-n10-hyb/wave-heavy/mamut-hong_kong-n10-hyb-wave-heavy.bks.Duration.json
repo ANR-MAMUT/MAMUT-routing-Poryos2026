@@ -1,18 +1,20 @@
 {
     "instance_name": "mamut-hong_kong-n10-hyb-wave-heavy",
     "routes": [
-        [10, 4, 6, 7, 8, 5, 2, 1, 9, 3]
+        [3, 9, 2, 1],
+        [4, 10],
+        [7, 6, 8, 5]
     ],
-    "cost": 11312.088355741396,
+    "cost": 12567.795512189412,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=120s)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=120s)",
         "validated_by": "mamut-routing-lib td Duration checker",
-        "date": "2026-07-10T06:42:31",
-        "validated_cost": 11312.088355741396,
-        "validated_num_routes": 1,
-        "route_durations": [11312.088355741396],
-        "route_departure_times": [0.0]
+        "date": "2026-07-16T07:52:23",
+        "validated_cost": 12567.795512189412,
+        "validated_num_routes": 3,
+        "route_durations": [4354.126816214712, 3025.7374748553916, 5187.931221119308],
+        "route_departure_times": [0.0, 0.0, 0.0]
     },
     "objective_function": "Duration"
 }

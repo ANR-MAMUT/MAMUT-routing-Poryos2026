@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 25,
     "num_vehicles": null,
-    "vehicle_capacity": 158,
+    "vehicle_capacity": 131,
     "coordinates": [
         [1438.9425746026898, -1211.8557234748282],
         [2854.0909988205926, -5289.485434391499],
@@ -33,7 +33,7 @@
         [1773.2358493738222, 2432.9261548337518],
         [387.0331156990046, -8158.699173478547]
     ],
-    "demands": [0, 7, 10, 8, 4, 3, 7, 7, 7, 8, 1, 76, 3, 5, 1, 7, 55, 3, 9, 2, 5, 10, 5, 8, 2, 2],
+    "demands": [0, 7, 100, 8, 4, 3, 7, 7, 7, 8, 1, 76, 3, 5, 1, 7, 55, 3, 93, 2, 5, 10, 5, 8, 2, 2],
     "depot": 0,
     "reference_lla": {
         "lat": 22.35252895,
@@ -45,22 +45,22 @@
         "model": "distances-sidecar",
         "distances": {
             "path": "sidecars/hong_kong/n=25/mamut-hong_kong-n25-hyb/mamut-hong_kong-n25-hyb.distances-fastest.json.gz",
-            "sha256": "59ed30dce1e262304ea90c8642d5307a57c27dd3feac9415732c56c4bc39b234"
+            "sha256": "882365c7253211b56ea307b9d82d3af243da776ad32fa26b99ff6c1540268391"
         }
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "VRPTW",
         "metric_variant": "fastest",
         "city": "hong_kong",
         "method": "hyb",
         "base_instance_name": "mamut-hong_kong-n25-hyb",
-        "num_vehicles_lb": 2,
+        "num_vehicles_lb": 4,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "derive-vrptw",
-            "version": 2,
+            "version": 3,
             "city": "hong_kong",
             "method": "hyb",
             "service_seed": 1703898577,
@@ -71,7 +71,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/hong_kong/n=25/mamut-hong_kong-n25-hyb/mamut-hong_kong-n25-hyb.geo.json.gz",
-                "sha256": "6940d699f81fb810435c93367d1c61ee86aa0d5c48706de81746dd64fe154953"
+                "sha256": "014a80e4beb4352d121a666fd0e0fe03a6fa931b6eba0db9718406a96698463d"
             }
         },
         "tw_set": {

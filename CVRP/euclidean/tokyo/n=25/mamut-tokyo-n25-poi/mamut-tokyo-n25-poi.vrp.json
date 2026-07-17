@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 25,
     "num_vehicles": null,
-    "vehicle_capacity": 152,
+    "vehicle_capacity": 125,
     "coordinates": [
         [-2164.0120515125586, 1974.6974344579025],
         [-8708.41345284718, -1913.7241021393875],
@@ -33,7 +33,7 @@
         [-10098.574995582574, 11508.566480926202],
         [848.1036176016479, 3512.822201114268]
     ],
-    "demands": [0, 8, 7, 3, 1, 3, 10, 67, 7, 3, 4, 9, 4, 5, 80, 3, 5, 1, 8, 5, 7, 6, 6, 3, 6, 5],
+    "demands": [0, 8, 82, 3, 53, 3, 10, 67, 7, 3, 4, 9, 4, 5, 80, 3, 5, 1, 8, 5, 7, 6, 79, 3, 6, 5],
     "depot": 0,
     "reference_lla": {
         "lat": 35.6768601,
@@ -47,26 +47,26 @@
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "CVRP",
         "metric_variant": "euclidean",
         "city": "tokyo",
         "method": "poi",
         "base_instance_name": "mamut-tokyo-n25-poi",
-        "num_vehicles_lb": 2,
+        "num_vehicles_lb": 4,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "generate-base",
-            "version": 2,
+            "version": 3,
             "city": "tokyo",
             "method": "poi",
             "sampling_seed": 1620450941,
-            "stage1_base": "tokyo_poi-n26-k2"
+            "stage1_base": "tokyo_poi-n26-k4"
         },
         "sidecars": {
             "geo": {
                 "path": "sidecars/tokyo/n=25/mamut-tokyo-n25-poi/mamut-tokyo-n25-poi.geo.json.gz",
-                "sha256": "571d3c37b18a4ba1e5344ed53415e8c0e5faa0cc199a38c96e53a1ec5739d21d"
+                "sha256": "1fc46ca4ec9561a215fadc451031366e0e3deded1aabfea98d7a017b55490db3"
             }
         }
     }

@@ -1,19 +1,21 @@
 {
     "instance_name": "mamut-paris-n25-poi-bpr-light",
     "routes": [
-        [4, 21, 8, 19, 1, 18, 25, 20, 11, 24],
-        [15, 3, 17, 10, 12, 7, 13, 16, 22, 9, 14, 6, 5, 23, 2]
+        [2, 23, 6, 5, 9, 22, 16, 10, 17, 14],
+        [7, 8, 19, 1, 18, 25, 20, 11, 24],
+        [15, 3, 13, 12],
+        [21, 4]
     ],
-    "cost": 11367.421706558316,
+    "cost": 12092.625743139479,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=240s)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=240s)",
         "validated_by": "mamut-routing-lib td Duration checker",
-        "date": "2026-07-10T08:00:41",
-        "validated_cost": 11367.421706558316,
-        "validated_num_routes": 2,
-        "route_durations": [4120.256279409095, 7247.165427149221],
-        "route_departure_times": [3394.8006073019, 0.0]
+        "date": "2026-07-16T14:37:06",
+        "validated_cost": 12092.625743139479,
+        "validated_num_routes": 4,
+        "route_durations": [4849.506025221842, 4046.8543790690205, 1995.9043563876673, 1200.3609824609484],
+        "route_departure_times": [0.0, 0.0, 0.0, 975.0265880938363]
     },
     "objective_function": "Duration"
 }

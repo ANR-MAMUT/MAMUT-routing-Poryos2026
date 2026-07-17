@@ -1,20 +1,24 @@
 {
     "instance_name": "mamut-hong_kong-n25-poi-bpr-heavy",
     "routes": [
-        [4, 5, 22, 24, 25, 8, 3, 12, 19, 6, 21, 10, 11, 2, 14, 1, 20],
-        [9, 15, 23],
-        [18, 16, 13, 7, 17]
+        [4, 10, 21, 6],
+        [11, 14, 1, 20, 2, 23, 9, 15],
+        [16, 13, 7, 5],
+        [18, 24],
+        [19, 3, 12, 17],
+        [22],
+        [25, 8]
     ],
-    "cost": 32609.459252584667,
+    "cost": 33874.380586511965,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=240s)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=240s)",
         "validated_by": "mamut-routing-lib td Duration checker",
-        "date": "2026-07-10T07:06:12",
-        "validated_cost": 32609.459252584667,
-        "validated_num_routes": 3,
-        "route_durations": [22404.98403610248, 4307.570433411274, 5896.904783070915],
-        "route_departure_times": [2095.011041303391, 32221.02691258399, 7930.481103525344]
+        "date": "2026-07-16T10:11:49",
+        "validated_cost": 33874.380586511965,
+        "validated_num_routes": 7,
+        "route_durations": [5410.5272258803, 11186.795794318985, 3956.276937048958, 2956.5794029593617, 5666.004381519507, 1301.9353692008383, 3396.261475584016],
+        "route_departure_times": [3917.8296970436318, 145.8373101244567, 189.4410191460171, 0.0, 7559.614259113819, 0.0, 4168.02059979561]
     },
     "objective_function": "Duration"
 }

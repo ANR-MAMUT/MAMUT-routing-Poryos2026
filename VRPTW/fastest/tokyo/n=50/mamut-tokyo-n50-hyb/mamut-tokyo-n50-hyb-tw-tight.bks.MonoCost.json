@@ -1,19 +1,19 @@
 {
     "instance_name": "mamut-tokyo-n50-hyb-tw-tight",
     "routes": [
-        [1, 23, 48, 26, 31, 33, 38],
-        [12, 7, 19, 46, 34, 50, 49, 25, 30, 39, 32, 6, 43, 41, 24],
-        [14, 16, 8, 5],
-        [18, 9, 40, 17, 3, 35, 11, 4],
-        [28, 13, 21, 20, 37, 22, 27, 47, 15, 2, 10, 29, 36, 42, 44, 45]
+        [8, 14, 1, 23, 48, 26, 31],
+        [12, 7, 19, 46, 34, 50, 28, 13, 21, 20, 37, 22, 27, 47, 15, 10, 2],
+        [16, 17, 3, 4, 11, 35],
+        [18, 9, 40, 5, 33, 38],
+        [24, 45, 29, 36, 42, 44, 49, 25, 30, 39, 32, 6, 43, 41]
     ],
-    "cost": 10478.846,
+    "cost": 11394.618999999995,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=480s)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=480s)",
         "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
-        "date": "2026-07-10T12:42:45",
-        "validated_cost": 10478.846,
+        "date": "2026-07-16T13:28:25",
+        "validated_cost": 11394.618999999995,
         "validated_num_routes": 5
     },
     "objective_function": "MonoCost"

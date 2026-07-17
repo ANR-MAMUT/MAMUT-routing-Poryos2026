@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 25,
     "num_vehicles": null,
-    "vehicle_capacity": 150,
+    "vehicle_capacity": 129,
     "coordinates": [
         [27567.380647101618, -311.8625620472418],
         [38257.799859627135, 9676.787790909726],
@@ -33,7 +33,7 @@
         [38289.05525939373, 5129.499079785034],
         [36230.288804810916, 14740.874346709226]
     ],
-    "demands": [0, 2, 4, 2, 3, 5, 1, 7, 5, 7, 5, 4, 1, 6, 10, 3, 1, 82, 4, 9, 9, 6, 3, 9, 86, 2],
+    "demands": [0, 2, 4, 2, 3, 5, 52, 7, 5, 7, 70, 4, 1, 79, 10, 3, 1, 82, 4, 9, 9, 6, 62, 9, 86, 2],
     "service_times": [0, 404, 936, 481, 892, 566, 855, 569, 56, 352, 1296, 1137, 375, 107, 1255, 584, 995, 3, 348, 337, 561, 969, 541, 744, 742, 981],
     "depot": 0,
     "reference_lla": {
@@ -46,7 +46,7 @@
         "model": "road-graph",
         "graph": {
             "path": "sidecars/san_francisco/n=25/mamut-san_francisco-n25-hyb/mamut-san_francisco-n25-hyb.road.json.gz",
-            "sha256": "9ebe950eacb8c3b1bfc32cc0e8799641027a941fb99d5f15397985137a238836"
+            "sha256": "9d90029fc47975ba981d1d0f5b40717db850b787a5a07e390930ab00db8479a2"
         },
         "traffic": {
             "path": "sidecars/san_francisco/n=25/mamut-san_francisco-n25-hyb/mamut-san_francisco-n25-hyb.traffic-wave-moderate.json.gz",
@@ -58,7 +58,7 @@
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "city": "san_francisco",
         "method": "hyb",
         "base_instance_name": "mamut-san_francisco-n25-hyb",
@@ -66,7 +66,7 @@
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "build-td",
-            "version": 2,
+            "version": 3,
             "city": "san_francisco",
             "method": "hyb"
         },
@@ -86,7 +86,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/san_francisco/n=25/mamut-san_francisco-n25-hyb/mamut-san_francisco-n25-hyb.geo.json.gz",
-                "sha256": "65ab21597b012c2c0d3102c66e688267ff24e91afcbf586ef3abf637846ce753"
+                "sha256": "58ca59214fdab15f079775c436d0653d70e9884398dd0ed4e68493af4db5a90f"
             }
         },
         "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",

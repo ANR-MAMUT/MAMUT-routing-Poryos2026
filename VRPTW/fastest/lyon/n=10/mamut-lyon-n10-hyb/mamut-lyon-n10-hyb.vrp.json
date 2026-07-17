@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 10,
     "num_vehicles": null,
-    "vehicle_capacity": 86,
+    "vehicle_capacity": 133,
     "coordinates": [
         [135.7576295960148, 21.597263143175013],
         [3126.3010134318724, -320.96171734745644],
@@ -18,7 +18,7 @@
         [-3221.170321779459, -2460.636245678063],
         [-1721.2898458264253, -4599.490878225703]
     ],
-    "demands": [0, 4, 2, 7, 7, 7, 1, 10, 7, 8, 3],
+    "demands": [0, 4, 2, 84, 7, 80, 1, 10, 7, 86, 3],
     "depot": 0,
     "reference_lla": {
         "lat": 45.7578147,
@@ -30,22 +30,22 @@
         "model": "distances-sidecar",
         "distances": {
             "path": "sidecars/lyon/n=10/mamut-lyon-n10-hyb/mamut-lyon-n10-hyb.distances-fastest.json.gz",
-            "sha256": "383d197decf604269c8e3eb3443fcbe43535a64691283ab4d3d2fa235b040744"
+            "sha256": "9a3201791c076a6dd2d1d17e329157e4badc8f8e2ff8613f496dda083a0a4995"
         }
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "VRPTW",
         "metric_variant": "fastest",
         "city": "lyon",
         "method": "hyb",
         "base_instance_name": "mamut-lyon-n10-hyb",
-        "num_vehicles_lb": 1,
+        "num_vehicles_lb": 3,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "derive-vrptw",
-            "version": 2,
+            "version": 3,
             "city": "lyon",
             "method": "hyb",
             "service_seed": 1327471760,
@@ -55,7 +55,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/lyon/n=10/mamut-lyon-n10-hyb/mamut-lyon-n10-hyb.geo.json.gz",
-                "sha256": "06a5abb6f300e2f6beca9b02ef9f65ce73e1c341b963ccb29c9fca7d20a15145"
+                "sha256": "d3874cdb1b4699b53827779a66291304e3121c99d1bffbcdaa98ce14aa604d76"
             }
         },
         "tw_set": {
@@ -64,13 +64,25 @@
             "policy": "route-centered",
             "note": "windows shared verbatim with the base's TDVRPTW twins (post minimal-shared-tw-repair)"
         },
+        "tw_anchor": {
+            "policy": "deterministic-capacity-horizon-nearest-neighbour",
+            "routes": [
+                [5, 2, 4, 1, 8, 6, 10, 7],
+                [3],
+                [9]
+            ],
+            "num_routes": 3,
+            "min_customers_per_route": 1,
+            "max_customers_per_route": 8
+        },
         "tw_repair": {
-            "policy": "minimal-shared-tw-repair",
+            "policy": "global-anchor-minimal-shared-deadline-lift",
             "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
             "lifted_customers": 0,
             "max_lift_seconds": 0,
             "reduced_customers": 0,
             "max_reduction_seconds": 0,
+            "anchor_routes": 3,
             "repairs": {
 
             }
@@ -81,13 +93,13 @@
         [0, 86400],
         [0, 9471],
         [0, 9235],
-        [0, 21810],
+        [0, 14730],
         [0, 10461],
         [0, 9325],
         [0, 17317],
-        [46, 16113],
+        [0, 15426],
         [0, 13742],
-        [2509, 12825],
+        [0, 5471],
         [0, 21068]
     ]
 }

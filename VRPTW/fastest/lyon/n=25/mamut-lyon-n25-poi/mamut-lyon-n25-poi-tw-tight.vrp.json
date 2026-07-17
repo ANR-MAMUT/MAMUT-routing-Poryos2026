@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 25,
     "num_vehicles": null,
-    "vehicle_capacity": 171,
+    "vehicle_capacity": 131,
     "coordinates": [
         [135.7576295960148, 21.597263143175013],
         [925.524906524174, -664.4651514073839],
@@ -33,7 +33,7 @@
         [1553.6803957228935, 844.5084920265172],
         [-492.26840887977266, -3111.0879815286526]
     ],
-    "demands": [0, 1, 2, 7, 10, 1, 7, 2, 10, 2, 3, 6, 2, 9, 1, 5, 5, 9, 93, 1, 61, 4, 2, 8, 3, 91],
+    "demands": [0, 53, 2, 7, 99, 1, 80, 2, 10, 2, 3, 6, 59, 9, 1, 5, 5, 9, 93, 1, 61, 4, 2, 8, 3, 91],
     "depot": 0,
     "reference_lla": {
         "lat": 45.7578147,
@@ -45,22 +45,22 @@
         "model": "distances-sidecar",
         "distances": {
             "path": "sidecars/lyon/n=25/mamut-lyon-n25-poi/mamut-lyon-n25-poi.distances-fastest.json.gz",
-            "sha256": "e6b64f8161f65ca090651442819e85dfb5b94459473d8cede44844940b4be006"
+            "sha256": "cd6f417207b820d9fcaae1bcba7d08b1bc92a0bf69fe4aa61e98c6a95af985e6"
         }
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "VRPTW",
         "metric_variant": "fastest",
         "city": "lyon",
         "method": "poi",
         "base_instance_name": "mamut-lyon-n25-poi",
-        "num_vehicles_lb": 3,
+        "num_vehicles_lb": 5,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "derive-vrptw",
-            "version": 2,
+            "version": 3,
             "city": "lyon",
             "method": "poi",
             "service_seed": 2457944228,
@@ -71,7 +71,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/lyon/n=25/mamut-lyon-n25-poi/mamut-lyon-n25-poi.geo.json.gz",
-                "sha256": "a47bd4670e46dff65720a02bc29050c3bcd6b3aa514c52807f807b546037af1f"
+                "sha256": "9f767b65521e8d0db1d42c650e35244e414ff5a41ba4fc218b30cf4763174bc2"
             }
         },
         "tw_set": {
@@ -79,35 +79,49 @@
             "td_paired": false,
             "policy": "route-centered-tight",
             "note": "static-only TW set; NOT the TDVRPTW windows; never audited under traffic"
+        },
+        "tw_anchor": {
+            "policy": "deterministic-capacity-horizon-nearest-neighbour",
+            "routes": [
+                [8, 22, 4, 13, 17, 9],
+                [1, 14, 5, 11, 19, 10, 24, 3, 23, 15, 21, 16, 2, 7],
+                [12, 20],
+                [18],
+                [25],
+                [6]
+            ],
+            "num_routes": 6,
+            "min_customers_per_route": 1,
+            "max_customers_per_route": 14
         }
     },
     "service_times": [0, 1152, 481, 1257, 739, 844, 538, 476, 567, 951, 1041, 718, 1206, 169, 1398, 734, 812, 1398, 935, 1248, 777, 574, 802, 837, 734, 983],
     "time_windows": [
         [0, 86400],
-        [5389, 10683],
-        [17189, 21435],
-        [14372, 19217],
+        [0, 2699],
+        [10910, 15156],
+        [5389, 10234],
         [0, 3583],
-        [9528, 11944],
-        [18006, 25663],
-        [19223, 22722],
+        [1544, 3960],
+        [0, 4032],
+        [11916, 15415],
         [0, 1322],
-        [12643, 17328],
-        [12936, 14840],
-        [9461, 13858],
-        [0, 4758],
-        [2261, 4905],
-        [7255, 11208],
-        [4906, 7567],
-        [21105, 25322],
-        [3101, 6410],
-        [16729, 19526],
-        [11234, 13677],
-        [2835, 5043],
-        [19103, 25734],
+        [2038, 6723],
+        [4952, 6856],
+        [1477, 5874],
+        [0, 2538],
+        [1041, 3685],
+        [0, 3225],
+        [8846, 11507],
+        [9753, 13970],
+        [1075, 4384],
+        [0, 1523],
+        [3251, 5694],
+        [283, 2491],
+        [7751, 14382],
         [0, 2887],
-        [4812, 9337],
-        [15293, 16708],
-        [18671, 21173]
+        [6967, 11492],
+        [6309, 7724],
+        [0, 1445]
     ]
 }

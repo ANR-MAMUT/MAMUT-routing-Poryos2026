@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 25,
     "num_vehicles": null,
-    "vehicle_capacity": 177,
+    "vehicle_capacity": 141,
     "coordinates": [
         [1438.9425746026898, -1211.8557234748282],
         [606.0347964877085, 10526.327714736706],
@@ -33,7 +33,7 @@
         [1603.9689736012306, -5599.975802319523],
         [1413.5849636099879, -8172.503541214461]
     ],
-    "demands": [0, 1, 9, 7, 4, 9, 5, 84, 10, 1, 1, 7, 8, 1, 4, 3, 5, 8, 79, 87, 3, 4, 10, 5, 3, 4],
+    "demands": [0, 1, 9, 7, 4, 9, 71, 84, 100, 1, 1, 82, 8, 1, 4, 3, 5, 8, 79, 87, 3, 4, 99, 5, 3, 4],
     "depot": 0,
     "reference_lla": {
         "lat": 22.35252895,
@@ -45,22 +45,22 @@
         "model": "distances-sidecar",
         "distances": {
             "path": "sidecars/hong_kong/n=25/mamut-hong_kong-n25-poi/mamut-hong_kong-n25-poi.distances-fastest.json.gz",
-            "sha256": "0a671c6e9c86955f315ebbcd03a37357987691edf724de69913ccee4504025af"
+            "sha256": "b4352c130e0884dde3469b087f2ef4b478322517e531fb4ad8100edc9ca7bcd7"
         }
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "VRPTW",
         "metric_variant": "fastest",
         "city": "hong_kong",
         "method": "poi",
         "base_instance_name": "mamut-hong_kong-n25-poi",
-        "num_vehicles_lb": 3,
+        "num_vehicles_lb": 5,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "derive-vrptw",
-            "version": 2,
+            "version": 3,
             "city": "hong_kong",
             "method": "poi",
             "service_seed": 3646891821,
@@ -70,7 +70,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/hong_kong/n=25/mamut-hong_kong-n25-poi/mamut-hong_kong-n25-poi.geo.json.gz",
-                "sha256": "7bcb47194cb2448e5905a2f5e0951d9c60a6cf315240d1ce725b5930e4cbdd0b"
+                "sha256": "3f8dad863b72c3e05c598db1b987889f968ff1b876fe856a3db22f8b36f3b993"
             }
         },
         "tw_set": {
@@ -79,13 +79,29 @@
             "policy": "route-centered",
             "note": "windows shared verbatim with the base's TDVRPTW twins (post minimal-shared-tw-repair)"
         },
+        "tw_anchor": {
+            "policy": "deterministic-capacity-horizon-nearest-neighbour",
+            "routes": [
+                [4, 5, 22, 24, 3, 12, 13, 25, 16, 10],
+                [21, 6, 2, 14, 1, 20, 23, 9, 15, 17],
+                [11],
+                [8],
+                [7],
+                [18],
+                [19]
+            ],
+            "num_routes": 7,
+            "min_customers_per_route": 1,
+            "max_customers_per_route": 10
+        },
         "tw_repair": {
-            "policy": "minimal-shared-tw-repair",
+            "policy": "global-anchor-minimal-shared-deadline-lift",
             "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
             "lifted_customers": 0,
             "max_lift_seconds": 0,
             "reduced_customers": 0,
             "max_reduction_seconds": 0,
+            "anchor_routes": 7,
             "repairs": {
 
             }
@@ -94,30 +110,30 @@
     "service_times": [0, 336, 1430, 320, 1402, 113, 748, 894, 1018, 1, 714, 1011, 1365, 1178, 691, 1309, 771, 1242, 225, 935, 2076, 1614, 884, 1143, 1658, 1527],
     "time_windows": [
         [0, 86400],
-        [14005, 34281],
-        [12907, 29547],
+        [0, 16292],
+        [0, 11558],
         [0, 15661],
         [0, 8950],
         [0, 10272],
-        [8490, 23803],
-        [0, 14575],
-        [1151, 19782],
-        [24332, 33446],
-        [13679, 23972],
-        [12676, 27323],
+        [0, 9636],
+        [0, 8276],
+        [0, 9719],
+        [6343, 15457],
+        [5694, 15987],
+        [0, 7649],
         [0, 17449],
-        [1583, 13687],
-        [14116, 31832],
-        [16016, 41817],
-        [2597, 20552],
-        [11224, 14982],
-        [8423, 16529],
-        [3534, 26198],
-        [21410, 27662],
-        [7294, 26784],
+        [686, 12790],
+        [0, 13843],
+        [0, 23828],
+        [605, 18560],
+        [11387, 15145],
+        [0, 4546],
+        [0, 11912],
+        [3420, 9672],
+        [0, 10044],
         [0, 13328],
-        [19957, 34934],
+        [1968, 16945],
         [0, 10025],
-        [5453, 12304]
+        [4556, 11407]
     ]
 }

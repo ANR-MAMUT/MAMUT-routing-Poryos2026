@@ -134,109 +134,109 @@
     "time_windows": [
         [0, 86400],
         [0, 19750],
-        [24808, 32704],
-        [54563, 73489],
+        [22394, 30290],
+        [0, 9623],
         [0, 17159],
-        [83782, 83799],
-        [84384, 84402],
-        [84585, 84599],
-        [84717, 84727],
-        [39687, 56783],
-        [59115, 80715],
-        [77976, 84623],
-        [83077, 83091],
-        [56022, 85210],
-        [30116, 41540],
-        [81765, 85350],
-        [82863, 82875],
-        [66819, 84518],
+        [5611, 27102],
+        [0, 10896],
+        [0, 22718],
+        [6454, 12737],
+        [7451, 24547],
+        [26658, 48258],
+        [0, 16836],
+        [6172, 26663],
+        [23565, 54158],
+        [27703, 39127],
+        [1066, 9490],
+        [5424, 20961],
+        [0, 14526],
         [1890, 20780],
-        [86020, 86029],
-        [51328, 70771],
-        [84086, 84099],
+        [22577, 26618],
+        [0, 12550],
+        [0, 15722],
         [0, 6714],
-        [83542, 83550],
-        [79319, 83758],
-        [34654, 46648],
-        [82447, 82461],
-        [70574, 84310],
-        [85250, 85260],
-        [77378, 83049],
-        [60255, 83716],
-        [84138, 84149],
-        [64329, 84184],
-        [16018, 29263],
-        [71184, 84520],
-        [86028, 86036],
-        [79184, 85452],
-        [82861, 82870],
-        [83722, 83735],
-        [84455, 84466],
-        [83674, 83680],
-        [83853, 83861],
-        [11438, 28883],
-        [83208, 83220],
-        [72394, 84874],
-        [37079, 46396],
-        [34976, 53104],
-        [55781, 77812],
-        [36911, 38370],
-        [85569, 85581],
-        [29546, 34334],
-        [85421, 85429],
-        [45504, 69423],
-        [84796, 84815],
+        [9274, 28824],
+        [14005, 41371],
+        [32240, 44234],
+        [5935, 6799],
+        [24949, 41700],
+        [0, 18072],
+        [17589, 42561],
+        [0, 17562],
+        [10610, 28082],
+        [22819, 47848],
+        [13604, 26849],
+        [0, 16624],
+        [0, 12963],
+        [0, 13914],
+        [0, 12999],
+        [0, 14372],
+        [0, 14159],
+        [0, 9690],
+        [18840, 30542],
+        [9024, 26469],
+        [14504, 28197],
+        [0, 12647],
+        [34665, 43982],
+        [32562, 50690],
+        [0, 11251],
+        [34498, 35957],
+        [19981, 34278],
+        [27132, 31920],
+        [1120, 16672],
+        [14038, 37957],
+        [1381, 24203],
         [4829, 25364],
-        [85916, 85927],
-        [83918, 83928],
-        [8721, 26659],
-        [83927, 83937],
-        [82822, 82834],
-        [85641, 85651],
-        [19863, 34008],
-        [84455, 84463],
-        [39870, 65957],
-        [11802, 36994],
-        [84465, 84474],
+        [1304, 20500],
+        [4724, 17386],
+        [0, 9215],
+        [6094, 22007],
+        [16629, 27455],
+        [13684, 34719],
+        [17449, 31594],
+        [38993, 49750],
+        [7635, 33722],
+        [9388, 34580],
+        [0, 9270],
         [4132, 29113],
-        [83527, 83538],
-        [83030, 83039],
-        [83407, 83419],
-        [69952, 74651],
+        [1033, 15660],
+        [0, 13583],
+        [1890, 19895],
+        [37495, 42194],
         [367, 11885],
-        [85570, 85586],
-        [84676, 84689],
-        [84679, 84693],
+        [21038, 35430],
+        [0, 20280],
+        [13567, 34461],
         [0, 10422],
-        [35122, 66922],
-        [84094, 84115],
-        [84767, 84781],
-        [37937, 54991],
-        [85412, 85428],
-        [85296, 85309],
-        [52248, 59163],
-        [83994, 84010],
-        [83953, 83963],
-        [85663, 85679],
-        [84567, 84582],
-        [84548, 84559],
+        [2887, 34687],
+        [0, 28095],
+        [9053, 20815],
+        [0, 14419],
+        [20696, 34493],
+        [32468, 51713],
+        [39829, 46744],
+        [2822, 18921],
+        [0, 18537],
+        [0, 13756],
+        [4350, 11652],
+        [73, 22674],
         [689, 25948],
-        [52675, 65032],
-        [85059, 85068],
-        [83739, 83747],
-        [84831, 84844],
-        [84831, 84841],
-        [83032, 86240],
+        [0, 6559],
+        [553, 26718],
+        [1395, 17596],
+        [0, 5326],
+        [295, 9866],
+        [0, 6642],
         [4568, 25824],
-        [83919, 83928],
-        [24456, 43698],
+        [3105, 20573],
+        [22042, 41284],
         [0, 8342],
-        [32690, 53513],
-        [41974, 57654]
+        [30276, 51099],
+        [9738, 25418]
     ],
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "city": "tokyo",
         "method": "hyb",
         "base_instance_name": "mamut-tokyo-n100-hyb",
@@ -244,7 +244,7 @@
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "build-td",
-            "version": 2,
+            "version": 3,
             "city": "tokyo",
             "method": "hyb"
         },
@@ -287,258 +287,15 @@
         "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
         "problem_type": "TDVRPTW",
         "tw_repair": {
-            "policy": "minimal-shared-tw-repair",
+            "policy": "global-anchor-minimal-shared-deadline-lift",
             "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
             "lifted_customers": 0,
             "max_lift_seconds": 0,
-            "reduced_customers": 49,
-            "max_reduction_seconds": 21,
+            "reduced_customers": 0,
+            "max_reduction_seconds": 0,
+            "anchor_routes": 8,
             "repairs": {
-                "5": {
-                    "earliest_before": 83799,
-                    "earliest_after": 83782,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "6": {
-                    "earliest_before": 84402,
-                    "earliest_after": 84384,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "7": {
-                    "earliest_before": 84599,
-                    "earliest_after": 84585,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "8": {
-                    "earliest_before": 84727,
-                    "earliest_after": 84717,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "12": {
-                    "earliest_before": 83091,
-                    "earliest_after": 83077,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "16": {
-                    "earliest_before": 82875,
-                    "earliest_after": 82863,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "19": {
-                    "earliest_before": 86029,
-                    "earliest_after": 86020,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "21": {
-                    "earliest_before": 84099,
-                    "earliest_after": 84086,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "23": {
-                    "earliest_before": 83550,
-                    "earliest_after": 83542,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "26": {
-                    "earliest_before": 82461,
-                    "earliest_after": 82447,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "28": {
-                    "earliest_before": 85260,
-                    "earliest_after": 85250,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "31": {
-                    "earliest_before": 84149,
-                    "earliest_after": 84138,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "35": {
-                    "earliest_before": 86036,
-                    "earliest_after": 86028,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "37": {
-                    "earliest_before": 82870,
-                    "earliest_after": 82861,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "38": {
-                    "earliest_before": 83735,
-                    "earliest_after": 83722,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "39": {
-                    "earliest_before": 84466,
-                    "earliest_after": 84455,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "40": {
-                    "earliest_before": 83680,
-                    "earliest_after": 83674,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "41": {
-                    "earliest_before": 83861,
-                    "earliest_after": 83853,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "43": {
-                    "earliest_before": 83220,
-                    "earliest_after": 83208,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "49": {
-                    "earliest_before": 85581,
-                    "earliest_after": 85569,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "51": {
-                    "earliest_before": 85429,
-                    "earliest_after": 85421,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "53": {
-                    "earliest_before": 84815,
-                    "earliest_after": 84796,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "55": {
-                    "earliest_before": 85927,
-                    "earliest_after": 85916,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "56": {
-                    "earliest_before": 83928,
-                    "earliest_after": 83918,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "58": {
-                    "earliest_before": 83937,
-                    "earliest_after": 83927,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "59": {
-                    "earliest_before": 82834,
-                    "earliest_after": 82822,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "60": {
-                    "earliest_before": 85651,
-                    "earliest_after": 85641,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "62": {
-                    "earliest_before": 84463,
-                    "earliest_after": 84455,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "65": {
-                    "earliest_before": 84474,
-                    "earliest_after": 84465,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "67": {
-                    "earliest_before": 83538,
-                    "earliest_after": 83527,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "68": {
-                    "earliest_before": 83039,
-                    "earliest_after": 83030,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "69": {
-                    "earliest_before": 83419,
-                    "earliest_after": 83407,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "72": {
-                    "earliest_before": 85586,
-                    "earliest_after": 85570,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "73": {
-                    "earliest_before": 84689,
-                    "earliest_after": 84676,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "74": {
-                    "earliest_before": 84693,
-                    "earliest_after": 84679,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "77": {
-                    "earliest_before": 84115,
-                    "earliest_after": 84094,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "78": {
-                    "earliest_before": 84781,
-                    "earliest_after": 84767,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "80": {
-                    "earliest_before": 85428,
-                    "earliest_after": 85412,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "81": {
-                    "earliest_before": 85309,
-                    "earliest_after": 85296,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "83": {
-                    "earliest_before": 84010,
-                    "earliest_after": 83994,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "84": {
-                    "earliest_before": 83963,
-                    "earliest_after": 83953,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "85": {
-                    "earliest_before": 85679,
-                    "earliest_after": 85663,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "86": {
-                    "earliest_before": 84582,
-                    "earliest_after": 84567,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "87": {
-                    "earliest_before": 84559,
-                    "earliest_after": 84548,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "90": {
-                    "earliest_before": 85068,
-                    "earliest_after": 85059,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "91": {
-                    "earliest_before": 83747,
-                    "earliest_after": 83739,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "92": {
-                    "earliest_before": 84844,
-                    "earliest_after": 84831,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "93": {
-                    "earliest_before": 84841,
-                    "earliest_after": 84831,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "96": {
-                    "earliest_before": 83928,
-                    "earliest_after": 83919,
-                    "earliest_binding_overlay": "wave-light"
-                }
+
             }
         }
     }

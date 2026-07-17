@@ -1,20 +1,19 @@
 {
     "instance_name": "mamut-lyon-n50-poi",
     "routes": [
-        [4, 28, 30, 18, 12, 19, 42],
-        [6, 26, 21, 22],
-        [8, 27, 45, 35, 16, 48, 9, 10, 23, 3, 40, 47, 38, 14, 17, 49, 24],
-        [25, 13, 34, 29, 15, 11, 44, 20, 5, 31, 33, 46, 50, 43, 2, 36, 1],
-        [32, 7, 39, 41, 37]
+        [6, 26, 8, 32, 39, 25, 13, 11, 34, 35, 16, 45],
+        [21, 4, 22, 1, 36, 43, 2, 50, 46, 44, 20, 5, 31, 33, 41, 7, 37],
+        [27, 29, 15, 10, 23, 9, 48, 3, 40, 47, 38, 24, 17, 49],
+        [28, 30, 18, 12, 19, 42, 14]
     ],
-    "cost": 5637.539999999999,
+    "cost": 5358.795,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=480s)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=480s)",
         "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
-        "date": "2026-07-10T12:42:35",
-        "validated_cost": 5637.539999999999,
-        "validated_num_routes": 5
+        "date": "2026-07-16T13:28:23",
+        "validated_cost": 5358.795,
+        "validated_num_routes": 4
     },
     "objective_function": "MonoCost"
 }

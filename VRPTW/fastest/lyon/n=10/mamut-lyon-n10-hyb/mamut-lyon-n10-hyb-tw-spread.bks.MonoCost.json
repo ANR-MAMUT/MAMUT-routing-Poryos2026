@@ -1,17 +1,18 @@
 {
     "instance_name": "mamut-lyon-n10-hyb-tw-spread",
     "routes": [
-        [3, 9, 10, 6, 8, 2],
-        [5, 7, 4, 1]
+        [5],
+        [7, 3, 2, 4, 1],
+        [9, 10, 6, 8]
     ],
-    "cost": 2013.7770000000003,
+    "cost": 2354.421,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=120s)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=120s)",
         "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
-        "date": "2026-07-10T12:42:32",
-        "validated_cost": 2013.7770000000003,
-        "validated_num_routes": 2
+        "date": "2026-07-16T13:28:23",
+        "validated_cost": 2354.421,
+        "validated_num_routes": 3
     },
     "objective_function": "MonoCost"
 }

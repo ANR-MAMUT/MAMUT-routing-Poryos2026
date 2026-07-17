@@ -1,18 +1,21 @@
 {
     "instance_name": "mamut-san_francisco-n10-poi-wave-light",
     "routes": [
-        [5, 4, 3, 9, 1, 7, 2, 6, 10, 8]
+        [1],
+        [5, 4, 9, 3],
+        [8, 7, 2, 6],
+        [10]
     ],
-    "cost": 13035.280773815604,
+    "cost": 13815.573457629363,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=120s)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=120s)",
         "validated_by": "mamut-routing-lib td Duration checker",
-        "date": "2026-07-10T05:32:56",
-        "validated_cost": 13035.280773815604,
-        "validated_num_routes": 1,
-        "route_durations": [13035.280773815604],
-        "route_departure_times": [0.0]
+        "date": "2026-07-16T07:50:40",
+        "validated_cost": 13815.573457629363,
+        "validated_num_routes": 4,
+        "route_durations": [2410.829628962151, 6028.5080025798625, 4283.140075904818, 1093.0957501825299],
+        "route_departure_times": [0.0, 0.0, 0.0, 0.0]
     },
     "objective_function": "Duration"
 }

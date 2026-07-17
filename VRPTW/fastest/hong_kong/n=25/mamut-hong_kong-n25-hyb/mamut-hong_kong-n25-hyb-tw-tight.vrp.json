@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 25,
     "num_vehicles": null,
-    "vehicle_capacity": 158,
+    "vehicle_capacity": 131,
     "coordinates": [
         [1438.9425746026898, -1211.8557234748282],
         [2854.0909988205926, -5289.485434391499],
@@ -33,7 +33,7 @@
         [1773.2358493738222, 2432.9261548337518],
         [387.0331156990046, -8158.699173478547]
     ],
-    "demands": [0, 7, 10, 8, 4, 3, 7, 7, 7, 8, 1, 76, 3, 5, 1, 7, 55, 3, 9, 2, 5, 10, 5, 8, 2, 2],
+    "demands": [0, 7, 100, 8, 4, 3, 7, 7, 7, 8, 1, 76, 3, 5, 1, 7, 55, 3, 93, 2, 5, 10, 5, 8, 2, 2],
     "depot": 0,
     "reference_lla": {
         "lat": 22.35252895,
@@ -45,22 +45,22 @@
         "model": "distances-sidecar",
         "distances": {
             "path": "sidecars/hong_kong/n=25/mamut-hong_kong-n25-hyb/mamut-hong_kong-n25-hyb.distances-fastest.json.gz",
-            "sha256": "59ed30dce1e262304ea90c8642d5307a57c27dd3feac9415732c56c4bc39b234"
+            "sha256": "882365c7253211b56ea307b9d82d3af243da776ad32fa26b99ff6c1540268391"
         }
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "VRPTW",
         "metric_variant": "fastest",
         "city": "hong_kong",
         "method": "hyb",
         "base_instance_name": "mamut-hong_kong-n25-hyb",
-        "num_vehicles_lb": 2,
+        "num_vehicles_lb": 4,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "derive-vrptw",
-            "version": 2,
+            "version": 3,
             "city": "hong_kong",
             "method": "hyb",
             "service_seed": 1703898577,
@@ -71,7 +71,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/hong_kong/n=25/mamut-hong_kong-n25-hyb/mamut-hong_kong-n25-hyb.geo.json.gz",
-                "sha256": "6940d699f81fb810435c93367d1c61ee86aa0d5c48706de81746dd64fe154953"
+                "sha256": "014a80e4beb4352d121a666fd0e0fe03a6fa931b6eba0db9718406a96698463d"
             }
         },
         "tw_set": {
@@ -79,6 +79,18 @@
             "td_paired": false,
             "policy": "route-centered-tight",
             "note": "static-only TW set; NOT the TDVRPTW windows; never audited under traffic"
+        },
+        "tw_anchor": {
+            "policy": "deterministic-capacity-horizon-nearest-neighbour",
+            "routes": [
+                [21, 2, 6, 15, 1],
+                [24, 23, 17, 22, 9, 12, 8, 13, 25, 16, 14, 4, 10, 7, 3, 20, 5, 19],
+                [18],
+                [11]
+            ],
+            "num_routes": 4,
+            "min_customers_per_route": 1,
+            "max_customers_per_route": 18
         }
     },
     "service_times": [0, 251, 4, 313, 552, 707, 695, 655, 60, 633, 514, 588, 736, 661, 798, 427, 733, 502, 750, 519, 10, 750, 12, 453, 613, 340],
@@ -86,28 +98,28 @@
         [0, 86400],
         [0, 4823],
         [0, 2744],
-        [6573, 11646],
-        [3171, 10409],
-        [18532, 20637],
+        [8679, 13752],
+        [5277, 12515],
+        [11504, 13609],
         [0, 4040],
-        [5693, 11119],
-        [1093, 6343],
-        [8921, 13674],
-        [4099, 10968],
-        [8186, 11566],
-        [783, 4581],
-        [994, 6702],
-        [4033, 7577],
+        [7799, 13225],
+        [3199, 8449],
+        [1377, 6130],
+        [6205, 13074],
+        [0, 2449],
+        [2888, 6686],
+        [3100, 8808],
+        [6139, 9683],
         [0, 4041],
-        [4133, 5794],
-        [13484, 14348],
-        [15761, 19049],
-        [13203, 18973],
-        [6788, 12146],
+        [6239, 7900],
+        [1506, 2370],
+        [0, 2359],
+        [12181, 17951],
+        [8894, 14252],
         [0, 1932],
-        [11805, 18160],
-        [9821, 16309],
-        [10234, 14251],
-        [4013, 5206]
+        [0, 6181],
+        [0, 4330],
+        [0, 2272],
+        [6119, 7312]
     ]
 }

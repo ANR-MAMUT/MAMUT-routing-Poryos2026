@@ -1,19 +1,20 @@
 {
     "instance_name": "mamut-tokyo-n25-poi-tw-spread",
     "routes": [
-        [7, 9, 24, 5, 1, 16, 11, 8, 3],
+        [2, 18, 8, 3],
+        [7, 9, 24, 5, 1, 16, 11, 21],
         [10, 12, 6, 22],
-        [18, 2, 13, 25, 15, 21],
-        [23, 20, 19, 14, 4, 17]
+        [13, 25, 4, 15],
+        [23, 20, 19, 14, 17]
     ],
-    "cost": 7302.566,
+    "cost": 7691.588,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=240s)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=240s)",
         "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
-        "date": "2026-07-10T12:42:45",
-        "validated_cost": 7302.566,
-        "validated_num_routes": 4
+        "date": "2026-07-16T13:28:25",
+        "validated_cost": 7691.588,
+        "validated_num_routes": 5
     },
     "objective_function": "MonoCost"
 }

@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 25,
     "num_vehicles": null,
-    "vehicle_capacity": 193,
+    "vehicle_capacity": 139,
     "coordinates": [
         [27567.380647101618, -311.8625620472418],
         [18558.110903080724, 15853.006480186414],
@@ -33,7 +33,7 @@
         [26894.992415638764, -2187.6211953995016],
         [26652.27736434158, -15914.960293941931]
     ],
-    "demands": [0, 7, 5, 9, 1, 10, 1, 6, 2, 5, 4, 2, 9, 7, 2, 87, 5, 83, 3, 8, 9, 6, 9, 10, 4, 10],
+    "demands": [0, 7, 5, 9, 1, 10, 54, 6, 2, 5, 4, 2, 9, 7, 2, 87, 5, 83, 3, 8, 9, 6, 92, 10, 4, 10],
     "service_times": [0, 1126, 2580, 1576, 1553, 1374, 1322, 701, 898, 1447, 786, 2018, 86, 1865, 2291, 716, 2324, 1316, 1877, 1236, 719, 1245, 399, 937, 938, 301],
     "depot": 0,
     "reference_lla": {
@@ -46,7 +46,7 @@
         "model": "road-graph",
         "graph": {
             "path": "sidecars/san_francisco/n=25/mamut-san_francisco-n25-poi/mamut-san_francisco-n25-poi.road.json.gz",
-            "sha256": "b03e48e67c0e72c74069be8241565a7e4c23223f24bd71ed16570d980c370700"
+            "sha256": "2cb1e384395db6bc0ca0cd82e9ed513926d1601089c3edfa0c63c35cbdb61fec"
         },
         "traffic": {
             "path": "sidecars/san_francisco/n=25/mamut-san_francisco-n25-poi/mamut-san_francisco-n25-poi.traffic-bpr-heavy.json.gz",
@@ -58,35 +58,35 @@
     },
     "time_windows": [
         [0, 86400],
-        [28698, 36921],
-        [13133, 25973],
+        [28214, 37156],
+        [12017, 24857],
         [0, 8267],
-        [17196, 35035],
-        [14593, 21696],
-        [26671, 34152],
+        [16080, 33919],
+        [13477, 20580],
+        [0, 4266],
         [0, 10521],
-        [701, 16254],
-        [15465, 33708],
-        [2927, 28903],
-        [20749, 34867],
+        [301, 15854],
+        [14349, 32592],
+        [2528, 28504],
+        [19633, 33751],
         [0, 14758],
-        [1208, 18225],
-        [456, 22987],
-        [5018, 29728],
-        [15473, 28982],
-        [32786, 40720],
+        [809, 17826],
+        [56, 22587],
+        [0, 12480],
+        [14357, 27866],
+        [0, 6990],
         [0, 12855],
         [0, 8587],
-        [2443, 26223],
-        [28693, 42301],
-        [27, 16122],
+        [2043, 25823],
+        [22667, 36275],
+        [0, 8375],
         [997, 12831],
         [0, 12722],
-        [10262, 20750]
+        [9862, 20350]
     ],
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "city": "san_francisco",
         "method": "poi",
         "base_instance_name": "mamut-san_francisco-n25-poi",
@@ -94,7 +94,7 @@
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "build-td",
-            "version": 2,
+            "version": 3,
             "city": "san_francisco",
             "method": "poi"
         },
@@ -131,20 +131,25 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/san_francisco/n=25/mamut-san_francisco-n25-poi/mamut-san_francisco-n25-poi.geo.json.gz",
-                "sha256": "706aec8c0356e7f7ed4cb005fcc46f83bb32aa7542ad9ade4595488430906268"
+                "sha256": "ed3ebb422e218d482a9fffc9617ded3a757a0ad1721a5c9f658ca4d645e9357f"
             }
         },
         "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
         "problem_type": "TDVRPTW",
         "tw_repair": {
-            "policy": "minimal-shared-tw-repair",
+            "policy": "global-anchor-minimal-shared-deadline-lift",
             "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
-            "lifted_customers": 0,
-            "max_lift_seconds": 0,
+            "lifted_customers": 1,
+            "max_lift_seconds": 719,
             "reduced_customers": 0,
             "max_reduction_seconds": 0,
+            "anchor_routes": 4,
             "repairs": {
-
+                "1": {
+                    "deadline_before": 36437,
+                    "deadline_after": 37156,
+                    "deadline_binding_overlay": "bpr-heavy"
+                }
             }
         }
     }

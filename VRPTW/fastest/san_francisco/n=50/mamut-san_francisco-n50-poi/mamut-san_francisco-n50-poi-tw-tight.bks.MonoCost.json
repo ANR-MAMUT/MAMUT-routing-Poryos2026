@@ -1,18 +1,18 @@
 {
     "instance_name": "mamut-san_francisco-n50-poi-tw-tight",
     "routes": [
-        [16, 3, 32, 44, 1, 30, 4, 47, 41, 38, 48, 7],
-        [31, 46, 29, 2, 34, 21, 33, 6, 20, 12, 13, 50, 8, 26, 19, 45, 5, 39, 17, 15],
-        [35, 22, 14, 28, 40, 18, 23, 27, 24, 42, 25],
-        [43, 37, 36, 11, 9, 10, 49]
+        [4, 27, 24, 42, 30, 23, 18, 40, 28, 29, 2, 33, 34, 21, 6, 20, 12, 13, 37, 11, 36],
+        [10, 25, 49, 9, 43],
+        [31, 46, 16, 3, 32, 44, 1, 35, 22, 14, 15, 50, 8, 19, 45, 5, 39, 17, 26],
+        [47, 41, 7, 38, 48]
     ],
-    "cost": 9550.29,
+    "cost": 9391.882000000001,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=480s)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=480s)",
         "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
-        "date": "2026-07-10T12:42:42",
-        "validated_cost": 9550.29,
+        "date": "2026-07-16T13:28:24",
+        "validated_cost": 9391.882000000001,
         "validated_num_routes": 4
     },
     "objective_function": "MonoCost"

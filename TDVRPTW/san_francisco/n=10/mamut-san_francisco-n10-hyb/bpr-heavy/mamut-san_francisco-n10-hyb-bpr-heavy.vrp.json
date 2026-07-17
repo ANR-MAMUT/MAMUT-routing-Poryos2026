@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 10,
     "num_vehicles": null,
-    "vehicle_capacity": 122,
+    "vehicle_capacity": 116,
     "coordinates": [
         [27567.380647101618, -311.8625620472418],
         [20831.002691242335, -14847.357619048676],
@@ -18,7 +18,7 @@
         [27370.074981349317, -8270.698288620415],
         [28698.407123398207, -1824.1517637416177]
     ],
-    "demands": [0, 1, 50, 6, 5, 7, 1, 7, 10, 5, 1],
+    "demands": [0, 1, 50, 6, 5, 84, 1, 7, 98, 73, 1],
     "service_times": [0, 851, 823, 1371, 605, 892, 1242, 1357, 1293, 448, 1339],
     "depot": 0,
     "reference_lla": {
@@ -31,7 +31,7 @@
         "model": "road-graph",
         "graph": {
             "path": "sidecars/san_francisco/n=10/mamut-san_francisco-n10-hyb/mamut-san_francisco-n10-hyb.road.json.gz",
-            "sha256": "a60336103072756be6cb7936c25a15187628c715b5816069857546584d353444"
+            "sha256": "f4179a6b54fc27388a529831d4cba6f8a7270b4b0f87d14d20d8dbdea73118de"
         },
         "traffic": {
             "path": "sidecars/san_francisco/n=10/mamut-san_francisco-n10-hyb/mamut-san_francisco-n10-hyb.traffic-bpr-heavy.json.gz",
@@ -43,20 +43,20 @@
     },
     "time_windows": [
         [0, 86400],
-        [0, 20389],
-        [128, 5218],
+        [0, 18260],
+        [0, 2650],
         [0, 13435],
-        [5679, 15978],
+        [0, 7871],
         [0, 13626],
-        [0, 17604],
-        [1523, 22763],
-        [0, 17930],
-        [0, 21169],
-        [0, 14235]
+        [0, 16222],
+        [0, 19932],
+        [0, 13014],
+        [0, 13334],
+        [0, 14275]
     ],
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "city": "san_francisco",
         "method": "hyb",
         "base_instance_name": "mamut-san_francisco-n10-hyb",
@@ -64,7 +64,7 @@
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "build-td",
-            "version": 2,
+            "version": 3,
             "city": "san_francisco",
             "method": "hyb"
         },
@@ -101,18 +101,19 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/san_francisco/n=10/mamut-san_francisco-n10-hyb/mamut-san_francisco-n10-hyb.geo.json.gz",
-                "sha256": "74409b49d30048d6f8650f40d01e23658cf1d6c40a9492ccbdb8751f830fe205"
+                "sha256": "f22cf26d4f3d7e5c0f082430444dd699506bf5ae5deab0a34a4392acd38d7b4c"
             }
         },
         "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
         "problem_type": "TDVRPTW",
         "tw_repair": {
-            "policy": "minimal-shared-tw-repair",
+            "policy": "global-anchor-minimal-shared-deadline-lift",
             "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
             "lifted_customers": 0,
             "max_lift_seconds": 0,
             "reduced_customers": 0,
             "max_reduction_seconds": 0,
+            "anchor_routes": 4,
             "repairs": {
 
             }

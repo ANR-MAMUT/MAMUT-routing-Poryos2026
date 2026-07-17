@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 10,
     "num_vehicles": null,
-    "vehicle_capacity": 174,
+    "vehicle_capacity": 124,
     "coordinates": [
         [1438.9425746026898, -1211.8557234748282],
         [-4415.099913634072, 1944.5011457522387],
@@ -18,7 +18,7 @@
         [3329.414601464914, -2450.5662664800284],
         [1505.2176207169177, -5856.468498663148]
     ],
-    "demands": [0, 7, 84, 5, 2, 9, 6, 10, 1, 9, 7],
+    "demands": [0, 7, 84, 5, 2, 9, 79, 100, 1, 92, 7],
     "depot": 0,
     "reference_lla": {
         "lat": 22.35252895,
@@ -32,26 +32,26 @@
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "CVRP",
         "metric_variant": "euclidean",
         "city": "hong_kong",
         "method": "poi",
         "base_instance_name": "mamut-hong_kong-n10-poi",
-        "num_vehicles_lb": 1,
+        "num_vehicles_lb": 4,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "generate-base",
-            "version": 2,
+            "version": 3,
             "city": "hong_kong",
             "method": "poi",
             "sampling_seed": 3458029247,
-            "stage1_base": "hong_kong_poi-n11-k1"
+            "stage1_base": "hong_kong_poi-n11-k4"
         },
         "sidecars": {
             "geo": {
                 "path": "sidecars/hong_kong/n=10/mamut-hong_kong-n10-poi/mamut-hong_kong-n10-poi.geo.json.gz",
-                "sha256": "10b7fcb07a0739fd7600a98372a9bba37800fd515d6c17dbbcaa577b5ff88ae1"
+                "sha256": "747a2d6c0d841ee70db20536d21be7356d793fe15ff7aa2231480a560ac59b7f"
             }
         }
     }

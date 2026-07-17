@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 10,
     "num_vehicles": null,
-    "vehicle_capacity": 186,
+    "vehicle_capacity": 107,
     "coordinates": [
         [-2164.0120515125586, 1974.6974344579025],
         [-4680.138606671568, 5780.644034964869],
@@ -18,7 +18,7 @@
         [-11008.752319403007, 2634.9313777581015],
         [3190.549111645815, 10355.017815607061]
     ],
-    "demands": [0, 2, 2, 100, 5, 6, 2, 3, 3, 2, 6],
+    "demands": [0, 2, 2, 100, 5, 6, 2, 3, 3, 58, 79],
     "depot": 0,
     "reference_lla": {
         "lat": 35.6768601,
@@ -30,22 +30,22 @@
         "model": "distances-sidecar",
         "distances": {
             "path": "sidecars/tokyo/n=10/mamut-tokyo-n10-hyb/mamut-tokyo-n10-hyb.distances-fastest.json.gz",
-            "sha256": "c7164cfff8b5b40754eed94a0e7b6470526403443b019cf0bae42a6995b68788"
+            "sha256": "5aae167b86846b9595a3a78ceab77f97a8ccd9a0ce2d35b8ed0b0e3bc64c8f2e"
         }
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "VRPTW",
         "metric_variant": "fastest",
         "city": "tokyo",
         "method": "hyb",
         "base_instance_name": "mamut-tokyo-n10-hyb",
-        "num_vehicles_lb": 1,
+        "num_vehicles_lb": 3,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "derive-vrptw",
-            "version": 2,
+            "version": 3,
             "city": "tokyo",
             "method": "hyb",
             "service_seed": 273368325,
@@ -55,7 +55,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/tokyo/n=10/mamut-tokyo-n10-hyb/mamut-tokyo-n10-hyb.geo.json.gz",
-                "sha256": "735a2fdb595fe4d2c9c2043ffea91998dd91bd59a87c6d379ae63577c9b60a17"
+                "sha256": "32541997865bbee347e3adde6c319e583f67c2b6224831bcd9bfc7d6a1854fbd"
             }
         },
         "tw_set": {
@@ -64,13 +64,25 @@
             "policy": "route-centered",
             "note": "windows shared verbatim with the base's TDVRPTW twins (post minimal-shared-tw-repair)"
         },
+        "tw_anchor": {
+            "policy": "deterministic-capacity-horizon-nearest-neighbour",
+            "routes": [
+                [4, 5, 7, 6, 10, 2, 1, 8],
+                [9],
+                [3]
+            ],
+            "num_routes": 3,
+            "min_customers_per_route": 1,
+            "max_customers_per_route": 8
+        },
         "tw_repair": {
-            "policy": "minimal-shared-tw-repair",
+            "policy": "global-anchor-minimal-shared-deadline-lift",
             "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
             "lifted_customers": 0,
             "max_lift_seconds": 0,
             "reduced_customers": 0,
             "max_reduction_seconds": 0,
+            "anchor_routes": 3,
             "repairs": {
 
             }
@@ -81,13 +93,13 @@
         [0, 86400],
         [2697, 15912],
         [0, 15897],
-        [13723, 18553],
+        [0, 3229],
         [0, 7779],
         [0, 9659],
         [0, 17436],
         [0, 13770],
         [7953, 14187],
-        [1744, 23737],
+        [0, 11411],
         [0, 18463]
     ]
 }

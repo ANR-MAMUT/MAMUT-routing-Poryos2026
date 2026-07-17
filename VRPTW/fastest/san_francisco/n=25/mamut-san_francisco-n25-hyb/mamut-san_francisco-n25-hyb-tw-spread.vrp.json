@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 25,
     "num_vehicles": null,
-    "vehicle_capacity": 150,
+    "vehicle_capacity": 129,
     "coordinates": [
         [27567.380647101618, -311.8625620472418],
         [38257.799859627135, 9676.787790909726],
@@ -33,7 +33,7 @@
         [38289.05525939373, 5129.499079785034],
         [36230.288804810916, 14740.874346709226]
     ],
-    "demands": [0, 2, 4, 2, 3, 5, 1, 7, 5, 7, 5, 4, 1, 6, 10, 3, 1, 82, 4, 9, 9, 6, 3, 9, 86, 2],
+    "demands": [0, 2, 4, 2, 3, 5, 52, 7, 5, 7, 70, 4, 1, 79, 10, 3, 1, 82, 4, 9, 9, 6, 62, 9, 86, 2],
     "depot": 0,
     "reference_lla": {
         "lat": 37.78499105,
@@ -45,22 +45,22 @@
         "model": "distances-sidecar",
         "distances": {
             "path": "sidecars/san_francisco/n=25/mamut-san_francisco-n25-hyb/mamut-san_francisco-n25-hyb.distances-fastest.json.gz",
-            "sha256": "e5afee657b439ad94ddd7f1f4db73012945c3e43b64e9a1b94d5629b8f4e1ed2"
+            "sha256": "0bc0ebcb224a03631ad025e51cd969a93f6abc8e6b05095e19322442077a0ee7"
         }
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "VRPTW",
         "metric_variant": "fastest",
         "city": "san_francisco",
         "method": "hyb",
         "base_instance_name": "mamut-san_francisco-n25-hyb",
-        "num_vehicles_lb": 2,
+        "num_vehicles_lb": 5,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "derive-vrptw",
-            "version": 2,
+            "version": 3,
             "city": "san_francisco",
             "method": "hyb",
             "service_seed": 2868830468,
@@ -71,7 +71,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/san_francisco/n=25/mamut-san_francisco-n25-hyb/mamut-san_francisco-n25-hyb.geo.json.gz",
-                "sha256": "65ab21597b012c2c0d3102c66e688267ff24e91afcbf586ef3abf637846ce753"
+                "sha256": "58ca59214fdab15f079775c436d0653d70e9884398dd0ed4e68493af4db5a90f"
             }
         },
         "tw_set": {

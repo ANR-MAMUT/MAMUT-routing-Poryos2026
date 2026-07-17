@@ -1,16 +1,19 @@
 {
     "instance_name": "mamut-san_francisco-n10-poi",
     "routes": [
-        [5, 4, 3, 9, 1, 8, 10, 7, 2, 6]
+        [1],
+        [5, 4, 9, 3],
+        [8, 7, 2, 6],
+        [10]
     ],
-    "cost": 2390.6890000000003,
+    "cost": 3146.117,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=120s)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=120s)",
         "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
-        "date": "2026-07-10T12:42:39",
-        "validated_cost": 2390.6890000000003,
-        "validated_num_routes": 1
+        "date": "2026-07-16T13:28:24",
+        "validated_cost": 3146.117,
+        "validated_num_routes": 4
     },
     "objective_function": "MonoCost"
 }

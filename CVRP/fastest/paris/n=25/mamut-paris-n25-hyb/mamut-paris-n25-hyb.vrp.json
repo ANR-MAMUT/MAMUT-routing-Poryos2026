@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 25,
     "num_vehicles": null,
-    "vehicle_capacity": 156,
+    "vehicle_capacity": 122,
     "coordinates": [
         [-500.8740114215472, 70.82241150336951],
         [4532.19255418217, 3564.094497024737],
@@ -33,7 +33,7 @@
         [4278.097632131759, 3078.2836470352418],
         [4615.996589766718, -1306.279881612815]
     ],
-    "demands": [0, 2, 3, 2, 8, 4, 4, 10, 8, 3, 4, 2, 3, 8, 57, 1, 10, 99, 7, 51, 7, 5, 2, 4, 5, 9],
+    "demands": [0, 2, 3, 2, 8, 4, 4, 10, 8, 3, 65, 2, 61, 8, 57, 1, 10, 99, 7, 51, 7, 5, 2, 4, 71, 95],
     "depot": 0,
     "reference_lla": {
         "lat": 48.85886575,
@@ -45,31 +45,31 @@
         "model": "distances-sidecar",
         "distances": {
             "path": "sidecars/paris/n=25/mamut-paris-n25-hyb/mamut-paris-n25-hyb.distances-fastest.json.gz",
-            "sha256": "c98e2d9deff37a0f685553506da96331c953191caf12056a90f6f0d388506ca8"
+            "sha256": "5b0138e78c6490dd6b0a4302c7464020dc2c588900743c9609d235e3a80b5ea0"
         }
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "CVRP",
         "metric_variant": "fastest",
         "city": "paris",
         "method": "hyb",
         "base_instance_name": "mamut-paris-n25-hyb",
-        "num_vehicles_lb": 3,
+        "num_vehicles_lb": 5,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "generate-base",
-            "version": 2,
+            "version": 3,
             "city": "paris",
             "method": "hyb",
             "sampling_seed": 2352690653,
-            "stage1_base": "paris_hyb-n26-k3"
+            "stage1_base": "paris_hyb-n26-k5"
         },
         "sidecars": {
             "geo": {
                 "path": "sidecars/paris/n=25/mamut-paris-n25-hyb/mamut-paris-n25-hyb.geo.json.gz",
-                "sha256": "ebe0c025cc12bf0d7d7a3fa74c783b7b4f5e2b2200f1711b8e8246fcae989818"
+                "sha256": "1c0aead436afb099d44e74ce2cda74d1cd5e3c09a2ca5cdc86a14f8d87cce1d1"
             }
         }
     }

@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 25,
     "num_vehicles": null,
-    "vehicle_capacity": 177,
+    "vehicle_capacity": 141,
     "coordinates": [
         [1438.9425746026898, -1211.8557234748282],
         [606.0347964877085, 10526.327714736706],
@@ -33,7 +33,7 @@
         [1603.9689736012306, -5599.975802319523],
         [1413.5849636099879, -8172.503541214461]
     ],
-    "demands": [0, 1, 9, 7, 4, 9, 5, 84, 10, 1, 1, 7, 8, 1, 4, 3, 5, 8, 79, 87, 3, 4, 10, 5, 3, 4],
+    "demands": [0, 1, 9, 7, 4, 9, 71, 84, 100, 1, 1, 82, 8, 1, 4, 3, 5, 8, 79, 87, 3, 4, 99, 5, 3, 4],
     "service_times": [0, 336, 1430, 320, 1402, 113, 748, 894, 1018, 1, 714, 1011, 1365, 1178, 691, 1309, 771, 1242, 225, 935, 2076, 1614, 884, 1143, 1658, 1527],
     "depot": 0,
     "reference_lla": {
@@ -46,7 +46,7 @@
         "model": "road-graph",
         "graph": {
             "path": "sidecars/hong_kong/n=25/mamut-hong_kong-n25-poi/mamut-hong_kong-n25-poi.road.json.gz",
-            "sha256": "e4e59d8839f6e185d5d7f3b77105e10f882a7e340f8bd047a769671302193bb1"
+            "sha256": "ab60cced727792d1b4b025c309877bee6d6ac313d055c1da8838b20aa4ec48dc"
         },
         "traffic": {
             "path": "sidecars/hong_kong/n=25/mamut-hong_kong-n25-poi/mamut-hong_kong-n25-poi.traffic-bpr-light.json.gz",
@@ -58,7 +58,7 @@
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "city": "hong_kong",
         "method": "poi",
         "base_instance_name": "mamut-hong_kong-n25-poi",
@@ -66,7 +66,7 @@
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "build-td",
-            "version": 2,
+            "version": 3,
             "city": "hong_kong",
             "method": "poi"
         },
@@ -103,7 +103,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/hong_kong/n=25/mamut-hong_kong-n25-poi/mamut-hong_kong-n25-poi.geo.json.gz",
-                "sha256": "7bcb47194cb2448e5905a2f5e0951d9c60a6cf315240d1ce725b5930e4cbdd0b"
+                "sha256": "3f8dad863b72c3e05c598db1b987889f968ff1b876fe856a3db22f8b36f3b993"
             }
         },
         "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",

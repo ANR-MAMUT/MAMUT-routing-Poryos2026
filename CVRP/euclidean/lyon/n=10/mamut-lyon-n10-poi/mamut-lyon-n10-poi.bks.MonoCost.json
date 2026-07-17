@@ -1,16 +1,18 @@
 {
     "instance_name": "mamut-lyon-n10-poi",
     "routes": [
-        [1, 2, 9, 5, 7, 10, 3, 8, 6, 4]
+        [1, 2, 9],
+        [5, 7, 10, 3, 6],
+        [8, 4]
     ],
-    "cost": 15166.967999999999,
+    "cost": 18035.929000000004,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=120s)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=120s)",
         "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
-        "date": "2026-07-10T04:08:41",
-        "validated_cost": 15166.967999999999,
-        "validated_num_routes": 1
+        "date": "2026-07-16T07:49:00",
+        "validated_cost": 18035.929000000004,
+        "validated_num_routes": 3
     },
     "objective_function": "MonoCost"
 }

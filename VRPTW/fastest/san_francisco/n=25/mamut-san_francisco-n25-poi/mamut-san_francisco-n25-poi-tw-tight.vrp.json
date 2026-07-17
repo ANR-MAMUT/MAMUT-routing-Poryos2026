@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 25,
     "num_vehicles": null,
-    "vehicle_capacity": 193,
+    "vehicle_capacity": 139,
     "coordinates": [
         [27567.380647101618, -311.8625620472418],
         [18558.110903080724, 15853.006480186414],
@@ -33,7 +33,7 @@
         [26894.992415638764, -2187.6211953995016],
         [26652.27736434158, -15914.960293941931]
     ],
-    "demands": [0, 7, 5, 9, 1, 10, 1, 6, 2, 5, 4, 2, 9, 7, 2, 87, 5, 83, 3, 8, 9, 6, 9, 10, 4, 10],
+    "demands": [0, 7, 5, 9, 1, 10, 54, 6, 2, 5, 4, 2, 9, 7, 2, 87, 5, 83, 3, 8, 9, 6, 92, 10, 4, 10],
     "depot": 0,
     "reference_lla": {
         "lat": 37.78499105,
@@ -45,22 +45,22 @@
         "model": "distances-sidecar",
         "distances": {
             "path": "sidecars/san_francisco/n=25/mamut-san_francisco-n25-poi/mamut-san_francisco-n25-poi.distances-fastest.json.gz",
-            "sha256": "74dadca0c4ac7c0462ff2601f699577cc93208776c90f208093b41ad17432e99"
+            "sha256": "4477424403e05c3dd809711fffd5ceb8b5a534374be1fbba6bebb35b11226051"
         }
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "VRPTW",
         "metric_variant": "fastest",
         "city": "san_francisco",
         "method": "poi",
         "base_instance_name": "mamut-san_francisco-n25-poi",
-        "num_vehicles_lb": 2,
+        "num_vehicles_lb": 4,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "derive-vrptw",
-            "version": 2,
+            "version": 3,
             "city": "san_francisco",
             "method": "poi",
             "service_seed": 372157432,
@@ -71,7 +71,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/san_francisco/n=25/mamut-san_francisco-n25-poi/mamut-san_francisco-n25-poi.geo.json.gz",
-                "sha256": "706aec8c0356e7f7ed4cb005fcc46f83bb32aa7542ad9ade4595488430906268"
+                "sha256": "ed3ebb422e218d482a9fffc9617ded3a757a0ad1721a5c9f658ca4d645e9357f"
             }
         },
         "tw_set": {
@@ -79,35 +79,47 @@
             "td_paired": false,
             "policy": "route-centered-tight",
             "note": "static-only TW set; NOT the TDVRPTW windows; never audited under traffic"
+        },
+        "tw_anchor": {
+            "policy": "deterministic-capacity-horizon-nearest-neighbour",
+            "routes": [
+                [19, 3, 12, 18, 7, 24, 23, 8, 13, 14, 20, 25, 10, 5, 2, 16, 9, 4, 11, 21, 1],
+                [15],
+                [22],
+                [6, 17]
+            ],
+            "num_routes": 4,
+            "min_customers_per_route": 1,
+            "max_customers_per_route": 21
         }
     },
     "service_times": [0, 1126, 2580, 1576, 1553, 1374, 1322, 701, 898, 1447, 786, 2018, 86, 1865, 2291, 716, 2324, 1316, 1877, 1236, 719, 1245, 399, 937, 938, 301],
     "time_windows": [
         [0, 86400],
-        [31222, 34397],
-        [18593, 20512],
+        [30738, 33913],
+        [17477, 19396],
         [0, 4695],
-        [22858, 29373],
-        [16917, 19372],
-        [27592, 33231],
+        [21742, 28257],
+        [15801, 18256],
+        [0, 3345],
         [3542, 6524],
-        [4468, 12486],
-        [22756, 26417],
-        [14092, 17738],
-        [26384, 29233],
+        [4069, 12087],
+        [21640, 25301],
+        [13693, 17339],
+        [25268, 28117],
         [0, 7059],
-        [6718, 12715],
-        [8771, 14672],
-        [15794, 18952],
-        [20194, 24261],
-        [35168, 38338],
+        [6319, 12316],
+        [8371, 14272],
+        [0, 1704],
+        [19078, 23145],
+        [1438, 4608],
         [0, 6786],
         [0, 2899],
-        [13324, 15343],
-        [33546, 37448],
-        [6187, 9962],
+        [12924, 14943],
+        [27520, 31422],
+        [0, 2215],
         [5214, 8615],
         [3834, 7792],
-        [14431, 16580]
+        [14032, 16181]
     ]
 }

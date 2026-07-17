@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 25,
     "num_vehicles": null,
-    "vehicle_capacity": 141,
+    "vehicle_capacity": 138,
     "coordinates": [
         [-2164.0120515125586, 1974.6974344579025],
         [-8776.875283054862, 3728.5142074990667],
@@ -33,7 +33,7 @@
         [-6488.123387448324, -6381.418742989421],
         [2226.6883157671937, 8728.00907202518]
     ],
-    "demands": [0, 9, 4, 60, 7, 8, 5, 2, 10, 5, 6, 4, 2, 7, 6, 8, 5, 9, 10, 2, 6, 6, 7, 1, 2, 72],
+    "demands": [0, 9, 4, 60, 7, 8, 5, 2, 100, 5, 79, 4, 2, 7, 6, 8, 74, 9, 10, 2, 6, 6, 81, 1, 2, 72],
     "depot": 0,
     "reference_lla": {
         "lat": 35.6768601,
@@ -45,22 +45,22 @@
         "model": "distances-sidecar",
         "distances": {
             "path": "sidecars/tokyo/n=25/mamut-tokyo-n25-hyb/mamut-tokyo-n25-hyb.distances-fastest.json.gz",
-            "sha256": "c70db7d289d71b1c03f3b656c8818fea3ee8a7ae0e17c43cb2c489e792852d49"
+            "sha256": "3bc42fa73798865c89c36bdccdf5a77bf1f480dec869ac0ee3f3fc2fbcf40241"
         }
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "VRPTW",
         "metric_variant": "fastest",
         "city": "tokyo",
         "method": "hyb",
         "base_instance_name": "mamut-tokyo-n25-hyb",
-        "num_vehicles_lb": 2,
+        "num_vehicles_lb": 5,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "derive-vrptw",
-            "version": 2,
+            "version": 3,
             "city": "tokyo",
             "method": "hyb",
             "service_seed": 1896207309,
@@ -71,7 +71,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/tokyo/n=25/mamut-tokyo-n25-hyb/mamut-tokyo-n25-hyb.geo.json.gz",
-                "sha256": "33f9cb2033694dd4d3ed2e0f6718715a508a294c0fb945862bb4e3b87ac1e2ff"
+                "sha256": "752b3ce45688922e726573864b9ddc47d493436f52a40d15c2908c8706648ff7"
             }
         },
         "tw_set": {

@@ -1,18 +1,20 @@
 {
     "instance_name": "mamut-paris-n10-hyb-wave-moderate",
     "routes": [
-        [5, 2, 9, 7, 6, 3, 1, 4, 8, 10]
+        [1, 3, 4, 6, 7, 9, 2],
+        [5, 10],
+        [8]
     ],
-    "cost": 11806.995883683065,
+    "cost": 12376.741460186615,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=120s)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=120s)",
         "validated_by": "mamut-routing-lib td Duration checker",
-        "date": "2026-07-10T07:39:48",
-        "validated_cost": 11806.995883683065,
-        "validated_num_routes": 1,
-        "route_durations": [11806.995883683065],
-        "route_departure_times": [0.0]
+        "date": "2026-07-16T14:12:17",
+        "validated_cost": 12376.741460186615,
+        "validated_num_routes": 3,
+        "route_durations": [7533.739857310631, 2789.070802750309, 2053.930800125675],
+        "route_departure_times": [0.0, 0.0, 0.0]
     },
     "objective_function": "Duration"
 }

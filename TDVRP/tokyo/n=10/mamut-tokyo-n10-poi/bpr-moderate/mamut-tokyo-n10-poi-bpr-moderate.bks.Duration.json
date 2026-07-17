@@ -1,18 +1,20 @@
 {
     "instance_name": "mamut-tokyo-n10-poi-bpr-moderate",
     "routes": [
-        [9, 1, 10, 8, 6, 2, 3, 4, 5, 7]
+        [1, 10, 8, 6, 4, 5, 7],
+        [2, 3],
+        [9]
     ],
-    "cost": 8480.922317410672,
+    "cost": 9664.82472500065,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=120s)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=120s)",
         "validated_by": "mamut-routing-lib td Duration checker",
-        "date": "2026-07-10T06:03:55",
-        "validated_cost": 8480.922317410672,
-        "validated_num_routes": 1,
-        "route_durations": [8480.922317410672],
-        "route_departure_times": [0.0]
+        "date": "2026-07-16T07:51:15",
+        "validated_cost": 9664.82472500065,
+        "validated_num_routes": 3,
+        "route_durations": [6578.714745104736, 2217.644925075121, 868.4650548207937],
+        "route_departure_times": [0.0, 0.0, 38744.942549382395]
     },
     "objective_function": "Duration"
 }

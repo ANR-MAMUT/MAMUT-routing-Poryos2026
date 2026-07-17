@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 10,
     "num_vehicles": null,
-    "vehicle_capacity": 172,
+    "vehicle_capacity": 100,
     "coordinates": [
         [-500.8740114215472, 70.82241150336951],
         [204.8446488510741, -2048.531554806438],
@@ -18,7 +18,7 @@
         [-3362.9471560758475, -786.6270302935086],
         [3425.2382808219295, 1785.9871400442835]
     ],
-    "demands": [0, 9, 5, 5, 1, 3, 3, 9, 76, 6, 5],
+    "demands": [0, 9, 5, 5, 54, 3, 3, 9, 76, 6, 75],
     "depot": 0,
     "reference_lla": {
         "lat": 48.85886575,
@@ -30,31 +30,31 @@
         "model": "distances-sidecar",
         "distances": {
             "path": "sidecars/paris/n=10/mamut-paris-n10-hyb/mamut-paris-n10-hyb.distances-fastest.json.gz",
-            "sha256": "2aeed6c95d9ae50b69e0c510a32810bf218298bef40892e729cebb6802710a13"
+            "sha256": "7b2d47fed4a1b9a9e9a0c0c0aae46b98b1ef84c67df791149c8f68e6ad91a5b3"
         }
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "CVRP",
         "metric_variant": "fastest",
         "city": "paris",
         "method": "hyb",
         "base_instance_name": "mamut-paris-n10-hyb",
-        "num_vehicles_lb": 1,
+        "num_vehicles_lb": 3,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "generate-base",
-            "version": 2,
+            "version": 3,
             "city": "paris",
             "method": "hyb",
             "sampling_seed": 2840735235,
-            "stage1_base": "paris_hyb-n11-k1"
+            "stage1_base": "paris_hyb-n11-k3"
         },
         "sidecars": {
             "geo": {
                 "path": "sidecars/paris/n=10/mamut-paris-n10-hyb/mamut-paris-n10-hyb.geo.json.gz",
-                "sha256": "63ea552e0ea54b85f92a6631cb21d353308307ed581b0794e285367c8198f30d"
+                "sha256": "2951ea0f32ad1c54260149c85aae4adb39bf033ab8bdacf0114a8acf4a23ebd8"
             }
         }
     }

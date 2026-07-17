@@ -1,19 +1,21 @@
 {
     "instance_name": "mamut-paris-n25-poi-wave-light",
     "routes": [
-        [4, 21, 8, 19, 1, 18, 25, 20, 11, 24],
-        [15, 3, 17, 10, 12, 7, 13, 16, 22, 9, 14, 6, 5, 23, 2]
+        [2, 23, 6, 5, 9, 22, 16, 10, 17, 14],
+        [7, 8, 19, 1, 18, 25, 20, 11, 24],
+        [15, 3, 13, 12],
+        [21, 4]
     ],
-    "cost": 11475.99983676834,
+    "cost": 12220.495806797693,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=240s)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=240s)",
         "validated_by": "mamut-routing-lib td Duration checker",
-        "date": "2026-07-10T08:00:54",
-        "validated_cost": 11475.99983676834,
-        "validated_num_routes": 2,
-        "route_durations": [4158.430276973564, 7317.569559794777],
-        "route_departure_times": [3387.753607430982, 0.0]
+        "date": "2026-07-16T14:37:19",
+        "validated_cost": 12220.495806797693,
+        "validated_num_routes": 4,
+        "route_durations": [4893.708086415624, 4091.7243336979795, 2022.0375505875306, 1213.0258360965588],
+        "route_departure_times": [0.0, 0.0, 0.0, 974.0885184745941]
     },
     "objective_function": "Duration"
 }

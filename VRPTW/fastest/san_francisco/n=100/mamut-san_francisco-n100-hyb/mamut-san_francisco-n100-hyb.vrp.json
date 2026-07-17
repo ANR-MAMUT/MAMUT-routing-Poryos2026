@@ -125,7 +125,7 @@
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "VRPTW",
         "metric_variant": "fastest",
         "city": "san_francisco",
@@ -135,7 +135,7 @@
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "derive-vrptw",
-            "version": 2,
+            "version": 3,
             "city": "san_francisco",
             "method": "hyb",
             "service_seed": 2547445799,
@@ -154,193 +154,34 @@
             "policy": "route-centered",
             "note": "windows shared verbatim with the base's TDVRPTW twins (post minimal-shared-tw-repair)"
         },
+        "tw_anchor": {
+            "policy": "deterministic-capacity-horizon-nearest-neighbour",
+            "routes": [
+                [4, 36, 32, 9, 11, 39, 83, 42, 8, 87, 74, 18],
+                [46, 67, 89, 78, 88, 37, 12, 85, 28, 1, 21, 58, 49, 23, 47, 29, 27, 30, 35, 57, 7, 20, 24],
+                [76, 19, 81, 63, 54, 98, 44, 51, 72, 14, 70, 84, 100, 41, 97, 64, 62, 86, 13, 79, 3, 73, 16, 82, 17],
+                [66, 52, 59, 91, 69, 55],
+                [10, 25, 94, 77, 2, 33, 80, 45, 95, 93, 90, 60, 99, 71, 96, 5],
+                [15, 31, 43, 65, 56, 40, 38, 34, 6, 61],
+                [48, 22, 92, 50, 53, 26, 75, 68]
+            ],
+            "num_routes": 7,
+            "min_customers_per_route": 6,
+            "max_customers_per_route": 25
+        },
         "tw_repair": {
-            "policy": "minimal-shared-tw-repair",
+            "policy": "global-anchor-minimal-shared-deadline-lift",
             "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
-            "lifted_customers": 0,
-            "max_lift_seconds": 0,
-            "reduced_customers": 36,
-            "max_reduction_seconds": 32,
+            "lifted_customers": 1,
+            "max_lift_seconds": 1199,
+            "reduced_customers": 0,
+            "max_reduction_seconds": 0,
+            "anchor_routes": 7,
             "repairs": {
                 "5": {
-                    "earliest_before": 82927,
-                    "earliest_after": 82909,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "6": {
-                    "earliest_before": 83428,
-                    "earliest_after": 83406,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "15": {
-                    "earliest_before": 84862,
-                    "earliest_after": 84844,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "17": {
-                    "earliest_before": 84637,
-                    "earliest_after": 84626,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "22": {
-                    "earliest_before": 84227,
-                    "earliest_after": 84205,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "26": {
-                    "earliest_before": 83393,
-                    "earliest_after": 83366,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "31": {
-                    "earliest_before": 83959,
-                    "earliest_after": 83940,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "33": {
-                    "earliest_before": 82934,
-                    "earliest_after": 82920,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "34": {
-                    "earliest_before": 84760,
-                    "earliest_after": 84740,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "38": {
-                    "earliest_before": 83634,
-                    "earliest_after": 83613,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "40": {
-                    "earliest_before": 85098,
-                    "earliest_after": 85078,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "41": {
-                    "earliest_before": 86265,
-                    "earliest_after": 86261,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "43": {
-                    "earliest_before": 85195,
-                    "earliest_after": 85176,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "45": {
-                    "earliest_before": 85741,
-                    "earliest_after": 85726,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "48": {
-                    "earliest_before": 84498,
-                    "earliest_after": 84481,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "50": {
-                    "earliest_before": 83388,
-                    "earliest_after": 83363,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "53": {
-                    "earliest_before": 84878,
-                    "earliest_after": 84855,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "55": {
-                    "earliest_before": 84106,
-                    "earliest_after": 84093,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "56": {
-                    "earliest_before": 84288,
-                    "earliest_after": 84269,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "59": {
-                    "earliest_before": 85103,
-                    "earliest_after": 85096,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "60": {
-                    "earliest_before": 84146,
-                    "earliest_after": 84127,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "61": {
-                    "earliest_before": 85202,
-                    "earliest_after": 85185,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "62": {
-                    "earliest_before": 84239,
-                    "earliest_after": 84234,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "65": {
-                    "earliest_before": 84906,
-                    "earliest_after": 84886,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "68": {
-                    "earliest_before": 83643,
-                    "earliest_after": 83628,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "69": {
-                    "earliest_before": 83736,
-                    "earliest_after": 83725,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "71": {
-                    "earliest_before": 84994,
-                    "earliest_after": 84975,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "75": {
-                    "earliest_before": 83688,
-                    "earliest_after": 83656,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "80": {
-                    "earliest_before": 84292,
-                    "earliest_after": 84277,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "90": {
-                    "earliest_before": 84526,
-                    "earliest_after": 84510,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "91": {
-                    "earliest_before": 84564,
-                    "earliest_after": 84554,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "92": {
-                    "earliest_before": 83686,
-                    "earliest_after": 83664,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "93": {
-                    "earliest_before": 84219,
-                    "earliest_after": 84203,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "95": {
-                    "earliest_before": 83983,
-                    "earliest_after": 83968,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "96": {
-                    "earliest_before": 85334,
-                    "earliest_after": 85319,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "99": {
-                    "earliest_before": 83618,
-                    "earliest_after": 83601,
-                    "earliest_binding_overlay": "wave-light"
+                    "deadline_before": 31438,
+                    "deadline_after": 32637,
+                    "deadline_binding_overlay": "bpr-heavy"
                 }
             }
         }
@@ -348,105 +189,105 @@
     "service_times": [0, 945, 668, 1027, 1722, 2836, 2126, 703, 1725, 1861, 1449, 2868, 1104, 492, 619, 947, 1847, 1305, 1213, 659, 1365, 1040, 1319, 1228, 828, 2831, 1892, 620, 1689, 1347, 974, 1802, 1, 2814, 876, 1531, 881, 888, 2004, 1766, 550, 1, 970, 535, 759, 89, 1080, 1278, 1233, 2536, 2012, 2652, 2027, 487, 2409, 1747, 1394, 1263, 2633, 1009, 1428, 531, 1953, 2000, 1915, 790, 1571, 928, 2069, 2228, 1659, 431, 2249, 1188, 1219, 1383, 462, 1144, 598, 2161, 1407, 1929, 1112, 814, 2350, 1988, 2306, 1791, 1560, 2064, 1052, 1471, 1842, 1373, 2603, 1626, 225, 1049, 751, 1897, 1515],
     "time_windows": [
         [0, 86400],
-        [47574, 63670],
-        [82484, 85161],
-        [80175, 84936],
+        [4344, 20440],
+        [0, 21938],
+        [22530, 41057],
         [0, 1937],
-        [82909, 82927],
-        [83406, 83428],
-        [60044, 85576],
+        [21891, 32637],
+        [6800, 14069],
+        [15292, 41815],
         [3807, 18726],
         [0, 13694],
-        [58956, 69740],
+        [0, 5563],
         [359, 8898],
-        [45938, 55469],
-        [79649, 85589],
-        [19207, 56550],
-        [84844, 84862],
-        [84008, 84121],
-        [84626, 84637],
-        [16727, 27669],
-        [16049, 31887],
-        [9996, 27651],
-        [50924, 62249],
-        [84205, 84227],
-        [58424, 67541],
-        [72961, 85380],
-        [71360, 76860],
-        [83366, 83393],
-        [49321, 85163],
-        [47465, 60332],
-        [61775, 69956],
-        [53464, 84935],
-        [83940, 83959],
+        [2707, 12238],
+        [22003, 35886],
+        [0, 33213],
+        [0, 9485],
+        [26363, 42024],
+        [29741, 45282],
+        [10689, 21631],
+        [0, 8550],
+        [20555, 38210],
+        [7694, 19019],
+        [0, 10488],
+        [15193, 24310],
+        [20470, 41155],
+        [0, 4542],
+        [0, 19629],
+        [5872, 41714],
+        [4234, 17101],
+        [18326, 26507],
+        [8712, 40183],
+        [0, 5817],
         [0, 12027],
-        [82920, 82934],
-        [84740, 84760],
-        [59743, 80878],
+        [6666, 13585],
+        [0, 23277],
+        [14991, 36126],
         [0, 7161],
-        [35887, 63613],
-        [83613, 83634],
+        [0, 20382],
+        [0, 15344],
         [0, 20132],
-        [85078, 85098],
-        [86261, 86265],
+        [0, 19517],
+        [16799, 25478],
         [5196, 15249],
-        [85176, 85195],
-        [26172, 37835],
-        [85726, 85741],
-        [85313, 85313],
-        [58659, 77078],
-        [84481, 84498],
-        [53182, 67578],
-        [83363, 83388],
-        [21020, 44741],
-        [74826, 84162],
-        [84855, 84878],
-        [26597, 30950],
-        [84093, 84106],
-        [84269, 84288],
-        [61388, 82568],
-        [53900, 61399],
-        [85096, 85103],
-        [84127, 84146],
-        [85185, 85202],
-        [84234, 84239],
-        [15618, 37768],
-        [8899, 31539],
-        [84886, 84906],
-        [7508, 24777],
-        [38599, 58971],
-        [83628, 83643],
-        [83725, 83736],
-        [29431, 47829],
-        [84975, 84994],
-        [28475, 42678],
-        [78383, 84797],
+        [0, 7529],
+        [2834, 14497],
+        [5533, 24429],
+        [0, 9575],
+        [11913, 30332],
+        [0, 9845],
+        [9951, 24347],
+        [0, 18822],
+        [0, 21404],
+        [0, 8227],
+        [0, 20684],
+        [3259, 7612],
+        [0, 20534],
+        [0, 15250],
+        [16635, 37815],
+        [10670, 18169],
+        [0, 13309],
+        [11390, 29423],
+        [227, 25727],
+        [18910, 30074],
+        [0, 14431],
+        [11110, 33750],
+        [0, 13009],
+        [0, 8796],
+        [0, 11421],
+        [8929, 19774],
+        [0, 16833],
+        [6094, 24492],
+        [18912, 29254],
+        [5138, 19341],
+        [20738, 45248],
         [3393, 26375],
-        [83656, 83688],
-        [16940, 30035],
-        [71964, 85022],
-        [38142, 50723],
-        [77416, 83811],
-        [84277, 84292],
-        [15143, 34200],
-        [75871, 84900],
+        [0, 27161],
+        [0, 6698],
+        [0, 15577],
+        [0, 10555],
+        [19771, 39391],
+        [5676, 20459],
+        [0, 10863],
+        [18226, 54040],
         [0, 22693],
-        [34776, 46135],
-        [41569, 62089],
-        [73597, 83827],
+        [11439, 22798],
+        [0, 18859],
+        [15951, 37186],
         [9, 26069],
-        [34686, 55480],
-        [35610, 57762],
-        [84510, 84526],
-        [84554, 84564],
-        [83664, 83686],
-        [84203, 84219],
-        [70841, 83292],
-        [83968, 83983],
-        [85319, 85334],
-        [16204, 19263],
-        [22473, 39928],
-        [83601, 83618],
-        [35424, 50270]
+        [0, 15312],
+        [0, 13254],
+        [7757, 30693],
+        [0, 18861],
+        [0, 15521],
+        [9243, 26348],
+        [0, 10973],
+        [6496, 25756],
+        [15687, 34395],
+        [19800, 22859],
+        [0, 16590],
+        [14000, 30133],
+        [12087, 26933]
     ]
 }

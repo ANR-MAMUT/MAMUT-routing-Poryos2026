@@ -1,18 +1,20 @@
 {
     "instance_name": "mamut-lyon-n10-hyb-bpr-light",
     "routes": [
-        [5, 7, 3, 9, 10, 6, 8, 2, 4, 1]
+        [3, 7],
+        [5],
+        [9, 10, 6, 8, 2, 4, 1]
     ],
-    "cost": 8552.282550830798,
+    "cost": 9031.597643128302,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=120s)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=120s)",
         "validated_by": "mamut-routing-lib td Duration checker",
-        "date": "2026-07-10T07:15:24",
-        "validated_cost": 8552.282550830798,
-        "validated_num_routes": 1,
-        "route_durations": [8552.282550830798],
-        "route_departure_times": [686.4258054084775]
+        "date": "2026-07-16T11:28:22",
+        "validated_cost": 9031.597643128302,
+        "validated_num_routes": 3,
+        "route_durations": [1416.2943144736016, 572.907188475877, 7042.396140178822],
+        "route_departure_times": [0.0, 0.0, 0.0]
     },
     "objective_function": "Duration"
 }

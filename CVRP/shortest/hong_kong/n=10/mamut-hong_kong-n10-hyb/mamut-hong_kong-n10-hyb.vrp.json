@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 10,
     "num_vehicles": null,
-    "vehicle_capacity": 174,
+    "vehicle_capacity": 101,
     "coordinates": [
         [1438.9425746026898, -1211.8557234748282],
         [1341.1207028225522, -8492.364949990431],
@@ -18,7 +18,7 @@
         [9962.929957311815, -5586.984192715099],
         [5504.164896871657, 5115.139734534838]
     ],
-    "demands": [0, 3, 9, 7, 3, 5, 77, 4, 1, 8, 2],
+    "demands": [0, 61, 9, 7, 60, 5, 77, 4, 1, 8, 2],
     "depot": 0,
     "reference_lla": {
         "lat": 22.35252895,
@@ -30,31 +30,31 @@
         "model": "distances-sidecar",
         "distances": {
             "path": "sidecars/hong_kong/n=10/mamut-hong_kong-n10-hyb/mamut-hong_kong-n10-hyb.distances-shortest.json.gz",
-            "sha256": "7fd201a5b4bd30f539cf54d7fb4a5ae2568cf8481542f97fc81f2cd74138d5e1"
+            "sha256": "f5daf7fe6bc1fa475c61a8e4143a31796770e7cb671a4ee5a30ce85ca47b025c"
         }
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "CVRP",
         "metric_variant": "shortest",
         "city": "hong_kong",
         "method": "hyb",
         "base_instance_name": "mamut-hong_kong-n10-hyb",
-        "num_vehicles_lb": 1,
+        "num_vehicles_lb": 3,
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "generate-base",
-            "version": 2,
+            "version": 3,
             "city": "hong_kong",
             "method": "hyb",
             "sampling_seed": 2027204622,
-            "stage1_base": "hong_kong_hyb-n11-k1"
+            "stage1_base": "hong_kong_hyb-n11-k3"
         },
         "sidecars": {
             "geo": {
                 "path": "sidecars/hong_kong/n=10/mamut-hong_kong-n10-hyb/mamut-hong_kong-n10-hyb.geo.json.gz",
-                "sha256": "f508a260a55b8f33ae36ecc01ddbf7ea5bb89d33d5a289319479b3282fdf31f4"
+                "sha256": "88270c7c78b6c9a622a35352f5c260b1acca88a6956ffe8f3607db2acf3f8918"
             }
         }
     }

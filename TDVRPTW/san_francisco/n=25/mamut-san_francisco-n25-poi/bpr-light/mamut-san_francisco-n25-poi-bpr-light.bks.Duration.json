@@ -1,20 +1,22 @@
 {
     "instance_name": "mamut-san_francisco-n25-poi-bpr-light",
     "routes": [
-        [6, 1, 21, 17],
-        [7, 24, 23, 22, 8, 13, 14, 20, 25, 10, 15, 2, 5, 4, 9, 16, 11],
-        [19, 3, 12, 18]
+        [7, 23, 6, 13, 14, 20, 25, 10, 24],
+        [11, 1],
+        [15, 2, 5, 4, 9, 16, 21],
+        [18, 22, 8],
+        [19, 17, 3, 12]
     ],
-    "cost": 38942.64176921971,
+    "cost": 40218.65605042887,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
-        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=240s)",
+        "source": "kayros 0.4.0 TD-ILS (seed=42, time_limit=240s)",
         "validated_by": "mamut-routing-lib td Duration checker",
-        "date": "2026-07-10T08:30:47",
-        "validated_cost": 38942.64176921971,
-        "validated_num_routes": 3,
-        "route_durations": [8964.101160339895, 24936.63538295917, 5041.905225920643],
-        "route_departure_times": [33626.11831384485, 0.0, 0.0]
+        "date": "2026-07-17T10:09:35",
+        "validated_cost": 40218.65605042887,
+        "validated_num_routes": 5,
+        "route_durations": [12453.046251878079, 5108.669216917915, 13082.687925076429, 3835.5837838406414, 5738.668872715808],
+        "route_departure_times": [321.19364098887706, 33614.13870839725, 11598.379614110436, 0.0, 0.0]
     },
     "objective_function": "Duration"
 }

@@ -525,7 +525,7 @@
     },
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "problem_type": "VRPTW",
         "metric_variant": "fastest",
         "city": "lyon",
@@ -535,7 +535,7 @@
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "derive-vrptw",
-            "version": 2,
+            "version": 3,
             "city": "lyon",
             "method": "poi",
             "service_seed": 3273878924,
@@ -554,2394 +554,564 @@
             "policy": "route-centered",
             "note": "windows shared verbatim with the base's TDVRPTW twins (post minimal-shared-tw-repair)"
         },
+        "tw_anchor": {
+            "policy": "deterministic-capacity-horizon-nearest-neighbour",
+            "routes": [
+                [68, 166, 367, 361, 391, 343, 379, 354, 373, 240, 220, 388, 196, 431, 366, 82, 50, 30, 314, 272, 175, 114],
+                [132, 444, 262, 413, 267, 15, 154, 243, 206, 457, 241, 21, 150, 46, 187, 265, 283, 252, 180, 355, 304],
+                [435, 113, 9, 156, 403, 117, 210, 136, 244, 201, 3, 24, 1, 463, 353, 97, 381, 287, 209, 399, 246, 407, 182, 489, 315],
+                [208, 224, 77, 101, 322, 341, 440, 327, 478, 257, 63, 352, 159, 389, 8],
+                [213, 93, 167, 71, 288, 281, 186, 20, 299, 495, 41, 73, 133, 423, 325],
+                [52, 451, 140, 56, 396, 49, 214, 250, 27, 418, 147, 84, 125, 319, 249, 296, 170, 394, 326, 197, 19],
+                [74, 402, 424, 308, 365, 339, 429, 434, 337, 115, 415, 236, 420, 81, 161, 189, 51, 14, 433],
+                [416, 311, 499, 12, 202, 378, 285, 36, 67, 29, 441, 87, 217, 278, 64, 176, 168, 90, 376, 485, 153, 369, 467, 277, 372, 377],
+                [135, 92, 95, 155, 297, 111, 289, 104, 334, 219, 40, 215, 138, 364, 386, 18, 211, 212, 295],
+                [233, 128, 276, 442, 110, 162, 370, 171, 340, 479, 500, 329, 468, 107, 426, 225, 248, 33, 226, 348, 302, 456, 221],
+                [222, 313, 11, 102, 254, 235, 6, 271, 476, 80, 31, 137, 228, 320, 356, 406, 360, 421, 258, 436, 270],
+                [16, 121, 205, 229, 465, 174, 70, 198, 401],
+                [382, 120, 134, 481, 7, 151, 145, 55],
+                [275, 371, 357, 374, 234, 318, 105, 464, 324, 412, 351, 472, 158, 264, 75, 131, 259, 149, 37, 284, 32, 310, 242],
+                [195, 303, 157, 203, 22, 96, 256, 99, 123, 160],
+                [292, 38, 146, 66, 190, 428, 491, 178, 216, 253, 473, 358, 298, 148, 411, 109, 487, 23, 427, 274, 449, 112],
+                [312, 307, 486, 119, 47, 398, 245, 498, 494, 199, 204],
+                [409, 483, 60, 5, 184, 177, 2, 35, 4, 443, 42, 408, 39, 181, 130],
+                [294, 152, 359, 279, 317, 143, 462, 179, 438, 76, 437, 26, 430, 496, 58, 118, 460, 280, 349, 89, 61],
+                [232, 124, 455, 139, 480, 397, 362, 330, 88, 459, 116, 173, 273, 103, 309, 282, 474, 414, 301],
+                [163, 286, 238, 129, 375, 383, 239, 227, 385, 79, 482, 268, 122, 193, 28, 493],
+                [291, 48, 368, 323, 470, 194, 59, 336, 169, 450, 306, 345, 332, 255, 419, 445, 490, 83, 13, 363],
+                [45, 410, 488, 231, 223, 17, 251, 164, 466, 335, 425, 86, 62, 384, 469, 328, 432, 342, 392, 390, 100],
+                [266, 183, 141, 346],
+                [91, 142, 127, 69, 475, 247, 380, 338, 57, 188, 350, 172, 44, 448],
+                [34, 316, 293, 305, 446, 260, 43, 191, 192, 185, 453, 237, 439, 387],
+                [395, 54, 106, 263, 126, 94, 78, 344, 290, 454],
+                [269, 207, 461, 108, 53, 471],
+                [447, 72, 417, 218, 85, 230, 492, 10, 404, 333],
+                [144, 347, 65, 98, 393, 458, 405, 400, 261],
+                [422, 321, 331],
+                [200, 25],
+                [452, 497],
+                [484, 477],
+                [300, 165]
+            ],
+            "num_routes": 35,
+            "min_customers_per_route": 2,
+            "max_customers_per_route": 26
+        },
         "tw_repair": {
-            "policy": "minimal-shared-tw-repair",
+            "policy": "global-anchor-minimal-shared-deadline-lift",
             "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
             "lifted_customers": 0,
             "max_lift_seconds": 0,
-            "reduced_customers": 375,
-            "max_reduction_seconds": 11,
+            "reduced_customers": 0,
+            "max_reduction_seconds": 0,
+            "anchor_routes": 35,
             "repairs": {
-                "2": {
-                    "earliest_before": 85353,
-                    "earliest_after": 85349,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "4": {
-                    "earliest_before": 85613,
-                    "earliest_after": 85609,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "6": {
-                    "earliest_before": 85657,
-                    "earliest_after": 85652,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "10": {
-                    "earliest_before": 85353,
-                    "earliest_after": 85344,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "11": {
-                    "earliest_before": 84788,
-                    "earliest_after": 84786,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "13": {
-                    "earliest_before": 85294,
-                    "earliest_after": 85289,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "14": {
-                    "earliest_before": 85866,
-                    "earliest_after": 85861,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "16": {
-                    "earliest_before": 85305,
-                    "earliest_after": 85302,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "17": {
-                    "earliest_before": 85281,
-                    "earliest_after": 85276,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "18": {
-                    "earliest_before": 85675,
-                    "earliest_after": 85671,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "19": {
-                    "earliest_before": 85170,
-                    "earliest_after": 85167,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "22": {
-                    "earliest_before": 85928,
-                    "earliest_after": 85924,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "23": {
-                    "earliest_before": 85192,
-                    "earliest_after": 85187,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "25": {
-                    "earliest_before": 84829,
-                    "earliest_after": 84821,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "26": {
-                    "earliest_before": 85221,
-                    "earliest_after": 85216,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "27": {
-                    "earliest_before": 85770,
-                    "earliest_after": 85768,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "28": {
-                    "earliest_before": 85318,
-                    "earliest_after": 85312,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "31": {
-                    "earliest_before": 86257,
-                    "earliest_after": 86253,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "32": {
-                    "earliest_before": 85166,
-                    "earliest_after": 85162,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "33": {
-                    "earliest_before": 85963,
-                    "earliest_after": 85962,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "35": {
-                    "earliest_before": 85101,
-                    "earliest_after": 85098,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "37": {
-                    "earliest_before": 85521,
-                    "earliest_after": 85514,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "38": {
-                    "earliest_before": 86145,
-                    "earliest_after": 86142,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "39": {
-                    "earliest_before": 85832,
-                    "earliest_after": 85824,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "40": {
-                    "earliest_before": 85441,
-                    "earliest_after": 85434,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "42": {
-                    "earliest_before": 84891,
-                    "earliest_after": 84885,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "43": {
-                    "earliest_before": 84881,
-                    "earliest_after": 84873,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "44": {
-                    "earliest_before": 85427,
-                    "earliest_after": 85421,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "45": {
-                    "earliest_before": 85950,
-                    "earliest_after": 85946,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "46": {
-                    "earliest_before": 85171,
-                    "earliest_after": 85168,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "47": {
-                    "earliest_before": 85310,
-                    "earliest_after": 85305,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "48": {
-                    "earliest_before": 84802,
-                    "earliest_after": 84797,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "49": {
-                    "earliest_before": 85482,
-                    "earliest_after": 85480,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "53": {
-                    "earliest_before": 85417,
-                    "earliest_after": 85409,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "54": {
-                    "earliest_before": 86018,
-                    "earliest_after": 86012,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "55": {
-                    "earliest_before": 85551,
-                    "earliest_after": 85545,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "56": {
-                    "earliest_before": 85057,
-                    "earliest_after": 85055,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "57": {
-                    "earliest_before": 84754,
-                    "earliest_after": 84746,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "58": {
-                    "earliest_before": 85344,
-                    "earliest_after": 85338,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "59": {
-                    "earliest_before": 85380,
-                    "earliest_after": 85376,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "61": {
-                    "earliest_before": 85100,
-                    "earliest_after": 85095,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "62": {
-                    "earliest_before": 85581,
-                    "earliest_after": 85574,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "63": {
-                    "earliest_before": 86178,
-                    "earliest_after": 86176,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "64": {
-                    "earliest_before": 84886,
-                    "earliest_after": 84883,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "65": {
-                    "earliest_before": 85085,
-                    "earliest_after": 85077,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "66": {
-                    "earliest_before": 84675,
-                    "earliest_after": 84670,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "69": {
-                    "earliest_before": 85407,
-                    "earliest_after": 85399,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "72": {
-                    "earliest_before": 85588,
-                    "earliest_after": 85582,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "75": {
-                    "earliest_before": 85605,
-                    "earliest_after": 85600,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "76": {
-                    "earliest_before": 85476,
-                    "earliest_after": 85471,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "77": {
-                    "earliest_before": 85604,
-                    "earliest_after": 85602,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "78": {
-                    "earliest_before": 85384,
-                    "earliest_after": 85380,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "79": {
-                    "earliest_before": 85774,
-                    "earliest_after": 85763,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "80": {
-                    "earliest_before": 84708,
-                    "earliest_after": 84704,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "83": {
-                    "earliest_before": 85982,
-                    "earliest_after": 85978,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "84": {
-                    "earliest_before": 85674,
-                    "earliest_after": 85672,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "85": {
-                    "earliest_before": 85503,
-                    "earliest_after": 85495,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "86": {
-                    "earliest_before": 86238,
-                    "earliest_after": 86235,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "87": {
-                    "earliest_before": 85411,
-                    "earliest_after": 85408,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "88": {
-                    "earliest_before": 85076,
-                    "earliest_after": 85070,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "89": {
-                    "earliest_before": 85920,
-                    "earliest_after": 85915,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "90": {
-                    "earliest_before": 85408,
-                    "earliest_after": 85405,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "91": {
-                    "earliest_before": 85883,
-                    "earliest_after": 85879,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "92": {
-                    "earliest_before": 85889,
-                    "earliest_after": 85886,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "94": {
-                    "earliest_before": 86119,
-                    "earliest_after": 86114,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "95": {
-                    "earliest_before": 84929,
-                    "earliest_after": 84926,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "96": {
-                    "earliest_before": 85897,
-                    "earliest_after": 85893,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "98": {
-                    "earliest_before": 85598,
-                    "earliest_after": 85591,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "99": {
-                    "earliest_before": 85180,
-                    "earliest_after": 85175,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "100": {
-                    "earliest_before": 85061,
-                    "earliest_after": 85052,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "101": {
-                    "earliest_before": 86034,
-                    "earliest_after": 86032,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "102": {
-                    "earliest_before": 85322,
-                    "earliest_after": 85320,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "103": {
-                    "earliest_before": 85045,
-                    "earliest_after": 85039,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "104": {
-                    "earliest_before": 85744,
-                    "earliest_after": 85740,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "105": {
-                    "earliest_before": 84976,
-                    "earliest_after": 84973,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "106": {
-                    "earliest_before": 85525,
-                    "earliest_after": 85522,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "107": {
-                    "earliest_before": 85216,
-                    "earliest_after": 85212,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "108": {
-                    "earliest_before": 84864,
-                    "earliest_after": 84856,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "109": {
-                    "earliest_before": 85734,
-                    "earliest_after": 85729,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "110": {
-                    "earliest_before": 85234,
-                    "earliest_after": 85232,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "111": {
-                    "earliest_before": 85009,
-                    "earliest_after": 85005,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "112": {
-                    "earliest_before": 86049,
-                    "earliest_after": 86039,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "116": {
-                    "earliest_before": 85771,
-                    "earliest_after": 85764,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "118": {
-                    "earliest_before": 85608,
-                    "earliest_after": 85602,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "119": {
-                    "earliest_before": 85698,
-                    "earliest_after": 85693,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "120": {
-                    "earliest_before": 86208,
-                    "earliest_after": 86206,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "121": {
-                    "earliest_before": 85905,
-                    "earliest_after": 85902,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "122": {
-                    "earliest_before": 85134,
-                    "earliest_after": 85128,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "123": {
-                    "earliest_before": 85649,
-                    "earliest_after": 85644,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "124": {
-                    "earliest_before": 85419,
-                    "earliest_after": 85414,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "125": {
-                    "earliest_before": 85285,
-                    "earliest_after": 85282,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "126": {
-                    "earliest_before": 85621,
-                    "earliest_after": 85618,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "127": {
-                    "earliest_before": 85260,
-                    "earliest_after": 85255,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "128": {
-                    "earliest_before": 85640,
-                    "earliest_after": 85636,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "129": {
-                    "earliest_before": 85903,
-                    "earliest_after": 85897,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "130": {
-                    "earliest_before": 86119,
-                    "earliest_after": 86114,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "131": {
-                    "earliest_before": 85578,
-                    "earliest_after": 85573,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "134": {
-                    "earliest_before": 85084,
-                    "earliest_after": 85081,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "135": {
-                    "earliest_before": 84779,
-                    "earliest_after": 84776,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "137": {
-                    "earliest_before": 85432,
-                    "earliest_after": 85429,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "138": {
-                    "earliest_before": 86194,
-                    "earliest_after": 86189,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "139": {
-                    "earliest_before": 85169,
-                    "earliest_after": 85161,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "140": {
-                    "earliest_before": 84840,
-                    "earliest_after": 84839,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "141": {
-                    "earliest_before": 85179,
-                    "earliest_after": 85176,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "142": {
-                    "earliest_before": 85869,
-                    "earliest_after": 85863,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "143": {
-                    "earliest_before": 85852,
-                    "earliest_after": 85847,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "144": {
-                    "earliest_before": 85020,
-                    "earliest_after": 85015,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "145": {
-                    "earliest_before": 85748,
-                    "earliest_after": 85744,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "146": {
-                    "earliest_before": 85597,
-                    "earliest_after": 85593,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "147": {
-                    "earliest_before": 85300,
-                    "earliest_after": 85298,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "148": {
-                    "earliest_before": 85238,
-                    "earliest_after": 85233,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "149": {
-                    "earliest_before": 85848,
-                    "earliest_after": 85843,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "151": {
-                    "earliest_before": 86267,
-                    "earliest_after": 86264,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "152": {
-                    "earliest_before": 85987,
-                    "earliest_after": 85984,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "153": {
-                    "earliest_before": 84795,
-                    "earliest_after": 84791,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "155": {
-                    "earliest_before": 85247,
-                    "earliest_after": 85243,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "157": {
-                    "earliest_before": 85571,
-                    "earliest_after": 85568,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "158": {
-                    "earliest_before": 85726,
-                    "earliest_after": 85722,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "160": {
-                    "earliest_before": 85488,
-                    "earliest_after": 85482,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "162": {
-                    "earliest_before": 85153,
-                    "earliest_after": 85150,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "163": {
-                    "earliest_before": 85972,
-                    "earliest_after": 85968,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "164": {
-                    "earliest_before": 86112,
-                    "earliest_after": 86108,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "165": {
-                    "earliest_before": 84727,
-                    "earliest_after": 84718,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "168": {
-                    "earliest_before": 85251,
-                    "earliest_after": 85248,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "169": {
-                    "earliest_before": 85436,
-                    "earliest_after": 85430,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "170": {
-                    "earliest_before": 85920,
-                    "earliest_after": 85915,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "171": {
-                    "earliest_before": 85617,
-                    "earliest_after": 85614,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "172": {
-                    "earliest_before": 85645,
-                    "earliest_after": 85640,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "173": {
-                    "earliest_before": 84985,
-                    "earliest_after": 84978,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "176": {
-                    "earliest_before": 85228,
-                    "earliest_after": 85224,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "177": {
-                    "earliest_before": 85565,
-                    "earliest_after": 85562,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "178": {
-                    "earliest_before": 85449,
-                    "earliest_after": 85444,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "179": {
-                    "earliest_before": 85753,
-                    "earliest_after": 85748,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "180": {
-                    "earliest_before": 85966,
-                    "earliest_after": 85964,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "181": {
-                    "earliest_before": 85162,
-                    "earliest_after": 85155,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "183": {
-                    "earliest_before": 86139,
-                    "earliest_after": 86135,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "185": {
-                    "earliest_before": 85330,
-                    "earliest_after": 85322,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "188": {
-                    "earliest_before": 85334,
-                    "earliest_after": 85329,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "190": {
-                    "earliest_before": 85342,
-                    "earliest_after": 85336,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "191": {
-                    "earliest_before": 85144,
-                    "earliest_after": 85136,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "192": {
-                    "earliest_before": 85406,
-                    "earliest_after": 85397,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "193": {
-                    "earliest_before": 85257,
-                    "earliest_after": 85251,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "194": {
-                    "earliest_before": 85504,
-                    "earliest_after": 85500,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "195": {
-                    "earliest_before": 85859,
-                    "earliest_after": 85856,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "197": {
-                    "earliest_before": 85705,
-                    "earliest_after": 85701,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "198": {
-                    "earliest_before": 85354,
-                    "earliest_after": 85351,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "199": {
-                    "earliest_before": 85555,
-                    "earliest_after": 85550,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "200": {
-                    "earliest_before": 85478,
-                    "earliest_after": 85471,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "202": {
-                    "earliest_before": 85255,
-                    "earliest_after": 85253,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "203": {
-                    "earliest_before": 85755,
-                    "earliest_after": 85752,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "204": {
-                    "earliest_before": 85568,
-                    "earliest_after": 85563,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "205": {
-                    "earliest_before": 86101,
-                    "earliest_after": 86099,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "207": {
-                    "earliest_before": 85335,
-                    "earliest_after": 85329,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "211": {
-                    "earliest_before": 84898,
-                    "earliest_after": 84894,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "212": {
-                    "earliest_before": 85481,
-                    "earliest_after": 85476,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "214": {
-                    "earliest_before": 85464,
-                    "earliest_after": 85463,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "215": {
-                    "earliest_before": 85569,
-                    "earliest_after": 85565,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "216": {
-                    "earliest_before": 85340,
-                    "earliest_after": 85335,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "217": {
-                    "earliest_before": 85284,
-                    "earliest_after": 85280,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "218": {
-                    "earliest_before": 85305,
-                    "earliest_after": 85297,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "219": {
-                    "earliest_before": 85307,
-                    "earliest_after": 85303,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "221": {
-                    "earliest_before": 85931,
-                    "earliest_after": 85928,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "222": {
-                    "earliest_before": 85460,
-                    "earliest_after": 85456,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "223": {
-                    "earliest_before": 85783,
-                    "earliest_after": 85778,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "224": {
-                    "earliest_before": 85710,
-                    "earliest_after": 85709,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "225": {
-                    "earliest_before": 84819,
-                    "earliest_after": 84816,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "227": {
-                    "earliest_before": 85773,
-                    "earliest_after": 85764,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "228": {
-                    "earliest_before": 85467,
-                    "earliest_after": 85464,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "230": {
-                    "earliest_before": 85300,
-                    "earliest_after": 85294,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "231": {
-                    "earliest_before": 85315,
-                    "earliest_after": 85310,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "232": {
-                    "earliest_before": 85223,
-                    "earliest_after": 85220,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "233": {
-                    "earliest_before": 85676,
-                    "earliest_after": 85674,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "234": {
-                    "earliest_before": 85698,
-                    "earliest_after": 85695,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "235": {
-                    "earliest_before": 85703,
-                    "earliest_after": 85700,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "237": {
-                    "earliest_before": 85736,
-                    "earliest_after": 85727,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "238": {
-                    "earliest_before": 85150,
-                    "earliest_after": 85144,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "239": {
-                    "earliest_before": 85668,
-                    "earliest_after": 85661,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "242": {
-                    "earliest_before": 85670,
-                    "earliest_after": 85666,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "245": {
-                    "earliest_before": 85763,
-                    "earliest_after": 85758,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "247": {
-                    "earliest_before": 85528,
-                    "earliest_after": 85520,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "248": {
-                    "earliest_before": 85748,
-                    "earliest_after": 85746,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "249": {
-                    "earliest_before": 85109,
-                    "earliest_after": 85105,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "250": {
-                    "earliest_before": 85332,
-                    "earliest_after": 85331,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "251": {
-                    "earliest_before": 86007,
-                    "earliest_after": 86001,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "253": {
-                    "earliest_before": 85183,
-                    "earliest_after": 85177,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "254": {
-                    "earliest_before": 85757,
-                    "earliest_after": 85755,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "255": {
-                    "earliest_before": 85529,
-                    "earliest_after": 85524,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "256": {
-                    "earliest_before": 85749,
-                    "earliest_after": 85746,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "258": {
-                    "earliest_before": 84856,
-                    "earliest_after": 84852,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "259": {
-                    "earliest_before": 85711,
-                    "earliest_after": 85707,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "260": {
-                    "earliest_before": 84868,
-                    "earliest_after": 84861,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "261": {
-                    "earliest_before": 85662,
-                    "earliest_after": 85658,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "263": {
-                    "earliest_before": 85924,
-                    "earliest_after": 85922,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "264": {
-                    "earliest_before": 85641,
-                    "earliest_after": 85637,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "266": {
-                    "earliest_before": 85844,
-                    "earliest_after": 85841,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "268": {
-                    "earliest_before": 85151,
-                    "earliest_after": 85144,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "269": {
-                    "earliest_before": 85650,
-                    "earliest_after": 85645,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "270": {
-                    "earliest_before": 85196,
-                    "earliest_after": 85190,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "271": {
-                    "earliest_before": 85372,
-                    "earliest_after": 85368,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "273": {
-                    "earliest_before": 84985,
-                    "earliest_after": 84978,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "274": {
-                    "earliest_before": 85011,
-                    "earliest_after": 85007,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "275": {
-                    "earliest_before": 86333,
-                    "earliest_after": 86331,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "276": {
-                    "earliest_before": 85823,
-                    "earliest_after": 85821,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "277": {
-                    "earliest_before": 85676,
-                    "earliest_after": 85671,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "278": {
-                    "earliest_before": 84750,
-                    "earliest_after": 84747,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "279": {
-                    "earliest_before": 86247,
-                    "earliest_after": 86244,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "280": {
-                    "earliest_before": 85476,
-                    "earliest_after": 85471,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "282": {
-                    "earliest_before": 84721,
-                    "earliest_after": 84714,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "284": {
-                    "earliest_before": 85041,
-                    "earliest_after": 85035,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "285": {
-                    "earliest_before": 86061,
-                    "earliest_after": 86058,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "286": {
-                    "earliest_before": 85177,
-                    "earliest_after": 85170,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "290": {
-                    "earliest_before": 85538,
-                    "earliest_after": 85530,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "291": {
-                    "earliest_before": 86022,
-                    "earliest_after": 86019,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "292": {
-                    "earliest_before": 85903,
-                    "earliest_after": 85899,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "293": {
-                    "earliest_before": 84648,
-                    "earliest_after": 84641,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "294": {
-                    "earliest_before": 85708,
-                    "earliest_after": 85705,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "295": {
-                    "earliest_before": 85352,
-                    "earliest_after": 85346,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "296": {
-                    "earliest_before": 85541,
-                    "earliest_after": 85538,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "297": {
-                    "earliest_before": 85717,
-                    "earliest_after": 85714,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "298": {
-                    "earliest_before": 85644,
-                    "earliest_after": 85639,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "300": {
-                    "earliest_before": 84796,
-                    "earliest_after": 84785,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "301": {
-                    "earliest_before": 85165,
-                    "earliest_after": 85159,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "303": {
-                    "earliest_before": 85740,
-                    "earliest_after": 85737,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "304": {
-                    "earliest_before": 85208,
-                    "earliest_after": 85205,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "305": {
-                    "earliest_before": 85984,
-                    "earliest_after": 85975,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "306": {
-                    "earliest_before": 85297,
-                    "earliest_after": 85290,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "307": {
-                    "earliest_before": 86228,
-                    "earliest_after": 86224,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "309": {
-                    "earliest_before": 85995,
-                    "earliest_after": 85989,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "310": {
-                    "earliest_before": 85288,
-                    "earliest_after": 85284,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "312": {
-                    "earliest_before": 85803,
-                    "earliest_after": 85801,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "313": {
-                    "earliest_before": 85853,
-                    "earliest_after": 85848,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "316": {
-                    "earliest_before": 85765,
-                    "earliest_after": 85759,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "317": {
-                    "earliest_before": 84971,
-                    "earliest_after": 84967,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "318": {
-                    "earliest_before": 85620,
-                    "earliest_after": 85617,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "319": {
-                    "earliest_before": 85799,
-                    "earliest_after": 85796,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "320": {
-                    "earliest_before": 85681,
-                    "earliest_after": 85677,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "321": {
-                    "earliest_before": 85397,
-                    "earliest_after": 85391,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "322": {
-                    "earliest_before": 85092,
-                    "earliest_after": 85089,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "323": {
-                    "earliest_before": 85116,
-                    "earliest_after": 85112,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "324": {
-                    "earliest_before": 86228,
-                    "earliest_after": 86224,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "325": {
-                    "earliest_before": 85327,
-                    "earliest_after": 85325,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "326": {
-                    "earliest_before": 85795,
-                    "earliest_after": 85792,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "328": {
-                    "earliest_before": 85573,
-                    "earliest_after": 85569,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "329": {
-                    "earliest_before": 85752,
-                    "earliest_after": 85748,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "330": {
-                    "earliest_before": 85332,
-                    "earliest_after": 85326,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "331": {
-                    "earliest_before": 85193,
-                    "earliest_after": 85185,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "332": {
-                    "earliest_before": 85094,
-                    "earliest_after": 85088,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "333": {
-                    "earliest_before": 85224,
-                    "earliest_after": 85217,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "334": {
-                    "earliest_before": 85534,
-                    "earliest_after": 85530,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "335": {
-                    "earliest_before": 85803,
-                    "earliest_after": 85800,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "336": {
-                    "earliest_before": 85163,
-                    "earliest_after": 85157,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "338": {
-                    "earliest_before": 85137,
-                    "earliest_after": 85130,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "340": {
-                    "earliest_before": 85490,
-                    "earliest_after": 85486,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "341": {
-                    "earliest_before": 85787,
-                    "earliest_after": 85785,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "342": {
-                    "earliest_before": 85955,
-                    "earliest_after": 85949,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "344": {
-                    "earliest_before": 86202,
-                    "earliest_after": 86198,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "345": {
-                    "earliest_before": 84974,
-                    "earliest_after": 84968,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "346": {
-                    "earliest_before": 85751,
-                    "earliest_after": 85746,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "347": {
-                    "earliest_before": 85057,
-                    "earliest_after": 85052,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "348": {
-                    "earliest_before": 85331,
-                    "earliest_after": 85329,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "349": {
-                    "earliest_before": 84902,
-                    "earliest_after": 84896,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "350": {
-                    "earliest_before": 85152,
-                    "earliest_after": 85146,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "351": {
-                    "earliest_before": 85543,
-                    "earliest_after": 85540,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "352": {
-                    "earliest_before": 84878,
-                    "earliest_after": 84876,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "355": {
-                    "earliest_before": 85495,
-                    "earliest_after": 85494,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "356": {
-                    "earliest_before": 85549,
-                    "earliest_after": 85545,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "357": {
-                    "earliest_before": 85937,
-                    "earliest_after": 85935,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "358": {
-                    "earliest_before": 85782,
-                    "earliest_after": 85776,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "359": {
-                    "earliest_before": 85230,
-                    "earliest_after": 85227,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "360": {
-                    "earliest_before": 85468,
-                    "earliest_after": 85463,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "362": {
-                    "earliest_before": 85306,
-                    "earliest_after": 85300,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "363": {
-                    "earliest_before": 85485,
-                    "earliest_after": 85480,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "364": {
-                    "earliest_before": 85292,
-                    "earliest_after": 85287,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "368": {
-                    "earliest_before": 85504,
-                    "earliest_after": 85500,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "369": {
-                    "earliest_before": 84705,
-                    "earliest_after": 84701,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "370": {
-                    "earliest_before": 84990,
-                    "earliest_after": 84987,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "371": {
-                    "earliest_before": 86003,
-                    "earliest_after": 86000,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "372": {
-                    "earliest_before": 85771,
-                    "earliest_after": 85766,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "374": {
-                    "earliest_before": 85562,
-                    "earliest_after": 85559,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "375": {
-                    "earliest_before": 85172,
-                    "earliest_after": 85165,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "376": {
-                    "earliest_before": 85244,
-                    "earliest_after": 85240,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "377": {
-                    "earliest_before": 85902,
-                    "earliest_after": 85899,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "378": {
-                    "earliest_before": 84795,
-                    "earliest_after": 84793,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "380": {
-                    "earliest_before": 86022,
-                    "earliest_after": 86011,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "382": {
-                    "earliest_before": 85244,
-                    "earliest_after": 85242,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "383": {
-                    "earliest_before": 85393,
-                    "earliest_after": 85387,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "384": {
-                    "earliest_before": 85755,
-                    "earliest_after": 85751,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "385": {
-                    "earliest_before": 85298,
-                    "earliest_after": 85290,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "386": {
-                    "earliest_before": 85645,
-                    "earliest_after": 85641,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "387": {
-                    "earliest_before": 85406,
-                    "earliest_after": 85402,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "389": {
-                    "earliest_before": 85054,
-                    "earliest_after": 85051,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "390": {
-                    "earliest_before": 85417,
-                    "earliest_after": 85408,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "392": {
-                    "earliest_before": 85517,
-                    "earliest_after": 85512,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "393": {
-                    "earliest_before": 84881,
-                    "earliest_after": 84872,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "394": {
-                    "earliest_before": 85584,
-                    "earliest_after": 85580,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "395": {
-                    "earliest_before": 85139,
-                    "earliest_after": 85134,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "396": {
-                    "earliest_before": 85201,
-                    "earliest_after": 85200,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "397": {
-                    "earliest_before": 85290,
-                    "earliest_after": 85284,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "398": {
-                    "earliest_before": 85975,
-                    "earliest_after": 85969,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "400": {
-                    "earliest_before": 85297,
-                    "earliest_after": 85287,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "401": {
-                    "earliest_before": 85282,
-                    "earliest_after": 85277,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "404": {
-                    "earliest_before": 85317,
-                    "earliest_after": 85308,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "405": {
-                    "earliest_before": 84722,
-                    "earliest_after": 84714,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "406": {
-                    "earliest_before": 85322,
-                    "earliest_after": 85317,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "408": {
-                    "earliest_before": 85241,
-                    "earliest_after": 85235,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "410": {
-                    "earliest_before": 85387,
-                    "earliest_after": 85381,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "411": {
-                    "earliest_before": 85160,
-                    "earliest_after": 85155,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "412": {
-                    "earliest_before": 85646,
-                    "earliest_after": 85643,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "414": {
-                    "earliest_before": 86022,
-                    "earliest_after": 86015,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "417": {
-                    "earliest_before": 85466,
-                    "earliest_after": 85459,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "418": {
-                    "earliest_before": 86057,
-                    "earliest_after": 86055,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "419": {
-                    "earliest_before": 85006,
-                    "earliest_after": 85001,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "421": {
-                    "earliest_before": 86188,
-                    "earliest_after": 86182,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "422": {
-                    "earliest_before": 84715,
-                    "earliest_after": 84709,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "425": {
-                    "earliest_before": 86236,
-                    "earliest_after": 86233,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "426": {
-                    "earliest_before": 85346,
-                    "earliest_after": 85343,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "427": {
-                    "earliest_before": 84949,
-                    "earliest_after": 84943,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "428": {
-                    "earliest_before": 85402,
-                    "earliest_after": 85396,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "430": {
-                    "earliest_before": 84740,
-                    "earliest_after": 84735,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "432": {
-                    "earliest_before": 85318,
-                    "earliest_after": 85312,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "433": {
-                    "earliest_before": 84938,
-                    "earliest_after": 84933,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "436": {
-                    "earliest_before": 85652,
-                    "earliest_after": 85647,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "437": {
-                    "earliest_before": 85791,
-                    "earliest_after": 85786,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "438": {
-                    "earliest_before": 85116,
-                    "earliest_after": 85111,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "439": {
-                    "earliest_before": 85698,
-                    "earliest_after": 85690,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "440": {
-                    "earliest_before": 85208,
-                    "earliest_after": 85206,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "442": {
-                    "earliest_before": 85637,
-                    "earliest_after": 85634,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "443": {
-                    "earliest_before": 86099,
-                    "earliest_after": 86094,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "445": {
-                    "earliest_before": 85551,
-                    "earliest_after": 85547,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "446": {
-                    "earliest_before": 85089,
-                    "earliest_after": 85083,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "447": {
-                    "earliest_before": 85909,
-                    "earliest_after": 85905,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "448": {
-                    "earliest_before": 85655,
-                    "earliest_after": 85650,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "449": {
-                    "earliest_before": 85816,
-                    "earliest_after": 85807,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "450": {
-                    "earliest_before": 85864,
-                    "earliest_after": 85858,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "453": {
-                    "earliest_before": 85105,
-                    "earliest_after": 85096,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "454": {
-                    "earliest_before": 85504,
-                    "earliest_after": 85496,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "455": {
-                    "earliest_before": 86082,
-                    "earliest_after": 86076,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "456": {
-                    "earliest_before": 85409,
-                    "earliest_after": 85406,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "458": {
-                    "earliest_before": 85615,
-                    "earliest_after": 85607,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "459": {
-                    "earliest_before": 85071,
-                    "earliest_after": 85065,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "460": {
-                    "earliest_before": 85712,
-                    "earliest_after": 85707,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "461": {
-                    "earliest_before": 85133,
-                    "earliest_after": 85125,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "462": {
-                    "earliest_before": 85115,
-                    "earliest_after": 85110,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "464": {
-                    "earliest_before": 85582,
-                    "earliest_after": 85579,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "466": {
-                    "earliest_before": 85332,
-                    "earliest_after": 85327,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "467": {
-                    "earliest_before": 85654,
-                    "earliest_after": 85650,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "468": {
-                    "earliest_before": 85310,
-                    "earliest_after": 85307,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "469": {
-                    "earliest_before": 85053,
-                    "earliest_after": 85048,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "470": {
-                    "earliest_before": 85019,
-                    "earliest_after": 85015,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "471": {
-                    "earliest_before": 85202,
-                    "earliest_after": 85193,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "472": {
-                    "earliest_before": 85571,
-                    "earliest_after": 85567,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "473": {
-                    "earliest_before": 85511,
-                    "earliest_after": 85505,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "474": {
-                    "earliest_before": 84933,
-                    "earliest_after": 84927,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "475": {
-                    "earliest_before": 85182,
-                    "earliest_after": 85175,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "476": {
-                    "earliest_before": 85321,
-                    "earliest_after": 85318,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "477": {
-                    "earliest_before": 86014,
-                    "earliest_after": 86006,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "478": {
-                    "earliest_before": 85852,
-                    "earliest_after": 85849,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "479": {
-                    "earliest_before": 85684,
-                    "earliest_after": 85680,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "480": {
-                    "earliest_before": 84700,
-                    "earliest_after": 84694,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "481": {
-                    "earliest_before": 85437,
-                    "earliest_after": 85433,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "482": {
-                    "earliest_before": 85897,
-                    "earliest_after": 85890,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "484": {
-                    "earliest_before": 85597,
-                    "earliest_after": 85588,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "485": {
-                    "earliest_before": 86246,
-                    "earliest_after": 86243,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "486": {
-                    "earliest_before": 85386,
-                    "earliest_after": 85382,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "487": {
-                    "earliest_before": 85676,
-                    "earliest_after": 85671,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "488": {
-                    "earliest_before": 85502,
-                    "earliest_after": 85496,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "490": {
-                    "earliest_before": 85470,
-                    "earliest_after": 85467,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "491": {
-                    "earliest_before": 86081,
-                    "earliest_after": 86075,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "492": {
-                    "earliest_before": 85566,
-                    "earliest_after": 85556,
-                    "earliest_binding_overlay": "wave-moderate"
-                },
-                "493": {
-                    "earliest_before": 86094,
-                    "earliest_after": 86086,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "494": {
-                    "earliest_before": 85835,
-                    "earliest_after": 85830,
-                    "earliest_binding_overlay": "wave-heavy"
-                },
-                "496": {
-                    "earliest_before": 85276,
-                    "earliest_after": 85271,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "497": {
-                    "earliest_before": 85074,
-                    "earliest_after": 85065,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "498": {
-                    "earliest_before": 85563,
-                    "earliest_after": 85559,
-                    "earliest_binding_overlay": "wave-light"
-                },
-                "500": {
-                    "earliest_before": 85629,
-                    "earliest_after": 85624,
-                    "earliest_binding_overlay": "wave-heavy"
-                }
+
             }
         }
     },
     "service_times": [0, 287, 861, 461, 557, 59, 603, 553, 276, 68, 738, 1529, 710, 892, 325, 1215, 1004, 937, 556, 1101, 1017, 1022, 362, 956, 371, 1307, 1030, 600, 802, 751, 554, 1, 1015, 370, 602, 1155, 794, 590, 119, 270, 733, 1429, 1288, 1204, 724, 298, 1101, 875, 1386, 861, 1275, 621, 801, 691, 205, 690, 1286, 1334, 873, 782, 471, 1134, 555, 139, 1387, 1007, 1529, 1046, 457, 677, 617, 323, 581, 848, 432, 577, 776, 727, 815, 211, 1529, 884, 877, 281, 648, 559, 1, 853, 1116, 304, 858, 362, 407, 554, 128, 1367, 394, 941, 476, 1051, 1058, 268, 985, 1109, 438, 1250, 750, 1085, 1266, 440, 1102, 1235, 34, 753, 1529, 621, 386, 675, 595, 490, 100, 427, 986, 555, 757, 1020, 651, 927, 661, 299, 84, 609, 486, 546, 1227, 1528, 567, 835, 1, 976, 1498, 1104, 342, 406, 1155, 502, 611, 1058, 936, 321, 1368, 1, 312, 1473, 824, 1047, 412, 733, 492, 909, 732, 668, 1170, 231, 128, 1260, 689, 956, 1032, 713, 341, 661, 532, 1143, 590, 322, 1041, 722, 754, 495, 340, 926, 408, 60, 1124, 754, 1015, 1100, 810, 374, 859, 971, 702, 877, 653, 440, 963, 572, 915, 667, 678, 1529, 1054, 520, 663, 232, 159, 870, 326, 1055, 649, 1326, 680, 70, 904, 648, 843, 969, 841, 870, 902, 297, 850, 429, 632, 1486, 789, 268, 815, 481, 820, 887, 1084, 650, 614, 569, 555, 400, 1038, 449, 219, 370, 520, 1484, 1104, 407, 19, 563, 578, 1171, 1044, 204, 1148, 975, 548, 677, 559, 746, 1352, 464, 1255, 513, 221, 396, 579, 200, 397, 226, 949, 596, 1007, 901, 327, 1170, 1132, 1, 483, 540, 1529, 1, 766, 317, 1406, 897, 1077, 234, 921, 1146, 865, 391, 553, 209, 355, 1508, 586, 818, 733, 569, 527, 227, 1201, 1062, 750, 574, 1098, 118, 811, 1, 556, 185, 913, 466, 498, 445, 533, 554, 428, 1285, 601, 504, 543, 771, 1234, 1064, 1, 972, 481, 1064, 660, 521, 861, 879, 1035, 965, 646, 418, 938, 1058, 930, 642, 781, 543, 185, 1233, 1, 1157, 449, 1074, 1000, 1320, 1022, 679, 1437, 1196, 918, 809, 685, 379, 338, 1058, 716, 416, 888, 734, 896, 952, 1026, 1195, 693, 1529, 1306, 326, 416, 1004, 740, 985, 1010, 355, 1529, 948, 1, 885, 1059, 731, 476, 744, 602, 833, 1088, 1245, 748, 1146, 615, 1111, 676, 1068, 1157, 911, 202, 1450, 704, 957, 1265, 794, 760, 1322, 868, 1441, 897, 769, 854, 1016, 577, 666, 189, 586, 1270, 645, 291, 1208, 88, 1, 1464, 234, 560, 1, 956, 1168, 769, 879, 1510, 668, 823, 1230, 961, 500, 539, 463, 1132, 434, 1110, 632, 684, 79, 1216, 673, 1017, 310, 539, 262, 246, 666, 1111, 1018, 558, 92, 814, 617, 417, 1116, 539, 1012, 1144, 552, 652, 671, 905, 584, 984, 1168, 1148, 800, 646, 652, 1280, 936, 972, 1, 437, 585, 1468, 802, 239, 511, 492, 1, 836, 516, 710, 1052, 771, 67, 423, 1, 388, 586, 956, 970, 618, 1437, 633],
     "time_windows": [
         [0, 86400],
-        [27836, 40503],
-        [85349, 85353],
-        [29511, 37102],
-        [85609, 85613],
-        [37930, 57907],
-        [85652, 85657],
-        [83370, 85748],
-        [65345, 85681],
-        [60001, 73073],
-        [85344, 85353],
-        [84786, 84788],
-        [65642, 82255],
-        [85289, 85294],
-        [85861, 85866],
-        [73355, 85046],
-        [85302, 85305],
-        [85276, 85281],
-        [85671, 85675],
-        [85167, 85170],
-        [49534, 61563],
-        [76410, 85220],
-        [85924, 85928],
-        [85187, 85192],
-        [27864, 39701],
-        [84821, 84829],
-        [85216, 85221],
-        [85768, 85770],
-        [85312, 85318],
-        [54642, 71885],
+        [1774, 14441],
+        [0, 15604],
+        [3449, 11040],
+        [1650, 10772],
+        [0, 11956],
+        [0, 14584],
+        [0, 17140],
+        [1172, 21508],
+        [0, 7848],
+        [0, 13018],
+        [0, 11234],
+        [0, 11592],
+        [8306, 22499],
+        [3988, 20804],
+        [0, 9582],
+        [0, 14846],
+        [0, 9416],
+        [8754, 15943],
+        [15037, 18646],
+        [0, 10360],
+        [0, 16281],
+        [0, 14458],
+        [1326, 23205],
+        [1802, 13639],
+        [0, 11714],
+        [294, 15781],
+        [0, 17953],
+        [491, 20001],
+        [340, 17583],
         [3066, 27651],
-        [86253, 86257],
-        [85162, 85166],
-        [85962, 85963],
-        [42271, 57696],
-        [85098, 85101],
-        [52946, 68409],
-        [85514, 85521],
-        [86142, 86145],
-        [85824, 85832],
-        [85434, 85441],
-        [43698, 71240],
-        [84885, 84891],
-        [84873, 84881],
-        [85421, 85427],
-        [85946, 85950],
-        [85168, 85171],
-        [85305, 85310],
-        [84797, 84802],
-        [85480, 85482],
+        [0, 19538],
+        [6045, 18508],
+        [5106, 24947],
+        [0, 7871],
+        [0, 13689],
+        [0, 14785],
+        [321, 20277],
+        [0, 14053],
+        [2747, 15712],
+        [632, 17739],
+        [0, 20037],
+        [6529, 7393],
+        [0, 17033],
+        [665, 18992],
+        [0, 6679],
+        [9710, 10910],
+        [0, 11785],
+        [0, 3222],
+        [0, 14802],
         [0, 28183],
-        [13240, 39572],
-        [57110, 85546],
-        [85409, 85417],
-        [86012, 86018],
-        [85545, 85551],
-        [85055, 85057],
-        [84746, 84754],
-        [85338, 85344],
-        [85376, 85380],
-        [42160, 50308],
-        [85095, 85100],
-        [85574, 85581],
-        [86176, 86178],
-        [84883, 84886],
-        [85077, 85085],
-        [84670, 84675],
-        [53039, 69912],
+        [0, 24776],
+        [0, 17609],
+        [0, 14951],
+        [0, 9780],
+        [0, 13646],
+        [274, 5877],
+        [0, 15017],
+        [298, 22882],
+        [0, 17250],
+        [0, 5523],
+        [1922, 30313],
+        [0, 13959],
+        [6974, 7838],
+        [6689, 21001],
+        [0, 10210],
+        [0, 11171],
+        [0, 16288],
         [0, 10812],
-        [85399, 85407],
-        [42609, 58571],
-        [18481, 39713],
-        [85582, 85588],
-        [49673, 68137],
-        [61235, 69398],
-        [85600, 85605],
-        [85471, 85476],
-        [85602, 85604],
-        [85380, 85384],
-        [85763, 85774],
-        [84704, 84708],
-        [14504, 34225],
+        [0, 11493],
+        [0, 11800],
+        [0, 12285],
+        [0, 5029],
+        [0, 16934],
+        [0, 4120],
+        [1996, 14053],
+        [223, 13360],
+        [0, 11022],
+        [0, 16021],
+        [0, 17719],
+        [0, 18849],
+        [0, 19430],
         [7954, 18355],
-        [85978, 85982],
-        [85672, 85674],
-        [85495, 85503],
-        [86235, 86238],
-        [85408, 85411],
-        [85070, 85076],
-        [85915, 85920],
-        [85405, 85408],
-        [85879, 85883],
-        [85886, 85889],
-        [19671, 35449],
-        [86114, 86119],
-        [84926, 84929],
-        [85893, 85897],
-        [19240, 53315],
-        [85591, 85598],
-        [85175, 85180],
-        [85052, 85061],
-        [86032, 86034],
-        [85320, 85322],
-        [85039, 85045],
-        [85740, 85744],
-        [84973, 84976],
-        [85522, 85525],
-        [85212, 85216],
-        [84856, 84864],
-        [85729, 85734],
-        [85232, 85234],
-        [85005, 85009],
-        [86039, 86049],
-        [50535, 81028],
-        [4896, 31300],
-        [16603, 28171],
-        [85764, 85771],
-        [59713, 65411],
-        [85602, 85608],
-        [85693, 85698],
-        [86206, 86208],
-        [85902, 85905],
-        [85128, 85134],
-        [85644, 85649],
-        [85414, 85419],
-        [85282, 85285],
-        [85618, 85621],
-        [85255, 85260],
-        [85636, 85640],
-        [85897, 85903],
-        [86114, 86119],
-        [85573, 85578],
-        [68518, 85512],
-        [46944, 72613],
-        [85081, 85084],
-        [84776, 84779],
-        [43101, 64536],
-        [85429, 85432],
-        [86189, 86194],
-        [85161, 85169],
-        [84839, 84840],
-        [85176, 85179],
-        [85863, 85869],
-        [85847, 85852],
-        [85015, 85020],
-        [85744, 85748],
-        [85593, 85597],
-        [85298, 85300],
-        [85233, 85238],
-        [85843, 85848],
-        [82078, 84860],
-        [86264, 86267],
-        [85984, 85987],
-        [84791, 84795],
-        [72870, 85445],
-        [85243, 85247],
-        [61920, 71295],
-        [85568, 85571],
-        [85722, 85726],
-        [82172, 85377],
-        [85482, 85488],
-        [18894, 31659],
-        [85150, 85153],
-        [85968, 85972],
-        [86108, 86112],
-        [84718, 84727],
+        [9912, 20226],
+        [2127, 18903],
+        [395, 5765],
+        [0, 12912],
+        [7807, 13016],
+        [7070, 7934],
+        [9668, 21941],
+        [12007, 22687],
+        [0, 7524],
+        [0, 11115],
+        [0, 8021],
+        [0, 17617],
+        [0, 11991],
+        [0, 14640],
+        [0, 27253],
+        [1794, 6203],
+        [0, 9474],
+        [3186, 21076],
+        [0, 6050],
+        [0, 9988],
+        [3316, 21883],
+        [0, 16796],
+        [0, 12508],
+        [0, 15020],
+        [1645, 19889],
+        [0, 9217],
+        [0, 24612],
+        [0, 7239],
+        [0, 17552],
+        [12722, 19672],
+        [0, 15803],
+        [3978, 30382],
+        [1808, 13376],
+        [0, 26458],
+        [0, 5478],
+        [0, 27883],
+        [0, 6834],
+        [0, 10328],
+        [0, 10102],
+        [0, 19547],
+        [0, 13525],
+        [0, 11440],
+        [0, 23260],
+        [0, 7381],
+        [0, 17368],
+        [0, 9169],
+        [0, 9236],
+        [1197, 20186],
+        [1863, 15435],
+        [0, 8517],
+        [0, 21410],
+        [0, 9139],
+        [0, 11848],
+        [0, 14699],
+        [1735, 17310],
+        [6924, 14567],
+        [0, 6401],
+        [0, 9139],
+        [0, 9799],
+        [0, 6791],
+        [0, 10513],
+        [0, 13317],
+        [0, 10755],
+        [0, 5635],
+        [0, 19887],
+        [3677, 14889],
+        [0, 20122],
+        [5083, 12712],
+        [0, 13053],
+        [0, 5301],
+        [7132, 31506],
+        [0, 12513],
+        [0, 9164],
+        [0, 6070],
+        [0, 15136],
+        [5074, 8737],
+        [0, 21551],
+        [0, 19092],
+        [4099, 16864],
+        [0, 12723],
+        [0, 10133],
+        [2701, 6562],
+        [0, 11854],
         [43, 907],
-        [17079, 39157],
-        [85248, 85251],
-        [85430, 85436],
-        [85915, 85920],
-        [85614, 85617],
-        [85640, 85645],
-        [84978, 84985],
-        [42651, 61149],
+        [0, 11728],
+        [6311, 26280],
+        [0, 15865],
+        [6298, 23072],
+        [0, 16396],
+        [4791, 13682],
+        [0, 21271],
+        [0, 12381],
         [9064, 24585],
-        [85224, 85228],
-        [85562, 85565],
-        [85444, 85449],
-        [85748, 85753],
-        [85964, 85966],
-        [85155, 85162],
-        [38477, 50905],
-        [86135, 86139],
-        [46557, 49459],
-        [85322, 85330],
-        [18638, 42779],
-        [78792, 85155],
-        [85329, 85334],
-        [21754, 30185],
-        [85336, 85342],
-        [85136, 85144],
-        [85397, 85406],
-        [85251, 85257],
-        [85500, 85504],
-        [85856, 85859],
+        [7454, 23020],
+        [0, 8796],
+        [0, 13984],
+        [0, 14396],
+        [10937, 18841],
+        [4374, 14680],
+        [11289, 23717],
+        [0, 8342],
+        [607, 3509],
+        [3445, 14069],
+        [0, 15351],
+        [1796, 21059],
+        [1927, 12497],
+        [6959, 15390],
+        [0, 7161],
+        [0, 16669],
+        [534, 15262],
+        [2552, 16118],
+        [0, 10242],
+        [0, 12368],
         [734, 20125],
-        [85701, 85705],
-        [85351, 85354],
-        [85550, 85555],
-        [85471, 85478],
-        [27341, 36174],
-        [85253, 85255],
-        [85752, 85755],
-        [85563, 85568],
-        [86099, 86101],
-        [78459, 86053],
-        [85329, 85335],
-        [86024, 86024],
-        [32946, 48048],
-        [46317, 59976],
-        [84894, 84898],
-        [85476, 85481],
-        [66201, 74982],
-        [85463, 85464],
-        [85565, 85569],
-        [85335, 85340],
-        [85280, 85284],
-        [85297, 85305],
-        [85303, 85307],
+        [11685, 20752],
+        [0, 10035],
+        [0, 12924],
+        [0, 9262],
+        [1280, 10113],
+        [0, 10076],
+        [0, 10181],
+        [0, 15319],
+        [0, 4788],
+        [1464, 11738],
+        [415, 1279],
+        [0, 4954],
+        [5758, 20860],
+        [0, 10139],
+        [3027, 22796],
+        [5421, 23206],
+        [0, 4423],
+        [0, 13429],
+        [531, 19535],
+        [0, 17018],
+        [6420, 16145],
+        [0, 7581],
+        [0, 16759],
         [0, 17415],
-        [85928, 85931],
-        [85456, 85460],
-        [85778, 85783],
-        [85709, 85710],
-        [84816, 84819],
-        [84631, 85547],
-        [85764, 85773],
-        [85464, 85467],
-        [58077, 77684],
-        [85294, 85300],
-        [85310, 85315],
-        [85220, 85223],
-        [85674, 85676],
-        [85695, 85698],
-        [85700, 85703],
-        [19475, 27787],
-        [85727, 85736],
-        [85144, 85150],
-        [85661, 85668],
+        [13269, 24732],
+        [0, 6390],
+        [0, 13359],
+        [0, 10339],
+        [9093, 16709],
+        [1811, 28988],
+        [0, 11526],
+        [0, 22468],
+        [0, 11706],
+        [0, 13516],
+        [0, 6413],
+        [0, 6870],
+        [0, 8865],
+        [0, 6638],
+        [0, 14469],
+        [4679, 12991],
+        [1109, 20181],
+        [0, 9948],
+        [0, 11470],
         [0, 18789],
-        [77853, 85862],
-        [85666, 85670],
-        [73177, 84788],
-        [46727, 62065],
-        [85758, 85763],
-        [33067, 53168],
-        [85520, 85528],
-        [85746, 85748],
-        [85105, 85109],
-        [85331, 85332],
-        [86001, 86007],
-        [84888, 85141],
-        [85177, 85183],
-        [85755, 85757],
-        [85524, 85529],
-        [85746, 85749],
-        [82356, 85561],
-        [84852, 84856],
-        [85707, 85711],
-        [84861, 84868],
-        [85658, 85662],
-        [75810, 81732],
-        [85922, 85924],
-        [85637, 85641],
-        [81523, 86046],
-        [85841, 85844],
-        [68342, 86096],
-        [85144, 85151],
-        [85645, 85650],
-        [85190, 85196],
-        [85368, 85372],
+        [858, 13952],
+        [1926, 26708],
+        [0, 14017],
+        [0, 12228],
+        [0, 7169],
+        [5879, 25980],
+        [0, 9835],
+        [5203, 23613],
+        [10496, 15018],
+        [0, 16437],
+        [0, 12210],
+        [7893, 19509],
+        [0, 21414],
+        [0, 14715],
+        [7554, 15813],
+        [0, 13540],
+        [0, 16519],
+        [0, 28668],
+        [1815, 16850],
+        [0, 11663],
+        [0, 20989],
+        [0, 4737],
+        [0, 15360],
+        [0, 17258],
+        [4528, 20546],
+        [0, 11799],
+        [0, 14055],
+        [4633, 9829],
+        [0, 10769],
+        [7894, 24571],
+        [0, 18117],
         [6124, 26864],
-        [84978, 84985],
-        [85007, 85011],
-        [86331, 86333],
-        [85821, 85823],
-        [85671, 85676],
-        [84747, 84750],
-        [86244, 86247],
-        [85471, 85476],
-        [23395, 37301],
-        [84714, 84721],
-        [80574, 85351],
-        [85035, 85041],
-        [86058, 86061],
-        [85170, 85177],
-        [22090, 56573],
-        [23852, 35049],
-        [20060, 34065],
-        [85530, 85538],
-        [86019, 86022],
-        [85899, 85903],
-        [84641, 84648],
-        [85705, 85708],
-        [85346, 85352],
-        [85538, 85541],
-        [85714, 85717],
-        [85639, 85644],
-        [48961, 64263],
-        [84785, 84796],
-        [85159, 85165],
-        [85338, 85565],
-        [85737, 85740],
-        [85205, 85208],
-        [85975, 85984],
-        [85290, 85297],
-        [86224, 86228],
-        [62056, 75959],
-        [85989, 85995],
-        [85284, 85288],
-        [65294, 78666],
-        [85801, 85803],
-        [85848, 85853],
+        [5785, 16955],
+        [4432, 24558],
+        [0, 6834],
+        [0, 4055],
+        [12358, 33670],
+        [3846, 20775],
+        [0, 10148],
+        [5298, 22049],
+        [0, 9872],
+        [9832, 18214],
+        [3578, 21935],
+        [4657, 17422],
+        [0, 16640],
+        [0, 6420],
+        [0, 29385],
+        [0, 7621],
+        [0, 13618],
+        [0, 14900],
+        [0, 6009],
+        [0, 9669],
+        [0, 15901],
+        [0, 7066],
+        [7378, 22909],
+        [5429, 22440],
+        [0, 11505],
+        [7377, 10129],
+        [0, 13060],
+        [0, 4738],
+        [8664, 25635],
+        [5224, 29445],
+        [0, 11533],
+        [13766, 18554],
+        [0, 15628],
+        [161, 16894],
+        [304, 1168],
+        [0, 9333],
+        [1295, 26250],
+        [5438, 21186],
+        [0, 8002],
+        [0, 11662],
+        [0, 5694],
         [5606, 26313],
-        [39532, 55088],
-        [85759, 85765],
-        [84967, 84971],
-        [85617, 85620],
-        [85796, 85799],
-        [85677, 85681],
-        [85391, 85397],
-        [85089, 85092],
-        [85112, 85116],
-        [86224, 86228],
-        [85325, 85327],
-        [85792, 85795],
-        [80986, 85221],
-        [85569, 85573],
-        [85748, 85752],
-        [85326, 85332],
-        [85185, 85193],
-        [85088, 85094],
-        [85217, 85224],
-        [85530, 85534],
-        [85800, 85803],
-        [85157, 85163],
-        [12808, 29775],
-        [85130, 85137],
-        [10047, 29224],
-        [85486, 85490],
-        [85785, 85787],
-        [85949, 85955],
+        [11281, 26837],
+        [0, 7454],
+        [0, 13590],
+        [0, 13571],
+        [2810, 21668],
+        [3793, 18893],
+        [0, 13754],
+        [0, 14404],
+        [0, 6916],
+        [0, 18863],
+        [0, 26739],
+        [8638, 22801],
+        [0, 17278],
+        [0, 20526],
+        [3581, 14800],
+        [0, 13859],
+        [0, 14294],
+        [162, 20971],
+        [295, 15405],
+        [4695, 10492],
+        [0, 22483],
+        [204, 12702],
+        [0, 14979],
+        [0, 9951],
+        [0, 13549],
+        [0, 20033],
+        [0, 10934],
+        [0, 21882],
         [0, 8679],
-        [86198, 86202],
-        [84968, 84974],
-        [85746, 85751],
-        [85052, 85057],
-        [85329, 85331],
-        [84896, 84902],
-        [85146, 85152],
-        [85540, 85543],
-        [84876, 84878],
-        [29273, 40786],
+        [0, 14994],
+        [0, 19726],
+        [0, 16842],
+        [0, 9596],
+        [6376, 26121],
+        [9991, 18973],
+        [987, 15175],
+        [0, 17328],
+        [0, 15800],
+        [3211, 14724],
         [0, 17765],
-        [85494, 85495],
-        [85545, 85549],
-        [85935, 85937],
-        [85776, 85782],
-        [85227, 85230],
-        [85463, 85468],
+        [1468, 29072],
+        [3204, 20593],
+        [0, 12029],
+        [3487, 13225],
+        [0, 7447],
+        [2836, 24164],
         [0, 5451],
-        [85300, 85306],
-        [85480, 85485],
-        [85287, 85292],
-        [58784, 80380],
+        [0, 13152],
+        [3409, 29400],
+        [1684, 19858],
+        [0, 13754],
         [4221, 19974],
         [0, 10967],
-        [85500, 85504],
-        [84701, 84705],
-        [84987, 84990],
-        [86000, 86003],
-        [85766, 85771],
+        [0, 8526],
+        [18487, 23189],
+        [0, 16965],
+        [0, 4980],
+        [12024, 35201],
         [0, 16700],
-        [85559, 85562],
-        [85165, 85172],
-        [85240, 85244],
-        [85899, 85902],
-        [84793, 84795],
+        [0, 5191],
+        [0, 11029],
+        [12955, 23539],
+        [15374, 32824],
+        [0, 12028],
         [0, 14156],
-        [86011, 86022],
-        [23655, 50922],
-        [85242, 85244],
-        [85387, 85393],
-        [85751, 85755],
-        [85290, 85298],
-        [85641, 85645],
-        [85402, 85406],
+        [0, 13614],
+        [0, 24860],
+        [0, 6760],
+        [0, 12541],
+        [0, 15877],
+        [1583, 9684],
+        [94, 23358],
+        [7253, 16166],
         [0, 24592],
-        [85051, 85054],
-        [85408, 85417],
+        [1684, 18290],
+        [1022, 21616],
         [0, 12591],
-        [85512, 85517],
-        [84872, 84881],
-        [85580, 85584],
-        [85134, 85139],
-        [85200, 85201],
-        [85284, 85290],
-        [85969, 85975],
-        [35420, 47803],
-        [85287, 85297],
-        [85277, 85282],
-        [58509, 69575],
-        [57222, 76857],
-        [85308, 85317],
-        [84714, 84722],
-        [85317, 85322],
-        [27049, 59345],
-        [85235, 85241],
-        [40730, 57623],
-        [85381, 85387],
-        [85155, 85160],
-        [85643, 85646],
-        [62592, 85645],
-        [86015, 86022],
-        [14430, 31632],
-        [64461, 76956],
-        [85459, 85466],
-        [86055, 86057],
-        [85001, 85006],
-        [14223, 34228],
-        [86182, 86188],
-        [84709, 84715],
-        [49047, 71731],
-        [58877, 77957],
-        [86233, 86236],
-        [85343, 85346],
-        [84943, 84949],
-        [85396, 85402],
-        [11134, 23213],
-        [84735, 84740],
+        [3535, 17672],
+        [0, 16099],
+        [3769, 26286],
+        [0, 5242],
+        [0, 14073],
+        [0, 13602],
+        [0, 15131],
+        [8232, 20615],
+        [0, 17336],
+        [0, 17048],
+        [0, 6031],
+        [0, 11632],
+        [130, 12941],
+        [0, 20045],
+        [0, 27024],
+        [0, 32157],
+        [0, 16945],
+        [0, 8593],
+        [0, 11875],
+        [0, 22825],
+        [0, 14148],
+        [0, 18451],
+        [14032, 19798],
+        [0, 16837],
+        [0, 6292],
+        [0, 9762],
+        [392, 17821],
+        [131, 24605],
+        [0, 19433],
+        [4078, 24375],
+        [0, 12786],
+        [0, 20528],
+        [0, 11331],
+        [1813, 10593],
+        [1430, 22338],
+        [9313, 17192],
+        [0, 12412],
+        [0, 10645],
+        [6246, 11892],
         [0, 23875],
-        [85312, 85318],
-        [84933, 84938],
-        [4748, 35905],
-        [64209, 85895],
-        [85647, 85652],
-        [85786, 85791],
-        [85111, 85116],
-        [85690, 85698],
-        [85206, 85208],
-        [44907, 60088],
-        [85634, 85637],
-        [86094, 86099],
-        [67241, 85098],
-        [85547, 85551],
-        [85083, 85089],
-        [85905, 85909],
-        [85650, 85655],
-        [85807, 85816],
-        [85858, 85864],
-        [71815, 79804],
-        [35037, 41337],
-        [85096, 85105],
-        [85496, 85504],
-        [86076, 86082],
-        [85406, 85409],
-        [71579, 85618],
-        [85607, 85615],
-        [85065, 85071],
-        [85707, 85712],
-        [85125, 85133],
-        [85110, 85115],
-        [24417, 44520],
-        [85579, 85582],
-        [45236, 57220],
-        [85327, 85332],
-        [85650, 85654],
-        [85307, 85310],
-        [85048, 85053],
-        [85015, 85019],
-        [85193, 85202],
-        [85567, 85571],
-        [85505, 85511],
-        [84927, 84933],
-        [85175, 85182],
-        [85318, 85321],
-        [86006, 86014],
-        [85849, 85852],
-        [85680, 85684],
-        [84694, 84700],
-        [85433, 85437],
-        [85890, 85897],
-        [37185, 56315],
-        [85588, 85597],
-        [86243, 86246],
-        [85382, 85386],
-        [85671, 85676],
-        [85496, 85502],
-        [31737, 58554],
-        [85467, 85470],
-        [86075, 86081],
-        [85556, 85566],
-        [86086, 86094],
-        [85830, 85835],
-        [48854, 64889],
-        [85271, 85276],
-        [85065, 85074],
-        [85559, 85563],
-        [61624, 83327],
-        [85624, 85629]
+        [0, 20623],
+        [0, 25639],
+        [0, 21110],
+        [0, 12310],
+        [1735, 29499],
+        [4127, 11012],
+        [1555, 9756],
+        [3295, 18894],
+        [0, 18069],
+        [2158, 17339],
+        [0, 13311],
+        [0, 21275],
+        [0, 10859],
+        [8533, 18639],
+        [0, 11595],
+        [0, 12782],
+        [0, 27799],
+        [7336, 24127],
+        [0, 22595],
+        [0, 4865],
+        [0, 3429],
+        [681, 18487],
+        [0, 16047],
+        [0, 11607],
+        [8576, 27667],
+        [0, 18980],
+        [0, 19217],
+        [331, 16916],
+        [7089, 19161],
+        [0, 6853],
+        [0, 18421],
+        [0, 18458],
+        [0, 14706],
+        [0, 8452],
+        [0, 17129],
+        [14749, 29993],
+        [0, 19864],
+        [0, 19405],
+        [0, 18774],
+        [1689, 9284],
+        [0, 19784],
+        [2964, 12362],
+        [14988, 16129],
+        [0, 14736],
+        [3502, 10265],
+        [0, 8511],
+        [5754, 6618],
+        [0, 17315],
+        [0, 16958],
+        [0, 14050],
+        [0, 16561],
+        [0, 10499],
+        [0, 15365],
+        [14534, 24026],
+        [0, 9646],
+        [0, 25686],
+        [0, 7484],
+        [4549, 31366],
+        [561, 27992],
+        [0, 12306],
+        [0, 14117],
+        [0, 24308],
+        [772, 8103],
+        [0, 13686],
+        [4908, 16306],
+        [0, 8453],
+        [0, 12168],
+        [0, 12664],
+        [433, 16659]
     ]
 }

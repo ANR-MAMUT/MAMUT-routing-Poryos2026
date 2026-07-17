@@ -4,7 +4,7 @@
     "benchmark_name": "Mamut2026",
     "num_customers": 25,
     "num_vehicles": null,
-    "vehicle_capacity": 158,
+    "vehicle_capacity": 131,
     "coordinates": [
         [1438.9425746026898, -1211.8557234748282],
         [2854.0909988205926, -5289.485434391499],
@@ -33,7 +33,7 @@
         [1773.2358493738222, 2432.9261548337518],
         [387.0331156990046, -8158.699173478547]
     ],
-    "demands": [0, 7, 10, 8, 4, 3, 7, 7, 7, 8, 1, 76, 3, 5, 1, 7, 55, 3, 9, 2, 5, 10, 5, 8, 2, 2],
+    "demands": [0, 7, 100, 8, 4, 3, 7, 7, 7, 8, 1, 76, 3, 5, 1, 7, 55, 3, 93, 2, 5, 10, 5, 8, 2, 2],
     "service_times": [0, 251, 4, 313, 552, 707, 695, 655, 60, 633, 514, 588, 736, 661, 798, 427, 733, 502, 750, 519, 10, 750, 12, 453, 613, 340],
     "depot": 0,
     "reference_lla": {
@@ -46,7 +46,7 @@
         "model": "road-graph",
         "graph": {
             "path": "sidecars/hong_kong/n=25/mamut-hong_kong-n25-hyb/mamut-hong_kong-n25-hyb.road.json.gz",
-            "sha256": "26fee87289869859c5a6f50d31907d6146efd4057d1518d9ef296da81f53f96b"
+            "sha256": "d2395c9b88779b4a824a785234a2be052b1294fb25c2cbec60297a24f1e6cd1a"
         },
         "traffic": {
             "path": "sidecars/hong_kong/n=25/mamut-hong_kong-n25-hyb/mamut-hong_kong-n25-hyb.traffic-bpr-heavy.json.gz",
@@ -60,33 +60,33 @@
         [0, 86400],
         [0, 18667],
         [0, 2280],
-        [0, 29886],
-        [0, 14450],
-        [9987, 29181],
+        [0, 31992],
+        [1236, 16556],
+        [2960, 22154],
         [0, 13110],
-        [1210, 15603],
-        [0, 14475],
-        [2879, 19715],
-        [639, 14427],
-        [0, 26399],
-        [0, 9640],
-        [0, 9172],
-        [1951, 9658],
+        [3316, 17709],
+        [0, 16581],
+        [0, 12172],
+        [2745, 16533],
+        [0, 17283],
+        [0, 11745],
+        [629, 11278],
+        [4057, 11764],
         [0, 14295],
-        [0, 16572],
-        [6028, 21804],
-        [5729, 29082],
-        [6837, 25339],
-        [3593, 15341],
+        [0, 18678],
+        [0, 9826],
+        [0, 12392],
+        [5815, 24317],
+        [5699, 17447],
         [0, 7101],
-        [4628, 25337],
-        [2052, 24078],
-        [0, 27460],
-        [1608, 7611]
+        [0, 13358],
+        [0, 12099],
+        [0, 15481],
+        [3714, 9717]
     ],
     "metadata": {
         "authors": "MAMUT-routing workbench (generated instance)",
-        "generated_at": "2026-07-09",
+        "generated_at": "2026-07-16",
         "city": "hong_kong",
         "method": "hyb",
         "base_instance_name": "mamut-hong_kong-n25-hyb",
@@ -94,7 +94,7 @@
         "generator": {
             "name": "mamut-routing-workbench",
             "stage": "build-td",
-            "version": 2,
+            "version": 3,
             "city": "hong_kong",
             "method": "hyb"
         },
@@ -131,18 +131,19 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/hong_kong/n=25/mamut-hong_kong-n25-hyb/mamut-hong_kong-n25-hyb.geo.json.gz",
-                "sha256": "6940d699f81fb810435c93367d1c61ee86aa0d5c48706de81746dd64fe154953"
+                "sha256": "014a80e4beb4352d121a666fd0e0fe03a6fa931b6eba0db9718406a96698463d"
             }
         },
         "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
         "problem_type": "TDVRPTW",
         "tw_repair": {
-            "policy": "minimal-shared-tw-repair",
+            "policy": "global-anchor-minimal-shared-deadline-lift",
             "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
             "lifted_customers": 0,
             "max_lift_seconds": 0,
             "reduced_customers": 0,
             "max_reduction_seconds": 0,
+            "anchor_routes": 4,
             "repairs": {
 
             }
