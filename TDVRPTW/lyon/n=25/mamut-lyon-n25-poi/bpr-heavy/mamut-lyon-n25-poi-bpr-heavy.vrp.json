@@ -131,7 +131,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/lyon/n=25/mamut-lyon-n25-poi/mamut-lyon-n25-poi.geo.json.gz",
-                "sha256": "9f767b65521e8d0db1d42c650e35244e414ff5a41ba4fc218b30cf4763174bc2"
+                "sha256": "6f99927c72f16b5316deec38b9994bf1fbe8c8365ef219aad4f746ee3f11f382"
             }
         },
         "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",

@@ -146,7 +146,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/san_francisco/n=100/mamut-san_francisco-n100-poi/mamut-san_francisco-n100-poi.geo.json.gz",
-                "sha256": "aa1a325ab667a8a646bd2828fa3ac646a42252b4a74009c20ffb158475b31d16"
+                "sha256": "04149e55d1c771c407a543cc1ba4007d293bd6f66b45d2f732debce230e5660a"
             }
         },
         "tw_set": {

@@ -128,7 +128,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/paris/n=50/mamut-paris-n50-poi/mamut-paris-n50-poi.geo.json.gz",
-                "sha256": "def5ecc3d68c9fcee52c735221a094599a3adae18211cc13e77474e470644832"
+                "sha256": "8d270083e8b9d384bcd5d7ca8978936f5079687e86a8e28330e97c4eed606f60"
             }
         },
         "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",

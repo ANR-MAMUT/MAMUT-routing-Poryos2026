@@ -51,7 +51,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/lyon/n=10/mamut-lyon-n10-hyb/mamut-lyon-n10-hyb.geo.json.gz",
-                "sha256": "d3874cdb1b4699b53827779a66291304e3121c99d1bffbcdaa98ce14aa604d76"
+                "sha256": "8f93a6ec85462997878304ff990885a04546ab3529dca0095236a3cd4aa3b90f"
             }
         }
     }

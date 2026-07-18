@@ -54,7 +54,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/hong_kong/n=10/mamut-hong_kong-n10-hyb/mamut-hong_kong-n10-hyb.geo.json.gz",
-                "sha256": "88270c7c78b6c9a622a35352f5c260b1acca88a6956ffe8f3607db2acf3f8918"
+                "sha256": "75441eb6c3991b715090e16bce25cfdd8e70a726f2010e5168a93a89e08c6138"
             }
         }
     }

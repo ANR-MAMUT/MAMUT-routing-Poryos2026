@@ -146,7 +146,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/paris/n=100/mamut-paris-n100-hyb/mamut-paris-n100-hyb.geo.json.gz",
-                "sha256": "48b1d768237d605a2954eda199be757e003bb1589b8d88df9e21250fd8bcc44c"
+                "sha256": "d8d083dc897a3c27253ffc5812364be4167be14225edf3e574dea91fd9bd1234"
             }
         },
         "tw_set": {

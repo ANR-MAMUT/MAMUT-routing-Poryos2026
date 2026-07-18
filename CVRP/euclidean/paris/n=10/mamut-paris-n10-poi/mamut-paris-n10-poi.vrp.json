@@ -51,7 +51,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/paris/n=10/mamut-paris-n10-poi/mamut-paris-n10-poi.geo.json.gz",
-                "sha256": "e5727a1a568a15cf382b6b93228da60ee78d8f93f77ec0db02773947f9ca023d"
+                "sha256": "f9b10b4c127555c770f2fad84a1e1d0f6c578121113a11d5bb132475d7c9a8aa"
             }
         }
     }

@@ -101,7 +101,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/san_francisco/n=10/mamut-san_francisco-n10-hyb/mamut-san_francisco-n10-hyb.geo.json.gz",
-                "sha256": "f22cf26d4f3d7e5c0f082430444dd699506bf5ae5deab0a34a4392acd38d7b4c"
+                "sha256": "ed885c58b307daa7cce21e6cb0419cc20626b2879d71afabac74162bd6169413"
             }
         },
         "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",

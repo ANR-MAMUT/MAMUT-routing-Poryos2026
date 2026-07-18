@@ -146,7 +146,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/hong_kong/n=100/mamut-hong_kong-n100-poi/mamut-hong_kong-n100-poi.geo.json.gz",
-                "sha256": "37c57acde6d4e256e756b894fa279dcf14a2b49823a5e9c81d0c5bf620bde133"
+                "sha256": "9aa3c962d097f1f1af76615cf36865ebf7f3e6ce57b2f3c2de43c030e3a430ea"
             }
         },
         "tw_set": {

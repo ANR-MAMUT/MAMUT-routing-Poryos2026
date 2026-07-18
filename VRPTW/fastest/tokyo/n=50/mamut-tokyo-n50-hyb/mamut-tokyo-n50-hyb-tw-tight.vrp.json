@@ -96,7 +96,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/tokyo/n=50/mamut-tokyo-n50-hyb/mamut-tokyo-n50-hyb.geo.json.gz",
-                "sha256": "3c889345c21ebc507ed402304809a69b4622fd602652782af03ae02e76fbb457"
+                "sha256": "8c22878965c38dbea73f4a094a732f3d7a7f51763af3fcd59faa9519b6aea094"
             }
         },
         "tw_set": {

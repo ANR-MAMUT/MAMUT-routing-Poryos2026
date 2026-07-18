@@ -146,7 +146,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/tokyo/n=100/mamut-tokyo-n100-poi/mamut-tokyo-n100-poi.geo.json.gz",
-                "sha256": "c326dc5017b60c2fc3663779bd38932feb020003ae89bd5d36bfe51db02bf36a"
+                "sha256": "8069e7f2ff13fca08fd82a9366b32734d5128009b312d8ef896d204127ed7d8f"
             }
         },
         "tw_set": {

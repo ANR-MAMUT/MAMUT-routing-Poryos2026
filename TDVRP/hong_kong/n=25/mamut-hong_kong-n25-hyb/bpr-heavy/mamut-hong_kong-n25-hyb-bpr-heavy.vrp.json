@@ -103,7 +103,7 @@
         "sidecars": {
             "geo": {
                 "path": "sidecars/hong_kong/n=25/mamut-hong_kong-n25-hyb/mamut-hong_kong-n25-hyb.geo.json.gz",
-                "sha256": "014a80e4beb4352d121a666fd0e0fe03a6fa931b6eba0db9718406a96698463d"
+                "sha256": "72290f860aa0cda6bd6d78d615ba0125a6033b9564ecc0f7aad31ea2df3635a2"
             }
         },
         "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
