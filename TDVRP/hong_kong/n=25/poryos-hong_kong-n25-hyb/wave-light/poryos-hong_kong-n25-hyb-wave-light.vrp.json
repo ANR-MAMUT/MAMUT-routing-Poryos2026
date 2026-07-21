@@ -1,0 +1,95 @@
+{
+    "instance_name": "poryos-hong_kong-n25-hyb-wave-light",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Poryos2026",
+    "num_customers": 25,
+    "num_vehicles": null,
+    "vehicle_capacity": 131,
+    "coordinates": [
+        [1438.9425746026898, -1211.8557234748282],
+        [2854.0909988205926, -5289.485434391499],
+        [1064.7303099413407, -4565.50818442616],
+        [4135.942077729063, -6886.53857213557],
+        [-1291.42758610145, -7534.520196424505],
+        [11628.232688114813, 3269.857196819434],
+        [923.6263809727918, -4613.631346716304],
+        [4060.200083972907, -6650.307220623232],
+        [1650.4308939328166, -8323.731675055418],
+        [-2096.6421363271893, -1536.4555021404958],
+        [-3269.283285384209, -7706.210745539751],
+        [9158.65210163097, -10012.65504722463],
+        [3141.704468852478, -5482.583832940391],
+        [1591.1514336250698, -7826.520164695534],
+        [-640.6765402061213, -8525.795925338925],
+        [1223.021177482664, -5454.771331817496],
+        [406.8702318673604, -8091.660322058564],
+        [3895.0172944592714, 7567.627210922325],
+        [-10047.765793116041, 98.29120733013112],
+        [-7824.829985244633, 10307.260476472775],
+        [3725.391552440347, -7028.847295481892],
+        [787.7757463954183, -4445.289215195031],
+        [9396.92794771471, 8593.772058556891],
+        [3941.7632876489383, 2088.5842719580696],
+        [1773.2358493738222, 2432.9261548337518],
+        [387.0331156990046, -8158.699173478547]
+    ],
+    "demands": [0, 7, 100, 8, 4, 3, 7, 7, 7, 8, 1, 76, 3, 5, 1, 7, 55, 3, 93, 2, 5, 10, 5, 8, 2, 2],
+    "service_times": [0, 251, 4, 313, 552, 707, 695, 655, 60, 633, 514, 588, 736, 661, 798, 427, 733, 502, 750, 519, 10, 750, 12, 453, 613, 340],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 22.35252895,
+        "lon": 114.15986375,
+        "alt": 0.0
+    },
+    "horizon": [0.0, 86400.0],
+    "td": {
+        "model": "road-graph",
+        "graph": {
+            "path": "sidecars/hong_kong/n=25/poryos-hong_kong-n25-hyb/poryos-hong_kong-n25-hyb.road.json.gz",
+            "sha256": "8c041931a55a1f3a0428c23912613ed1a4ed0410e426718cc3601d50e45efaa5"
+        },
+        "traffic": {
+            "path": "sidecars/hong_kong/n=25/poryos-hong_kong-n25-hyb/poryos-hong_kong-n25-hyb.traffic-wave-light.json.gz",
+            "sha256": "652f7fd7327b278411d14d1147adfa3acf36c48ea652372abf932ca2a4daa2fd"
+        },
+        "atf_sha256": "c586ae003768c3a0511fe8eff209e2ede5ae4c218e13ac65aa3b4919a135ad08",
+        "sample_step": 60.0,
+        "simplify_tolerance": 1.0
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-16",
+        "city": "hong_kong",
+        "method": "hyb",
+        "base_instance_name": "poryos-hong_kong-n25-hyb",
+        "subinstance": "wave-light",
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "build-td",
+            "version": 3,
+            "city": "hong_kong",
+            "method": "hyb"
+        },
+        "traffic": {
+            "model": "wave",
+            "intensity": "light",
+            "seed": 10251,
+            "num_trips": 0,
+            "params": {
+                "floor_share": 0.35,
+                "min_speed_factor": 0.12,
+                "jitter": 0.08,
+                "amplitude": 0.25,
+                "center_decay_m": 3000.0
+            }
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/hong_kong/n=25/poryos-hong_kong-n25-hyb/poryos-hong_kong-n25-hyb.geo.json.gz",
+                "sha256": "fc668eb8e39f994199f8cff088c18893c40ba6fb6dccdce5a7b1c1e1e8b6a753"
+            }
+        },
+        "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
+        "problem_type": "TDVRP"
+    }
+}

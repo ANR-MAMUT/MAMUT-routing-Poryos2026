@@ -1,0 +1,105 @@
+{
+    "instance_name": "poryos-lyon-n10-poi-wave-moderate",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Poryos2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 96,
+    "coordinates": [
+        [135.7576295960148, 21.597263143175013],
+        [-1164.0975455280536, -1386.9656573759394],
+        [349.60714888174965, -2469.462390077968],
+        [2090.053894033262, 2037.426794875233],
+        [17.803017969731993, 573.805653555079],
+        [1360.7971717527425, 644.3658744564032],
+        [-270.2222319729993, 863.1041592261349],
+        [1723.4891058059418, 700.8849576255684],
+        [-467.8914630350672, 1204.8143916924419],
+        [577.7314830048462, -1047.9512471219673],
+        [3602.3800592215607, 1263.5027604862778]
+    ],
+    "demands": [0, 4, 58, 3, 8, 7, 52, 8, 74, 6, 10],
+    "service_times": [0, 832, 522, 1020, 1221, 35, 974, 694, 886, 702, 1141],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 45.7578147,
+        "lon": 4.835118850000001,
+        "alt": 0.0
+    },
+    "horizon": [0.0, 86400.0],
+    "td": {
+        "model": "road-graph",
+        "graph": {
+            "path": "sidecars/lyon/n=10/poryos-lyon-n10-poi/poryos-lyon-n10-poi.road.json.gz",
+            "sha256": "0f61806cba7529b2a8f6f05e780280a1d40e7fd6ed32278ccdb5bd6798c3a075"
+        },
+        "traffic": {
+            "path": "sidecars/lyon/n=10/poryos-lyon-n10-poi/poryos-lyon-n10-poi.traffic-wave-moderate.json.gz",
+            "sha256": "4ef28fdc5d91d57ca95a91a4efd2b3f4082f736cdeebff775824f9c0ee9ba77b"
+        },
+        "atf_sha256": "8e0da6e64530a42637edf7727b4256f05822c1d40d9dbeb63e89a44bca2f2d14",
+        "sample_step": 60.0,
+        "simplify_tolerance": 1.0
+    },
+    "time_windows": [
+        [0, 86400],
+        [0, 10707],
+        [0, 5862],
+        [1008, 8439],
+        [0, 12678],
+        [0, 9446],
+        [0, 1937],
+        [0, 19372],
+        [0, 10508],
+        [0, 18545],
+        [0, 12080]
+    ],
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-16",
+        "city": "lyon",
+        "method": "poi",
+        "base_instance_name": "poryos-lyon-n10-poi",
+        "subinstance": "wave-moderate",
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "build-td",
+            "version": 3,
+            "city": "lyon",
+            "method": "poi"
+        },
+        "traffic": {
+            "model": "wave",
+            "intensity": "moderate",
+            "seed": 20258,
+            "num_trips": 0,
+            "params": {
+                "floor_share": 0.35,
+                "min_speed_factor": 0.12,
+                "jitter": 0.08,
+                "amplitude": 0.45,
+                "center_decay_m": 3000.0
+            }
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/lyon/n=10/poryos-lyon-n10-poi/poryos-lyon-n10-poi.geo.json.gz",
+                "sha256": "8fb68760b96f0e8d7435dfcabc8c24a9fc982d3ae53ef9e6e434eee5a3104f9e"
+            }
+        },
+        "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
+        "problem_type": "TDVRPTW",
+        "tw_repair": {
+            "policy": "global-anchor-minimal-shared-deadline-lift",
+            "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
+            "lifted_customers": 0,
+            "max_lift_seconds": 0,
+            "reduced_customers": 0,
+            "max_reduction_seconds": 0,
+            "anchor_routes": 3,
+            "repairs": {
+
+            }
+        }
+    }
+}

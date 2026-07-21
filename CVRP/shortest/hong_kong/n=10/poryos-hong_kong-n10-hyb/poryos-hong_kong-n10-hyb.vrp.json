@@ -1,0 +1,61 @@
+{
+    "instance_name": "poryos-hong_kong-n10-hyb",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Poryos2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 101,
+    "coordinates": [
+        [1438.9425746026898, -1211.8557234748282],
+        [1341.1207028225522, -8492.364949990431],
+        [-617.8920959478759, -7808.174334780928],
+        [3729.5649171749856, -2859.97228879346],
+        [1113.921911167056, 11014.492264973676],
+        [422.1075768473487, -2211.2211519477],
+        [-8059.341270334778, 9001.557866204848],
+        [-3140.1587977196036, -2065.126878252965],
+        [-2308.6187075243256, -1828.7764953860717],
+        [9962.929957311815, -5586.984192715099],
+        [5504.164896871657, 5115.139734534838]
+    ],
+    "demands": [0, 61, 9, 7, 60, 5, 77, 4, 1, 8, 2],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 22.35252895,
+        "lon": 114.15986375,
+        "alt": 0.0
+    },
+    "metric_variant": "shortest",
+    "arc_costs_source": {
+        "model": "distances-sidecar",
+        "distances": {
+            "path": "sidecars/hong_kong/n=10/poryos-hong_kong-n10-hyb/poryos-hong_kong-n10-hyb.distances-shortest.json.gz",
+            "sha256": "32fd1e60fa1929ce41481339945664c108800126fc395437be9d3d1ff631b720"
+        }
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-16",
+        "problem_type": "CVRP",
+        "metric_variant": "shortest",
+        "city": "hong_kong",
+        "method": "hyb",
+        "base_instance_name": "poryos-hong_kong-n10-hyb",
+        "num_vehicles_lb": 3,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "generate-base",
+            "version": 3,
+            "city": "hong_kong",
+            "method": "hyb",
+            "sampling_seed": 2027204622,
+            "stage1_base": "hong_kong_hyb-n11-k3"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/hong_kong/n=10/poryos-hong_kong-n10-hyb/poryos-hong_kong-n10-hyb.geo.json.gz",
+                "sha256": "005d74099d89087ae53250379f27535df069eb4818322f78b5a645fb5c2ef142"
+            }
+        }
+    }
+}

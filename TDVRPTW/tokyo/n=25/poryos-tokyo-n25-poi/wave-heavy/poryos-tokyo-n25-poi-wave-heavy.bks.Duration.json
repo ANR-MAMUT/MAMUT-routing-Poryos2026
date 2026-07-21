@@ -1,0 +1,22 @@
+{
+    "instance_name": "poryos-tokyo-n25-poi-wave-heavy",
+    "routes": [
+        [3, 18, 8, 11, 2],
+        [4, 15],
+        [19, 20, 14, 23, 25, 13, 17],
+        [21, 7, 9, 24, 5, 10, 12, 6, 1, 16],
+        [22]
+    ],
+    "cost": 23372.089761500592,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T18:37:59",
+        "validated_cost": 23372.089761500592,
+        "validated_num_routes": 5,
+        "route_durations": [3645.7628441386414, 2575.392995730317, 6561.305382798339, 9591.539073229922, 998.0894656033743],
+        "route_departure_times": [0.0, 0.0, 0.0, 3247.6242641183035, 0.0]
+    },
+    "objective_function": "Duration"
+}

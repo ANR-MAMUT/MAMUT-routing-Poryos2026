@@ -1,0 +1,21 @@
+{
+    "instance_name": "poryos-hong_kong-n25-hyb-wave-moderate",
+    "routes": [
+        [2],
+        [5, 11, 3, 7, 20, 1, 12],
+        [21, 6, 15, 10, 4, 14, 16, 25, 8, 13],
+        [24, 23, 22, 17, 19, 18, 9]
+    ],
+    "cost": 21622.184550018846,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T10:11:18",
+        "validated_cost": 21622.184550018846,
+        "validated_num_routes": 4,
+        "route_durations": [430.0504709433261, 6437.124652187779, 7193.2978354799725, 7561.7115914077685],
+        "route_departure_times": [0.0, 2117.2308998804065, 271.87573402864365, 1860.1768125453136]
+    },
+    "objective_function": "Duration"
+}

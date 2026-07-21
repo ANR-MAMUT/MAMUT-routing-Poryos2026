@@ -1,0 +1,24 @@
+{
+    "instance_name": "poryos-san_francisco-n100-hyb-tw-tight",
+    "routes": [
+        [4, 32, 9, 11, 39, 83, 42, 8, 87, 7, 57],
+        [15, 31, 43, 65, 40, 56, 38, 34, 61, 5],
+        [25, 94, 77, 2, 33, 68, 80, 45, 16, 73, 82],
+        [36, 10, 23, 49],
+        [46, 66, 74, 18, 97, 64, 20],
+        [48, 22, 92, 50, 53, 26, 75, 6, 47, 29, 35, 27, 30],
+        [52, 59, 91, 69, 55, 62, 24, 86, 13, 79, 3, 17],
+        [67, 89, 78, 88, 37, 85, 12, 28, 1, 21, 58, 95, 90, 93, 60, 99, 71, 96],
+        [76, 19, 81, 63, 54, 44, 98, 51, 72, 14, 70, 84, 100, 41]
+    ],
+    "cost": 17807.044999999995,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=900s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-16T13:28:24",
+        "validated_cost": 17807.044999999995,
+        "validated_num_routes": 9
+    },
+    "objective_function": "MonoCost"
+}

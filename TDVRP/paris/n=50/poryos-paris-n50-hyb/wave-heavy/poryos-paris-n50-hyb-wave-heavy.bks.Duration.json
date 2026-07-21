@@ -1,0 +1,22 @@
+{
+    "instance_name": "poryos-paris-n50-hyb-wave-heavy",
+    "routes": [
+        [3, 8, 36, 16],
+        [4, 25, 19, 5, 42, 13, 35, 40, 37, 39, 2, 15, 9, 18, 34, 47, 38, 44],
+        [6, 26, 27, 30, 32, 28, 46, 33, 29, 22, 45, 14, 48],
+        [11, 50, 43, 31, 7, 41, 49, 1],
+        [17, 23, 24, 20, 10, 12, 21]
+    ],
+    "cost": 36196.80181082262,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 1.1.2 TD-ILS (seed=123, time_limit=960s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-20T07:05:36",
+        "validated_cost": 36196.80181082262,
+        "validated_num_routes": 5,
+        "route_durations": [3368.645840855374, 14024.234142120655, 9754.451640744435, 4515.671335458037, 4533.7988516441155],
+        "route_departure_times": [0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

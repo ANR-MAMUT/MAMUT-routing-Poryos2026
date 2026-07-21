@@ -1,0 +1,83 @@
+{
+    "instance_name": "poryos-tokyo-n10-poi-tw-spread",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Poryos2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 126,
+    "coordinates": [
+        [-2164.0120515125586, 1974.6974344579025],
+        [-2368.5399789541557, 2915.978557673715],
+        [9776.578345053547, 10419.041124313777],
+        [8331.450764447467, 7800.840153895153],
+        [-322.0137606154777, -202.15054569215596],
+        [-2927.457661907366, -1444.5244787300826],
+        [7514.637437772537, 8013.310528765747],
+        [-5883.661612626828, 1377.121806185281],
+        [-2548.5442139645206, 5788.997489221489],
+        [-1610.4354896600664, 2670.89021202972],
+        [-2767.872458872456, 5965.912599434728]
+    ],
+    "demands": [0, 2, 82, 9, 4, 4, 81, 4, 5, 70, 5],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 35.6768601,
+        "lon": 139.7638947,
+        "alt": 0.0
+    },
+    "metric_variant": "fastest",
+    "arc_costs_source": {
+        "model": "distances-sidecar",
+        "distances": {
+            "path": "sidecars/tokyo/n=10/poryos-tokyo-n10-poi/poryos-tokyo-n10-poi.distances-fastest.json.gz",
+            "sha256": "cf4cab1b1c0e4d1c81a5a852d86d01bd4967bfe7544b3ef82e58b8808f3b4114"
+        }
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-16",
+        "problem_type": "VRPTW",
+        "metric_variant": "fastest",
+        "city": "tokyo",
+        "method": "poi",
+        "base_instance_name": "poryos-tokyo-n10-poi",
+        "num_vehicles_lb": 3,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "derive-vrptw",
+            "version": 3,
+            "city": "tokyo",
+            "method": "poi",
+            "service_seed": 2895843321,
+            "tw_seed": 3668062877,
+            "tw_anchor": "uniform-feasible",
+            "tw_set": "spread"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/tokyo/n=10/poryos-tokyo-n10-poi/poryos-tokyo-n10-poi.geo.json.gz",
+                "sha256": "d49f1970419a67b104d70db3d83b44592f6707999e44fe30cebb5eab0c17dabe"
+            }
+        },
+        "tw_set": {
+            "name": "spread",
+            "td_paired": false,
+            "policy": "uniform-spread",
+            "note": "static-only TW set; NOT the TDVRPTW windows; never audited under traffic"
+        }
+    },
+    "service_times": [0, 422, 1, 741, 1251, 481, 1024, 703, 3, 720, 611],
+    "time_windows": [
+        [0, 86400],
+        [62911, 85883],
+        [29022, 40887],
+        [26738, 38116],
+        [9960, 21524],
+        [62517, 83768],
+        [0, 27321],
+        [27161, 39980],
+        [26187, 46840],
+        [0, 27828],
+        [55086, 70264]
+    ]
+}

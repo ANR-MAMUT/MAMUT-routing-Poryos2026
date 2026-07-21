@@ -1,0 +1,105 @@
+{
+    "instance_name": "poryos-hong_kong-n10-hyb-wave-light",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Poryos2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 101,
+    "coordinates": [
+        [1438.9425746026898, -1211.8557234748282],
+        [1341.1207028225522, -8492.364949990431],
+        [-617.8920959478759, -7808.174334780928],
+        [3729.5649171749856, -2859.97228879346],
+        [1113.921911167056, 11014.492264973676],
+        [422.1075768473487, -2211.2211519477],
+        [-8059.341270334778, 9001.557866204848],
+        [-3140.1587977196036, -2065.126878252965],
+        [-2308.6187075243256, -1828.7764953860717],
+        [9962.929957311815, -5586.984192715099],
+        [5504.164896871657, 5115.139734534838]
+    ],
+    "demands": [0, 61, 9, 7, 60, 5, 77, 4, 1, 8, 2],
+    "service_times": [0, 950, 497, 192, 233, 1272, 957, 103, 13, 405, 1071],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 22.35252895,
+        "lon": 114.15986375,
+        "alt": 0.0
+    },
+    "horizon": [0.0, 86400.0],
+    "td": {
+        "model": "road-graph",
+        "graph": {
+            "path": "sidecars/hong_kong/n=10/poryos-hong_kong-n10-hyb/poryos-hong_kong-n10-hyb.road.json.gz",
+            "sha256": "3dfcd01ba015a1c1c51a02bffa23b7966836749d3d700ee224ebeb9f756dfea2"
+        },
+        "traffic": {
+            "path": "sidecars/hong_kong/n=10/poryos-hong_kong-n10-hyb/poryos-hong_kong-n10-hyb.traffic-wave-light.json.gz",
+            "sha256": "12f9b63ba4e8577786a2be446a98cf4dfc2c72517cc092a5a4596b61f9ffc529"
+        },
+        "atf_sha256": "43aec317fdf1f0603129efcfeed274b6c8ae44e0b1121c8c9384fcab825dbbb0",
+        "sample_step": 60.0,
+        "simplify_tolerance": 1.0
+    },
+    "time_windows": [
+        [0, 86400],
+        [0, 12984],
+        [0, 10080],
+        [0, 18928],
+        [0, 6771],
+        [0, 8932],
+        [0, 17036],
+        [0, 11863],
+        [0, 12832],
+        [652, 14146],
+        [0, 17482]
+    ],
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-16",
+        "city": "hong_kong",
+        "method": "hyb",
+        "base_instance_name": "poryos-hong_kong-n10-hyb",
+        "subinstance": "wave-light",
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "build-td",
+            "version": 3,
+            "city": "hong_kong",
+            "method": "hyb"
+        },
+        "traffic": {
+            "model": "wave",
+            "intensity": "light",
+            "seed": 10251,
+            "num_trips": 0,
+            "params": {
+                "floor_share": 0.35,
+                "min_speed_factor": 0.12,
+                "jitter": 0.08,
+                "amplitude": 0.25,
+                "center_decay_m": 3000.0
+            }
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/hong_kong/n=10/poryos-hong_kong-n10-hyb/poryos-hong_kong-n10-hyb.geo.json.gz",
+                "sha256": "005d74099d89087ae53250379f27535df069eb4818322f78b5a645fb5c2ef142"
+            }
+        },
+        "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
+        "problem_type": "TDVRPTW",
+        "tw_repair": {
+            "policy": "global-anchor-minimal-shared-deadline-lift",
+            "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
+            "lifted_customers": 0,
+            "max_lift_seconds": 0,
+            "reduced_customers": 0,
+            "max_reduction_seconds": 0,
+            "anchor_routes": 3,
+            "repairs": {
+
+            }
+        }
+    }
+}

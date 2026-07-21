@@ -1,0 +1,22 @@
+{
+    "instance_name": "poryos-san_francisco-n25-hyb-wave-light",
+    "routes": [
+        [1, 25, 6, 8, 22],
+        [3, 7, 18, 5, 17, 14, 15, 12],
+        [10],
+        [23, 16, 21, 20, 19, 13, 4],
+        [24, 2, 9, 11]
+    ],
+    "cost": 24358.3884720727,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T07:51:01",
+        "validated_cost": 24358.3884720727,
+        "validated_num_routes": 5,
+        "route_durations": [5089.212951730994, 6359.290814011864, 1658.7870456943872, 6674.04245978115, 4577.055200854307],
+        "route_departure_times": [0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

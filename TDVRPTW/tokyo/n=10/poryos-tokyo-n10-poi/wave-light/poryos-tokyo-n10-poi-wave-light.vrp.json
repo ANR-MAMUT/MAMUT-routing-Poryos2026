@@ -1,0 +1,105 @@
+{
+    "instance_name": "poryos-tokyo-n10-poi-wave-light",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Poryos2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 126,
+    "coordinates": [
+        [-2164.0120515125586, 1974.6974344579025],
+        [-2368.5399789541557, 2915.978557673715],
+        [9776.578345053547, 10419.041124313777],
+        [8331.450764447467, 7800.840153895153],
+        [-322.0137606154777, -202.15054569215596],
+        [-2927.457661907366, -1444.5244787300826],
+        [7514.637437772537, 8013.310528765747],
+        [-5883.661612626828, 1377.121806185281],
+        [-2548.5442139645206, 5788.997489221489],
+        [-1610.4354896600664, 2670.89021202972],
+        [-2767.872458872456, 5965.912599434728]
+    ],
+    "demands": [0, 2, 82, 9, 4, 4, 81, 4, 5, 70, 5],
+    "service_times": [0, 422, 1, 741, 1251, 481, 1024, 703, 3, 720, 611],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 35.6768601,
+        "lon": 139.7638947,
+        "alt": 0.0
+    },
+    "horizon": [0.0, 86400.0],
+    "td": {
+        "model": "road-graph",
+        "graph": {
+            "path": "sidecars/tokyo/n=10/poryos-tokyo-n10-poi/poryos-tokyo-n10-poi.road.json.gz",
+            "sha256": "fb2ccd95ead1345f43e03f2ddb3ca0749f92fec4280c0fbdd0728a23318000da"
+        },
+        "traffic": {
+            "path": "sidecars/tokyo/n=10/poryos-tokyo-n10-poi/poryos-tokyo-n10-poi.traffic-wave-light.json.gz",
+            "sha256": "43ed27e133685866da7228d9f1685d9e9e409078cff9250a7dad86249dffdefa"
+        },
+        "atf_sha256": "87dee634970540ae1c0696708f9ca377dddcb94bdce2a05adabeb65065bc74eb",
+        "sample_step": 60.0,
+        "simplify_tolerance": 1.0
+    },
+    "time_windows": [
+        [0, 86400],
+        [0, 7767],
+        [0, 14584],
+        [1270, 10666],
+        [0, 11038],
+        [0, 8514],
+        [0, 7898],
+        [0, 8803],
+        [0, 13122],
+        [0, 14418],
+        [0, 17816]
+    ],
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-16",
+        "city": "tokyo",
+        "method": "poi",
+        "base_instance_name": "poryos-tokyo-n10-poi",
+        "subinstance": "wave-light",
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "build-td",
+            "version": 3,
+            "city": "tokyo",
+            "method": "poi"
+        },
+        "traffic": {
+            "model": "wave",
+            "intensity": "light",
+            "seed": 10251,
+            "num_trips": 0,
+            "params": {
+                "floor_share": 0.35,
+                "min_speed_factor": 0.12,
+                "jitter": 0.08,
+                "amplitude": 0.25,
+                "center_decay_m": 3000.0
+            }
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/tokyo/n=10/poryos-tokyo-n10-poi/poryos-tokyo-n10-poi.geo.json.gz",
+                "sha256": "d49f1970419a67b104d70db3d83b44592f6707999e44fe30cebb5eab0c17dabe"
+            }
+        },
+        "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
+        "problem_type": "TDVRPTW",
+        "tw_repair": {
+            "policy": "global-anchor-minimal-shared-deadline-lift",
+            "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
+            "lifted_customers": 0,
+            "max_lift_seconds": 0,
+            "reduced_customers": 0,
+            "max_reduction_seconds": 0,
+            "anchor_routes": 3,
+            "repairs": {
+
+            }
+        }
+    }
+}

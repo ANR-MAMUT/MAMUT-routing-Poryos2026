@@ -1,0 +1,21 @@
+{
+    "instance_name": "poryos-lyon-n25-hyb-bpr-heavy",
+    "routes": [
+        [10, 12, 11, 6],
+        [16, 18, 22, 25, 13, 8],
+        [19, 3, 20, 21, 4, 1, 17, 5, 9],
+        [23, 7, 14, 24, 2, 15]
+    ],
+    "cost": 24406.930981334302,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T13:33:54",
+        "validated_cost": 24406.930981334302,
+        "validated_num_routes": 4,
+        "route_durations": [2623.8170908638135, 5847.559584777108, 8671.662040867242, 7263.89226482614],
+        "route_departure_times": [0.0, 0.0, 0.0, 3631.146412283581]
+    },
+    "objective_function": "Duration"
+}

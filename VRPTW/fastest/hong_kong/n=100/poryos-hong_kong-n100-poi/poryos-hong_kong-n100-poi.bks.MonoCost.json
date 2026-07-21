@@ -1,0 +1,22 @@
+{
+    "instance_name": "poryos-hong_kong-n100-poi",
+    "routes": [
+        [14, 25, 86, 27, 100, 58, 3, 95, 15, 24, 40],
+        [19, 99, 67, 93, 88, 65, 2],
+        [32, 56, 80, 13, 94, 28, 41, 83, 81, 45, 82, 63, 7, 96, 1, 54],
+        [47, 10, 51, 17, 76, 5, 12, 78, 59, 52, 74, 84, 11, 42, 70, 61, 79, 30, 16, 23, 62],
+        [66, 75, 31, 46, 90, 87, 57, 68, 50, 91, 6],
+        [85, 71, 26, 35, 36, 9, 64, 21, 69, 22, 8, 55, 38],
+        [92, 72, 97, 18, 53, 20, 89, 34, 44, 48, 73, 43, 33, 39, 60, 4, 49, 77, 29, 37, 98]
+    ],
+    "cost": 16590.275,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=900s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-16T13:28:22",
+        "validated_cost": 16590.275,
+        "validated_num_routes": 7
+    },
+    "objective_function": "MonoCost"
+}

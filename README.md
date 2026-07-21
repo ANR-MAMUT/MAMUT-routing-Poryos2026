@@ -1,6 +1,6 @@
-# Mamut2026 — the MAMUT-routing city benchmark collection
+# Poryos2026 — the MAMUT-routing city benchmark collection
 
-Mamut2026 is one benchmark family with four problem-type variants (CVRP, VRPTW, TDVRP, TDVRPTW) generated from real OpenStreetMap city road networks. Every variant of a base instance shares the same customers, coordinates, demands and vehicle capacity, so the family supports controlled paired comparisons: CVRP vs TDVRP isolates the cost of ignoring time, VRPTW vs TDVRPTW the cost of time dependence, and light vs heavy traffic the marginal cost of congestion on identical time windows.
+Poryos2026 is one benchmark family with four problem-type variants (CVRP, VRPTW, TDVRP, TDVRPTW) generated from real OpenStreetMap city road networks. Every variant of a base instance shares the same customers, coordinates, demands and vehicle capacity, so the family supports controlled paired comparisons: CVRP vs TDVRP isolates the cost of ignoring time, VRPTW vs TDVRPTW the cost of time dependence, and light vs heavy traffic the marginal cost of congestion on identical time windows.
 
 Grid: 5 cities (Lyon, Paris, San-Francisco, Hong-Kong, Tokyo) × n ∈ {10, 25, 50, 100, 500, 1000} customers × 2 sampling methods (`poi`: OSM points of interest; `hyb`: hybrid POI + parametric) = 60 base instances.
 
@@ -13,7 +13,7 @@ Grid: 5 cities (Lyon, Paris, San-Francisco, Hong-Kong, Tokyo) × n ∈ {10, 25, 
 
 ## Naming
 
-Base name: `mamut-<city>-n<N>-<method>` (e.g. `mamut-lyon-n10-hyb`). CVRP and the TD-paired VRPTW instance carry the base name verbatim (the metric or TW set is distinguished by path). TD subinstances append `-<model>-<intensity>` (e.g. `mamut-lyon-n10-hyb-bpr-heavy`). Static-only VRPTW time-window sets append `-tw-<set>` (e.g. `mamut-lyon-n10-hyb-tw-tight`); the reserved `tw-` tag marks by name that the instance is not TD-paired.
+Base name: `mamut-<city>-n<N>-<method>` (e.g. `poryos-lyon-n10-hyb`). CVRP and the TD-paired VRPTW instance carry the base name verbatim (the metric or TW set is distinguished by path). TD subinstances append `-<model>-<intensity>` (e.g. `poryos-lyon-n10-hyb-bpr-heavy`). Static-only VRPTW time-window sets append `-tw-<set>` (e.g. `poryos-lyon-n10-hyb-tw-tight`); the reserved `tw-` tag marks by name that the instance is not TD-paired.
 
 ## Layout
 
@@ -56,7 +56,7 @@ Every client time window has strictly positive width. Route-centered sets ship a
 
 ## Capacity policy
 
-Mamut2026 instances are genuine vehicle-routing instances by construction. The generator targets 3–5 customers per route at `n=10`, 5–8 at `n=25`, and 12–16 from `n=50` upward. Every published base passes the hard gate `LB_cap = ceil(sum(q_i) / Q) >= 2`; the exact lower bound is recorded as `metadata.num_vehicles_lb`.
+Poryos2026 instances are genuine vehicle-routing instances by construction. The generator targets 3–5 customers per route at `n=10`, 5–8 at `n=25`, and 12–16 from `n=50` upward. Every published base passes the hard gate `LB_cap = ceil(sum(q_i) / Q) >= 2`; the exact lower bound is recorded as `metadata.num_vehicles_lb`.
 
 ## Time-dependent model
 
@@ -71,10 +71,10 @@ from pathlib import Path
 from mamut_routing_lib.artifacts import discover_benchmark_instances, load_benchmark_instance, resolve_arc_costs
 from mamut_routing_lib.td import load_td_instance
 
-items = discover_benchmark_instances(Path("path/to/Mamut2026"))
+items = discover_benchmark_instances(Path("path/to/Poryos2026"))
 static = load_benchmark_instance(items[0].instance_path)      # CVRP / VRPTW
 matrix = resolve_arc_costs(static, items[0].instance_path)    # hydrate from sidecar
-td = load_td_instance("TDVRPTW/lyon/n=10/mamut-lyon-n10-hyb/bpr-heavy/mamut-lyon-n10-hyb-bpr-heavy.vrp.json")
+td = load_td_instance("TDVRPTW/lyon/n=10/poryos-lyon-n10-hyb/bpr-heavy/poryos-lyon-n10-hyb-bpr-heavy.vrp.json")
 ```
 
 CVRPLIB `.vrp` exports with explicit matrices are committed for n <= 100; larger sizes can be exported with the MAMUT-routing workbench CLI (about 8 MB of text per instance at n = 1000).

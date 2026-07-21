@@ -1,0 +1,58 @@
+{
+    "instance_name": "poryos-lyon-n10-hyb",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Poryos2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 133,
+    "coordinates": [
+        [135.7576295960148, 21.597263143175013],
+        [3126.3010134318724, -320.96171734745644],
+        [1031.7086868969097, -934.078618401704],
+        [-2716.8638004217123, -1126.865821124214],
+        [1218.8167662808248, -103.60261815535841],
+        [192.30442889933292, 726.7575745405231],
+        [-455.388499595481, -3116.91484030618],
+        [-2169.781890321866, 2614.729356937507],
+        [314.52171931586815, -2797.1452361383003],
+        [-3221.170321779459, -2460.636245678063],
+        [-1721.2898458264253, -4599.490878225703]
+    ],
+    "demands": [0, 4, 2, 84, 7, 80, 1, 10, 7, 86, 3],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 45.7578147,
+        "lon": 4.835118850000001,
+        "alt": 0.0
+    },
+    "metric_variant": "euclidean",
+    "arc_costs_source": {
+        "model": "euclidean",
+        "decimals": 3
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-16",
+        "problem_type": "CVRP",
+        "metric_variant": "euclidean",
+        "city": "lyon",
+        "method": "hyb",
+        "base_instance_name": "poryos-lyon-n10-hyb",
+        "num_vehicles_lb": 3,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "generate-base",
+            "version": 3,
+            "city": "lyon",
+            "method": "hyb",
+            "sampling_seed": 2724691499,
+            "stage1_base": "lyon_hyb-n11-k3"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/lyon/n=10/poryos-lyon-n10-hyb/poryos-lyon-n10-hyb.geo.json.gz",
+                "sha256": "321fbcebfc6e36ece0754e8a5684d1022f283f967608180d72e6412d9f148a89"
+            }
+        }
+    }
+}

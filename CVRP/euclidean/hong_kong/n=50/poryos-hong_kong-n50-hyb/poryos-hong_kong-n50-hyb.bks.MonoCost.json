@@ -1,0 +1,19 @@
+{
+    "instance_name": "poryos-hong_kong-n50-hyb",
+    "routes": [
+        [14, 42, 35, 17, 24, 31, 21, 41, 13, 5, 20, 10, 9, 46, 50, 40, 39, 8, 6, 15, 32],
+        [16, 28, 22, 38, 49, 34, 18, 45],
+        [33, 3, 44, 37],
+        [48, 43, 47, 1, 23, 7, 12, 25, 19, 29, 30, 26, 27, 2, 4, 36, 11]
+    ],
+    "cost": 126151.939,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=480s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T04:08:41",
+        "validated_cost": 126151.939,
+        "validated_num_routes": 4
+    },
+    "objective_function": "MonoCost"
+}

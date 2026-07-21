@@ -1,0 +1,20 @@
+{
+    "instance_name": "poryos-lyon-n50-poi",
+    "routes": [
+        [1, 36, 43, 2, 50, 46, 44, 33, 20, 5, 31, 11, 15, 10, 23, 9, 48, 3, 40, 47, 38, 24, 17, 49, 27],
+        [6, 26, 21, 4, 22, 8],
+        [7, 32, 37],
+        [28, 30, 18, 12, 19, 42, 14],
+        [39, 41, 25, 13, 34, 29, 35, 16, 45]
+    ],
+    "cost": 5276.447999999999,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=480s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T04:08:42",
+        "validated_cost": 5276.447999999999,
+        "validated_num_routes": 5
+    },
+    "objective_function": "MonoCost"
+}

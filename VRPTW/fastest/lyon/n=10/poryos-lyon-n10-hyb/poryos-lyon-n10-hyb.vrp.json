@@ -1,0 +1,105 @@
+{
+    "instance_name": "poryos-lyon-n10-hyb",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Poryos2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 133,
+    "coordinates": [
+        [135.7576295960148, 21.597263143175013],
+        [3126.3010134318724, -320.96171734745644],
+        [1031.7086868969097, -934.078618401704],
+        [-2716.8638004217123, -1126.865821124214],
+        [1218.8167662808248, -103.60261815535841],
+        [192.30442889933292, 726.7575745405231],
+        [-455.388499595481, -3116.91484030618],
+        [-2169.781890321866, 2614.729356937507],
+        [314.52171931586815, -2797.1452361383003],
+        [-3221.170321779459, -2460.636245678063],
+        [-1721.2898458264253, -4599.490878225703]
+    ],
+    "demands": [0, 4, 2, 84, 7, 80, 1, 10, 7, 86, 3],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 45.7578147,
+        "lon": 4.835118850000001,
+        "alt": 0.0
+    },
+    "metric_variant": "fastest",
+    "arc_costs_source": {
+        "model": "distances-sidecar",
+        "distances": {
+            "path": "sidecars/lyon/n=10/poryos-lyon-n10-hyb/poryos-lyon-n10-hyb.distances-fastest.json.gz",
+            "sha256": "68c6d4c12d79748c2adb9ea846617381f0b07f82d5844be759d1344486d686ce"
+        }
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-16",
+        "problem_type": "VRPTW",
+        "metric_variant": "fastest",
+        "city": "lyon",
+        "method": "hyb",
+        "base_instance_name": "poryos-lyon-n10-hyb",
+        "num_vehicles_lb": 3,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "derive-vrptw",
+            "version": 3,
+            "city": "lyon",
+            "method": "hyb",
+            "service_seed": 1327471760,
+            "tw_seed": 3660121882,
+            "tw_anchor": "free-flow-fastest"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/lyon/n=10/poryos-lyon-n10-hyb/poryos-lyon-n10-hyb.geo.json.gz",
+                "sha256": "321fbcebfc6e36ece0754e8a5684d1022f283f967608180d72e6412d9f148a89"
+            }
+        },
+        "tw_set": {
+            "name": "td-shared",
+            "td_paired": true,
+            "policy": "route-centered",
+            "note": "windows shared verbatim with the base's TDVRPTW twins (post minimal-shared-tw-repair)"
+        },
+        "tw_anchor": {
+            "policy": "deterministic-capacity-horizon-nearest-neighbour",
+            "routes": [
+                [5, 2, 4, 1, 8, 6, 10, 7],
+                [3],
+                [9]
+            ],
+            "num_routes": 3,
+            "min_customers_per_route": 1,
+            "max_customers_per_route": 8
+        },
+        "tw_repair": {
+            "policy": "global-anchor-minimal-shared-deadline-lift",
+            "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
+            "lifted_customers": 0,
+            "max_lift_seconds": 0,
+            "reduced_customers": 0,
+            "max_reduction_seconds": 0,
+            "anchor_routes": 3,
+            "repairs": {
+
+            }
+        }
+    },
+    "service_times": [0, 1147, 1468, 269, 1212, 466, 13, 472, 863, 25, 825],
+    "time_windows": [
+        [0, 86400],
+        [0, 9471],
+        [0, 9235],
+        [0, 14730],
+        [0, 10461],
+        [0, 9325],
+        [0, 17317],
+        [0, 15426],
+        [0, 13742],
+        [0, 5471],
+        [0, 21068]
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "instance_name": "poryos-lyon-n25-hyb-tw-tight",
+    "routes": [
+        [7, 24, 14, 23, 5],
+        [8, 12, 11, 13, 25, 9],
+        [10, 6, 15, 2, 4, 20, 21, 1, 17],
+        [19, 3, 16, 18, 22]
+    ],
+    "cost": 4620.473,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-16T13:28:23",
+        "validated_cost": 4620.473,
+        "validated_num_routes": 4
+    },
+    "objective_function": "MonoCost"
+}

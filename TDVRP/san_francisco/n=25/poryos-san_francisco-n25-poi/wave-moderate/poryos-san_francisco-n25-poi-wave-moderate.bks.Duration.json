@@ -1,0 +1,21 @@
+{
+    "instance_name": "poryos-san_francisco-n25-poi-wave-moderate",
+    "routes": [
+        [3, 15],
+        [7, 23, 6, 13, 14, 20, 25, 10, 24],
+        [11, 1, 22, 8, 18],
+        [19, 21, 17, 2, 5, 9, 16, 4, 12]
+    ],
+    "cost": 38488.11593208497,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T07:51:22",
+        "validated_cost": 38488.11593208497,
+        "validated_num_routes": 4,
+        "route_durations": [2567.7475041234575, 12512.419062282208, 8550.045135177543, 14857.904230501765],
+        "route_departure_times": [83952.45560780008, 0.0, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

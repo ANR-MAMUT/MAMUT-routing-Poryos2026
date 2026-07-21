@@ -1,0 +1,21 @@
+{
+    "instance_name": "poryos-paris-n50-poi-wave-light",
+    "routes": [
+        [16, 46, 17, 15, 48, 49, 47, 14, 27, 39, 36, 28, 6, 29, 45],
+        [20, 23, 5, 44, 37, 35, 30, 32, 19, 11, 13, 7, 38, 41, 2],
+        [25, 3, 12, 26, 8, 18, 42, 9, 24, 43],
+        [40, 1, 31, 34, 50, 33, 22, 10, 4, 21]
+    ],
+    "cost": 23141.06188085979,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=123, time_limit=480s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-17T10:07:10",
+        "validated_cost": 23141.06188085979,
+        "validated_num_routes": 4,
+        "route_durations": [6775.098733126794, 7675.4940853731505, 4010.279753444972, 4680.189308914872],
+        "route_departure_times": [0.0, 0.0, 130.7658050440057, 0.0]
+    },
+    "objective_function": "Duration"
+}

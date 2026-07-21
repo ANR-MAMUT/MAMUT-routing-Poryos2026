@@ -1,0 +1,21 @@
+{
+    "instance_name": "poryos-san_francisco-n50-hyb-bpr-moderate",
+    "routes": [
+        [17, 8, 49, 40, 5, 27, 25, 36, 42, 2, 6, 15, 1],
+        [22, 7, 20, 38, 9, 12, 34, 13, 18, 14, 32, 35, 33],
+        [31, 50, 29, 48, 23, 26],
+        [39, 45, 44, 28, 46, 47, 24, 37, 30, 41, 43, 21, 4, 16, 10, 3, 19, 11]
+    ],
+    "cost": 93030.56828385111,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 1.1.2 TD-ILS (seed=123, time_limit=960s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-20T07:07:45",
+        "validated_cost": 93030.56828385111,
+        "validated_num_routes": 4,
+        "route_durations": [22794.71210878683, 24395.37028344013, 11431.920649795386, 34408.56524182876],
+        "route_departure_times": [0.0, 0.0, 0.0, 51494.01802880433]
+    },
+    "objective_function": "Duration"
+}

@@ -1,0 +1,20 @@
+{
+    "instance_name": "poryos-paris-n10-poi-wave-heavy",
+    "routes": [
+        [3, 1, 2, 9, 8, 7],
+        [6, 4],
+        [10, 5]
+    ],
+    "cost": 12166.638038377969,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=120s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T14:12:24",
+        "validated_cost": 12166.638038377969,
+        "validated_num_routes": 3,
+        "route_durations": [7793.202957594254, 1264.5660049280123, 3108.8690758557027],
+        "route_departure_times": [242.31850723294207, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

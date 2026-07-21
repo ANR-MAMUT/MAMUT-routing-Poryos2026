@@ -1,0 +1,20 @@
+{
+    "instance_name": "poryos-tokyo-n10-poi-wave-heavy",
+    "routes": [
+        [1, 10, 8, 6],
+        [2, 3, 4, 5, 7],
+        [9]
+    ],
+    "cost": 9745.320522334781,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=120s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T18:34:33",
+        "validated_cost": 9745.320522334781,
+        "validated_num_routes": 3,
+        "route_durations": [3608.797017313597, 5264.717699381457, 871.8058056397281],
+        "route_departure_times": [0.0, 380.11604404649887, 0.0]
+    },
+    "objective_function": "Duration"
+}

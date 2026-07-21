@@ -1,0 +1,20 @@
+{
+    "instance_name": "poryos-paris-n10-hyb-wave-light",
+    "routes": [
+        [1, 3, 4, 6, 7, 9, 2],
+        [5, 10],
+        [8]
+    ],
+    "cost": 12382.986006191548,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=120s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T07:50:06",
+        "validated_cost": 12382.986006191548,
+        "validated_num_routes": 3,
+        "route_durations": [7537.252537719996, 2790.529720064338, 2055.2037484072134],
+        "route_departure_times": [0.0, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

@@ -1,0 +1,23 @@
+{
+    "instance_name": "poryos-lyon-n25-poi-wave-light",
+    "routes": [
+        [1],
+        [5, 2, 25, 7, 11, 19, 14],
+        [8, 4, 22],
+        [12, 20, 15],
+        [13, 17, 6, 21, 16, 23],
+        [18, 24, 9, 10, 3]
+    ],
+    "cost": 24455.10549927381,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T07:50:05",
+        "validated_cost": 24455.10549927381,
+        "validated_num_routes": 6,
+        "route_durations": [1301.3749028649538, 7018.67028491965, 2315.059802413169, 3129.59886393578, 5313.846146861139, 5376.555498279117],
+        "route_departure_times": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

@@ -1,0 +1,21 @@
+{
+    "instance_name": "poryos-lyon-n25-poi",
+    "routes": [
+        [1],
+        [5, 2, 25, 7, 11, 19, 14],
+        [8, 4, 22],
+        [12, 20, 15],
+        [13, 17, 6, 21, 16, 23],
+        [18, 24, 9, 10, 3]
+    ],
+    "cost": 3013.511000000001,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-16T07:49:00",
+        "validated_cost": 3013.511000000001,
+        "validated_num_routes": 6
+    },
+    "objective_function": "MonoCost"
+}

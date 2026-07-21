@@ -1,0 +1,21 @@
+{
+    "instance_name": "poryos-lyon-n50-hyb-bpr-heavy",
+    "routes": [
+        [3, 16, 9, 41, 21, 38, 36, 20, 45, 24, 35, 34, 27, 40, 46],
+        [12, 7, 10, 18, 29, 6],
+        [23, 1, 22, 44, 49, 25, 42, 43, 48, 14, 39, 26, 47],
+        [32, 31, 13, 15, 17, 37, 4, 2, 33, 11, 28, 8, 30, 5, 50, 19]
+    ],
+    "cost": 51688.43400514735,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 1.1.2 TD-ILS (seed=456, time_limit=960s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-20T07:03:38",
+        "validated_cost": 51688.43400514735,
+        "validated_num_routes": 4,
+        "route_durations": [17116.377933916185, 3329.2821555265255, 15104.5390711757, 16138.234844528937],
+        "route_departure_times": [0.0, 83100.70541832178, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

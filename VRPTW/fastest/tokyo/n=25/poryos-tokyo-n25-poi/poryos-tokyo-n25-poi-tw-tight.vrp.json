@@ -1,0 +1,126 @@
+{
+    "instance_name": "poryos-tokyo-n25-poi-tw-tight",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Poryos2026",
+    "num_customers": 25,
+    "num_vehicles": null,
+    "vehicle_capacity": 125,
+    "coordinates": [
+        [-2164.0120515125586, 1974.6974344579025],
+        [-8708.41345284718, -1913.7241021393875],
+        [145.52185345101066, 320.8552161146198],
+        [-2549.83607697957, -70.31155808060387],
+        [8622.843196038482, -866.3238957489634],
+        [-11620.30805962372, 3134.634600515479],
+        [-8924.3041138961, 3170.919249246443],
+        [-4167.8096429902125, 5991.723045300252],
+        [-2319.3235519206964, -510.11459181612923],
+        [-2384.197296310819, 8168.451755375621],
+        [-10498.444188321111, 3145.1333062752747],
+        [-1035.962286657833, -927.8724294376968],
+        [-10276.75418062205, 3150.2888257781233],
+        [489.5157398392955, 3424.398505387897],
+        [4815.586488447534, 8874.08573021659],
+        [-152.43456326650175, 2110.963517414119],
+        [-8675.802706376473, -7750.442604519375],
+        [635.9638447857955, 3175.6609969126785],
+        [-2613.6506799221456, -653.8279681775592],
+        [9588.576463613143, 10010.86707930334],
+        [6747.086473227757, 7913.490335091894],
+        [-1959.2480723767435, 2728.4341282546725],
+        [-5194.258737848646, 1572.2475490612758],
+        [1449.6306874261686, 4884.420784254875],
+        [-10098.574995582574, 11508.566480926202],
+        [848.1036176016479, 3512.822201114268]
+    ],
+    "demands": [0, 8, 82, 3, 53, 3, 10, 67, 7, 3, 4, 9, 4, 5, 80, 3, 5, 1, 8, 5, 7, 6, 79, 3, 6, 5],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 35.6768601,
+        "lon": 139.7638947,
+        "alt": 0.0
+    },
+    "metric_variant": "fastest",
+    "arc_costs_source": {
+        "model": "distances-sidecar",
+        "distances": {
+            "path": "sidecars/tokyo/n=25/poryos-tokyo-n25-poi/poryos-tokyo-n25-poi.distances-fastest.json.gz",
+            "sha256": "91e43f236a2aef72b9ff0842f7345ef0f41dbf6f1a2da38de25596b520ab5558"
+        }
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-16",
+        "problem_type": "VRPTW",
+        "metric_variant": "fastest",
+        "city": "tokyo",
+        "method": "poi",
+        "base_instance_name": "poryos-tokyo-n25-poi",
+        "num_vehicles_lb": 4,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "derive-vrptw",
+            "version": 3,
+            "city": "tokyo",
+            "method": "poi",
+            "service_seed": 3453327665,
+            "tw_seed": 93390341,
+            "tw_anchor": "free-flow-fastest",
+            "tw_set": "tight"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/tokyo/n=25/poryos-tokyo-n25-poi/poryos-tokyo-n25-poi.geo.json.gz",
+                "sha256": "2c0d488ea6195fd910db6916dd852ad729b3927424fa4ddf127ec1d3c3267121"
+            }
+        },
+        "tw_set": {
+            "name": "tight",
+            "td_paired": false,
+            "policy": "route-centered-tight",
+            "note": "static-only TW set; NOT the TDVRPTW windows; never audited under traffic"
+        },
+        "tw_anchor": {
+            "policy": "deterministic-capacity-horizon-nearest-neighbour",
+            "routes": [
+                [21, 15, 17, 13, 25, 23, 2, 11, 8, 3],
+                [22, 18, 1, 12, 10, 5, 6, 9, 24],
+                [7, 20, 19, 16],
+                [4],
+                [14]
+            ],
+            "num_routes": 5,
+            "min_customers_per_route": 1,
+            "max_customers_per_route": 10
+        }
+    },
+    "service_times": [0, 831, 436, 526, 558, 736, 482, 755, 345, 229, 50, 645, 1069, 521, 1004, 877, 554, 296, 1027, 1020, 685, 782, 634, 489, 945, 831],
+    "time_windows": [
+        [0, 86400],
+        [417, 4517],
+        [2710, 6361],
+        [4007, 8444],
+        [0, 3062],
+        [1533, 8260],
+        [3575, 8187],
+        [0, 2300],
+        [2444, 9220],
+        [3365, 10342],
+        [3451, 5973],
+        [2638, 7533],
+        [426, 6810],
+        [0, 4690],
+        [0, 2600],
+        [0, 3529],
+        [3765, 5652],
+        [0, 4081],
+        [0, 3850],
+        [0, 5499],
+        [0, 3566],
+        [0, 2044],
+        [0, 938],
+        [1845, 5710],
+        [4526, 10491],
+        [1106, 4587]
+    ]
+}

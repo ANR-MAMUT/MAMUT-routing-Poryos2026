@@ -1,0 +1,21 @@
+{
+    "instance_name": "poryos-lyon-n25-hyb-wave-moderate",
+    "routes": [
+        [5, 23, 7, 14, 24, 2, 15],
+        [10, 6],
+        [12, 11, 13, 25, 9],
+        [19, 1, 17, 20, 21, 4, 3, 16, 18, 22, 8]
+    ],
+    "cost": 24496.425013603563,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T07:50:01",
+        "validated_cost": 24496.425013603563,
+        "validated_num_routes": 4,
+        "route_durations": [7704.148128908944, 1913.765468641531, 4228.632235499273, 10649.879180553813],
+        "route_departure_times": [0.0, 0.0, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

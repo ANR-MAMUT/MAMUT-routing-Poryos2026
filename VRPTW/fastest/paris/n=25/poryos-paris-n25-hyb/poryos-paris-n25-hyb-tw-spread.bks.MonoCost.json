@@ -1,0 +1,21 @@
+{
+    "instance_name": "poryos-paris-n25-hyb-tw-spread",
+    "routes": [
+        [1, 24, 22],
+        [2, 6, 25, 18, 8, 21],
+        [3, 13, 17, 9, 16],
+        [10, 15, 7, 4, 23, 11],
+        [14, 5],
+        [20, 19, 12]
+    ],
+    "cost": 6025.935000000002,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-16T13:28:24",
+        "validated_cost": 6025.935000000002,
+        "validated_num_routes": 6
+    },
+    "objective_function": "MonoCost"
+}

@@ -1,4 +1,4 @@
-# Changelog — Mamut2026 collection
+# Changelog — Poryos2026 collection
 
 ## 2026-07-17 — BKS re-seeding for the regenerated instances (coverage 1080/1080)
 

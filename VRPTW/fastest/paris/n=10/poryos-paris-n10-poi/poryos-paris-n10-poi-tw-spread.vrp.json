@@ -1,0 +1,83 @@
+{
+    "instance_name": "poryos-paris-n10-poi-tw-spread",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Poryos2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 117,
+    "coordinates": [
+        [-500.8740114215472, 70.82241150336951],
+        [6467.771607250243, -63.205621447679604],
+        [2343.367098758174, 521.424603083366],
+        [1784.9254574427957, -3600.0256404078536],
+        [-1537.5401958980694, -1013.9675618401842],
+        [345.0056679063213, 310.01693741263904],
+        [-607.8643365458338, -389.5972047251853],
+        [-2479.0277453648314, 4473.094961895015],
+        [1621.1337198228437, 3580.5826408675644],
+        [827.0413724647658, 2512.805078839476],
+        [-222.56301618360513, 1122.7346376741345]
+    ],
+    "demands": [0, 4, 10, 2, 59, 5, 9, 2, 8, 80, 82],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 48.85886575,
+        "lon": 2.3469411,
+        "alt": 0.0
+    },
+    "metric_variant": "fastest",
+    "arc_costs_source": {
+        "model": "distances-sidecar",
+        "distances": {
+            "path": "sidecars/paris/n=10/poryos-paris-n10-poi/poryos-paris-n10-poi.distances-fastest.json.gz",
+            "sha256": "13a19adc84ae079a6d55becbbf4229ce8627e59d5247e0baa454d221112e188d"
+        }
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-16",
+        "problem_type": "VRPTW",
+        "metric_variant": "fastest",
+        "city": "paris",
+        "method": "poi",
+        "base_instance_name": "poryos-paris-n10-poi",
+        "num_vehicles_lb": 3,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "derive-vrptw",
+            "version": 3,
+            "city": "paris",
+            "method": "poi",
+            "service_seed": 3329313734,
+            "tw_seed": 4090361794,
+            "tw_anchor": "uniform-feasible",
+            "tw_set": "spread"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/paris/n=10/poryos-paris-n10-poi/poryos-paris-n10-poi.geo.json.gz",
+                "sha256": "45c703b78d84e9c7419bc36a5a715683c1693fffd4963a85a9f416bc7f525b1d"
+            }
+        },
+        "tw_set": {
+            "name": "spread",
+            "td_paired": false,
+            "policy": "uniform-spread",
+            "note": "static-only TW set; NOT the TDVRPTW windows; never audited under traffic"
+        }
+    },
+    "service_times": [0, 859, 1567, 1388, 1, 1408, 886, 553, 916, 813, 1330],
+    "time_windows": [
+        [0, 86400],
+        [21841, 42480],
+        [69584, 81813],
+        [73243, 84722],
+        [68471, 86272],
+        [25599, 27000],
+        [3563, 25217],
+        [10414, 35399],
+        [8414, 22150],
+        [4463, 14051],
+        [33990, 55658]
+    ]
+}

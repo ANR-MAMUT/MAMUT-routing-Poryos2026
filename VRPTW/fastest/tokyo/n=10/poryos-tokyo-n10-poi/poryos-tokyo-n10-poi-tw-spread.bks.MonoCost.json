@@ -1,0 +1,18 @@
+{
+    "instance_name": "poryos-tokyo-n10-poi-tw-spread",
+    "routes": [
+        [2, 3, 8, 10, 1],
+        [6, 4, 7, 5],
+        [9]
+    ],
+    "cost": 3866.852,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=120s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-16T13:28:25",
+        "validated_cost": 3866.852,
+        "validated_num_routes": 3
+    },
+    "objective_function": "MonoCost"
+}

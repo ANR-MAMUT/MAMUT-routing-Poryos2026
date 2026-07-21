@@ -1,0 +1,80 @@
+{
+    "instance_name": "poryos-san_francisco-n10-hyb-wave-light",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Poryos2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 116,
+    "coordinates": [
+        [27567.380647101618, -311.8625620472418],
+        [20831.002691242335, -14847.357619048676],
+        [26891.010381785043, -1590.959803547444],
+        [27333.686637104704, 660.9341895113392],
+        [23279.790117235345, -188.08560439639047],
+        [25967.423829982512, 1422.6547332263924],
+        [25899.240267214365, -4937.5384202517835],
+        [15887.27313507047, 10474.539507965108],
+        [27162.886353292874, -6164.339083099242],
+        [27370.074981349317, -8270.698288620415],
+        [28698.407123398207, -1824.1517637416177]
+    ],
+    "demands": [0, 1, 50, 6, 5, 84, 1, 7, 98, 73, 1],
+    "service_times": [0, 851, 823, 1371, 605, 892, 1242, 1357, 1293, 448, 1339],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 37.78499105,
+        "lon": -122.7276414,
+        "alt": 0.0
+    },
+    "horizon": [0.0, 86400.0],
+    "td": {
+        "model": "road-graph",
+        "graph": {
+            "path": "sidecars/san_francisco/n=10/poryos-san_francisco-n10-hyb/poryos-san_francisco-n10-hyb.road.json.gz",
+            "sha256": "20e6f6557334e6a09deba3cd16a958e849f8f3ce261450b2844786dbf6e08b16"
+        },
+        "traffic": {
+            "path": "sidecars/san_francisco/n=10/poryos-san_francisco-n10-hyb/poryos-san_francisco-n10-hyb.traffic-wave-light.json.gz",
+            "sha256": "b32feef22d5cf3c4a7b827bde603dab9b0d4cb1d5b01d856c35cb1c018f8cb42"
+        },
+        "atf_sha256": "81abcc0ac69f23aa5f08a5993fafe598047b785bd8b0e41ba5f5492cf49d6b38",
+        "sample_step": 60.0,
+        "simplify_tolerance": 1.0
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-16",
+        "city": "san_francisco",
+        "method": "hyb",
+        "base_instance_name": "poryos-san_francisco-n10-hyb",
+        "subinstance": "wave-light",
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "build-td",
+            "version": 3,
+            "city": "san_francisco",
+            "method": "hyb"
+        },
+        "traffic": {
+            "model": "wave",
+            "intensity": "light",
+            "seed": 10251,
+            "num_trips": 0,
+            "params": {
+                "floor_share": 0.35,
+                "min_speed_factor": 0.12,
+                "jitter": 0.08,
+                "amplitude": 0.25,
+                "center_decay_m": 3000.0
+            }
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/san_francisco/n=10/poryos-san_francisco-n10-hyb/poryos-san_francisco-n10-hyb.geo.json.gz",
+                "sha256": "afb4777de4030949e17de8049ab30d2d27f571e098a156e11d8117d386a649c0"
+            }
+        },
+        "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
+        "problem_type": "TDVRP"
+    }
+}

@@ -1,0 +1,105 @@
+{
+    "instance_name": "poryos-paris-n10-hyb-wave-light",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Poryos2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 100,
+    "coordinates": [
+        [-500.8740114215472, 70.82241150336951],
+        [204.8446488510741, -2048.531554806438],
+        [-8173.220823616647, 2231.9919294420965],
+        [211.35652709402478, -3429.149072564719],
+        [1164.4979859466587, -4043.880396272072],
+        [-15.266373918583824, 1335.4140196994983],
+        [-3805.380107470213, -3591.508253884344],
+        [-2347.624105815279, -2030.6269205401368],
+        [4983.648261324295, -3650.5327220929316],
+        [-3362.9471560758475, -786.6270302935086],
+        [3425.2382808219295, 1785.9871400442835]
+    ],
+    "demands": [0, 9, 5, 5, 54, 3, 3, 9, 76, 6, 75],
+    "service_times": [0, 909, 859, 330, 938, 1127, 626, 1593, 1249, 260, 970],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 48.85886575,
+        "lon": 2.3469411,
+        "alt": 0.0
+    },
+    "horizon": [0.0, 86400.0],
+    "td": {
+        "model": "road-graph",
+        "graph": {
+            "path": "sidecars/paris/n=10/poryos-paris-n10-hyb/poryos-paris-n10-hyb.road.json.gz",
+            "sha256": "11c189089add73edab7bfdcb66bc50caccff87d9b1dfec2d860aa8953496d2a4"
+        },
+        "traffic": {
+            "path": "sidecars/paris/n=10/poryos-paris-n10-hyb/poryos-paris-n10-hyb.traffic-wave-light.json.gz",
+            "sha256": "fd2da6abeb4c9237a0c0b0d89d77b3df8d34f8f6d076a1c137ac2e5a811ec614"
+        },
+        "atf_sha256": "49b3af2a4f3c5a420b7bf7fa85df963686b7b5ad5cf242dd7e73aa6c866f64d3",
+        "sample_step": 60.0,
+        "simplify_tolerance": 1.0
+    },
+    "time_windows": [
+        [0, 86400],
+        [0, 12233],
+        [0, 16914],
+        [0, 15643],
+        [0, 17073],
+        [0, 12753],
+        [0, 14793],
+        [0, 7842],
+        [0, 9924],
+        [0, 13383],
+        [0, 12801]
+    ],
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-16",
+        "city": "paris",
+        "method": "hyb",
+        "base_instance_name": "poryos-paris-n10-hyb",
+        "subinstance": "wave-light",
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "build-td",
+            "version": 3,
+            "city": "paris",
+            "method": "hyb"
+        },
+        "traffic": {
+            "model": "wave",
+            "intensity": "light",
+            "seed": 10251,
+            "num_trips": 0,
+            "params": {
+                "floor_share": 0.35,
+                "min_speed_factor": 0.12,
+                "jitter": 0.08,
+                "amplitude": 0.25,
+                "center_decay_m": 3000.0
+            }
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/paris/n=10/poryos-paris-n10-hyb/poryos-paris-n10-hyb.geo.json.gz",
+                "sha256": "11d13acda18d5c745417967edc570d2e3b6870720b19ebcdf7751aeb64269826"
+            }
+        },
+        "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
+        "problem_type": "TDVRPTW",
+        "tw_repair": {
+            "policy": "global-anchor-minimal-shared-deadline-lift",
+            "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
+            "lifted_customers": 0,
+            "max_lift_seconds": 0,
+            "reduced_customers": 0,
+            "max_reduction_seconds": 0,
+            "anchor_routes": 3,
+            "repairs": {
+
+            }
+        }
+    }
+}

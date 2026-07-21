@@ -1,0 +1,19 @@
+{
+    "instance_name": "poryos-hong_kong-n10-poi",
+    "routes": [
+        [4, 1, 6],
+        [7],
+        [8, 10, 5, 2, 3],
+        [9]
+    ],
+    "cost": 4537.8910000000005,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=120s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-16T07:49:00",
+        "validated_cost": 4537.8910000000005,
+        "validated_num_routes": 4
+    },
+    "objective_function": "MonoCost"
+}

@@ -1,0 +1,18 @@
+{
+    "instance_name": "poryos-tokyo-n10-poi-tw-tight",
+    "routes": [
+        [2, 3, 8, 10],
+        [6, 4, 5, 7],
+        [9, 1]
+    ],
+    "cost": 3739.0999999999995,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=120s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-16T13:28:25",
+        "validated_cost": 3739.0999999999995,
+        "validated_num_routes": 3
+    },
+    "objective_function": "MonoCost"
+}

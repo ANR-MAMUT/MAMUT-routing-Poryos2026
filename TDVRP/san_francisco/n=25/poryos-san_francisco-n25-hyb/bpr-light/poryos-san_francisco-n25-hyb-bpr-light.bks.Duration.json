@@ -1,0 +1,22 @@
+{
+    "instance_name": "poryos-san_francisco-n25-hyb-bpr-light",
+    "routes": [
+        [1, 6, 25, 8, 22],
+        [3, 7, 18, 5, 17, 14, 15, 12],
+        [10, 2, 9, 11],
+        [23, 16, 21, 20, 19, 13, 4],
+        [24]
+    ],
+    "cost": 24179.539249143498,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T07:50:59",
+        "validated_cost": 24179.539249143498,
+        "validated_num_routes": 5,
+        "route_durations": [5038.546518697052, 6315.103880340782, 4207.606178366777, 6627.971969833208, 1990.3107019056758],
+        "route_departure_times": [0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

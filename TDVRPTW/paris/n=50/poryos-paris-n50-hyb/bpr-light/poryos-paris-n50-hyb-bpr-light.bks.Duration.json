@@ -1,0 +1,22 @@
+{
+    "instance_name": "poryos-paris-n50-hyb-bpr-light",
+    "routes": [
+        [1, 49, 27, 30, 32, 28, 26, 46, 33, 29, 14, 48, 22, 45],
+        [3, 8, 36, 16],
+        [6, 43, 11, 18, 34, 19, 4, 25, 5, 42, 13, 37, 40, 35, 39, 2, 15, 9, 47, 44],
+        [17, 23, 24, 20, 10, 12, 21],
+        [50, 38, 41, 7, 31]
+    ],
+    "cost": 36183.76099911149,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=2026, time_limit=480s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-17T10:07:07",
+        "validated_cost": 36183.76099911149,
+        "validated_num_routes": 5,
+        "route_durations": [10718.037546979063, 3354.069891792123, 14257.634463581755, 4515.720862416372, 3338.298234342178],
+        "route_departure_times": [0.0, 0.0, 1901.923273090234, 2200.9350019934977, 0.0]
+    },
+    "objective_function": "Duration"
+}

@@ -1,0 +1,22 @@
+{
+    "instance_name": "poryos-san_francisco-n100-hyb",
+    "routes": [
+        [7, 77, 52, 59, 66, 8],
+        [18, 62, 13, 79, 3, 82, 73, 16, 45, 2, 80, 33, 68, 55, 69, 91, 17, 86, 24, 20],
+        [23, 49, 1, 21, 99, 71, 95, 90, 93, 60, 96, 58, 28, 12, 85, 67, 89, 78, 88, 37],
+        [27, 47, 29, 48, 61, 5, 43, 65, 38, 56, 40, 92, 6, 22, 50, 26, 75, 53, 34, 11],
+        [36, 32, 9, 4],
+        [39, 57, 25, 94, 31, 15, 35, 10, 30],
+        [42, 83, 87, 74, 97, 64, 19, 76, 81, 63, 98, 54, 44, 70, 14, 72, 51, 100, 84, 41, 46]
+    ],
+    "cost": 276001.31700000004,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=456, time_limit=900s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T04:08:43",
+        "validated_cost": 276001.31700000004,
+        "validated_num_routes": 7
+    },
+    "objective_function": "MonoCost"
+}

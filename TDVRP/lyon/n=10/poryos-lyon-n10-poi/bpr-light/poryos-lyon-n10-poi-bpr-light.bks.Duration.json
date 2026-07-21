@@ -1,0 +1,20 @@
+{
+    "instance_name": "poryos-lyon-n10-poi-bpr-light",
+    "routes": [
+        [1, 2, 9, 5, 7, 10, 3],
+        [6, 4],
+        [8]
+    ],
+    "cost": 9741.384102288797,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=120s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T07:49:42",
+        "validated_cost": 9741.384102288797,
+        "validated_num_routes": 3,
+        "route_durations": [6127.892448308152, 2442.821119298763, 1170.6705346818808],
+        "route_departure_times": [0.0, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

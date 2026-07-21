@@ -1,0 +1,136 @@
+{
+    "instance_name": "poryos-hong_kong-n25-hyb",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Poryos2026",
+    "num_customers": 25,
+    "num_vehicles": null,
+    "vehicle_capacity": 131,
+    "coordinates": [
+        [1438.9425746026898, -1211.8557234748282],
+        [2854.0909988205926, -5289.485434391499],
+        [1064.7303099413407, -4565.50818442616],
+        [4135.942077729063, -6886.53857213557],
+        [-1291.42758610145, -7534.520196424505],
+        [11628.232688114813, 3269.857196819434],
+        [923.6263809727918, -4613.631346716304],
+        [4060.200083972907, -6650.307220623232],
+        [1650.4308939328166, -8323.731675055418],
+        [-2096.6421363271893, -1536.4555021404958],
+        [-3269.283285384209, -7706.210745539751],
+        [9158.65210163097, -10012.65504722463],
+        [3141.704468852478, -5482.583832940391],
+        [1591.1514336250698, -7826.520164695534],
+        [-640.6765402061213, -8525.795925338925],
+        [1223.021177482664, -5454.771331817496],
+        [406.8702318673604, -8091.660322058564],
+        [3895.0172944592714, 7567.627210922325],
+        [-10047.765793116041, 98.29120733013112],
+        [-7824.829985244633, 10307.260476472775],
+        [3725.391552440347, -7028.847295481892],
+        [787.7757463954183, -4445.289215195031],
+        [9396.92794771471, 8593.772058556891],
+        [3941.7632876489383, 2088.5842719580696],
+        [1773.2358493738222, 2432.9261548337518],
+        [387.0331156990046, -8158.699173478547]
+    ],
+    "demands": [0, 7, 100, 8, 4, 3, 7, 7, 7, 8, 1, 76, 3, 5, 1, 7, 55, 3, 93, 2, 5, 10, 5, 8, 2, 2],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 22.35252895,
+        "lon": 114.15986375,
+        "alt": 0.0
+    },
+    "metric_variant": "fastest",
+    "arc_costs_source": {
+        "model": "distances-sidecar",
+        "distances": {
+            "path": "sidecars/hong_kong/n=25/poryos-hong_kong-n25-hyb/poryos-hong_kong-n25-hyb.distances-fastest.json.gz",
+            "sha256": "ba1448a8109ec9790ad4df9780226b381cb19ce2284feac9733e0b0ad06cb70c"
+        }
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-16",
+        "problem_type": "VRPTW",
+        "metric_variant": "fastest",
+        "city": "hong_kong",
+        "method": "hyb",
+        "base_instance_name": "poryos-hong_kong-n25-hyb",
+        "num_vehicles_lb": 4,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "derive-vrptw",
+            "version": 3,
+            "city": "hong_kong",
+            "method": "hyb",
+            "service_seed": 1703898577,
+            "tw_seed": 42267764,
+            "tw_anchor": "free-flow-fastest"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/hong_kong/n=25/poryos-hong_kong-n25-hyb/poryos-hong_kong-n25-hyb.geo.json.gz",
+                "sha256": "fc668eb8e39f994199f8cff088c18893c40ba6fb6dccdce5a7b1c1e1e8b6a753"
+            }
+        },
+        "tw_set": {
+            "name": "td-shared",
+            "td_paired": true,
+            "policy": "route-centered",
+            "note": "windows shared verbatim with the base's TDVRPTW twins (post minimal-shared-tw-repair)"
+        },
+        "tw_anchor": {
+            "policy": "deterministic-capacity-horizon-nearest-neighbour",
+            "routes": [
+                [21, 2, 6, 15, 1],
+                [24, 23, 17, 22, 9, 12, 8, 13, 25, 16, 14, 4, 10, 7, 3, 20, 5, 19],
+                [18],
+                [11]
+            ],
+            "num_routes": 4,
+            "min_customers_per_route": 1,
+            "max_customers_per_route": 18
+        },
+        "tw_repair": {
+            "policy": "global-anchor-minimal-shared-deadline-lift",
+            "overlays_audited": ["bpr-light", "bpr-moderate", "bpr-heavy", "wave-light", "wave-moderate", "wave-heavy"],
+            "lifted_customers": 0,
+            "max_lift_seconds": 0,
+            "reduced_customers": 0,
+            "max_reduction_seconds": 0,
+            "anchor_routes": 4,
+            "repairs": {
+
+            }
+        }
+    },
+    "service_times": [0, 251, 4, 313, 552, 707, 695, 655, 60, 633, 514, 588, 736, 661, 798, 427, 733, 502, 750, 519, 10, 750, 12, 453, 613, 340],
+    "time_windows": [
+        [0, 86400],
+        [0, 18667],
+        [0, 2280],
+        [0, 31992],
+        [1236, 16556],
+        [2960, 22154],
+        [0, 13110],
+        [3316, 17709],
+        [0, 16581],
+        [0, 12172],
+        [2745, 16533],
+        [0, 17283],
+        [0, 11745],
+        [629, 11278],
+        [4057, 11764],
+        [0, 14295],
+        [0, 18678],
+        [0, 9826],
+        [0, 12392],
+        [5815, 24317],
+        [5699, 17447],
+        [0, 7101],
+        [0, 13358],
+        [0, 12099],
+        [0, 15481],
+        [3714, 9717]
+    ]
+}

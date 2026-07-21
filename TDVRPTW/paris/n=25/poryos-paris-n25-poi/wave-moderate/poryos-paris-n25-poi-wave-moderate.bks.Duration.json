@@ -1,0 +1,21 @@
+{
+    "instance_name": "poryos-paris-n25-poi-wave-moderate",
+    "routes": [
+        [2, 23, 6, 5, 9, 22, 16, 10, 17, 14],
+        [7, 8, 19, 1, 18, 25, 20, 11, 24],
+        [15, 3, 13, 12],
+        [21, 4]
+    ],
+    "cost": 12209.144580748678,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T14:37:21",
+        "validated_cost": 12209.144580748678,
+        "validated_num_routes": 4,
+        "route_durations": [4891.8395511399885, 4088.8908158516774, 2020.9500475453988, 1207.4641662116137],
+        "route_departure_times": [0.0, 0.0, 0.0, 973.9517390629591]
+    },
+    "objective_function": "Duration"
+}

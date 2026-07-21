@@ -1,0 +1,20 @@
+{
+    "instance_name": "poryos-tokyo-n50-hyb-tw-tight",
+    "routes": [
+        [8, 14, 1, 23, 48, 26, 31],
+        [12, 7, 19, 46, 34, 50, 28, 13, 21, 20, 37, 22, 27, 47, 15, 10, 2],
+        [16, 17, 3, 4, 11, 35],
+        [18, 9, 40, 5, 33, 38],
+        [24, 45, 29, 36, 42, 44, 49, 25, 30, 39, 32, 6, 43, 41]
+    ],
+    "cost": 11394.618999999995,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=480s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-16T13:28:25",
+        "validated_cost": 11394.618999999995,
+        "validated_num_routes": 5
+    },
+    "objective_function": "MonoCost"
+}

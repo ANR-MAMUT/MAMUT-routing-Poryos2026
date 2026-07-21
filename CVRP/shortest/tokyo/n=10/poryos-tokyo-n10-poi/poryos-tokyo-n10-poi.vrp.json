@@ -1,0 +1,61 @@
+{
+    "instance_name": "poryos-tokyo-n10-poi",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Poryos2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 126,
+    "coordinates": [
+        [-2164.0120515125586, 1974.6974344579025],
+        [-2368.5399789541557, 2915.978557673715],
+        [9776.578345053547, 10419.041124313777],
+        [8331.450764447467, 7800.840153895153],
+        [-322.0137606154777, -202.15054569215596],
+        [-2927.457661907366, -1444.5244787300826],
+        [7514.637437772537, 8013.310528765747],
+        [-5883.661612626828, 1377.121806185281],
+        [-2548.5442139645206, 5788.997489221489],
+        [-1610.4354896600664, 2670.89021202972],
+        [-2767.872458872456, 5965.912599434728]
+    ],
+    "demands": [0, 2, 82, 9, 4, 4, 81, 4, 5, 70, 5],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 35.6768601,
+        "lon": 139.7638947,
+        "alt": 0.0
+    },
+    "metric_variant": "shortest",
+    "arc_costs_source": {
+        "model": "distances-sidecar",
+        "distances": {
+            "path": "sidecars/tokyo/n=10/poryos-tokyo-n10-poi/poryos-tokyo-n10-poi.distances-shortest.json.gz",
+            "sha256": "f6076da81ad75f556cb9498c1551206cb6a5e8f09d343fa4c6c831ba00905666"
+        }
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-16",
+        "problem_type": "CVRP",
+        "metric_variant": "shortest",
+        "city": "tokyo",
+        "method": "poi",
+        "base_instance_name": "poryos-tokyo-n10-poi",
+        "num_vehicles_lb": 3,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "generate-base",
+            "version": 3,
+            "city": "tokyo",
+            "method": "poi",
+            "sampling_seed": 1174341027,
+            "stage1_base": "tokyo_poi-n11-k3"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/tokyo/n=10/poryos-tokyo-n10-poi/poryos-tokyo-n10-poi.geo.json.gz",
+                "sha256": "d49f1970419a67b104d70db3d83b44592f6707999e44fe30cebb5eab0c17dabe"
+            }
+        }
+    }
+}

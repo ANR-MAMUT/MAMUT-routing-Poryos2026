@@ -1,0 +1,61 @@
+{
+    "instance_name": "poryos-san_francisco-n10-hyb",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Poryos2026",
+    "num_customers": 10,
+    "num_vehicles": null,
+    "vehicle_capacity": 116,
+    "coordinates": [
+        [27567.380647101618, -311.8625620472418],
+        [20831.002691242335, -14847.357619048676],
+        [26891.010381785043, -1590.959803547444],
+        [27333.686637104704, 660.9341895113392],
+        [23279.790117235345, -188.08560439639047],
+        [25967.423829982512, 1422.6547332263924],
+        [25899.240267214365, -4937.5384202517835],
+        [15887.27313507047, 10474.539507965108],
+        [27162.886353292874, -6164.339083099242],
+        [27370.074981349317, -8270.698288620415],
+        [28698.407123398207, -1824.1517637416177]
+    ],
+    "demands": [0, 1, 50, 6, 5, 84, 1, 7, 98, 73, 1],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 37.78499105,
+        "lon": -122.7276414,
+        "alt": 0.0
+    },
+    "metric_variant": "shortest",
+    "arc_costs_source": {
+        "model": "distances-sidecar",
+        "distances": {
+            "path": "sidecars/san_francisco/n=10/poryos-san_francisco-n10-hyb/poryos-san_francisco-n10-hyb.distances-shortest.json.gz",
+            "sha256": "b433466ef6d5c86391f5c5e0b240f4615ae667c1f2943b56df8ebe3c3d976a29"
+        }
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-16",
+        "problem_type": "CVRP",
+        "metric_variant": "shortest",
+        "city": "san_francisco",
+        "method": "hyb",
+        "base_instance_name": "poryos-san_francisco-n10-hyb",
+        "num_vehicles_lb": 3,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "generate-base",
+            "version": 3,
+            "city": "san_francisco",
+            "method": "hyb",
+            "sampling_seed": 3016621112,
+            "stage1_base": "san_francisco_hyb-n11-k3"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/san_francisco/n=10/poryos-san_francisco-n10-hyb/poryos-san_francisco-n10-hyb.geo.json.gz",
+                "sha256": "afb4777de4030949e17de8049ab30d2d27f571e098a156e11d8117d386a649c0"
+            }
+        }
+    }
+}

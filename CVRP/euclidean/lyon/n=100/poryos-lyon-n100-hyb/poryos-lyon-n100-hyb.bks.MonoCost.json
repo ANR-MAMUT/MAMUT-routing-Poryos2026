@@ -1,0 +1,24 @@
+{
+    "instance_name": "poryos-lyon-n100-hyb",
+    "routes": [
+        [5, 35, 91, 86, 45],
+        [10, 24, 48, 88, 11, 82, 33, 59, 15, 7],
+        [12, 6, 76, 17, 30, 47, 34, 38, 39, 72],
+        [16, 78, 75, 25, 65, 96, 56, 58, 27, 22, 81, 29, 54, 62, 28],
+        [26, 13, 32, 19],
+        [40, 57, 68, 44, 64, 74, 8, 90, 95, 9, 89, 53, 73, 83, 67, 97],
+        [41, 31, 36, 61, 4, 60, 98, 77, 55, 80, 63, 92, 18, 37, 21, 46],
+        [50, 43, 52, 42, 49, 20, 94],
+        [84, 2, 71, 51, 93, 100, 99, 87, 85, 1, 69, 79, 70, 14, 3, 66, 23]
+    ],
+    "cost": 108011.63100000004,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP HGS on 1000-scaled integers (seed=123, time_limit=900s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-10T04:08:41",
+        "validated_cost": 108011.63100000004,
+        "validated_num_routes": 9
+    },
+    "objective_function": "MonoCost"
+}

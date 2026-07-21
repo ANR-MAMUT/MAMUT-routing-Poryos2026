@@ -1,0 +1,20 @@
+{
+    "instance_name": "poryos-tokyo-n25-hyb-tw-spread",
+    "routes": [
+        [6, 10, 19],
+        [7, 2, 21, 18, 12, 20, 16, 4],
+        [11, 25, 3],
+        [13, 23, 24, 17, 22, 15, 9],
+        [14, 8, 5, 1]
+    ],
+    "cost": 8556.748000000001,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-16T13:28:25",
+        "validated_cost": 8556.748000000001,
+        "validated_num_routes": 5
+    },
+    "objective_function": "MonoCost"
+}

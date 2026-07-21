@@ -1,0 +1,21 @@
+{
+    "instance_name": "poryos-san_francisco-n25-poi-bpr-moderate",
+    "routes": [
+        [3, 15],
+        [7, 23, 6, 13, 14, 20, 25, 10, 24],
+        [11, 1, 22, 8, 18],
+        [19, 21, 17, 2, 5, 9, 16, 4, 12]
+    ],
+    "cost": 38342.98074192801,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T07:51:10",
+        "validated_cost": 38342.98074192801,
+        "validated_num_routes": 4,
+        "route_durations": [2562.6924120691547, 12453.354491724987, 8503.969795137134, 14822.964042996735],
+        "route_departure_times": [83955.33017516199, 0.0, 77979.93062389134, 0.0]
+    },
+    "objective_function": "Duration"
+}

@@ -1,0 +1,20 @@
+{
+    "instance_name": "poryos-tokyo-n25-poi",
+    "routes": [
+        [3, 18, 8, 11, 2],
+        [4, 15],
+        [19, 20, 14, 23, 25, 13, 17],
+        [21, 7, 9, 24, 5, 10, 12, 6, 1, 16],
+        [22]
+    ],
+    "cost": 6891.335999999999,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-16T13:28:25",
+        "validated_cost": 6891.335999999999,
+        "validated_num_routes": 5
+    },
+    "objective_function": "MonoCost"
+}

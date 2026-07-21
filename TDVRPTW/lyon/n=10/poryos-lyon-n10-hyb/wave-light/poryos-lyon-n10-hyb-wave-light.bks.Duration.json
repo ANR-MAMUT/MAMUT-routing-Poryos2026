@@ -1,0 +1,20 @@
+{
+    "instance_name": "poryos-lyon-n10-hyb-wave-light",
+    "routes": [
+        [3, 7],
+        [5],
+        [9, 10, 6, 8, 2, 4, 1]
+    ],
+    "cost": 9074.73417902656,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=120s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T11:28:40",
+        "validated_cost": 9074.73417902656,
+        "validated_num_routes": 3,
+        "route_durations": [1427.7572467876837, 575.4831925210428, 7071.493739717833],
+        "route_departure_times": [0.0, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

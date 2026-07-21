@@ -1,0 +1,22 @@
+{
+    "instance_name": "poryos-tokyo-n50-hyb-wave-light",
+    "routes": [
+        [5, 1, 23, 48, 26, 31, 33],
+        [8, 14, 16],
+        [18, 9, 40, 17, 3, 11, 4, 22, 37, 27, 47, 15, 20, 21],
+        [24, 45, 50, 34, 46, 19, 7, 12],
+        [28, 13, 2, 10, 29, 36, 42, 44, 49, 25, 30, 39, 32, 6, 41, 43, 38, 35]
+    ],
+    "cost": 52607.38459231876,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=480s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T18:38:06",
+        "validated_cost": 52607.38459231876,
+        "validated_num_routes": 5,
+        "route_durations": [6387.522884375596, 2404.53639620602, 13264.660158334349, 9289.192778820578, 21261.47237458222],
+        "route_departure_times": [0.0, 0.0, 244.6114504225896, 0.0, 9021.772581371673]
+    },
+    "objective_function": "Duration"
+}

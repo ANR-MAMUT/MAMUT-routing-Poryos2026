@@ -1,0 +1,125 @@
+{
+    "instance_name": "poryos-san_francisco-n25-poi-tw-tight",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Poryos2026",
+    "num_customers": 25,
+    "num_vehicles": null,
+    "vehicle_capacity": 139,
+    "coordinates": [
+        [27567.380647101618, -311.8625620472418],
+        [18558.110903080724, 15853.006480186414],
+        [29487.347060222568, 722.4275225711312],
+        [28109.05025228539, 201.268483371017],
+        [28253.013969226817, 490.1988214681638],
+        [29194.524315355222, 615.1084142378343],
+        [20153.49835885502, -4712.093978883138],
+        [26837.037261323807, -847.0845648199902],
+        [20645.20792702422, -345.848943408223],
+        [28306.40032028609, 1279.6992180807088],
+        [27620.544382827626, -15061.215450863085],
+        [27183.939809623193, 1015.7276883996659],
+        [27590.995832100816, 222.69228382946744],
+        [22242.84975251324, -7023.118426794532],
+        [21673.78317189807, -9409.615103078353],
+        [29023.16481782747, -150.9502061757976],
+        [28488.39869672662, 1287.1417220530159],
+        [38480.54735914157, 9446.723631398943],
+        [26094.369659519554, 58.651240609902345],
+        [27915.342580311844, -306.4841254753646],
+        [20828.961636403903, -14863.878072556921],
+        [38338.690917060274, 9366.322540752957],
+        [20701.57882708868, -342.6551762691954],
+        [24811.866971773044, -974.825654010878],
+        [26894.992415638764, -2187.6211953995016],
+        [26652.27736434158, -15914.960293941931]
+    ],
+    "demands": [0, 7, 5, 9, 1, 10, 54, 6, 2, 5, 4, 2, 9, 7, 2, 87, 5, 83, 3, 8, 9, 6, 92, 10, 4, 10],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 37.78499105,
+        "lon": -122.7276414,
+        "alt": 0.0
+    },
+    "metric_variant": "fastest",
+    "arc_costs_source": {
+        "model": "distances-sidecar",
+        "distances": {
+            "path": "sidecars/san_francisco/n=25/poryos-san_francisco-n25-poi/poryos-san_francisco-n25-poi.distances-fastest.json.gz",
+            "sha256": "e996ff49cc2e9d670f3a1ed4ddd6f3f28bba1e69bcb5b3c4403b47dee177518a"
+        }
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-16",
+        "problem_type": "VRPTW",
+        "metric_variant": "fastest",
+        "city": "san_francisco",
+        "method": "poi",
+        "base_instance_name": "poryos-san_francisco-n25-poi",
+        "num_vehicles_lb": 4,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "derive-vrptw",
+            "version": 3,
+            "city": "san_francisco",
+            "method": "poi",
+            "service_seed": 372157432,
+            "tw_seed": 3891431203,
+            "tw_anchor": "free-flow-fastest",
+            "tw_set": "tight"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/san_francisco/n=25/poryos-san_francisco-n25-poi/poryos-san_francisco-n25-poi.geo.json.gz",
+                "sha256": "2aa161872ccbd9304581aab0250f3b11e5186cd349e615c9a12d969655f3a876"
+            }
+        },
+        "tw_set": {
+            "name": "tight",
+            "td_paired": false,
+            "policy": "route-centered-tight",
+            "note": "static-only TW set; NOT the TDVRPTW windows; never audited under traffic"
+        },
+        "tw_anchor": {
+            "policy": "deterministic-capacity-horizon-nearest-neighbour",
+            "routes": [
+                [19, 3, 12, 18, 7, 24, 23, 8, 13, 14, 20, 25, 10, 5, 2, 16, 9, 4, 11, 21, 1],
+                [15],
+                [22],
+                [6, 17]
+            ],
+            "num_routes": 4,
+            "min_customers_per_route": 1,
+            "max_customers_per_route": 21
+        }
+    },
+    "service_times": [0, 1126, 2580, 1576, 1553, 1374, 1322, 701, 898, 1447, 786, 2018, 86, 1865, 2291, 716, 2324, 1316, 1877, 1236, 719, 1245, 399, 937, 938, 301],
+    "time_windows": [
+        [0, 86400],
+        [30738, 33913],
+        [17477, 19396],
+        [0, 4695],
+        [21742, 28257],
+        [15801, 18256],
+        [0, 3345],
+        [3542, 6524],
+        [4069, 12087],
+        [21640, 25301],
+        [13693, 17339],
+        [25268, 28117],
+        [0, 7059],
+        [6319, 12316],
+        [8371, 14272],
+        [0, 1704],
+        [19078, 23145],
+        [1438, 4608],
+        [0, 6786],
+        [0, 2899],
+        [12924, 14943],
+        [27520, 31422],
+        [0, 2215],
+        [5214, 8615],
+        [3834, 7792],
+        [14032, 16181]
+    ]
+}

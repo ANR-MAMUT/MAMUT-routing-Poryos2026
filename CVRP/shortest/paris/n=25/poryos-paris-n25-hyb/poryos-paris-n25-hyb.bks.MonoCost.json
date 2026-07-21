@@ -1,0 +1,20 @@
+{
+    "instance_name": "poryos-paris-n25-hyb",
+    "routes": [
+        [3, 13, 17, 9, 16],
+        [8, 25, 18, 7, 15],
+        [14, 10],
+        [19, 12, 20],
+        [21, 2, 11, 23, 1, 24, 22, 4, 6, 5]
+    ],
+    "cost": 100885.857,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-16T07:49:00",
+        "validated_cost": 100885.857,
+        "validated_num_routes": 5
+    },
+    "objective_function": "MonoCost"
+}

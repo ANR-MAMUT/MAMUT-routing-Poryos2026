@@ -1,0 +1,23 @@
+{
+    "instance_name": "poryos-tokyo-n25-hyb-bpr-heavy",
+    "routes": [
+        [4, 16, 6, 20, 12],
+        [9, 15, 22, 17, 13, 21, 7, 1, 2],
+        [10],
+        [11, 25, 3, 19],
+        [14, 8, 5, 18],
+        [23, 24]
+    ],
+    "cost": 58154.22426448908,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=1729, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-17T10:12:55",
+        "validated_cost": 58154.22426448908,
+        "validated_num_routes": 6,
+        "route_durations": [10903.771519332153, 19214.6341918901, 1818.9353722506928, 8935.465814657706, 10361.803401560474, 6919.613964797954],
+        "route_departure_times": [4447.260162173423, 2201.1083128010237, 0.0, 0.0, 2720.9189083498727, 32644.51642599765]
+    },
+    "objective_function": "Duration"
+}

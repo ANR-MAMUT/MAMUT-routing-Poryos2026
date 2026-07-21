@@ -1,0 +1,20 @@
+{
+    "instance_name": "poryos-paris-n10-poi-bpr-heavy",
+    "routes": [
+        [3, 1, 2, 9, 8, 7],
+        [6, 4],
+        [10, 5]
+    ],
+    "cost": 12115.680673237657,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=120s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T14:12:18",
+        "validated_cost": 12115.680673237657,
+        "validated_num_routes": 3,
+        "route_durations": [7758.5407132451965, 1257.5010566642807, 3099.63890332818],
+        "route_departure_times": [252.17323625232407, 1766.388328772079, 0.0]
+    },
+    "objective_function": "Duration"
+}

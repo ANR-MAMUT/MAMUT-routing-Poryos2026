@@ -1,0 +1,24 @@
+{
+    "instance_name": "poryos-hong_kong-n25-poi-wave-light",
+    "routes": [
+        [3, 12, 7, 17],
+        [4, 10, 21, 6],
+        [9, 15, 23, 2, 1, 20, 14, 11],
+        [16, 13, 18, 24],
+        [19],
+        [22],
+        [25, 8, 5]
+    ],
+    "cost": 34028.04333478771,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T07:49:57",
+        "validated_cost": 34028.04333478771,
+        "validated_num_routes": 7,
+        "route_durations": [5272.115606159436, 5432.887449375419, 11223.848743465669, 5020.33503515545, 2131.1087548430546, 1312.1214136569552, 3635.6263321317283],
+        "route_departure_times": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    },
+    "objective_function": "Duration"
+}

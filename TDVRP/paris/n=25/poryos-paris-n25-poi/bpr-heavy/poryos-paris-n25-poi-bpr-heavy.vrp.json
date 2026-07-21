@@ -1,0 +1,112 @@
+{
+    "instance_name": "poryos-paris-n25-poi-bpr-heavy",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Poryos2026",
+    "num_customers": 25,
+    "num_vehicles": null,
+    "vehicle_capacity": 142,
+    "coordinates": [
+        [-500.8740114215472, 70.82241150336951],
+        [-2638.6097140981406, -4769.377339700792],
+        [-534.659986646145, 805.2259756080111],
+        [1249.2683617779362, 1692.9406018757882],
+        [-340.9973730702737, -617.3605229607288],
+        [-6.643186394687618, 4104.157399727192],
+        [-540.9643667134388, 3582.452921260338],
+        [2879.53350600468, -1806.7080020871545],
+        [-544.3688859696449, -4717.595754036848],
+        [2428.4954715470394, 3447.2152305540176],
+        [3710.6707324070767, 548.177391829897],
+        [-2704.014526574933, 829.8649444155637],
+        [3635.1060139769943, -105.6809013827272],
+        [6391.390444940311, -126.6482499418997],
+        [1176.2372887519055, 2273.8830256699443],
+        [30.630104569455494, 973.2455878224935],
+        [8290.789685400361, 4157.525942258146],
+        [2416.239013874361, 1234.6272190808368],
+        [-6104.551525400731, -2083.809897355097],
+        [-1834.953985727831, -4595.427884504032],
+        [-2848.6929152276734, -100.45489043194902],
+        [-75.96587232931024, -880.6304458497068],
+        [3777.784803899398, 3763.0725426790714],
+        [-1020.4313918063405, 2590.1596257836227],
+        [-4014.3276989181804, 1400.4904304761321],
+        [-4010.1113814816604, -1656.7155700223757]
+    ],
+    "demands": [0, 9, 7, 61, 84, 6, 1, 6, 52, 9, 4, 8, 9, 65, 10, 7, 82, 7, 10, 5, 8, 2, 9, 7, 10, 10],
+    "service_times": [0, 526, 334, 424, 494, 304, 323, 519, 138, 290, 409, 4, 230, 1, 291, 195, 191, 263, 24, 9, 310, 364, 234, 209, 287, 325],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 48.85886575,
+        "lon": 2.3469411,
+        "alt": 0.0
+    },
+    "horizon": [0.0, 86400.0],
+    "td": {
+        "model": "road-graph",
+        "graph": {
+            "path": "sidecars/paris/n=25/poryos-paris-n25-poi/poryos-paris-n25-poi.road.json.gz",
+            "sha256": "91e11565901475ddafcb8c6f497414a89e67d4d6aa82b1da15dc18b3bda60992"
+        },
+        "traffic": {
+            "path": "sidecars/paris/n=25/poryos-paris-n25-poi/poryos-paris-n25-poi.traffic-bpr-heavy.json.gz",
+            "sha256": "707d0ae036da8659a771eca2da12756b61d69cf2655fedde52f30dcf1d8b17ae"
+        },
+        "atf_sha256": "3d595326fe9d45e871967e7e7994574e4878a1b8b84f714d7a8a19e9a2c43cb2",
+        "sample_step": 60.0,
+        "simplify_tolerance": 1.0
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-16",
+        "city": "paris",
+        "method": "poi",
+        "base_instance_name": "poryos-paris-n25-poi",
+        "subinstance": "bpr-heavy",
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "build-td",
+            "version": 3,
+            "city": "paris",
+            "method": "poi"
+        },
+        "traffic": {
+            "model": "bpr",
+            "intensity": "heavy",
+            "seed": 30164,
+            "num_trips": 1218128,
+            "params": {
+                "capacity_veh_h": {
+                    "5": 900.0,
+                    "4": 1100.0,
+                    "6": 600.0,
+                    "7": 400.0,
+                    "2": 1600.0,
+                    "8": 300.0,
+                    "3": 1400.0,
+                    "1": 1900.0
+                },
+                "min_speed_factor": 0.12,
+                "bpr_beta": 4,
+                "bpr_alpha": 0.15,
+                "multiplier_cap": 6.0,
+                "trips_per_vertex": 10.0,
+                "departures": {
+                    "lunch_return": [12.25, 0.5],
+                    "lunch_probability": 0.25,
+                    "lunch_back": [13.5, 0.5],
+                    "morning": [8.0, 0.75],
+                    "evening": [17.5, 1.0]
+                }
+            }
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/paris/n=25/poryos-paris-n25-poi/poryos-paris-n25-poi.geo.json.gz",
+                "sha256": "2a3b0576ead30c8ff845f1280ecfe23f92936eb3af23d3eb3c104e9ac6102769"
+            }
+        },
+        "notes": "Time dependence derives from the city's OSM road network: the shared road-graph sidecar pins free-flow fastest paths per base; this subinstance's traffic overlay carries per-edge hourly speeds; arrival-time functions are materialized deterministically on load and pinned by td.atf_sha256.",
+        "problem_type": "TDVRP"
+    }
+}

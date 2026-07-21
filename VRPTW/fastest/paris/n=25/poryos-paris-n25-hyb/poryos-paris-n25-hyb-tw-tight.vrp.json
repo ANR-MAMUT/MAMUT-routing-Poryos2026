@@ -1,0 +1,127 @@
+{
+    "instance_name": "poryos-paris-n25-hyb-tw-tight",
+    "instance_origin": "OsmCvrpGen",
+    "benchmark_name": "Poryos2026",
+    "num_customers": 25,
+    "num_vehicles": null,
+    "vehicle_capacity": 122,
+    "coordinates": [
+        [-500.8740114215472, 70.82241150336951],
+        [4532.19255418217, 3564.094497024737],
+        [166.9843395567751, 335.1415690492951],
+        [-588.9446013181778, -792.9688992800984],
+        [4120.443652820654, 654.1227258719621],
+        [415.31435122444947, -1288.5443455726545],
+        [1105.2663635548556, 713.2858908317457],
+        [5163.088515089101, -2340.5460628776423],
+        [1662.2201333037915, -1711.9211130315398],
+        [-3498.227136963731, -1950.9456535107497],
+        [4204.133520774522, -2188.207591935034],
+        [799.973174707279, 1567.2717289635414],
+        [-7412.432748481558, -2185.9274103734783],
+        [-2811.179308412284, -3538.7290950643783],
+        [227.7802218488149, -2321.220407890874],
+        [4505.568424074766, -1655.4036665075819],
+        [-2850.4464176178467, -1005.5671184044388],
+        [-3710.3344487661284, -4482.090005852844],
+        [6130.390266924982, -1434.9902467254917],
+        [-5875.321694278385, 627.8476849093715],
+        [-8626.614989630178, 3587.1610893863754],
+        [-324.7855505943021, 278.6886972405271],
+        [6228.987345474708, 1883.450035918348],
+        [1919.3826425202965, 3826.279339952008],
+        [4278.097632131759, 3078.2836470352418],
+        [4615.996589766718, -1306.279881612815]
+    ],
+    "demands": [0, 2, 3, 2, 8, 4, 4, 10, 8, 3, 65, 2, 61, 8, 57, 1, 10, 99, 7, 51, 7, 5, 2, 4, 71, 95],
+    "depot": 0,
+    "reference_lla": {
+        "lat": 48.85886575,
+        "lon": 2.3469411,
+        "alt": 0.0
+    },
+    "metric_variant": "fastest",
+    "arc_costs_source": {
+        "model": "distances-sidecar",
+        "distances": {
+            "path": "sidecars/paris/n=25/poryos-paris-n25-hyb/poryos-paris-n25-hyb.distances-fastest.json.gz",
+            "sha256": "97bd350e29e120dc3e4dcd7b5b04aca30e73fe6d44a7275c357703fb007b67e0"
+        }
+    },
+    "metadata": {
+        "authors": "MAMUT-routing workbench (generated instance)",
+        "generated_at": "2026-07-16",
+        "problem_type": "VRPTW",
+        "metric_variant": "fastest",
+        "city": "paris",
+        "method": "hyb",
+        "base_instance_name": "poryos-paris-n25-hyb",
+        "num_vehicles_lb": 5,
+        "generator": {
+            "name": "mamut-routing-workbench",
+            "stage": "derive-vrptw",
+            "version": 3,
+            "city": "paris",
+            "method": "hyb",
+            "service_seed": 468686834,
+            "tw_seed": 120237825,
+            "tw_anchor": "free-flow-fastest",
+            "tw_set": "tight"
+        },
+        "sidecars": {
+            "geo": {
+                "path": "sidecars/paris/n=25/poryos-paris-n25-hyb/poryos-paris-n25-hyb.geo.json.gz",
+                "sha256": "2a76d683c16ef999c0608ef74f7873ea9c19e1054c0a17845dc92bfca09e0f65"
+            }
+        },
+        "tw_set": {
+            "name": "tight",
+            "td_paired": false,
+            "policy": "route-centered-tight",
+            "note": "static-only TW set; NOT the TDVRPTW windows; never audited under traffic"
+        },
+        "tw_anchor": {
+            "policy": "deterministic-capacity-horizon-nearest-neighbour",
+            "routes": [
+                [21, 2, 6, 11, 8, 5, 3, 14, 13, 16, 9, 15, 7, 22, 1],
+                [25, 4, 23, 18, 20],
+                [10, 19],
+                [17],
+                [24],
+                [12]
+            ],
+            "num_routes": 6,
+            "min_customers_per_route": 1,
+            "max_customers_per_route": 15
+        }
+    },
+    "service_times": [0, 262, 203, 231, 265, 448, 546, 654, 366, 357, 657, 398, 502, 594, 157, 246, 329, 560, 306, 359, 255, 309, 108, 385, 111, 436],
+    "time_windows": [
+        [0, 86400],
+        [6005, 9103],
+        [0, 2645],
+        [1993, 4075],
+        [0, 1786],
+        [0, 5135],
+        [0, 4294],
+        [4103, 8519],
+        [0, 4453],
+        [2686, 7500],
+        [0, 2229],
+        [0, 4329],
+        [0, 2155],
+        [303, 7252],
+        [2206, 4647],
+        [2641, 9281],
+        [1657, 7515],
+        [0, 2464],
+        [1385, 2782],
+        [0, 4531],
+        [2133, 4134],
+        [0, 1849],
+        [5360, 9167],
+        [0, 3204],
+        [0, 2258],
+        [0, 1620]
+    ]
+}

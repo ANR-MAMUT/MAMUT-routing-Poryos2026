@@ -1,0 +1,24 @@
+{
+    "instance_name": "poryos-hong_kong-n25-poi-bpr-light",
+    "routes": [
+        [3, 12, 7, 17],
+        [4, 10, 21, 6],
+        [9, 15, 23, 2, 1, 20, 14, 11],
+        [16, 13, 18, 24],
+        [19],
+        [22],
+        [25, 8, 5]
+    ],
+    "cost": 33838.572292907425,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib td Duration checker",
+        "date": "2026-07-16T07:49:43",
+        "validated_cost": 33838.572292907425,
+        "validated_num_routes": 7,
+        "route_durations": [5244.351189824114, 5410.420730296659, 11161.406793202745, 4997.579661809461, 2107.9928331198494, 1301.9374515405798, 3614.8836331140164],
+        "route_departure_times": [0.0, 0.0, 0.0, 81653.55377171046, 0.0, 85307.1717592502, 0.0]
+    },
+    "objective_function": "Duration"
+}

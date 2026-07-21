@@ -1,0 +1,19 @@
+{
+    "instance_name": "poryos-san_francisco-n25-poi",
+    "routes": [
+        [3, 15, 2, 5, 9, 16, 4],
+        [7, 23, 6, 13, 14, 20, 25, 10, 24],
+        [12, 18, 22, 8, 1, 11],
+        [19, 17, 21]
+    ],
+    "cost": 6807.011999999999,
+    "metadata": {
+        "authors": "Florian Rascoussier (0nyr)",
+        "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=7, time_limit=240s)",
+        "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
+        "date": "2026-07-16T13:28:24",
+        "validated_cost": 6807.011999999999,
+        "validated_num_routes": 4
+    },
+    "objective_function": "MonoCost"
+}
