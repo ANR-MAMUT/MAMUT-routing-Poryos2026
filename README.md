@@ -11,6 +11,10 @@ Grid: 5 cities (Lyon, Paris, San-Francisco, Hong-Kong, Tokyo) × n ∈ {10, 25, 
 | TDVRP | 360 | 6 traffic subinstances (bpr/wave × light/moderate/heavy) |
 | TDVRPTW | 360 | 6 traffic subinstances, windows shared with the `td-shared` VRPTW set |
 
+## Etymology
+
+*Poryos* is a coined name built on *Poros* (Greek *Πόρος*), the allegorical figure of Plato's *Symposium* who personifies the expedient, the resourceful way through. The underlying word *póros* means a passage or route, and by extension the means of reaching a goal, which reads almost literally for a benchmark generated from real city road networks: every instance asks for good ways through a road graph. The stylized `y` echoes the companion time-dependent solver [KAYROS](https://github.com/0nyr/kayros), itself a respelling of *Kairos* (the opportune moment): Kayros supplies the timing and Poryos the paths, exactly the pairing that a time-dependent routing benchmark and its solver embody. The trailing `2026` is the release year. See [Poros (mythologie)](<https://fr.wikipedia.org/wiki/Poros_(mythologie)>).
+
 ## Naming
 
 Base name: `<family>-<city>-n<N>-<method>` (e.g. `poryos-lyon-n10-hyb`). CVRP and the TD-paired VRPTW instance carry the base name verbatim (the metric or TW set is distinguished by path). TD subinstances append `-<model>-<intensity>` (e.g. `poryos-lyon-n10-hyb-bpr-heavy`). Static-only VRPTW time-window sets append `-tw-<set>` (e.g. `poryos-lyon-n10-hyb-tw-tight`); the reserved `tw-` tag marks by name that the instance is not TD-paired.
