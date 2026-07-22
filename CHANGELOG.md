@@ -1,5 +1,11 @@
 # Changelog — Poryos2026 collection
 
+## 2026-07-22: benchmark-family identity renamed from Mamut2026 to Poryos2026
+
+- Renamed the family, repository, submodule path, metadata identity, and generated instance prefix from `Mamut2026`/`mamut-<city>` to `Poryos2026`/`poryos-<city>` so the dataset is clearly identified as Florian Rascoussier's benchmark family rather than a collective MAMUT project benchmark.
+- Re-pinned every affected canonical sidecar and arrival-time-function hash after the identity change. All 1,080 benchmark instances retain their data, problem variants, and complete checker-validated BKS coverage.
+- Updated the reference library, generation tools, publisher, tests, and documentation to use the Poryos2026 identity. Project-level names and artifact-format identifiers such as `MAMUT-routing`, `mamut-routing-lib`, and `mamut-collection.json` remain unchanged by design.
+
 ## 2026-07-17 — BKS re-seeding for the regenerated instances (coverage 1080/1080)
 
 - Recomputed the best known solutions of all 680 regenerated instances; the 400 byte-identical instances keep their existing BKS. Coverage is complete again: every instance carries a checker-validated BKS (`MonoCost` for CVRP/VRPTW, `Duration` for TDVRP/TDVRPTW).

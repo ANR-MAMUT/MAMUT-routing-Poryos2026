@@ -13,7 +13,7 @@ Grid: 5 cities (Lyon, Paris, San-Francisco, Hong-Kong, Tokyo) × n ∈ {10, 25, 
 
 ## Naming
 
-Base name: `mamut-<city>-n<N>-<method>` (e.g. `poryos-lyon-n10-hyb`). CVRP and the TD-paired VRPTW instance carry the base name verbatim (the metric or TW set is distinguished by path). TD subinstances append `-<model>-<intensity>` (e.g. `poryos-lyon-n10-hyb-bpr-heavy`). Static-only VRPTW time-window sets append `-tw-<set>` (e.g. `poryos-lyon-n10-hyb-tw-tight`); the reserved `tw-` tag marks by name that the instance is not TD-paired.
+Base name: `<family>-<city>-n<N>-<method>` (e.g. `poryos-lyon-n10-hyb`). CVRP and the TD-paired VRPTW instance carry the base name verbatim (the metric or TW set is distinguished by path). TD subinstances append `-<model>-<intensity>` (e.g. `poryos-lyon-n10-hyb-bpr-heavy`). Static-only VRPTW time-window sets append `-tw-<set>` (e.g. `poryos-lyon-n10-hyb-tw-tight`); the reserved `tw-` tag marks by name that the instance is not TD-paired.
 
 ## Layout
 
