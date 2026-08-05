@@ -1,5 +1,12 @@
 # Changelog — Poryos2026 collection
 
+## 2026-08-05 — BKS improvements from a time-dependent solver comparison
+
+- Improved 19 TDVRPTW best known solutions (12 at `n=100`, 6 at `n=500`, 1 at `n=1000`), found during a controlled comparison of several time-dependent VRPTW solvers at a one-hour budget per run. Improvements range from 0.512 percent down to 0.0001 percent, mean 0.069 percent; the largest is `poryos-hong_kong-n500-poi-bpr-heavy` at -0.512 percent.
+- Contributors: kayros TD-ILS (versions 1.3.0 and 1.5.0) supplied 18 of them and Timefold Solver 2.3.0 supplied one (`poryos-lyon-n100-hyb-wave-light`). Each stored solution names the solver, version, seed and time limit that produced it.
+- Every solution was re-validated with the reference `mamut-routing-lib` time-dependent Duration checker before storage, and written under the improve-only store discipline: the checker's re-priced cost is authoritative, and a candidate is stored only if it is strictly better than the entry it replaces.
+- The remaining 1061 instances are unchanged. Coverage stays complete: every instance carries a checker-validated BKS.
+
 ## 2026-07-22: benchmark-family identity renamed from Mamut2026 to Poryos2026
 
 - Renamed the family, repository, submodule path, metadata identity, and generated instance prefix from `Mamut2026`/`mamut-<city>` to `Poryos2026`/`poryos-<city>` so the dataset is clearly identified as Florian Rascoussier's benchmark family rather than a collective MAMUT project benchmark.
