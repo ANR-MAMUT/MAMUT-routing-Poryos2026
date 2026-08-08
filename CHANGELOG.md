@@ -1,6 +1,11 @@
 # Changelog — Poryos2026 collection
 
-## 2026-08-05 — BKS improvements from a time-dependent solver comparison
+## 2026-08-08 — first optimality certificates: 238 TD instances proven optimal, 4 BKS improved
+
+- First exact-solver campaign over the TDVRP and TDVRPTW families at n <= 100 (480 instances; Grid'5000 abaca, jobs 6832834, 6832960, 6835714 and 6837251). 238 instances now carry an optimality certificate in their BKS metadata (`metadata.optimality`): TDVRPTW 123 (60 at n=10, 57 at n=25, 6 at n=50) and TDVRP 115 (59 at n=10, 56 at n=25). These are the first proven optima in the collection's TD families.
+- Prover: kayros 1.5.1 lera branch-price-and-cut (HiGHS backend). Every certificate required four independent solves (cold and warm starts × asymmetric and symmetric labeling modes) agreeing on one checker-exact value, each with an audited exact-pricing phase; the reference `mamut-routing-lib` td Duration checker re-validated every stamped solution and value.
+- 4 TDVRPTW best known solutions improved to their certified optima (improve-only store discipline, checker re-priced costs authoritative): `poryos-san_francisco-n25-poi-bpr-heavy` (-0.256 percent), `poryos-tokyo-n50-hyb-bpr-heavy` (-0.206 percent), `poryos-tokyo-n50-hyb-bpr-moderate` (-0.281 percent) and `poryos-tokyo-n50-hyb-wave-heavy` (-0.181 percent). On the other 234 certified instances the stored heuristic BKS already equalled the exact optimum.
+- The remaining 242 TD instances at n <= 100 keep their heuristic BKS and stay open: 199 exceeded the time budget (up to 7200 s per solve), 27 exceeded the memory budget, and on 16 the certification audit declined to stamp because at least one solve concluded without a fully audited exact-pricing trail; their stored solutions are unchanged. TD instances at n >= 500 and all static families were out of scope.
 
 - Improved 19 TDVRPTW best known solutions (12 at `n=100`, 6 at `n=500`, 1 at `n=1000`), found during a controlled comparison of several time-dependent VRPTW solvers at a one-hour budget per run. Improvements range from 0.512 percent down to 0.0001 percent, mean 0.069 percent; the largest is `poryos-hong_kong-n500-poi-bpr-heavy` at -0.512 percent.
 - Contributors: kayros TD-ILS (versions 1.3.0 and 1.5.0) supplied 18 of them and Timefold Solver 2.3.0 supplied one (`poryos-lyon-n100-hyb-wave-light`). Each stored solution names the solver, version, seed and time limit that produced it.
