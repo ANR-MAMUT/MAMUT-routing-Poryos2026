@@ -13,7 +13,7 @@
         "date": "2026-07-16T11:28:54",
         "validated_cost": 9778.30127109809,
         "validated_num_routes": 3,
-        "route_durations": [6153.624467004855, 2448.9217844359646, 1175.7550196572677],
+        "route_durations": [6153.624467004856, 2448.9217844359646, 1175.7550196572677],
         "route_departure_times": [0.0, 0.0, 0.0],
         "optimality": {
             "proven": true,

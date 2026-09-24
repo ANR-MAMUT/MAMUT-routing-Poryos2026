@@ -7,16 +7,22 @@
         [32, 7, 37],
         [39, 41, 25, 13, 34, 29, 35, 16, 45]
     ],
-    "cost": 51322.32306755178,
+    "cost": 51322.32306755176,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
         "source": "kayros 1.1.2 TD-ILS (seed=42, time_limit=960s)",
         "validated_by": "mamut-routing-lib td Duration checker",
         "date": "2026-07-20T07:03:39",
-        "validated_cost": 51322.32306755178,
+        "validated_cost": 51322.32306755176,
         "validated_num_routes": 5,
-        "route_durations": [24964.26006552209, 4508.373364002197, 8121.682800944852, 3631.15097926048, 10096.855857822162],
-        "route_departure_times": [0.0, 0.0, 0.0, 0.0, 0.0]
+        "route_durations": [24964.26006552207, 4508.373364002197, 8121.682800944852, 3631.15097926048, 10096.855857822162],
+        "route_departure_times": [0.0, 0.0, 0.0, 0.0, 0.0],
+        "repriced": {
+            "previous_cost": 51322.32306755178,
+            "checker": "mamut-routing-lib td checker, contract td-fold/2 (lib >= 0.12.0)",
+            "contract": "td-fold/2",
+            "date": "2026-09-24"
+        }
     },
     "objective_function": "Duration"
 }

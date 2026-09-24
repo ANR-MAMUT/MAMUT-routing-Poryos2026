@@ -15,7 +15,7 @@
         "validated_cost": 88409.16795592509,
         "validated_num_routes": 4,
         "route_durations": [35935.153454516425, 23148.761716321398, 19710.543265966076, 9614.7095191212],
-        "route_departure_times": [1406.1808912552801, 0.0, 0.0, 77020.34640185322]
+        "route_departure_times": [1406.180891255281, 0.0, 0.0, 77020.34640185322]
     },
     "objective_function": "Duration"
 }

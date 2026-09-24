@@ -1,5 +1,30 @@
 # Changelog — Poryos2026 collection
 
+## 2026-09-24 — TD BKS re-priced under the td-fold/2 checker contract; relaxation-twin cross-evaluation
+
+- **Re-pricing, no route changed.** mamut-routing-lib 0.12.0 replaces the TD checker's route fold (contract
+  `td-fold/1` -> `td-fold/2`): waiting and service at a vertex are applied exactly to the accumulated arrival times
+  instead of being composed through a ratio interpolation, and slope-one travel is computed by addition. Every TD
+  BKS was re-priced with `mamut-routing bks reprice-td`: TDVRPTW 311 of 360 files rewritten (93 cost moves), TDVRP
+  286 of 360 (108 cost moves), all float rounding (at most 4.1e-16 relative); the others only refreshed
+  `route_durations` / `route_departure_times` by ulps. Each BKS whose cost moved records `metadata.repriced`
+  (previous cost, checker, contract, date). A second pass reports every file unchanged.
+- **Optimality stamps.** 48 stamped BKS (29 TDVRPTW, 19 TDVRP) moved by at most 7.3e-12: `proven_optimum` now equals
+  the re-priced cost, and a `note` records that the proof was obtained under `td-fold/1`, that `dual_bound` is the
+  prover's value in that arithmetic, and that re-certification under `td-fold/2` is pending.
+- **Relaxation-twin cross-evaluation: 41 TDVRP BKS and 1 CVRP BKS improved.** A TDVRPTW solution is a feasible
+  TDVRP solution of no larger duration (the TDVRP twin drops the windows; the arrival-time functions are FIFO),
+  and a VRPTW solution of any TW set is a CVRP solution of the same cost on the same metric. Every TDVRPTW BKS was
+  therefore priced on its TDVRP twin, and every VRPTW BKS on its CVRP twin, and offered through the improve-only
+  stores (`save_td_solution_as_bks_if_improved`, `save_solution_as_bks_if_improved`; exact comparison, checker
+  cost authoritative) after a structural check that the pair really is a relaxation. 41 TDVRP BKS improved (2 at
+  n=50, 2 at n=100, 15 at n=500, 22 at n=1000; mean -0.48 %, median -0.18 %, largest -1.74 % on
+  `poryos-hong_kong-n500-poi-wave-heavy`), and CVRP/fastest `poryos-hong_kong-n500-poi` improved from 51998.37 to
+  51865.004 (-0.26 %) with the routes of its VRPTW twin. No optimality-stamped BKS was affected. The new records keep
+  the twin's authors and carry `method: twin-cross-evaluation`, a `derived_from` block naming the source instance,
+  objective, cost and date, and `campaign: 2026-09 relaxation-twin cross-evaluation`. The decimal tie
+  `poryos-hong_kong-n25-hyb` (CVRP) was kept.
+
 ## 2026-08-08 — first optimality certificates: 238 TD instances proven optimal, 4 BKS improved
 
 - First exact-solver campaign over the TDVRP and TDVRPTW families at n <= 100 (480 instances; Grid'5000 abaca, jobs 6832834, 6832960, 6835714 and 6837251). 238 instances now carry an optimality certificate in their BKS metadata (`metadata.optimality`): TDVRPTW 123 (60 at n=10, 57 at n=25, 6 at n=50) and TDVRP 115 (59 at n=10, 56 at n=25). These are the first proven optima in the collection's TD families.
