@@ -7,15 +7,15 @@
         [24, 45, 50, 34, 46, 19, 7, 12],
         [28, 13, 2, 10, 29, 36, 42, 44, 49, 25, 30, 39, 32, 6, 41, 43, 38, 35]
     ],
-    "cost": 52804.65298781983,
+    "cost": 52804.65298781982,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
         "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=480s)",
         "validated_by": "mamut-routing-lib td Duration checker",
         "date": "2026-07-16T18:38:06",
-        "validated_cost": 52804.65298781983,
+        "validated_cost": 52804.65298781982,
         "validated_num_routes": 5,
-        "route_durations": [6386.502431621878, 2405.6700141445194, 13258.526559462243, 9285.855200771539, 21468.098781819645],
+        "route_durations": [6386.502431621878, 2405.6700141445194, 13258.526559462243, 9285.855200771539, 21468.09878181964],
         "route_departure_times": [0.0, 0.0, 253.38256533733255, 0.0, 9019.886928560438],
         "optimality": {
             "proven": true,
@@ -23,12 +23,19 @@
             "certificate": "Optimal under checker-exact route costs and standard LP/pricing tolerances. Certified by four independent solves (cold and warm starts x asymmetric and symmetric labeling modes) agreeing on the value, each with an audited exact-pricing phase and zero checker-infeasible priced columns.",
             "date": "2026-08-08",
             "arithmetic": "checker-exact route costs (IEEE-754 doubles, canonical route order); the proven optimum equals compute_solution_cost of the stored routes bit-exactly",
-            "proven_optimum": 52804.65298781983,
+            "proven_optimum": 52804.65298781982,
             "dual_bound": 52804.65298781982,
             "wall_time_s": 6465.49,
             "time_limit_s": 7200.0,
             "checker": "mamut-routing-lib td Duration checker",
-            "campaign": "2026-08-08 Poryos2026 first certification on Grid'5000 abaca (pilot 6832834, full 6832960, top-up 6835714 + 6837251)"
+            "campaign": "2026-08-08 Poryos2026 first certification on Grid'5000 abaca (pilot 6832834, full 6832960, top-up 6835714 + 6837251)",
+            "note": "Re-priced on 2026-09-24 from 52804.65298781983 to 52804.65298781982 by mamut-routing-lib td checker, contract td-fold/2 (lib >= 0.12.0) (exact vertex ready-time transforms and slope-one arc interpolation). Routes unchanged. The proof was obtained under the pre-0.12 fold (td-fold/1); dual_bound is the prover's value under that arithmetic. Re-certification under td-fold/2 is pending."
+        },
+        "repriced": {
+            "previous_cost": 52804.65298781983,
+            "checker": "mamut-routing-lib td checker, contract td-fold/2 (lib >= 0.12.0)",
+            "contract": "td-fold/2",
+            "date": "2026-09-24"
         }
     },
     "objective_function": "Duration"

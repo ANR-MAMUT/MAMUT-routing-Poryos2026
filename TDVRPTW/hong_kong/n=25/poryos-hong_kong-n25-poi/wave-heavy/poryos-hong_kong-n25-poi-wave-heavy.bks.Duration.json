@@ -9,15 +9,15 @@
         [22],
         [25, 8, 5]
     ],
-    "cost": 34092.42183860653,
+    "cost": 34092.42183860654,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
         "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=240s)",
         "validated_by": "mamut-routing-lib td Duration checker",
         "date": "2026-07-16T10:12:23",
-        "validated_cost": 34092.42183860653,
+        "validated_cost": 34092.42183860654,
         "validated_num_routes": 7,
-        "route_durations": [5432.74898444023, 11262.657693884279, 5514.687119565018, 1224.8597769075864, 5707.045581684278, 1311.5804957188639, 3638.842186406283],
+        "route_durations": [5432.74898444023, 11262.65769388428, 5514.68711956502, 1224.8597769075864, 5707.04558168428, 1311.5804957188639, 3638.842186406283],
         "route_departure_times": [3909.891005833941, 112.10738596373093, 181.53412453563797, 0.0, 7533.961010047623, 0.0, 4159.790124112347],
         "optimality": {
             "proven": true,
@@ -25,12 +25,19 @@
             "certificate": "Optimal under checker-exact route costs and standard LP/pricing tolerances. Certified by four independent solves (cold and warm starts x asymmetric and symmetric labeling modes) agreeing on the value, each with an audited exact-pricing phase and zero checker-infeasible priced columns.",
             "date": "2026-08-08",
             "arithmetic": "checker-exact route costs (IEEE-754 doubles, canonical route order); the proven optimum equals compute_solution_cost of the stored routes bit-exactly",
-            "proven_optimum": 34092.42183860653,
+            "proven_optimum": 34092.42183860654,
             "dual_bound": 34092.42183860653,
             "wall_time_s": 18.45,
             "time_limit_s": 1800.0,
             "checker": "mamut-routing-lib td Duration checker",
-            "campaign": "2026-08-08 Poryos2026 first certification on Grid'5000 abaca (pilot 6832834, full 6832960, top-up 6835714 + 6837251)"
+            "campaign": "2026-08-08 Poryos2026 first certification on Grid'5000 abaca (pilot 6832834, full 6832960, top-up 6835714 + 6837251)",
+            "note": "Re-priced on 2026-09-24 from 34092.42183860653 to 34092.42183860654 by mamut-routing-lib td checker, contract td-fold/2 (lib >= 0.12.0) (exact vertex ready-time transforms and slope-one arc interpolation). Routes unchanged. The proof was obtained under the pre-0.12 fold (td-fold/1); dual_bound is the prover's value under that arithmetic. Re-certification under td-fold/2 is pending."
+        },
+        "repriced": {
+            "previous_cost": 34092.42183860653,
+            "checker": "mamut-routing-lib td checker, contract td-fold/2 (lib >= 0.12.0)",
+            "contract": "td-fold/2",
+            "date": "2026-09-24"
         }
     },
     "objective_function": "Duration"

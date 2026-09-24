@@ -14,8 +14,8 @@
         "date": "2026-07-16T10:11:18",
         "validated_cost": 21622.184550018846,
         "validated_num_routes": 4,
-        "route_durations": [430.0504709433261, 6437.124652187779, 7193.2978354799725, 7561.7115914077685],
-        "route_departure_times": [0.0, 2117.2308998804065, 271.87573402864365, 1860.1768125453136],
+        "route_durations": [430.0504709433261, 6437.124652187779, 7193.2978354799725, 7561.711591407769],
+        "route_departure_times": [0.0, 2117.2308998804065, 271.87573402864365, 1860.1768125453132],
         "optimality": {
             "proven": true,
             "prover": "kayros 1.5.1 lera branch-price-and-cut (HiGHS backend; campaign build commit df05a37, behavior-identical to release v1.5.1)",
