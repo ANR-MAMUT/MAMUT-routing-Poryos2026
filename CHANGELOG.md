@@ -1,6 +1,6 @@
 # Changelog — Poryos2026 collection
 
-## 2026-09-24 — TD BKS re-priced under the td-fold/2 checker contract
+## 2026-09-24 — TD BKS re-priced under the td-fold/2 checker contract; relaxation-twin cross-evaluation
 
 - **Re-pricing, no route changed.** mamut-routing-lib 0.12.0 replaces the TD checker's route fold (contract
   `td-fold/1` -> `td-fold/2`): waiting and service at a vertex are applied exactly to the accumulated arrival times
@@ -12,6 +12,18 @@
 - **Optimality stamps.** 48 stamped BKS (29 TDVRPTW, 19 TDVRP) moved by at most 7.3e-12: `proven_optimum` now equals
   the re-priced cost, and a `note` records that the proof was obtained under `td-fold/1`, that `dual_bound` is the
   prover's value in that arithmetic, and that re-certification under `td-fold/2` is pending.
+- **Relaxation-twin cross-evaluation: 41 TDVRP BKS and 1 CVRP BKS improved.** A TDVRPTW solution is a feasible
+  TDVRP solution of no larger duration (the TDVRP twin drops the windows; the arrival-time functions are FIFO),
+  and a VRPTW solution of any TW set is a CVRP solution of the same cost on the same metric. Every TDVRPTW BKS was
+  therefore priced on its TDVRP twin, and every VRPTW BKS on its CVRP twin, and offered through the improve-only
+  stores (`save_td_solution_as_bks_if_improved`, `save_solution_as_bks_if_improved`; exact comparison, checker
+  cost authoritative) after a structural check that the pair really is a relaxation. 41 TDVRP BKS improved (2 at
+  n=50, 2 at n=100, 15 at n=500, 22 at n=1000; mean -0.48 %, median -0.18 %, largest -1.74 % on
+  `poryos-hong_kong-n500-poi-wave-heavy`), and CVRP/fastest `poryos-hong_kong-n500-poi` improved from 51998.37 to
+  51865.004 (-0.26 %) with the routes of its VRPTW twin. No optimality-stamped BKS was affected. The new records keep
+  the twin's authors and carry `method: twin-cross-evaluation`, a `derived_from` block naming the source instance,
+  objective, cost and date, and `campaign: 2026-09 relaxation-twin cross-evaluation`. The decimal tie
+  `poryos-hong_kong-n25-hyb` (CVRP) was kept.
 
 ## 2026-08-08 — first optimality certificates: 238 TD instances proven optimal, 4 BKS improved
 
