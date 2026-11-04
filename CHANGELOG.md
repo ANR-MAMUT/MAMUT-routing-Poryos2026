@@ -1,5 +1,9 @@
 # Changelog — Poryos2026 collection
 
+## 2026-11-04: community BKS improvement
+
+Accepted [vizzito's contribution](https://github.com/ANR-MAMUT/MAMUT-routing-Poryos2026/issues/2) for `poryos-lyon-n1000-hyb`, CVRP/fastest: exact cost improves from 60163.837 to 60120.025 seconds (43.812 seconds), with 64 routes. Re-validated the candidate and incumbent with mamut-routing-lib 0.12.0 against the sha256-pinned fastest-distance sidecar. An independent Decimal sum of the raw sidecar entries confirms both costs, and independent coverage, capacity and fleet checks pass. Stored the candidate through the canonical improve-only BKS store. The remaining 1079 BKS are unchanged. [Verification record](contributions/2026-11-04-issue-2.json).
+
 ## 2026-09-24 — TD BKS re-priced under the td-fold/2 checker contract; relaxation-twin cross-evaluation
 
 - **Re-pricing, no route changed.** mamut-routing-lib 0.12.0 replaces the TD checker's route fold (contract
