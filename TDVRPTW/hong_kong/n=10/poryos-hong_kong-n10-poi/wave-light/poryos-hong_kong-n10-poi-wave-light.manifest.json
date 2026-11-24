@@ -1,0 +1,68 @@
+{
+  "benchmark_revision": "r1",
+  "default_profile": "td-binary64-exact-v1",
+  "family": "Poryos2026",
+  "features": [
+    "single-depot",
+    "homogeneous-capacity",
+    "mandatory-visits",
+    "time-dependent-travel",
+    "service-start-windows"
+  ],
+  "instance": {
+    "path": "TDVRPTW/hong_kong/n=10/poryos-hong_kong-n10-poi/wave-light/poryos-hong_kong-n10-poi-wave-light.vrp.json",
+    "sha256": "3d38e03b6ea6e95a971dc4e1e7466a289f4981eb036e4e3ce8064588f904831e"
+  },
+  "instance_name": "poryos-hong_kong-n10-poi-wave-light",
+  "materialization": {
+    "atf_stream_sha256": "fdd3c3765bd667b4f366ea0ee49f8c27a1dc6dad6f85ec4241eb36a85fe77569",
+    "canonical_atf_sha256": "38ee57ad7c797aeb772d3361b55c13fdfc09bf7ac84906618778358843f8ee5e",
+    "interpretation": "binary64",
+    "kind": "regenerated",
+    "recipe": {
+      "artifacts": [
+        {
+          "path": ".mamut/artifacts/74fb885fc3b76dcd3ac65cb0b75b0086b89f976d422ea6a9fd398e6d10d2d828/mamut_routing_lib-0.13.0.dev0.tar.gz",
+          "scope": "file",
+          "sha256": "74fb885fc3b76dcd3ac65cb0b75b0086b89f976d422ea6a9fd398e6d10d2d828"
+        },
+        {
+          "path": ".mamut/artifacts/b829e5366f94c6810db090671d2a546cdc06079bf972ee2282f718def94cb9ba/mamut_routing_lib-0.13.0.dev0-cp312-cp312-linux_x86_64.whl",
+          "scope": "file",
+          "sha256": "b829e5366f94c6810db090671d2a546cdc06079bf972ee2282f718def94cb9ba"
+        },
+        {
+          "path": ".mamut/artifacts/21efc05188bca2b25987b5bd302a87169680b8aa234daa6e77b73e6c1c457197/materialization-environment-linux-x86_64.json",
+          "scope": "file",
+          "sha256": "21efc05188bca2b25987b5bd302a87169680b8aa234daa6e77b73e6c1c457197"
+        }
+      ],
+      "callable": "mamut_routing_lib.td.roadgraph.materialize_instance_atfs_roadgraph",
+      "parameters": {
+        "graph_path": "sidecars/hong_kong/n=10/poryos-hong_kong-n10-poi/poryos-hong_kong-n10-poi.road.json.gz",
+        "sample_step": 60.0,
+        "simplify_tolerance": 1.0,
+        "traffic_path": "sidecars/hong_kong/n=10/poryos-hong_kong-n10-poi/poryos-hong_kong-n10-poi.traffic-wave-light.json.gz"
+      }
+    }
+  },
+  "objective": "Duration",
+  "problem": "TDVRPTW",
+  "sidecars": [
+    {
+      "path": "sidecars/hong_kong/n=10/poryos-hong_kong-n10-poi/poryos-hong_kong-n10-poi.road.json.gz",
+      "scope": "decompressed",
+      "sha256": "1c2bfbab0c9a9707c34c3d56c8ea912b834014e8a3e0c660e6aea9f23f7b7555"
+    },
+    {
+      "path": "sidecars/hong_kong/n=10/poryos-hong_kong-n10-poi/poryos-hong_kong-n10-poi.traffic-wave-light.json.gz",
+      "scope": "decompressed",
+      "sha256": "97a864ce452cdb311686b328e72d98f1eeca195f2dfff2f2534a99dd8b4f05b9"
+    }
+  ],
+  "specification": "mamut-routing/0.1-review",
+  "units": {
+    "cost": "second",
+    "time": "second"
+  }
+}

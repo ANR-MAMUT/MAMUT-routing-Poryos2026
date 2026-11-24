@@ -1,0 +1,34 @@
+{
+  "benchmark_revision": "r1",
+  "cost_is_travel_time": false,
+  "default_profile": "binary64-exact-v1",
+  "family": "Poryos2026",
+  "features": [
+    "single-depot",
+    "homogeneous-capacity",
+    "mandatory-visits"
+  ],
+  "instance": {
+    "path": "CVRP/shortest/lyon/n=100/poryos-lyon-n100-poi/poryos-lyon-n100-poi.vrp.json",
+    "sha256": "aa7006aa55b22f1cee40565d4d89eebdeec83b5c1d5fb3cd88232b93b08682a7"
+  },
+  "instance_name": "poryos-lyon-n100-poi",
+  "materialization": {
+    "interpretation": "binary64",
+    "kind": "sidecar-matrix",
+    "matrix_sha256": "9303c8ffae0c830ea3fd80cf36041bf603786b856c0a438d689bdec6fa9ab978"
+  },
+  "objective": "MonoCost",
+  "problem": "CVRP",
+  "sidecars": [
+    {
+      "path": "sidecars/lyon/n=100/poryos-lyon-n100-poi/poryos-lyon-n100-poi.distances-shortest.json.gz",
+      "scope": "decompressed",
+      "sha256": "e54878808ccc7c671ee46e616c851ea05a2e6636aca33a52281f59ecd05ddf4e"
+    }
+  ],
+  "specification": "mamut-routing/0.1-review",
+  "units": {
+    "cost": "metre"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "benchmark_revision": "r1",
+  "default_profile": "td-binary64-exact-v1",
+  "family": "Poryos2026",
+  "features": [
+    "single-depot",
+    "homogeneous-capacity",
+    "mandatory-visits",
+    "time-dependent-travel"
+  ],
+  "instance": {
+    "path": "TDVRP/tokyo/n=50/poryos-tokyo-n50-poi/bpr-moderate/poryos-tokyo-n50-poi-bpr-moderate.vrp.json",
+    "sha256": "3ce442b8e3d55900fce5639d2b93116d2502f34b5ab6fb56295181b6f1973df4"
+  },
+  "instance_name": "poryos-tokyo-n50-poi-bpr-moderate",
+  "materialization": {
+    "atf_stream_sha256": "cda6e4bffee854ed66066b9e69001c75a6afb47d5ad1a6b616cc855a357a1e0a",
+    "canonical_atf_sha256": "848f9401eb4cb16cfd69f87df1180f70a3c27d8c9735a06771b3a3bfe8ca8a1b",
+    "interpretation": "binary64",
+    "kind": "regenerated",
+    "recipe": {
+      "artifacts": [
+        {
+          "path": ".mamut/artifacts/74fb885fc3b76dcd3ac65cb0b75b0086b89f976d422ea6a9fd398e6d10d2d828/mamut_routing_lib-0.13.0.dev0.tar.gz",
+          "scope": "file",
+          "sha256": "74fb885fc3b76dcd3ac65cb0b75b0086b89f976d422ea6a9fd398e6d10d2d828"
+        },
+        {
+          "path": ".mamut/artifacts/b829e5366f94c6810db090671d2a546cdc06079bf972ee2282f718def94cb9ba/mamut_routing_lib-0.13.0.dev0-cp312-cp312-linux_x86_64.whl",
+          "scope": "file",
+          "sha256": "b829e5366f94c6810db090671d2a546cdc06079bf972ee2282f718def94cb9ba"
+        },
+        {
+          "path": ".mamut/artifacts/21efc05188bca2b25987b5bd302a87169680b8aa234daa6e77b73e6c1c457197/materialization-environment-linux-x86_64.json",
+          "scope": "file",
+          "sha256": "21efc05188bca2b25987b5bd302a87169680b8aa234daa6e77b73e6c1c457197"
+        }
+      ],
+      "callable": "mamut_routing_lib.td.roadgraph.materialize_instance_atfs_roadgraph",
+      "parameters": {
+        "graph_path": "sidecars/tokyo/n=50/poryos-tokyo-n50-poi/poryos-tokyo-n50-poi.road.json.gz",
+        "sample_step": 60.0,
+        "simplify_tolerance": 1.0,
+        "traffic_path": "sidecars/tokyo/n=50/poryos-tokyo-n50-poi/poryos-tokyo-n50-poi.traffic-bpr-moderate.json.gz"
+      }
+    }
+  },
+  "objective": "Duration",
+  "problem": "TDVRP",
+  "sidecars": [
+    {
+      "path": "sidecars/tokyo/n=50/poryos-tokyo-n50-poi/poryos-tokyo-n50-poi.road.json.gz",
+      "scope": "decompressed",
+      "sha256": "7960f5ac6803c3d04922adff2be200e487f3696615cff584813390a772e9c16a"
+    },
+    {
+      "path": "sidecars/tokyo/n=50/poryos-tokyo-n50-poi/poryos-tokyo-n50-poi.traffic-bpr-moderate.json.gz",
+      "scope": "decompressed",
+      "sha256": "431bc29744afa1d129360113099d7ccaea70283a0d59a5c87c71c320c81e59bd"
+    }
+  ],
+  "specification": "mamut-routing/0.1-review",
+  "units": {
+    "cost": "second",
+    "time": "second"
+  }
+}

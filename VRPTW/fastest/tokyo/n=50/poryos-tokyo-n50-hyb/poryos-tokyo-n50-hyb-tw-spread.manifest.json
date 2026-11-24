@@ -1,0 +1,36 @@
+{
+  "benchmark_revision": "r1",
+  "cost_is_travel_time": true,
+  "default_profile": "binary64-exact-v1",
+  "family": "Poryos2026",
+  "features": [
+    "single-depot",
+    "homogeneous-capacity",
+    "mandatory-visits",
+    "service-start-windows"
+  ],
+  "instance": {
+    "path": "VRPTW/fastest/tokyo/n=50/poryos-tokyo-n50-hyb/poryos-tokyo-n50-hyb-tw-spread.vrp.json",
+    "sha256": "28ec548ceb3b60738e4e6a4652ce731075e3e0a0aedf93be5d9cb1483fbc309d"
+  },
+  "instance_name": "poryos-tokyo-n50-hyb-tw-spread",
+  "materialization": {
+    "interpretation": "binary64",
+    "kind": "sidecar-matrix",
+    "matrix_sha256": "b495a01dc0324177f3d1266b33feb4b53bdb5734341ba038c4260c03aa39d025"
+  },
+  "objective": "MonoCost",
+  "problem": "VRPTW",
+  "sidecars": [
+    {
+      "path": "sidecars/tokyo/n=50/poryos-tokyo-n50-hyb/poryos-tokyo-n50-hyb.distances-fastest.json.gz",
+      "scope": "decompressed",
+      "sha256": "5e48977d01f0c0fe7fad0c9368b751a5f03dca633ccd5dbc173d3f8598dafb8b"
+    }
+  ],
+  "specification": "mamut-routing/0.1-review",
+  "units": {
+    "cost": "second",
+    "time": "second"
+  }
+}

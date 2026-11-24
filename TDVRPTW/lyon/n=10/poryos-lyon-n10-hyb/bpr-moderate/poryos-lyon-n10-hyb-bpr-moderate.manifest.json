@@ -1,0 +1,68 @@
+{
+  "benchmark_revision": "r1",
+  "default_profile": "td-binary64-exact-v1",
+  "family": "Poryos2026",
+  "features": [
+    "single-depot",
+    "homogeneous-capacity",
+    "mandatory-visits",
+    "time-dependent-travel",
+    "service-start-windows"
+  ],
+  "instance": {
+    "path": "TDVRPTW/lyon/n=10/poryos-lyon-n10-hyb/bpr-moderate/poryos-lyon-n10-hyb-bpr-moderate.vrp.json",
+    "sha256": "bf1f8c9a406ee9b0b54e46ec0e1fb9d7a5dcad1b0ef21ed166940cb6abfc407f"
+  },
+  "instance_name": "poryos-lyon-n10-hyb-bpr-moderate",
+  "materialization": {
+    "atf_stream_sha256": "8b3f75b39dcfa1fccda19a5bafecd39bddeae1651944763af3aa3b8a85ed654d",
+    "canonical_atf_sha256": "af93adfa346a349dcc3c3fd361397761879679d74cec6687f174ea64133b3339",
+    "interpretation": "binary64",
+    "kind": "regenerated",
+    "recipe": {
+      "artifacts": [
+        {
+          "path": ".mamut/artifacts/74fb885fc3b76dcd3ac65cb0b75b0086b89f976d422ea6a9fd398e6d10d2d828/mamut_routing_lib-0.13.0.dev0.tar.gz",
+          "scope": "file",
+          "sha256": "74fb885fc3b76dcd3ac65cb0b75b0086b89f976d422ea6a9fd398e6d10d2d828"
+        },
+        {
+          "path": ".mamut/artifacts/b829e5366f94c6810db090671d2a546cdc06079bf972ee2282f718def94cb9ba/mamut_routing_lib-0.13.0.dev0-cp312-cp312-linux_x86_64.whl",
+          "scope": "file",
+          "sha256": "b829e5366f94c6810db090671d2a546cdc06079bf972ee2282f718def94cb9ba"
+        },
+        {
+          "path": ".mamut/artifacts/21efc05188bca2b25987b5bd302a87169680b8aa234daa6e77b73e6c1c457197/materialization-environment-linux-x86_64.json",
+          "scope": "file",
+          "sha256": "21efc05188bca2b25987b5bd302a87169680b8aa234daa6e77b73e6c1c457197"
+        }
+      ],
+      "callable": "mamut_routing_lib.td.roadgraph.materialize_instance_atfs_roadgraph",
+      "parameters": {
+        "graph_path": "sidecars/lyon/n=10/poryos-lyon-n10-hyb/poryos-lyon-n10-hyb.road.json.gz",
+        "sample_step": 60.0,
+        "simplify_tolerance": 1.0,
+        "traffic_path": "sidecars/lyon/n=10/poryos-lyon-n10-hyb/poryos-lyon-n10-hyb.traffic-bpr-moderate.json.gz"
+      }
+    }
+  },
+  "objective": "Duration",
+  "problem": "TDVRPTW",
+  "sidecars": [
+    {
+      "path": "sidecars/lyon/n=10/poryos-lyon-n10-hyb/poryos-lyon-n10-hyb.road.json.gz",
+      "scope": "decompressed",
+      "sha256": "c270edf0cf7abf3e1db751904bbf2605cd38835443cdc950fb13c017dc9f25e2"
+    },
+    {
+      "path": "sidecars/lyon/n=10/poryos-lyon-n10-hyb/poryos-lyon-n10-hyb.traffic-bpr-moderate.json.gz",
+      "scope": "decompressed",
+      "sha256": "a2b89df95c42ac9889c715a62c22bb842665043da6bf3fabff75600f5f119024"
+    }
+  ],
+  "specification": "mamut-routing/0.1-review",
+  "units": {
+    "cost": "second",
+    "time": "second"
+  }
+}

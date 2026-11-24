@@ -1,0 +1,34 @@
+{
+  "benchmark_revision": "r1",
+  "cost_is_travel_time": false,
+  "default_profile": "binary64-exact-v1",
+  "family": "Poryos2026",
+  "features": [
+    "single-depot",
+    "homogeneous-capacity",
+    "mandatory-visits"
+  ],
+  "instance": {
+    "path": "CVRP/shortest/hong_kong/n=25/poryos-hong_kong-n25-poi/poryos-hong_kong-n25-poi.vrp.json",
+    "sha256": "8550eef52700ad61ccc0cbf993d2a2c7b5677b3f04636291a24ba87dda64f326"
+  },
+  "instance_name": "poryos-hong_kong-n25-poi",
+  "materialization": {
+    "interpretation": "binary64",
+    "kind": "sidecar-matrix",
+    "matrix_sha256": "90a126f11c507f7a571a744f39989fcf408ddae4b43c34b9169979992ec510aa"
+  },
+  "objective": "MonoCost",
+  "problem": "CVRP",
+  "sidecars": [
+    {
+      "path": "sidecars/hong_kong/n=25/poryos-hong_kong-n25-poi/poryos-hong_kong-n25-poi.distances-shortest.json.gz",
+      "scope": "decompressed",
+      "sha256": "16f2d6c64a7a63568d8ebd3c7832b6c193e85408987c99d7d707a107cab30421"
+    }
+  ],
+  "specification": "mamut-routing/0.1-review",
+  "units": {
+    "cost": "metre"
+  }
+}
