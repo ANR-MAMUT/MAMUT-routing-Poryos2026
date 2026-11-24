@@ -1,5 +1,9 @@
 # Changelog — Poryos2026 collection
 
+## 2026-11-24. Hong Kong 25-customer CVRP improvement on v013
+
+The `fastest` CVRP incumbent for `poryos-hong_kong-n25-hyb` now uses the four routes from its time-window variant. On the CVRP edition `r1`, the C++ and Python Fraction backends both found a strict reduction of $5/2^{49}$ seconds under `binary64-exact-v1`. Both costs display as 9150.837 seconds. The new BKS records the source routes and the exact evaluation on the CVRP manifest. [CVRP incumbent](CVRP/fastest/hong_kong/n=25/poryos-hong_kong-n25-hyb/poryos-hong_kong-n25-hyb.bks.MonoCost.json) and [source VRPTW routes](VRPTW/fastest/hong_kong/n=25/poryos-hong_kong-n25-hyb/poryos-hong_kong-n25-hyb.bks.MonoCost.json).
+
 ## 2026-11-04: community BKS improvement
 
 Accepted [vizzito's contribution](https://github.com/ANR-MAMUT/MAMUT-routing-Poryos2026/issues/2) for `poryos-lyon-n1000-hyb`, CVRP/fastest: exact cost improves from 60163.837 to 60120.025 seconds (43.812 seconds), with 64 routes. Re-validated the candidate and incumbent with mamut-routing-lib 0.12.0 against the sha256-pinned fastest-distance sidecar. An independent Decimal sum of the raw sidecar entries confirms both costs, and independent coverage, capacity and fleet checks pass. Stored the candidate through the canonical improve-only BKS store. The remaining 1079 BKS are unchanged. [Verification record](contributions/2026-11-04-issue-2.json).
