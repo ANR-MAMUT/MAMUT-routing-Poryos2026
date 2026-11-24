@@ -87,6 +87,8 @@ CVRPLIB `.vrp` exports with explicit matrices are committed for n <= 100; larger
 
 BKS files sit next to their instance as `<instance>.bks.<objective>.json` (`MonoCost` for CVRP/VRPTW, `Duration` for TD), are checker-validated before storage, and only ever improve. Contributions are welcome through pull requests with reproducible solution files.
 
+Edition `r1` uses `binary64-exact-v1` for CVRP and VRPTW and `td-binary64-exact-v1` for TDVRP and TDVRPTW. Both evaluate the materialized binary64 operands with exact rational arithmetic. Each TD route also records its minimum duration and earliest departure attaining it. The certified solution cost is the fraction in `metadata.standard.authoritative_cost`. The top-level `cost` is its binary64 display.
+
 The CVRP/fastest BKS for `poryos-lyon-n1000-hyb` was improved by [vizzito](https://github.com/vizzito) from 60163.837 to 60120.025 seconds with 64 routes, accepted on 2026-11-04. See [the submission](https://github.com/ANR-MAMUT/MAMUT-routing-Poryos2026/issues/2) and [independent verification record](contributions/2026-11-04-issue-2.json).
 
 ## Provenance and reproducibility
