@@ -76,14 +76,35 @@
         [990, 662, 706, 133, 656, 625, 778, 994, 853, 322, 406, 27, 288],
         [991, 326, 683, 882, 808, 34, 700]
     ],
-    "cost": 70100.95100000007,
+    "cost": 70100.951,
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
         "source": "PyVRP 0.12.2 HGS on 1000-scaled integers (seed=456, time_limit=3600s)",
         "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
         "date": "2026-07-17T10:14:37",
-        "validated_cost": 70100.95100000007,
-        "validated_num_routes": 74
+        "validated_cost": 70100.951,
+        "validated_num_routes": 74,
+        "standard": {
+            "profile": "binary64-exact-v1",
+            "objective": "MonoCost",
+            "num_routes": 74,
+            "routes_sha256": "f665671b0951e0833705a36f731c2212d65c5c6bda8d896a0b4767c2f15959dd",
+            "authoritative_cost": {
+                "numerator": "1262826467207669593587",
+                "denominator": "18014398509481984"
+            },
+            "display_overflow": false,
+            "evaluation": {
+                "checker": "mamut-routing-lib",
+                "backend": "cpp-dyadic-prepared",
+                "implementation_sha256": "93280715da2a0e48789e5e4b3caef287f5214a05e5344e6416c52bc32d38c1d3",
+                "runtime": "CPython 3.12.12",
+                "verification_status": "incumbent-verified"
+            },
+            "specification": "mamut-routing/0.1-review",
+            "benchmark_revision": "r1",
+            "manifest_sha256": "70ef53a692949bd2eb65edb52f04a572bea0952c8e37ece09ea1ecb1c9cc328e"
+        }
     },
     "objective_function": "MonoCost"
 }

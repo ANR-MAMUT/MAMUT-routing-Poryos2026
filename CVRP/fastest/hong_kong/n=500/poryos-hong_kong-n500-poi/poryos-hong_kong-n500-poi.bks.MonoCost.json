@@ -40,7 +40,7 @@
         [471, 288, 299, 172, 66, 190, 267, 251, 269, 330, 222, 232, 356, 43, 489, 274, 247, 243, 384, 360],
         [492, 473, 309, 399, 266, 215, 335, 457, 402, 363, 240, 456, 498, 375]
     ],
-    "cost": 51865.00400000005,
+    "cost": 51865.004,
     "metadata": {
         "method": "twin-cross-evaluation",
         "source": "routes of the MonoCost BKS of the restriction Poryos2026/VRPTW/fastest/hong_kong/n=500/poryos-hong_kong-n500-poi/poryos-hong_kong-n500-poi.vrp.json, re-priced on this relaxation by the reference checker",
@@ -54,9 +54,30 @@
         "campaign": "2026-09 relaxation-twin cross-evaluation",
         "validated_by": "mamut-routing-lib MonoCost checker (exact decimal comparison)",
         "authors": "Florian Rascoussier (0nyr)",
-        "validated_cost": 51865.00400000005,
+        "validated_cost": 51865.004,
         "validated_num_routes": 38,
-        "date": "2026-09-24T15:09:03"
+        "date": "2026-09-24T15:09:03",
+        "standard": {
+            "profile": "binary64-exact-v1",
+            "objective": "MonoCost",
+            "num_routes": 38,
+            "routes_sha256": "a8cde5a92dc7271c8cceb2c00df87ecddb25e449dfeaf82589a3fa0e7053507e",
+            "authoritative_cost": {
+                "numerator": "467158425375938567999",
+                "denominator": "9007199254740992"
+            },
+            "display_overflow": false,
+            "evaluation": {
+                "checker": "mamut-routing-lib",
+                "backend": "cpp-dyadic-prepared",
+                "implementation_sha256": "93280715da2a0e48789e5e4b3caef287f5214a05e5344e6416c52bc32d38c1d3",
+                "runtime": "CPython 3.12.12",
+                "verification_status": "incumbent-verified"
+            },
+            "specification": "mamut-routing/0.1-review",
+            "benchmark_revision": "r1",
+            "manifest_sha256": "6b427b74bcbba366452b26e0f802a58ab3d0e898ab1a108e65c747467d1a170e"
+        }
     },
     "objective_function": "MonoCost"
 }

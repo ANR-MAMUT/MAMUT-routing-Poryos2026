@@ -13,7 +13,28 @@
         "validated_by": "mamut-routing-lib MonoCost checker (float domain)",
         "date": "2026-07-10T04:08:42",
         "validated_cost": 8992.712,
-        "validated_num_routes": 4
+        "validated_num_routes": 4,
+        "standard": {
+            "profile": "binary64-exact-v1",
+            "objective": "MonoCost",
+            "num_routes": 4,
+            "routes_sha256": "785df929ee13295cbe6a4d6ed3acf1bf48a060a7cbb5a036e52096a63c4140ea",
+            "authoritative_cost": {
+                "numerator": "10124893603062546893",
+                "denominator": "1125899906842624"
+            },
+            "display_overflow": false,
+            "evaluation": {
+                "checker": "mamut-routing-lib",
+                "backend": "cpp-dyadic-prepared",
+                "implementation_sha256": "93280715da2a0e48789e5e4b3caef287f5214a05e5344e6416c52bc32d38c1d3",
+                "runtime": "CPython 3.12.12",
+                "verification_status": "incumbent-verified"
+            },
+            "specification": "mamut-routing/0.1-review",
+            "benchmark_revision": "r1",
+            "manifest_sha256": "9b39d6e509594fbcf10aff41cb2058d3f4f8a7893f4b28a7de997696a66ec787"
+        }
     },
     "objective_function": "MonoCost"
 }

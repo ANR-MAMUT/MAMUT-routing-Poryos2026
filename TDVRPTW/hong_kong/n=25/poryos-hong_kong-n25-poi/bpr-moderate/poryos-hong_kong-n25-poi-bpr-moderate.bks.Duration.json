@@ -13,31 +13,122 @@
     "metadata": {
         "authors": "Florian Rascoussier (0nyr)",
         "source": "kayros 0.4.0 TD-ILS (seed=7, time_limit=240s)",
-        "validated_by": "mamut-routing-lib td Duration checker",
+        "validated_by": "mamut-routing-lib",
         "date": "2026-07-16T10:12:21",
         "validated_cost": 33874.8530290605,
         "validated_num_routes": 7,
-        "route_durations": [5410.547970988038, 11186.825697671922, 3956.287876694458, 2956.651113264133, 5666.3418634865075, 1301.9346519546598, 3396.263855000776],
-        "route_departure_times": [3917.944568419332, 145.8187338477386, 189.4410191460171, 0.0, 7559.3056824259975, 13119.174558836079, 4168.02059979561],
+        "route_durations": [5410.547970988039, 11186.82569767192, 3956.2878766944586, 2956.651113264133, 5666.341863486507, 1301.9346519546616, 3396.263855000776],
+        "route_departure_times": [3917.944568419332, 145.8187338477396, 189.44101914601708, 0.0, 7559.305682425999, 13119.174558836079, 4168.02059979561],
         "optimality": {
-            "proven": true,
-            "prover": "kayros 1.5.1 lera branch-price-and-cut (HiGHS backend; campaign build commit df05a37, behavior-identical to release v1.5.1)",
+            "status": "solver-reported-optimal",
+            "target_profile": "td-fold/1",
+            "solver": "kayros 1.5.1 lera branch-price-and-cut (HiGHS backend; campaign build commit df05a37, behavior-identical to release v1.5.1)",
+            "campaign": "2026-08-08 Poryos2026 first certification on Grid'5000 abaca (pilot 6832834, full 6832960, top-up 6835714 + 6837251)",
             "certificate": "Optimal under checker-exact route costs and standard LP/pricing tolerances. Certified by four independent solves (cold and warm starts x asymmetric and symmetric labeling modes) agreeing on the value, each with an audited exact-pricing phase and zero checker-infeasible priced columns.",
-            "date": "2026-08-08",
             "arithmetic": "checker-exact route costs (IEEE-754 doubles, canonical route order); the proven optimum equals compute_solution_cost of the stored routes bit-exactly",
-            "proven_optimum": 33874.8530290605,
-            "dual_bound": 33874.8530290605,
+            "date": "2026-08-08",
             "wall_time_s": 19.96,
             "time_limit_s": 1800.0,
-            "checker": "mamut-routing-lib td Duration checker",
-            "campaign": "2026-08-08 Poryos2026 first certification on Grid'5000 abaca (pilot 6832834, full 6832960, top-up 6835714 + 6837251)",
-            "note": "Re-priced on 2026-09-24 from 33874.85302906049 to 33874.8530290605 by mamut-routing-lib td checker, contract td-fold/2 (lib >= 0.12.0) (exact vertex ready-time transforms and slope-one arc interpolation). Routes unchanged. The proof was obtained under the pre-0.12 fold (td-fold/1); dual_bound is the prover's value under that arithmetic. Re-certification under td-fold/2 is pending."
+            "reported_primal": 33874.85302906049,
+            "reported_dual": 33874.8530290605,
+            "evidence": {
+                "path": ".mamut/history/202d2c0fea85c4fe5592f4738bcabb5272797950f745e40c416c08d545f0cb13.bks.json",
+                "sha256": "202d2c0fea85c4fe5592f4738bcabb5272797950f745e40c416c08d545f0cb13",
+                "scope": "file"
+            }
         },
-        "repriced": {
-            "previous_cost": 33874.85302906049,
-            "checker": "mamut-routing-lib td checker, contract td-fold/2 (lib >= 0.12.0)",
-            "contract": "td-fold/2",
-            "date": "2026-09-24"
+        "standard": {
+            "profile": "td-binary64-exact-v1",
+            "objective": "Duration",
+            "num_routes": 7,
+            "routes_sha256": "b3e9abcd8515a3680d5c848cb42b778298ff6b18e803c05b1463fc99a99ccd80",
+            "authoritative_cost": {
+                "numerator": "192442271014983632777414325791907803986792689242804645318263427641932859288625506813374934074363753527321356977034636943986396418905103137299146501760375292129022622866205883414435505675164529936917361188673987034061237777654625691366767095151501157335111574595111210480360614247928451831440909951033936811466586328759563",
+                "denominator": "5680977297521899941936137838034119525248569802218395317460656697756453946857259796729393545741614281629002464263239249752319397972093352930463418404629893830545265805784107066258994536152732358569076870533304240707808883529117696270725887405951610404972557272185269518303376372559403134664993754966040007147520000000"
+            },
+            "display_overflow": false,
+            "evaluation": {
+                "checker": "mamut-routing-lib",
+                "backend": "cpp-gmp-compose",
+                "implementation_sha256": "e74c3cf2062d560ef164ff38b83135a20103a15bec639f3abd1d897508ed87c2",
+                "runtime": "CPython 3.12.12",
+                "verification_status": "incumbent-verified"
+            },
+            "route_evaluations": [
+                {
+                    "duration": {
+                        "numerator": "283534161183325392240887416349018279762154342641292940931092948981143677194208851680523",
+                        "denominator": "52403964016892031011226241683220085570444177264890114148118236611133186022813204480"
+                    },
+                    "departure_time": {
+                        "numerator": "40580004491736106663940569509977521224",
+                        "denominator": "10357472849113797577042375279666487"
+                    }
+                },
+                {
+                    "duration": {
+                        "numerator": "52631074472546016787989393684307771151341934889444194664035211720190228292574467670843920220790559657942021356069276740685142946385431591283912234918275237827531",
+                        "denominator": "4704737151978601194163356318170763578653037668114531257107913758077764803675714675123372105535715456552251126347957140660827964238038738942283313315840000000"
+                    },
+                    "departure_time": {
+                        "numerator": "4919184661034435152700370949276039323196934532173390561035101941865916800",
+                        "denominator": "33734929190723388379203161438927505159495052624847867327000007649363601"
+                    }
+                },
+                {
+                    "duration": {
+                        "numerator": "11706982361665107419461779360898706900101658013174754539619484188422622844779632404438295271",
+                        "denominator": "2959082535582945841069433325575117267871697830422336189309553591881197787478491136000000"
+                    },
+                    "departure_time": {
+                        "numerator": "8823274677007184340",
+                        "denominator": "46575312552591331"
+                    }
+                },
+                {
+                    "duration": {
+                        "numerator": "1097208314383061440921124789070595353146310347657",
+                        "denominator": "371098338069298650714617811880789140685455360"
+                    },
+                    "departure_time": {
+                        "numerator": "0",
+                        "denominator": "1"
+                    }
+                },
+                {
+                    "duration": {
+                        "numerator": "37418749316194341063625170186577696611457062651871290051166649895141728441312429683680259",
+                        "denominator": "6603687214376886127651926338440740375847675045372125408770772309054229645654921052160"
+                    },
+                    "departure_time": {
+                        "numerator": "7275854171492202284570053489955142621540760114260860162752177020199461660",
+                        "denominator": "962502970134840588514460894733430889854318850586605171646538855164809"
+                    }
+                },
+                {
+                    "duration": {
+                        "numerator": "3807681493268559507430287310523051",
+                        "denominator": "2924633342811708128679878983680"
+                    },
+                    "departure_time": {
+                        "numerator": "13847697575292796560",
+                        "denominator": "1055531162664959"
+                    }
+                },
+                {
+                    "duration": {
+                        "numerator": "1921995428435433976697914973015530401828362170561472113241",
+                        "denominator": "565914637523059871536991159282565787233279786614784000"
+                    },
+                    "departure_time": {
+                        "numerator": "1557414372918671259480",
+                        "denominator": "373658031583395509"
+                    }
+                }
+            ],
+            "specification": "mamut-routing/0.1-review",
+            "benchmark_revision": "r1",
+            "manifest_sha256": "2f69d7469682f9b3092e7c0136f650162eb37afb3d600d8e614e6d30db55f68f"
         }
     },
     "objective_function": "Duration"

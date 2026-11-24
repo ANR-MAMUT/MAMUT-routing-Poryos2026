@@ -66,7 +66,7 @@
         [982, 628, 904, 808, 719, 621, 860, 606, 733, 743, 765],
         [997, 102, 162, 271, 349, 840, 194, 263, 95, 240, 566, 407, 33, 750, 803, 754, 605, 940, 212, 523, 552, 180, 748, 516, 782, 753, 916, 932, 610, 613, 521, 307, 58, 289, 441, 164]
     ],
-    "cost": 60120.02499999996,
+    "cost": 60120.025,
     "metadata": {
         "source": "https://github.com/ANR-MAMUT/MAMUT-routing-Poryos2026/issues/2",
         "submitted_solution_sha256": "2ba669067fdb810dcf6c48cc72461587388eb2a151ac340f1d2cc6afc6db563f",
@@ -74,9 +74,30 @@
         "checker_commit": "3f8d07705d6d00bba1b94180833f82c005c2f5c6",
         "verification_report": "contributions/2026-11-04-issue-2.json",
         "authors": "vizzito",
-        "validated_cost": 60120.02499999996,
+        "validated_cost": 60120.025,
         "validated_num_routes": 64,
-        "date": "2026-11-04T03:52:09"
+        "date": "2026-11-04T03:52:09",
+        "standard": {
+            "profile": "binary64-exact-v1",
+            "objective": "MonoCost",
+            "num_routes": 64,
+            "routes_sha256": "391ecf8bbb5ee1eae7b1e028c6eb364cda3c002c555ee4666aac815eb8939364",
+            "authoritative_cost": {
+                "numerator": "541513044375009806015",
+                "denominator": "9007199254740992"
+            },
+            "display_overflow": false,
+            "evaluation": {
+                "checker": "mamut-routing-lib",
+                "backend": "cpp-dyadic-prepared",
+                "implementation_sha256": "93280715da2a0e48789e5e4b3caef287f5214a05e5344e6416c52bc32d38c1d3",
+                "runtime": "CPython 3.12.12",
+                "verification_status": "incumbent-verified"
+            },
+            "specification": "mamut-routing/0.1-review",
+            "benchmark_revision": "r1",
+            "manifest_sha256": "fb61b60f5c7f355a5e6ded0b7740e05d4fd933aedcb64f4f209ac78307488efc"
+        }
     },
     "objective_function": "MonoCost"
 }
