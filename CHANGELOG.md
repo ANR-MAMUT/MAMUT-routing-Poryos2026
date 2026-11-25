@@ -1,5 +1,11 @@
 # Changelog — Poryos2026 collection
 
+## 2026-11-25. Optimality claims withdrawn from edition r1
+
+- The 238 solver-reported optimality claims (`metadata.optimality`) of this family's best-known solutions are withdrawn, 115 TDVRP and 123 TDVRPTW. They targeted the historical `td-fold/1` evaluation of earlier Kayros versions, not the `td-binary64-exact-v1` profile of edition `r1`. New claims will be derived with Kayros 2.0 under `td-binary64-exact-v1`.
+- The 238 content-addressed evidence files under `.mamut/history/` that only these claims referenced are removed. The archive of the original pre-migration best-known solutions, indexed by `.mamut/archives/r1-original-bks.json`, is unchanged.
+- No route, cost, route witness, manifest or instance file changed.
+
 ## 2026-11-24. Hong Kong 25-customer CVRP improvement on v013
 
 The `fastest` CVRP incumbent for `poryos-hong_kong-n25-hyb` now uses the four routes from its time-window variant. On the CVRP edition `r1`, the C++ and Python Fraction backends both found a strict reduction of $5/2^{49}$ seconds under `binary64-exact-v1`. Both costs display as 9150.837 seconds. The new BKS records the source routes and the exact evaluation on the CVRP manifest. [CVRP incumbent](CVRP/fastest/hong_kong/n=25/poryos-hong_kong-n25-hyb/poryos-hong_kong-n25-hyb.bks.MonoCost.json) and [source VRPTW routes](VRPTW/fastest/hong_kong/n=25/poryos-hong_kong-n25-hyb/poryos-hong_kong-n25-hyb.bks.MonoCost.json).

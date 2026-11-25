@@ -18,24 +18,6 @@
         "validated_num_routes": 6,
         "route_durations": [10903.655027890203, 14781.579522611544, 14458.922269369588, 4886.717372173093, 5867.672202766714, 6772.123125624402],
         "route_departure_times": [4447.41986959289, 24308.165992126374, 909.5069764431274, 8194.727716723015, 0.0, 2720.905566414014],
-        "optimality": {
-            "status": "solver-reported-optimal",
-            "target_profile": "td-fold/1",
-            "solver": "kayros 1.5.1 lera branch-price-and-cut (HiGHS backend; campaign build commit df05a37, behavior-identical to release v1.5.1)",
-            "campaign": "2026-08-08 Poryos2026 first certification on Grid'5000 abaca (pilot 6832834, full 6832960, top-up 6835714 + 6837251)",
-            "certificate": "Optimal under checker-exact route costs and standard LP/pricing tolerances. Certified by four independent solves (cold and warm starts x asymmetric and symmetric labeling modes) agreeing on the value, each with an audited exact-pricing phase and zero checker-infeasible priced columns.",
-            "arithmetic": "checker-exact route costs (IEEE-754 doubles, canonical route order); the proven optimum equals compute_solution_cost of the stored routes bit-exactly",
-            "date": "2026-08-08",
-            "wall_time_s": 19.47,
-            "time_limit_s": 1800.0,
-            "reported_primal": 57670.669520435535,
-            "reported_dual": 57670.66952043552,
-            "evidence": {
-                "path": ".mamut/history/56687bea719aad93780d6bcd22b211ab8cb976c77ba8c7c886b92974a48a4fdb.bks.json",
-                "sha256": "56687bea719aad93780d6bcd22b211ab8cb976c77ba8c7c886b92974a48a4fdb",
-                "scope": "file"
-            }
-        },
         "standard": {
             "profile": "td-binary64-exact-v1",
             "objective": "Duration",
