@@ -1,6 +1,5 @@
 {
   "benchmark_revision": "r1",
-  "cost_is_travel_time": false,
   "default_profile": "binary64-exact-v1",
   "family": "Poryos2026",
   "features": [
