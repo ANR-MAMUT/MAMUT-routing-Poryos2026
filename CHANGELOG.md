@@ -1,5 +1,10 @@
 # Changelog — Poryos2026 collection
 
+## 2026-11-26. Improved Duration records
+
+- Florian Rascoussier improved the total route duration for 58 TDVRPTW instances. The Kayros development build produced 57 solutions. Kayros 1.7.1 produced the solution for Lyon n=100 POI, BPR-light. [Kayros development revision `dba5688`](https://github.com/0nyr/kayros/commit/dba56886167c854d2ae36b627128d6d419f811f4) · [Kayros 1.7.1](https://github.com/0nyr/kayros/commit/2c9f4aedab10bf64365035c300f896ae9e597244)
+- Replaying those routes without time windows on the corresponding TDVRP instances also improved 23 TDVRP incumbents. The native and Python Fraction evaluators independently checked the exact durations and the earliest minimizing departure for each route under the edition `r1` profile, `td-binary64-exact-v1`.
+
 ## 2026-11-25. Optimality claims withdrawn from edition r1
 
 - The 238 solver-reported optimality claims (`metadata.optimality`) of this family's best-known solutions are withdrawn, 115 TDVRP and 123 TDVRPTW. They targeted the historical `td-fold/1` evaluation of earlier Kayros versions, not the `td-binary64-exact-v1` profile of edition `r1`. New claims will be derived with Kayros 2.0 under `td-binary64-exact-v1`.
